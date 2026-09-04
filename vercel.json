@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "buildCommand": "cd dripper-app && npm run build",
+  "outputDirectory": "dripper-app/dist",
+  "installCommand": "cd dripper-app && npm install"
+}
