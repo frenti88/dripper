@@ -49,13 +49,13 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="flex items-center gap-1.5 text-lg font-black tracking-tight text-[#121613]">
               <span className="font-sans">DRYP.</span>
               <span className="text-[#4b514d] font-normal text-xs ml-1 font-mono tracking-normal">
-                — Atelier & Archivo Cerámico Medellín
+                — Atelier & Archivo Cerámico de las Cumbres
               </span>
             </div>
             <p className="text-xs text-[#5a625c] max-w-md leading-relaxed">
               {language === 'es'
-                ? 'Cerámica colada a mano y torneada en torno manual en Santa Elena y Carmen de Viboral, Antioquia. Cocción de alta temperatura a 1.280°C.'
-                : 'Hand-cast and wheel-thrown ceramic objects in Santa Elena & Carmen de Viboral, Antioquia. High-fire cone firing at 1,280°C.'}
+                ? 'Cerámica colada a mano y torneada en torno manual en las Cumbres de Neblaria y el Valle de Silaria. Cocción de alta temperatura a 1.280°C.'
+                : 'Hand-cast and wheel-thrown ceramic objects in the Heights of Neblaria & the Silaria Valley. High-fire cone firing at 1,280°C.'}
             </p>
           </div>
 

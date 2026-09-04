@@ -5,8 +5,8 @@ export const DropTimeline: React.FC = () => {
   const steps = [
     {
       code: 'T−7',
-      title: 'Memory & Concept',
-      desc: 'We share the cultural artifact, the era, the memory that sparked the piece. No product renders yet—just the idea taking root.',
+      title: 'Design & Concept',
+      desc: 'We share the cultural artifact, the era, the inspiration that sparked the drip. No product renders yet—just the idea taking root.',
       icon: <Compass className="w-5 h-5 text-[#C05A3E]" />
     },
     {
@@ -30,7 +30,7 @@ export const DropTimeline: React.FC = () => {
     {
       code: 'ARCHIVE',
       title: 'Things Along The Way',
-      desc: 'Sold out editions enter the archive. "Gone for now." Memories catalogued and never identical in future iterations.',
+      desc: 'Sold out editions enter the archive. "Gone for now." Drips catalogued and never identical in future iterations.',
       icon: <Archive className="w-5 h-5 text-[#75726B]" />
     }
   ];

@@ -83,7 +83,7 @@ export const DripCard = memo<DripCardProps>(({
     : item.category === 'WabiSabi'
     ? (language === 'es' ? '1.280°C • Maestría Zen' : '1,280°C • Zen Craft')
     : item.category === 'Minerals'
-    ? (language === 'es' ? 'Santa Elena • Gres Mineral' : 'Santa Elena • Mineral Stoneware')
+    ? (language === 'es' ? 'Cumbres • Gres Mineral' : 'Highlands • Mineral Stoneware')
     : item.category === 'Music'
     ? (language === 'es' ? 'Vertido Rítmico • Cono 02' : 'Rhythmic Pour • Cone 02')
     : item.category === 'Cosmos'

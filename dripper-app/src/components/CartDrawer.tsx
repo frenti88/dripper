@@ -156,8 +156,8 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   </h3>
                   <p className="text-xs text-[#5a625c] max-w-xs mx-auto">
                     {language === 'es' 
-                      ? 'Tus piezas han sido apartadas del lote actual cocido a 1.280°C en Santa Elena.' 
-                      : 'Your pieces have been allocated from the current 1,280°C firing batch in Santa Elena.'}
+                      ? 'Tus piezas han sido apartadas del lote actual cocido a 1.280°C en las Cumbres de Neblaria.' 
+                      : 'Your pieces have been allocated from the current 1,280°C firing batch in the Heights of Neblaria.'}
                   </p>
                 </div>
 

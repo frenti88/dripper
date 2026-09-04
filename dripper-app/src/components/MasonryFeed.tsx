@@ -67,18 +67,18 @@ export const MasonryFeed: React.FC<MasonryFeedProps> = ({
           <SearchX className="w-8 h-8" />
         </div>
         <h3 className="font-serif text-2xl font-medium text-[#121613] mb-1 break-words max-w-lg">
-          {language === 'es' ? 'No encontramos ningún recuerdo con esa búsqueda' : 'No memories found for that search'}
+          {language === 'es' ? 'No encontramos ningún drip con esa búsqueda en el catálogo' : 'No drips found for that search in the catalog'}
         </h3>
         <p className="text-xs text-[#5a625c] max-w-md mb-6 leading-relaxed">
           {language === 'es' 
-            ? 'Prueba con otros términos como "fósil", "50mm", "camilo", "santa elena" o limpia los filtros para ver todo el archivo.' 
-            : 'Try searching for "fossil", "50mm", "camilo", "santa elena", or reset filters to explore the full archive.'}
+            ? 'Prueba con otros términos como "fósil", "vinilo", "50mm", "cerámica" o restablece los filtros para ver el catálogo completo.' 
+            : 'Try searching for "fossil", "vinyl", "50mm", "ceramics", or reset filters to explore the full catalog.'}
         </p>
         <button
           onClick={onResetFilters}
           className="px-6 py-3 rounded-full bg-[#121613] hover:bg-[#252c26] text-white text-xs font-semibold transition-all cursor-pointer shadow-md active:scale-95"
         >
-          {language === 'es' ? 'Ver todos los recuerdos' : 'View all memories'}
+          {language === 'es' ? 'Ver todos los Drips' : 'View all Drips'}
         </button>
       </div>
     );

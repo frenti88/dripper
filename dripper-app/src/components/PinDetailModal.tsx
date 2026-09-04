@@ -234,7 +234,7 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                 <div>
                   <h4 className="text-xs font-bold text-[#121613] leading-none">{item.author.name}</h4>
                   <span className="text-[11px] text-[#666f68] font-mono">
-                    {language === 'es' ? 'Santa Elena, Medellín • 1.280°C' : 'Santa Elena, Medellín • 1,280°C'}
+                    {language === 'es' ? 'Cumbres de Neblaria • 1.280°C' : 'Heights of Neblaria • 1,280°C'}
                   </span>
                 </div>
               </div>
@@ -259,7 +259,7 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                   }`}
                 >
                   <Bookmark className={`w-3.5 h-3.5 ${isSaved ? 'fill-white' : ''}`} />
-                  <span>{isSaved ? (language === 'es' ? 'Guardado' : 'Saved') : (language === 'es' ? 'Coleccionar' : 'Collect')}</span>
+                  <span>{isSaved ? (language === 'es' ? 'Drip Guardado' : 'Saved') : (language === 'es' ? 'Guardar Drip' : 'Save Drip')}</span>
                 </button>
 
                 <button

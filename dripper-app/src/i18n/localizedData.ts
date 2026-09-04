@@ -25,7 +25,7 @@ export const LOCALIZED_DROP_STAGES: Record<Language, Record<DropPhase, DropStage
     'T-7': {
       phase: 'T-7',
       label: 'T−7 Days',
-      badge: 'Concept & Memory',
+      badge: 'Concept & Drip',
       headline: 'Something old is coming back.',
       subheadline: 'DROP 001 is forming in the kiln. 7 days until the full reveal.',
       countdownText: '06d : 21h : 44m',
@@ -33,7 +33,7 @@ export const LOCALIZED_DROP_STAGES: Record<Language, Record<DropPhase, DropStage
       storySnippet: 'We took the shapes we once searched for in natural history museums, worn-out encyclopedia pages and toy boxes, and translated them into a functional brewing sculpture.',
       ctaText: 'Notify me when ready',
       ctaAction: 'notify',
-      availabilityNotice: 'Previewing memory. Production limited to 150 numbered pieces.'
+      availabilityNotice: 'Previewing drip edition. Production limited to 150 numbered pieces.'
     },
     'T-3': {
       phase: 'T-3',
@@ -72,14 +72,14 @@ export const LOCALIZED_DROP_STAGES: Record<Language, Record<DropPhase, DropStage
       storySnippet: 'Objects we grew up with. Reimagined for coffee. Small batch ceramics designed to brew slow and live on your open shelf.',
       ctaText: 'Explore Prehistoric',
       ctaAction: 'buy',
-      availabilityNotice: "This one won't stay forever. Made in Colombia."
+      availabilityNotice: "This one won't stay forever. Handcrafted in the Heights of Neblaria."
     }
   },
   es: {
     'T-7': {
       phase: 'T-7',
       label: 'T−7 Días',
-      badge: 'Concepto y Memoria',
+      badge: 'Concepto y Drip',
       headline: 'Algo antiguo está regresando.',
       subheadline: 'El LANZAMIENTO 001 se está formando en el horno. 7 días para la revelación completa.',
       countdownText: '06d : 21h : 44m',
@@ -87,7 +87,7 @@ export const LOCALIZED_DROP_STAGES: Record<Language, Record<DropPhase, DropStage
       storySnippet: 'Tomamos las formas que alguna vez buscamos en museos de historia natural, enciclopedias desgastadas y cajas de juguetes, y las convertimos en una escultura funcional para café.',
       ctaText: 'Avisarme cuando esté listo',
       ctaAction: 'notify',
-      availabilityNotice: 'Previsualizando memoria. Producción limitada a 150 piezas numeradas.'
+      availabilityNotice: 'Previsualizando edición de drip. Producción limitada a 150 piezas numeradas.'
     },
     'T-3': {
       phase: 'T-3',
@@ -107,7 +107,7 @@ export const LOCALIZED_DROP_STAGES: Record<Language, Record<DropPhase, DropStage
       label: 'T−1 Día',
       badge: 'Silueta y Geometría',
       headline: 'Mañana cambia tu mañana.',
-      subheadline: 'La silueta emerge a las 09:00 AM hora Colombia.',
+      subheadline: 'La silueta emerge a las 09:00 AM hora de las Cumbres.',
       countdownText: '00d : 18h : 32m',
       visualFocus: 'silhouette',
       storySnippet: 'La luz y las sombras juegan sobre placas geométricas inspiradas en segmentos vertebrales fosilizados. Mañana se encuentra con tus granos de café favoritos.',
@@ -126,7 +126,7 @@ export const LOCALIZED_DROP_STAGES: Record<Language, Record<DropPhase, DropStage
       storySnippet: 'Objetos con los que crecimos. Reimaginados para el café. Cerámica de lote pequeño diseñada para filtrar sin prisa y habitar tu repisa abierta.',
       ctaText: 'Explorar Prehistórico',
       ctaAction: 'buy',
-      availabilityNotice: 'Esta edición no estará para siempre. Hecho en Colombia.'
+      availabilityNotice: 'Esta edición no estará para siempre. Hecho en las Cumbres de Neblaria.'
     }
   }
 };
@@ -136,7 +136,7 @@ export const LOCALIZED_BENTO_CATEGORIES: Record<Language, BentoCategory[]> = {
     {
       id: 'prehistoric',
       title: 'PREHISTORIC',
-      subtitle: 'Fossilized ribs, vertebrae flutes & Mesozoic memory.',
+      subtitle: 'Fossilized ribs, vertebrae flutes & Mesozoic ceramic design.',
       tag: 'Drop 001',
       affinityTheme: 'Dinosaurs & Paleontology',
       imageAccent: '#C05A3E',
@@ -176,7 +176,7 @@ export const LOCALIZED_BENTO_CATEGORIES: Record<Language, BentoCategory[]> = {
     {
       id: 'prehistoric',
       title: 'PREHISTÓRICO',
-      subtitle: 'Costillas fosilizadas, estrías vertebrales y memoria mesozoica.',
+      subtitle: 'Costillas fosilizadas, estrías vertebrales y diseño cerámico mesozoico.',
       tag: 'Lanzamiento 001',
       affinityTheme: 'Dinosaurios y Paleontología',
       imageAccent: '#C05A3E',
@@ -230,7 +230,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'ORIGIN 01',
       name: 'Core 01',
       headline: 'The one that started everything.',
-      story: 'No theme. No collaboration. Just the purest expression of what we think a DRYP. should be. Born in our Medellín studio.',
+      story: 'No theme. No collaboration. Just the purest expression of what we think a DRYP. should be. Born in our mountain atelier in Neblaria.',
       objectDescription: 'A classic 60° cone with 12 continuous flutes. Hand-finished raw terracotta base meets a silky satin glaze bowl for effortless rinsing and thermal equilibrium.',
       price: 56,
       currency: 'USD',
@@ -247,7 +247,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Cups (15g–30g dose)',
         filterType: 'Standard 02 Conical filters (V60 / Cafec)',
         material: 'Vitrified high-fired stoneware & red earthenware base',
-        origin: 'Medellín Ceramic Workshop, Colombia',
+        origin: 'Sacred Kilns of Neblaria',
         weight: '280g',
         idealRecipe: {
           dose: '18g',
@@ -288,7 +288,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Cups (15g–28g dose)',
         filterType: 'Standard 02 Conical paper filters',
         material: 'High-density basalt stoneware with mineral slip',
-        origin: 'Medellín Studio, Colombia',
+        origin: 'Neblaria Mountain Studio',
         weight: '305g',
         idealRecipe: {
           dose: '18g',
@@ -330,7 +330,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Cups (15g–28g coffee bed)',
         filterType: 'Standard 02 Conical filters (Hario V60 / Cafec Abaca)',
         material: 'Hand-cast porcelain stoneware with reactive feldspar glaze',
-        origin: 'Carmen de Viboral & Medellín, Colombia',
+        origin: 'Silaria Valley & Neblaria Heights',
         weight: '310g',
         idealRecipe: {
           dose: '18g',
@@ -373,7 +373,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Cups (15g–25g dose)',
         filterType: 'Standard 02 Conical filters',
         material: 'Iron-rich stoneware cast in artisanal limited molds',
-        origin: 'Carmen de Viboral, Colombia',
+        origin: 'Silaria Valley Mountain Kilns',
         weight: '295g',
         idealRecipe: {
           dose: '16g',
@@ -384,27 +384,27 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
           grindSize: 'Medium'
         }
       },
-      tagline: 'Made to brew fast and light.',
+      tagline: 'Aerodynamics of the Cretaceous.',
       visualType: 'fossil-raptor'
     },
     {
-      id: 'lens-50',
+      id: 'lens-50-retro',
       numberCode: '05',
-      collection: 'Photography',
+      collection: 'Lens',
       categoryTag: 'Editions',
-      dropCode: 'OBJECT 05',
-      eyebrow: 'OBJECT 05',
+      dropCode: 'EDITION 02',
+      eyebrow: 'LENS 01',
       name: 'Lens 50',
-      headline: 'Some memories were only 36 photos long.',
-      story: 'Before everything lived on a screen, some moments had to wait. Lens 50 borrows the concentric forms of classic 50mm manual camera lenses and brings them into the morning coffee ritual.',
-      objectDescription: 'Concentric stepped interior aperture channels slow water bypass, extending dwell time. Delivers deep sweetness, dense caramelized body and chocolate-toned notes.',
+      headline: 'Click into focus.',
+      story: 'Inspired by 1970s manual prime camera lenses. Knurled aperture rings on the exterior wall act as thermal heat sinks, letting you hold the dripper immediately after a boiling 96°C pour.',
+      objectDescription: 'Heavy-gauge ceramic body with ribbed metal-style outer texture. Inner chamber features stepped geometric flow ribs that mimic mechanical aperture blades.',
       price: 74,
       currency: 'USD',
       stockStatus: 'available',
-      stockLabel: 'Pick your favorite',
-      stockCountRemaining: 23,
+      stockLabel: 'In stock',
+      stockCountRemaining: 24,
       paletteColors: [
-        { name: 'Optical Matte Black', hex: '#1C1B1A' },
+        { name: 'Vintage Barrel Black', hex: '#1C1B1A' },
         { name: 'Anodized Silver Rim', hex: '#C0BCB6' }
       ],
       specs: {
@@ -413,7 +413,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–3 Cups (18g–36g coffee bed)',
         filterType: 'Flat bottom basket filters (Kalita 185) or 02 Cone',
         material: 'Semi-vitrified stoneware with knurled grip rings and food-grade mineral glaze',
-        origin: 'Medellín Studio, Colombia',
+        origin: 'Neblaria Studio',
         weight: '345g',
         idealRecipe: {
           dose: '20g',
@@ -455,7 +455,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Cups (15g–30g dose)',
         filterType: 'Standard 02 Conical filters',
         material: 'Heavy grog refractory stoneware, high-fired at 1280°C',
-        origin: 'Bogotá / Medellín Studio, Colombia',
+        origin: 'Highland Ateliers of Neblaria',
         weight: '410g',
         idealRecipe: {
           dose: '18g',
@@ -495,7 +495,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Cups (15g–28g dose)',
         filterType: 'Standard 02 Conical filters',
         material: 'High-fire mineral composite ceramic',
-        origin: 'Medellín, Colombia',
+        origin: 'Cumbres de Neblaria',
         weight: '330g',
         idealRecipe: {
           dose: '18g',
@@ -518,7 +518,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'ARTIST 001',
       name: 'Artist 001 — Camilo R.',
       headline: "Coffee objects shouldn't all look the same.",
-      story: 'Created in collaboration with ceramic sculptor Camilo Restrepo in his mountain studio in Santa Elena, Medellín. Hand-pinched asymmetric contours.',
+      story: 'Created in collaboration with ceramic sculptor Camilo Restrepo in his mountain sanctuary in the Heights of Neblaria. Hand-pinched asymmetric contours.',
       objectDescription: 'Each piece carries unique finger impressions along the outer wall, making every single dripper an unrepeatable sculpture with calibrated extraction flutes.',
       price: 88,
       currency: 'USD',
@@ -528,7 +528,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       stockLabel: '082 / 150 • Limited Edition',
       stockCountRemaining: 12,
       paletteColors: [
-        { name: 'Raw Andes Sandstone', hex: '#D0C8B8' },
+        { name: 'Raw Neblaria Sandstone', hex: '#D0C8B8' },
         { name: 'Oxide Ochre', hex: '#A36838' }
       ],
       specs: {
@@ -536,8 +536,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         flowRate: 'Organically spiraled internal flutes calibrated for uniform bed saturation',
         capacity: '1–2 Cups (15g–30g dose)',
         filterType: 'Standard 02 Conical filters',
-        material: 'Hand-thrown native Antioquian clay with wood-fired slip',
-        origin: 'Santa Elena Studio, Medellín, Colombia',
+        material: 'Hand-thrown native mountain clay with wood-fired slip',
+        origin: 'Mist Summit Atelier, Neblaria',
         weight: '360g',
         idealRecipe: {
           dose: '18g',
@@ -548,7 +548,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
           grindSize: 'Medium-Fine'
         }
       },
-      tagline: 'Sculpted by hand in Santa Elena.',
+      tagline: 'Sculpted by hand in the Heights of Neblaria.',
       visualType: 'artist-001',
       artistName: 'Camilo Restrepo'
     },
@@ -559,17 +559,17 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'CITY 01',
       eyebrow: 'CITIES 01',
-      name: 'Medellín',
-      headline: 'Red brick hills and eternal spring mornings.',
-      story: 'A tribute to the brick architecture clinging to the mountainsides of the Aburrá Valley. Rich terracotta stoneware fired with native red clay.',
-      objectDescription: 'Stepped brickwork exterior grooves evoke the terraced urban topography of Medellín, guiding warmth into the coffee vessel below.',
+      name: 'Neblaria',
+      headline: 'Sacred terracotta terraces and eternal mountain mist.',
+      story: 'A tribute to the ancestral terraces carved into the slopes of the Neblaria Heights. Rich terracotta stoneware fired with sacred mountain red clay.',
+      objectDescription: 'Stepped brickwork exterior grooves evoke the terraced mountain topography of Neblaria, guiding warmth into the coffee vessel below.',
       price: 70,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Pick your favorite',
       stockCountRemaining: 19,
       paletteColors: [
-        { name: 'Andean Red Brick', hex: '#B85838' },
+        { name: 'Neblaria Red Clay', hex: '#B85838' },
         { name: 'Mountain Fog White', hex: '#F2EFE9' }
       ],
       specs: {
@@ -577,8 +577,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         flowRate: 'Medium extraction with stepped atmospheric relief',
         capacity: '1–2 Cups (15g–30g dose)',
         filterType: 'Standard 02 Conical filters',
-        material: 'Native Antioquia red earthenware stoneware',
-        origin: 'Carmen de Viboral, Colombia',
+        material: 'Native mountain red earthenware stoneware',
+        origin: 'Silaria Valley Kilns',
         weight: '320g',
         idealRecipe: {
           dose: '19g',
@@ -589,7 +589,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
           grindSize: 'Medium'
         }
       },
-      tagline: 'The warmth of our hometown.',
+      tagline: 'The warmth of our sacred mountain.',
       visualType: 'medellin'
     },
     {
@@ -618,7 +618,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Cups (12g–25g dose)',
         filterType: 'Standard 02 Conical filters',
         material: 'Precision slip-cast technical porcelain',
-        origin: 'Medellín Prototyping Lab, Colombia',
+        origin: 'Neblaria Mountain Lab',
         weight: '240g',
         idealRecipe: {
           dose: '15g',
@@ -643,7 +643,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'ORIGEN 01',
       name: 'Core 01',
       headline: 'La pieza con la que todo comenzó.',
-      story: 'Sin temáticas. Sin colaboraciones. Solo la expresión más pura de lo que concebimos como un DRYP. Nacido en nuestro taller de Medellín.',
+      story: 'Sin temáticas. Sin colaboraciones. Solo la expresión más pura de lo que concebimos como un DRYP. Nacido en nuestro taller de montaña en Neblaria.',
       objectDescription: 'Un cono clásico de 60° con 12 nervaduras continuas. La base de terracota pura acabada a mano se une a un cuenco satinado para un lavado impecable y equilibrio térmico.',
       price: 56,
       currency: 'USD',
@@ -660,7 +660,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Tazas (dosis de 15g–30g)',
         filterType: 'Filtros cónicos estándar 02 (V60 / Cafec)',
         material: 'Gres vitrificado de alta temperatura y base de barro rojo',
-        origin: 'Taller Cerámico Medellín, Colombia',
+        origin: 'Hornos Sagrados de Neblaria',
         weight: '280g',
         idealRecipe: {
           dose: '18g',
@@ -701,7 +701,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Tazas (dosis de 15g–28g)',
         filterType: 'Filtros de papel cónicos estándar 02',
         material: 'Gres de basalto de alta densidad con engobe mineral',
-        origin: 'Taller de Medellín, Colombia',
+        origin: 'Taller de Montaña de Neblaria',
         weight: '305g',
         idealRecipe: {
           dose: '18g',
@@ -743,7 +743,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Tazas (cama de café de 15g–28g)',
         filterType: 'Filtros cónicos estándar 02 (Hario V60 / Cafec Abaca)',
         material: 'Gres porcelánico colado a mano con esmalte reactivo de feldespato',
-        origin: 'Carmen de Viboral y Medellín, Colombia',
+        origin: 'Valle de Silaria y Cumbres de Neblaria',
         weight: '310g',
         idealRecipe: {
           dose: '18g',
@@ -786,7 +786,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Tazas (dosis de 15g–25g)',
         filterType: 'Filtros cónicos estándar 02',
         material: 'Gres rico en hierro fundido en moldes artesanales limitados',
-        origin: 'Carmen de Viboral, Colombia',
+        origin: 'Hornos de Montaña del Valle de Silaria',
         weight: '295g',
         idealRecipe: {
           dose: '16g',
@@ -808,7 +808,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       dropCode: 'OBJECT 05',
       eyebrow: 'OBJETO 05',
       name: 'Lens 50',
-      headline: 'Algunas memorias duraban solo 36 fotos.',
+      headline: 'Algunos momentos duraban solo 36 fotos.',
       story: 'Antes de que todo viviera en pantallas, los momentos sabían esperar. Lens 50 toma las formas concéntricas de los lentes manuales clásicos de 50mm y las traslada al ritual del café.',
       objectDescription: 'Canales de apertura escalonados concéntricos que regulan el paso del agua y prolongan el contacto. Entrega dulzura profunda, cuerpo caramelizado y notas a chocolate.',
       price: 74,
@@ -826,7 +826,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–3 Tazas (cama de café de 18g–36g)',
         filterType: 'Filtros de fondo plano (Kalita 185) o cono 02',
         material: 'Gres semi-vitrificado con anillos estriados y esmalte mineral apto para alimentos',
-        origin: 'Taller de Medellín, Colombia',
+        origin: 'Taller de Neblaria',
         weight: '345g',
         idealRecipe: {
           dose: '20g',
@@ -868,7 +868,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Tazas (dosis de 15g–30g)',
         filterType: 'Filtros cónicos estándar 02',
         material: 'Gres refractario con chamota gruesa, cocido a 1280°C',
-        origin: 'Taller Bogotá / Medellín, Colombia',
+        origin: 'Ateliers de Altura de Neblaria',
         weight: '410g',
         idealRecipe: {
           dose: '18g',
@@ -908,7 +908,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Tazas (dosis de 15g–28g)',
         filterType: 'Filtros cónicos estándar 02',
         material: 'Compuesto cerámico mineral de alta temperatura',
-        origin: 'Medellín, Colombia',
+        origin: 'Cumbres de Neblaria',
         weight: '330g',
         idealRecipe: {
           dose: '18g',
@@ -931,7 +931,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'ARTISTA 001',
       name: 'Artist 001 — Camilo R.',
       headline: 'Los objetos para café no deberían ser todos iguales.',
-      story: 'Creado en colaboración con el escultor ceramista Camilo Restrepo en su taller de montaña en Santa Elena, Medellín. Contornos asimétricos modelados a mano.',
+      story: 'Creado en colaboración con el escultor ceramista Camilo Restrepo en su santuario de montaña en las Cumbres de Neblaria. Contornos asimétricos modelados a mano.',
       objectDescription: 'Cada pieza lleva las huellas dactilares únicas del artesano sobre la pared exterior, haciendo de cada gotero una escultura irrepetible con estrías de extracción calibradas.',
       price: 88,
       currency: 'USD',
@@ -941,7 +941,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       stockLabel: '082 / 150 • Edición Limitada',
       stockCountRemaining: 12,
       paletteColors: [
-        { name: 'Arenisca Andina Cruda', hex: '#D0C8B8' },
+        { name: 'Arenisca Pura de Neblaria', hex: '#D0C8B8' },
         { name: 'Óxido Ocre', hex: '#A36838' }
       ],
       specs: {
@@ -949,8 +949,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         flowRate: 'Estrías espirales orgánicas calibradas para una saturación uniforme',
         capacity: '1–2 Tazas (dosis de 15g–30g)',
         filterType: 'Filtros cónicos estándar 02',
-        material: 'Barro nativo antioqueño torneado a mano con engobe a leña',
-        origin: 'Taller de Santa Elena, Medellín, Colombia',
+        material: 'Gres modelado a mano con arcillas nativas de montaña y engobe de leña',
+        origin: 'Taller Cumbre de la Niebla, Neblaria',
         weight: '360g',
         idealRecipe: {
           dose: '18g',
@@ -961,7 +961,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
           grindSize: 'Media-Fina'
         }
       },
-      tagline: 'Esculpido a mano en Santa Elena.',
+      tagline: 'Esculpido a mano en las Cumbres de Neblaria.',
       visualType: 'artist-001',
       artistName: 'Camilo Restrepo'
     },
@@ -972,17 +972,17 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'CITY 01',
       eyebrow: 'CIUDADES 01',
-      name: 'Medellín',
-      headline: 'Colinas de ladrillo rojo y mañanas de eterna primavera.',
-      story: 'Un homenaje a la arquitectura de ladrillo que abraza las laderas del Valle de Aburrá. Gres de barro rojo cocido con arcillas nativas.',
-      objectDescription: 'Ranuras exteriores escalonadas que evocan la topografía urbana de Medellín, conduciendo el calor hacia la jarra inferior.',
+      name: 'Neblaria',
+      headline: 'Terrazas de arcilla roja y mañanas de niebla perpetua.',
+      story: 'Un tributo a la arquitectura ancestral esculpida en las laderas de las Cumbres de Neblaria. Gres de terracota enriquecido con arcillas rojas nativas de la cordillera sagrada.',
+      objectDescription: 'Ranuras exteriores escalonadas que evocan la topografía mística de las Cumbres de Neblaria, conduciendo el calor hacia la jarra inferior.',
       price: 70,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Elige tu favorito',
       stockCountRemaining: 19,
       paletteColors: [
-        { name: 'Ladrillo Rojo Andino', hex: '#B85838' },
+        { name: 'Arcilla de Neblaria', hex: '#B85838' },
         { name: 'Blanco Niebla de Montaña', hex: '#F2EFE9' }
       ],
       specs: {
@@ -990,8 +990,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         flowRate: 'Extracción media con alivio atmosférico escalonado',
         capacity: '1–2 Tazas (dosis de 15g–30g)',
         filterType: 'Filtros cónicos estándar 02',
-        material: 'Barro rojo nativo de Antioquia vitrificado',
-        origin: 'Carmen de Viboral, Colombia',
+        material: 'Gres de loza roja nativa de la cordillera de montaña',
+        origin: 'Hornos del Valle de Silaria',
         weight: '320g',
         idealRecipe: {
           dose: '19g',
@@ -1002,7 +1002,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
           grindSize: 'Media'
         }
       },
-      tagline: 'La calidez de nuestra tierra natal.',
+      tagline: 'La calidez de nuestra cumbre ancestral.',
       visualType: 'medellin'
     },
     {
@@ -1031,7 +1031,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         capacity: '1–2 Tazas (dosis de 12g–25g)',
         filterType: 'Filtros cónicos estándar 02',
         material: 'Porcelana técnica colada de alta precisión',
-        origin: 'Laboratorio de Prototipos Medellín, Colombia',
+        origin: 'Laboratorio de Prototipos de Neblaria',
         weight: '240g',
         idealRecipe: {
           dose: '15g',
@@ -1057,7 +1057,7 @@ export const LOCALIZED_ARCHIVE_DROPS: Record<Language, ArchiveDrop[]> = {
       theme: 'Paleontology, Fossil Vertebrae & Mesozoic Fascination',
       year: '2026',
       headline: 'You never really outgrow dinosaurs.',
-      story: 'Vertebral stoneware flutes and volcanic grog clay. 150 numbered units hand-stamped in Carmen de Viboral.',
+      story: 'Vertebral stoneware flutes and volcanic grog clay. 150 numbered units hand-stamped in Silaria Valley.',
       itemsCount: 150,
       status: 'Gone for now',
       coverAccent: '#C05A3E'
@@ -1068,7 +1068,7 @@ export const LOCALIZED_ARCHIVE_DROPS: Record<Language, ArchiveDrop[]> = {
       title: 'LENS ARCHIVE',
       theme: 'Analog 35mm Photography & Concentric Aperture Steps',
       year: '2025',
-      headline: 'Some memories were only 36 photos long.',
+      headline: 'Some moments were only 36 photos long.',
       story: 'Concentric aperture blades and knurled focus rings turned into thermal extraction vessels.',
       itemsCount: 120,
       status: 'Gone for now',
@@ -1081,7 +1081,7 @@ export const LOCALIZED_ARCHIVE_DROPS: Record<Language, ArchiveDrop[]> = {
       theme: 'Hand-Pinched Mountain Sculptures',
       year: '2025',
       headline: "Coffee objects shouldn't all look the same.",
-      story: "Santa Elena wood-fired batch. Each unit carried individual thumb impressions from the potter's wheel.",
+      story: "Neblaria wood-fired batch. Each unit carried individual thumb impressions from the potter's wheel.",
       itemsCount: 150,
       status: 'Gone for now',
       coverAccent: '#5B6652'
@@ -1095,7 +1095,7 @@ export const LOCALIZED_ARCHIVE_DROPS: Record<Language, ArchiveDrop[]> = {
       theme: 'Paleontología, Vértebras Fósiles y Fascinación Mesozoica',
       year: '2026',
       headline: 'Uno nunca deja de amar los dinosaurios.',
-      story: 'Estrías vertebrales de gres y arcilla con chamota volcánica. 150 unidades numeradas y selladas a mano en Carmen de Viboral.',
+      story: 'Estrías vertebrales de gres y arcilla con chamota volcánica. 150 unidades numeradas y selladas a mano en el Valle de Silaria.',
       itemsCount: 150,
       status: 'Gone for now',
       coverAccent: '#C05A3E'
@@ -1106,7 +1106,7 @@ export const LOCALIZED_ARCHIVE_DROPS: Record<Language, ArchiveDrop[]> = {
       title: 'ARCHIVO DE LENTES',
       theme: 'Fotografía Análoga de 35mm y Pasos de Apertura Concéntricos',
       year: '2025',
-      headline: 'Algunas memorias duraban solo 36 fotos.',
+      headline: 'Algunos momentos duraban solo 36 fotos.',
       story: 'Cuchillas de apertura concéntricas y anillos de enfoque estriados convertidos en recipientes de extracción térmica.',
       itemsCount: 120,
       status: 'Gone for now',
@@ -1119,7 +1119,7 @@ export const LOCALIZED_ARCHIVE_DROPS: Record<Language, ArchiveDrop[]> = {
       theme: 'Esculturas de Montaña Modeladas a Mano',
       year: '2025',
       headline: 'Los objetos para café no deberían ser todos iguales.',
-      story: 'Lote de quema a leña en Santa Elena. Cada unidad conserva la huella dactilar individual del torno alfarero.',
+      story: 'Lote de quema a leña en Neblaria. Cada unidad conserva la huella dactilar individual del torno alfarero.',
       itemsCount: 150,
       status: 'Gone for now',
       coverAccent: '#5B6652'
@@ -1136,7 +1136,7 @@ export const LOCALIZED_BRAND_MANIFESTO_LINES: Record<Language, string[]> = {
     'Cities.',
     'Games.',
     'Objects.',
-    'Memories.',
+    'Drips.',
     'We put them together.'
   ],
   es: [
@@ -1147,7 +1147,7 @@ export const LOCALIZED_BRAND_MANIFESTO_LINES: Record<Language, string[]> = {
     'Las ciudades.',
     'Los juegos.',
     'Los objetos.',
-    'Las memorias.',
+    'Los drips.',
     'Los juntamos todos.'
   ]
 };
@@ -1225,10 +1225,10 @@ export const LOCALIZED_ARTIST_FEATURE: Record<Language, {
 }> = {
   en: {
     name: 'Camilo Restrepo',
-    location: 'Santa Elena, Medellín (2,200m altitude)',
+    location: 'Heights of Neblaria (2,800m altitude)',
     role: 'Ceramic Sculptor & Studio Potter',
     quote: "Coffee objects shouldn't all look the same.",
-    story: 'Working out of his wood-fired mountain workshop in Santa Elena, Camilo pinches and throws each piece using native iron-rich clays from the Antioquian Andes.',
+    story: 'Working out of his wood-fired mountain sanctuary in the Heights of Neblaria, Camilo pinches and throws each piece using native iron-rich clays from the sacred mountain ranges.',
     processSteps: [
       { name: '01. Clay Selection', desc: 'Native iron-dense clays mixed with silica grog for thermal buffer.' },
       { name: '02. Hand-Carved Master', desc: 'Vertebrae and spiral contours carved directly into wet plaster.' },
@@ -1238,10 +1238,10 @@ export const LOCALIZED_ARTIST_FEATURE: Record<Language, {
   },
   es: {
     name: 'Camilo Restrepo',
-    location: 'Santa Elena, Medellín (2.200m de altitud)',
+    location: 'Cumbres de Neblaria (2.800m de altitud)',
     role: 'Escultor Ceramista y Maestro Alfarero',
     quote: 'Los objetos para café no deberían ser todos iguales.',
-    story: 'Desde su taller de montaña a leña en Santa Elena, Camilo modela y tornea cada pieza utilizando arcillas andinas ricas en hierro extraídas de la cordillera antioqueña.',
+    story: 'Desde su taller de montaña a leña en las Cumbres de Neblaria, Camilo modela y tornea cada pieza utilizando arcillas ricas en hierro extraídas de las cordilleras sagradas.',
     processSteps: [
       { name: '01. Selección de Arcilla', desc: 'Barros nativos densos en hierro con chamota de sílice para inercia térmica.' },
       { name: '02. Matriz Tallada a Mano', desc: 'Contornos vertebrales y espirales esculpidos directamente sobre yeso húmedo.' },
@@ -1275,7 +1275,7 @@ export const LOCALIZED_FAQS: Record<Language, FAQItem[]> = {
     },
     {
       question: "Where are DRYP objects made and how are they shipped?",
-      answer: "Every piece is hand-cast, glazed, and fired in artisan workshops in Carmen de Viboral and Santa Elena, Antioquia, Colombia. We ship globally in custom shock-absorbing molded fiber packaging with full transit insurance."
+      answer: "Every piece is hand-cast, glazed, and fired in artisan workshops across the Heights of Neblaria and the sacred kilns of Silaria Valley. We ship globally in custom shock-absorbing molded fiber packaging with full transit insurance."
     }
   ],
   es: [
@@ -1301,7 +1301,7 @@ export const LOCALIZED_FAQS: Record<Language, FAQItem[]> = {
     },
     {
       question: "¿Dónde se fabrican los objetos DRYP y cómo se envían?",
-      answer: "Cada pieza se cuela, esmalta y quema a mano en talleres artesanales de Carmen de Viboral y Santa Elena, Antioquia, Colombia. Realizamos envíos a todo el mundo en empaques especiales de fibra moldeada amortiguada con seguro total de transporte."
+      answer: "Cada pieza se cuela, esmalta y quema a mano en talleres artesanales de las Cumbres de Neblaria y los hornos sagrados del Valle de Silaria. Realizamos envíos a todo el mundo en empaques especiales de fibra moldeada amortiguada con seguro total de transporte."
     }
   ]
 };

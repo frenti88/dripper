@@ -23,7 +23,7 @@ export const UI_TRANSLATIONS = {
     releaseAt: 'Release:',
     heroHeadlinePart1: 'Some things stay with you.',
     heroHeadlinePart2: 'We turn them into coffee objects.',
-    heroParagraph: 'DRYP transforms cultural memories, architectural lines, and prehistoric fossils into functional ceramics. Serious extraction physics. Highly personal objects.',
+    heroParagraph: 'DRYP transforms artisanal coffee drippers, architectural lines, and prehistoric fossils into functional ceramics. Serious extraction physics. Limited catalog editions.',
     exploreObjects: 'Explore DRYP Objects',
     howItBrews: 'How it brews',
     certificateNoteLive: 'Hand-numbered studio certificate included with each box.',
@@ -38,7 +38,7 @@ export const UI_TRANSLATIONS = {
 
     // Tagline Reveal
     thesisBadge: 'The Broadsheet Thesis',
-    thesisTagline: 'Yesterday × Tomorrow • Carmen de Viboral & Santa Elena, Colombia',
+    thesisTagline: 'Yesterday × Tomorrow • Neblaria Heights & Silaria Valley',
 
     // Bento Grid
     bentoBadge: 'CURATED THEMES',
@@ -56,7 +56,7 @@ export const UI_TRANSLATIONS = {
     addedToBag: 'Added to Bag',
     addToBag: 'Add to Bag',
     soldOut: 'Sold Out',
-    editorialVerification: 'Artisanal verification: Carmen de Viboral & Santa Elena studios, Colombia.',
+    editorialVerification: 'Artisanal verification: Neblaria & Silaria mountain ateliers.',
 
     // Product Reveal (Fossil T Macro)
     macroInspectionBadge: 'MACRO INSPECTION',
@@ -72,7 +72,7 @@ export const UI_TRANSLATIONS = {
     feature3Title: 'Universal 02 Fit',
     feature3Desc: 'Compatible with standard conical filters.',
     feature4Title: 'Numbered Edition',
-    feature4Desc: 'Batch stamp 037 / 150 Carmen de Viboral.',
+    feature4Desc: 'Batch stamp 037 / 150 Silaria Valley.',
     inspectFullObject: 'Inspect Full Object',
 
     // Coffee Credibility
@@ -101,7 +101,7 @@ export const UI_TRANSLATIONS = {
     // Catalog Section
     catalogBadge: 'THE COMPLETE INDEX',
     catalogTitle: 'The First 10 Objects.',
-    catalogSubtitle: 'Ten original drippers designed around cultural memory, architectural forms, and serious extraction dynamics.',
+    catalogSubtitle: 'Ten original drippers designed with artisanal precision, architectural forms, and serious extraction dynamics.',
     filterAll: 'All Objects',
     filterCore: 'Core',
     filterEditions: 'Editions',
@@ -115,9 +115,9 @@ export const UI_TRANSLATIONS = {
 
     // Artist Story
     artistBadge: 'STUDIO COLLABORATION',
-    artistSectionTitle: 'Sculpted in the Antioquian Mountains.',
+    artistSectionTitle: 'Sculpted in the Sacred Mountain Heights.',
     artistSectionSubtitle: 'We partner with master ceramicists who bring generational pottery traditions into modern coffee engineering.',
-    craftProcessTitle: 'The Craft Process in Santa Elena',
+    craftProcessTitle: 'The Craft Process in the Heights of Neblaria',
     exploreArtistPiece: 'Explore Camilo\'s Piece',
     studioLocationLabel: 'STUDIO LOCATION',
     elevationLabel: 'ELEVATION',
@@ -164,7 +164,7 @@ export const UI_TRANSLATIONS = {
     // Upcoming Drop
     upcomingBadge: 'UPCOMING MYSTERY DROP',
     upcomingTitle: 'Drop 002 — Encrypted',
-    upcomingSubtitle: 'The next cultural memory is being sculpted. Subscribers get priority 24-hour early access before the public release.',
+    upcomingSubtitle: 'The next drip edition is being sculpted. Subscribers get priority 24-hour early access before the public release.',
     mysteryTag: 'CLASSIFIED THEME',
     countdownDays: 'Days',
     countdownHours: 'Hours',
@@ -177,16 +177,16 @@ export const UI_TRANSLATIONS = {
 
     // Footer
     dispatchTitle: 'The Broadsheet Dispatch',
-    dispatchSubtitle: 'Monthly essays on extraction physics, ceramic craft from Antioquia, and early access to numbered drops.',
+    dispatchSubtitle: 'Monthly essays on extraction physics, ancestral mountain ceramic craft, and early access to numbered drops.',
     subscribeButton: 'Subscribe to Broadsheet',
     subscribedFooter: 'Subscribed to the Broadsheet Dispatch.',
     quickLinks: 'Navigation',
     collectionsLabel: 'Collections',
     studioLocations: 'Studios & Workshops',
-    medellinStudio: 'Medellín, Antioquia — Design & Lab',
-    carmenStudio: 'Carmen de Viboral — Ceramic Kilns',
-    santaElenaStudio: 'Santa Elena — Sculptor Studio',
-    copyright: 'DRYP. All rights reserved. Handcrafted coffee objects from Colombia.',
+    medellinStudio: 'Neblaria Heights — Design & Lab',
+    carmenStudio: 'Silaria Valley — Sacred Ceramic Kilns',
+    santaElenaStudio: 'Mist Summit — Master Sculptor Studio',
+    copyright: 'DRYP. All rights reserved. Handcrafted coffee objects from the Sacred Heights of Neblaria.',
     broadsheetEdition: 'Broadsheet Edition 001',
 
     // Product Detail Modal
@@ -228,11 +228,11 @@ export const UI_TRANSLATIONS = {
     secureCheckoutSimulated: 'DRYP. Checkout simulation: Handcrafted order placed!',
     closeBag: 'Close shopping bag',
     removeItem: 'Remove item',
-    transitSafeNotice: 'Protected by our 30-Day Safe Transit Guarantee. Handcrafted in Colombia.',
+    transitSafeNotice: 'Protected by our 30-Day Safe Transit Guarantee. Handcrafted in the Heights of Neblaria.',
 
     // Notify Modal
     notifyModalTitle: 'Kiln Drop Alerts',
-    notifyModalSubtitle: 'We fire 150 pieces per edition in Santa Elena. We\'ll email you 24 hours before the kiln cools so you can choose your piece.',
+    notifyModalSubtitle: 'We fire 150 pieces per edition in the mountain kilns of Neblaria. We\'ll email you 24 hours before the kiln cools so you can choose your piece.',
     notifyNamePlaceholder: 'Your name (optional)',
     notifyEmailPlaceholder: 'Your email address',
     notifySubmitBtn: 'Notify me when it drops',
@@ -266,7 +266,7 @@ export const UI_TRANSLATIONS = {
     releaseAt: 'Lanzamiento:',
     heroHeadlinePart1: 'Hay cosas que se quedan contigo.',
     heroHeadlinePart2: 'Las convertimos en objetos para café.',
-    heroParagraph: 'DRYP transforma memorias culturales, líneas arquitectónicas y fósiles prehistóricos en piezas cerámicas funcionales. Física de extracción seria. Objetos profundamente personales.',
+    heroParagraph: 'DRYP transforma goteros de café artesanales, líneas arquitectónicas y fósiles en piezas cerámicas funcionales. Física de extracción seria y catálogo de piezas en edición limitada.',
     exploreObjects: 'Explorar Objetos DRYP',
     howItBrews: 'Cómo filtra',
     certificateNoteLive: 'Certificado de estudio numerado a mano incluido en cada caja.',
@@ -281,7 +281,7 @@ export const UI_TRANSLATIONS = {
 
     // Revelación de Tesis
     thesisBadge: 'La Tesis Editorial',
-    thesisTagline: 'Ayer × Mañana • Carmen de Viboral y Santa Elena, Colombia',
+    thesisTagline: 'Ayer × Mañana • Cumbres de Neblaria y Valle de Silaria',
 
     // Cuadrícula Bento
     bentoBadge: 'TEMAS CURADOS',
@@ -299,7 +299,7 @@ export const UI_TRANSLATIONS = {
     addedToBag: 'Añadido a la Bolsa',
     addToBag: 'Añadir a la Bolsa',
     soldOut: 'Agotado',
-    editorialVerification: 'Verificación artesanal: Talleres de Carmen de Viboral y Santa Elena, Colombia.',
+    editorialVerification: 'Verificación artesanal: Talleres de las Cumbres de Neblaria y Valle de Silaria.',
 
     // Revelación de Producto (Inspección Macro Fossil T)
     macroInspectionBadge: 'INSPECCIÓN MACRO',
@@ -315,7 +315,7 @@ export const UI_TRANSLATIONS = {
     feature3Title: 'Filtro Cónico 02',
     feature3Desc: 'Compatible con filtros cónicos estándar de todo el mundo.',
     feature4Title: 'Edición Numerada',
-    feature4Desc: 'Sello de lote 037 / 150 Carmen de Viboral.',
+    feature4Desc: 'Sello de lote 037 / 150 Valle de Silaria.',
     inspectFullObject: 'Inspeccionar Objeto Completo',
 
     // Credibilidad del Café
@@ -344,7 +344,7 @@ export const UI_TRANSLATIONS = {
     // Sección de Catálogo
     catalogBadge: 'EL ÍNDICE COMPLETO',
     catalogTitle: 'Los Primeros 10 Objetos.',
-    catalogSubtitle: 'Diez goteros originales diseñados alrededor de la memoria cultural, formas arquitectónicas y dinámicas serias de extracción.',
+    catalogSubtitle: 'Diez goteros originales diseñados con precisión artesanal, formas arquitectónicas y dinámicas serias de extracción.',
     filterAll: 'Todos los Objetos',
     filterCore: 'Colección Base',
     filterEditions: 'Ediciones',
@@ -358,9 +358,9 @@ export const UI_TRANSLATIONS = {
 
     // Historia de Artista
     artistBadge: 'COLABORACIÓN DE ESTUDIO',
-    artistSectionTitle: 'Esculpido en las Montañas de Antioquia.',
+    artistSectionTitle: 'Esculpido en las Cumbres Sagradas.',
     artistSectionSubtitle: 'Colaboramos con maestros ceramistas que unen tradiciones alfareras generacionales con la ingeniería moderna del café.',
-    craftProcessTitle: 'El Proceso Artesanal en Santa Elena',
+    craftProcessTitle: 'El Proceso Artesanal en las Cumbres de Neblaria',
     exploreArtistPiece: 'Explorar la Pieza de Camilo',
     studioLocationLabel: 'UBICACIÓN DE ESTUDIO',
     elevationLabel: 'ELEVACIÓN',
@@ -407,7 +407,7 @@ export const UI_TRANSLATIONS = {
     // Próximo Lanzamiento
     upcomingBadge: 'PRÓXIMO LANZAMIENTO MISTERIOSO',
     upcomingTitle: 'Lanzamiento 002 — Encriptado',
-    upcomingSubtitle: 'La próxima memoria cultural se está esculpiendo. Los suscriptores reciben acceso prioritario 24 horas antes del lanzamiento público.',
+    upcomingSubtitle: 'La próxima edición de Drips se está esculpiendo. Los suscriptores reciben acceso prioritario 24 horas antes del lanzamiento público.',
     mysteryTag: 'TEMA CLASIFICADO',
     countdownDays: 'Días',
     countdownHours: 'Horas',
@@ -420,16 +420,16 @@ export const UI_TRANSLATIONS = {
 
     // Pie de Página
     dispatchTitle: 'La Gaceta Editorial DRYP',
-    dispatchSubtitle: 'Ensayos mensuales sobre física de extracción, cerámica antioqueña y acceso anticipado a ediciones numeradas.',
+    dispatchSubtitle: 'Ensayos mensuales sobre física de extracción, cerámica ancestral de montaña y acceso anticipado a ediciones numeradas.',
     subscribeButton: 'Suscribirse a la Gaceta',
     subscribedFooter: 'Suscrito a la Gaceta Editorial.',
     quickLinks: 'Navegación',
     collectionsLabel: 'Colecciones',
     studioLocations: 'Talleres y Estudios',
-    medellinStudio: 'Medellín, Antioquia — Diseño y Laboratorio',
-    carmenStudio: 'Carmen de Viboral — Hornos Cerámicos',
-    santaElenaStudio: 'Santa Elena — Taller del Escultor',
-    copyright: 'DRYP. Todos los derechos reservados. Objetos de café hechos a mano en Colombia.',
+    medellinStudio: 'Cumbres de Neblaria — Diseño y Laboratorio',
+    carmenStudio: 'Valle de Silaria — Hornos Cerámicos Sagrados',
+    santaElenaStudio: 'Cumbre de la Niebla — Taller del Maestro Escultor',
+    copyright: 'DRYP. Todos los derechos reservados. Objetos de café hechos a mano en las Cumbres de Neblaria.',
     broadsheetEdition: 'Gaceta Edición 001',
 
     // Modal de Detalle de Producto
@@ -471,11 +471,11 @@ export const UI_TRANSLATIONS = {
     secureCheckoutSimulated: 'DRYP. Simulación de checkout: ¡Pedido artesanal registrado!',
     closeBag: 'Cerrar bolsa de compra',
     removeItem: 'Eliminar objeto',
-    transitSafeNotice: 'Protegido por nuestra Garantía de Tránsito Seguro de 30 Días. Hecho a mano en Colombia.',
+    transitSafeNotice: 'Protegido por nuestra Garantía de Tránsito Seguro de 30 Días. Hecho a mano en las Cumbres de Neblaria.',
 
     // Modal de Notificación
     notifyModalTitle: 'Alertas de Horno',
-    notifyModalSubtitle: 'Horneamos 150 piezas por edición en Santa Elena. Te avisaremos 24 horas antes de que el horno enfríe para que elijas tu pieza.',
+    notifyModalSubtitle: 'Horneamos 150 piezas por edición en los hornos de Neblaria. Te avisaremos 24 horas antes de que el horno enfríe para que elijas tu pieza.',
     notifyNamePlaceholder: 'Tu nombre (opcional)',
     notifyEmailPlaceholder: 'Tu correo electrónico',
     notifySubmitBtn: 'Avisarme antes del lanzamiento',

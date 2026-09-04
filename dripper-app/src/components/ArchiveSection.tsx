@@ -62,7 +62,7 @@ export const ArchiveSection: React.FC = () => {
 
               <div className="pt-4 border-t border-[#8e9194]/40 flex items-center justify-between text-[12px] text-[#a7aaad] font-mono">
                 <span>{language === 'es' ? `${drop.itemsCount} piezas producidas` : `${drop.itemsCount} units produced`}</span>
-                <span>Carmen de Viboral</span>
+                <span>Valle de Silaria</span>
               </div>
             </div>
           ))}

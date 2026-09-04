@@ -61,7 +61,7 @@ export class ErrorBoundary extends Component<Props, State> {
             </div>
 
             <p className="text-[10px] font-mono text-[#8a948c]">
-              Cerámica colada a mano • Santa Elena, Medellín
+              Cerámica colada a mano • Cumbres de Neblaria
             </p>
           </div>
         </div>

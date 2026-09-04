@@ -19,7 +19,7 @@ export const PhilosophySection: React.FC = () => {
         </div>
 
         <p className="font-serif text-xl sm:text-2xl text-[#C05A3E] italic">
-          Coffee meets memory.
+          Coffee meets handcrafted ceramic drips.
         </p>
 
       </div>

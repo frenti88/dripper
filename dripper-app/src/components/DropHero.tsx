@@ -120,7 +120,7 @@ export const DropHero: React.FC<DropHeroProps> = ({
           </div>
           
           <div className="mt-3 flex items-center justify-between text-[13px] text-[#ffffff]/80 px-1">
-            <span>{currentStage.visualFocus.toUpperCase()} // CARMEN DE VIBORAL</span>
+            <span>{currentStage.visualFocus.toUpperCase()} // VALLE DE SILARIA</span>
             <span>{language === 'es' ? 'COLECCIÓN NUMERADA' : 'NUMBERED EDITION'}</span>
           </div>
         </div>
@@ -135,8 +135,8 @@ export const DropHero: React.FC<DropHeroProps> = ({
         </div>
 
         <div className="hidden sm:flex flex-col items-end text-right text-[13px] text-[#ffffff]/80 font-normal">
-          <span>MEDELLÍN × CARMEN DE VIBORAL</span>
-          <span className="text-[#ffffff]/60">CERAMICS & COFFEE MEMORIES</span>
+          <span>CUMBRES DE NEBLARIA × VALLE DE SILARIA</span>
+          <span className="text-[#ffffff]/60">HANDCRAFTED COFFEE DRIPPERS</span>
         </div>
       </div>
     </section>

@@ -110,7 +110,7 @@ export const InfoDrawer: React.FC<InfoDrawerProps> = ({
               <h2 id="info-drawer-title" className="font-serif text-2xl sm:text-3xl font-medium text-[#121613] tracking-tight">
                 {type === 'faq' && (language === 'es' ? 'Preguntas Frecuentes & Garantía' : 'FAQ & Transit Guarantee')}
                 {type === 'extraction' && (language === 'es' ? 'Física de Extracción & Ratios' : 'Extraction Dynamics & Ratios')}
-                {type === 'story' && (language === 'es' ? 'Historia del Taller en Santa Elena' : 'Santa Elena Atelier Story')}
+                {type === 'story' && (language === 'es' ? 'Historia del Taller en las Cumbres de Neblaria' : 'Heights of Neblaria Atelier Story')}
               </h2>
             </div>
 
@@ -296,8 +296,8 @@ export const InfoDrawer: React.FC<InfoDrawerProps> = ({
                   </h3>
                   <p className="text-xs text-[#a7aaad] leading-relaxed">
                     {language === 'es'
-                      ? 'En las montañas de Santa Elena, Antioquia, el alfarero Camilo Restrepo moldea cada pieza en torno manual. La cocción en cono de alta temperatura vitrifica el gres volcánico para lograr una porosidad nula y una inercia térmica excepcional.'
-                      : 'In the high Andean mountains of Santa Elena, master ceramist Camilo Restrepo throws each dripper on a manual wheel. High-fire cone vitrification cures volcanic stoneware to zero porosity and exceptional thermal inertia.'}
+                      ? 'En las altas montañas de las Cumbres de Neblaria, el alfarero Camilo Restrepo moldea cada pieza en torno manual. La cocción en cono de alta temperatura vitrifica el gres volcánico para lograr una porosidad nula y una inercia térmica excepcional.'
+                      : 'In the sacred mountain peaks of Neblaria, master ceramist Camilo Restrepo throws each dripper on a manual wheel. High-fire cone vitrification cures volcanic stoneware to zero porosity and exceptional thermal inertia.'}
                   </p>
                 </div>
 

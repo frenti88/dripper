@@ -51,11 +51,11 @@ const PRODUCT_IMAGE_MAP: Record<string, { src: string; label: string }> = {
   },
   'artist-001': {
     src: '/images/products/artist-001.jpg',
-    label: '08 / Artist 001 — Camilo Restrepo Santa Elena Clay'
+    label: '08 / Artist 001 — Camilo Restrepo Neblaria Mountain Clay'
   },
   'medellin': {
     src: '/images/products/medellin.jpg',
-    label: '09 / Medellín Comuna Earthenware'
+    label: '09 / Neblaria Sacred Terraces Earthenware'
   },
   'flow-01': {
     src: '/images/products/flow-01.jpg',

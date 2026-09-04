@@ -1,30 +1,46 @@
 import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
-import { Sparkles, Disc, Compass, Feather, Film, Camera, Building2, Gem, Palette, Sun } from 'lucide-react';
+import { Sparkles, Disc, Compass, Feather, Film, Building2, Gem, Palette, Sun } from 'lucide-react';
+
+// Lucide-style Dinosaur icon (Sauropod / Diplodocus)
+const DinosaurIcon: React.FC<{ className?: string; style?: React.CSSProperties }> = ({ className, style }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    style={style}
+  >
+    <path d="M2 18c3-.8 6-1.8 8.5-1.8 1.8 0 2.8-.8 3.5-2.2.7-1.3 1-3 1.3-5.5.3-2 .8-3.5 2.7-3.5h1.5a1.5 1.5 0 0 1 1.5 1.5v.5a1.5 1.5 0 0 1-1.5 1.5h-1c-1 0-1.5.8-1.8 2-.4 1.5-.8 3-1.8 4.2-1.4 1.8-2.8 2.8-4.5 3.3H3" />
+    <path d="M8 17.5V21" />
+    <path d="M12 17V21" />
+    <circle cx="18" cy="6" r="0.75" fill="currentColor" />
+  </svg>
+);
 
 interface CategoryPillBarProps {
   selectedCategory: string;
   onSelectCategory: (cat: string) => void;
-  activeFilterStockOnly: boolean;
-  onToggleStockFilter: () => void;
+  activeFilterStockOnly?: boolean;
+  onToggleStockFilter?: () => void;
 }
 
 export const CategoryPillBar: React.FC<CategoryPillBarProps> = ({
   selectedCategory,
-  onSelectCategory,
-  activeFilterStockOnly,
-  onToggleStockFilter
+  onSelectCategory
 }) => {
   const { language } = useLanguage();
 
   const categories = [
-    { id: 'All', label: language === 'es' ? 'Todos los Recuerdos' : 'All Memories', icon: Sparkles, glazeColor: '#c05a3e', tintClass: 'hover:bg-[#f4efea]' },
-    { id: 'Music', label: language === 'es' ? 'Música & Audio' : 'Music & Audio', icon: Disc, glazeColor: '#6d28d9', tintClass: 'hover:bg-[#f5f3ff]' },
-    { id: 'Cosmos', label: language === 'es' ? 'Cosmos & Órbita' : 'Cosmos & Space', icon: Compass, glazeColor: '#1e293b', tintClass: 'hover:bg-[#f1f5f9]' },
+    { id: 'All', label: language === 'es' ? 'Todos los Drips' : 'All Drips', icon: Sparkles, glazeColor: '#c05a3e', tintClass: 'hover:bg-[#f4efea]' },
+    { id: 'Music', label: language === 'es' ? 'Música' : 'Music', icon: Disc, glazeColor: '#6d28d9', tintClass: 'hover:bg-[#f5f3ff]' },
+    { id: 'Cosmos', label: language === 'es' ? 'Universo' : 'Universe', icon: Compass, glazeColor: '#1e293b', tintClass: 'hover:bg-[#f1f5f9]' },
     { id: 'Nature', label: language === 'es' ? 'Naturaleza' : 'Nature & Fauna', icon: Feather, glazeColor: '#15803d', tintClass: 'hover:bg-[#f0fdf4]' },
-    { id: 'Cinema', label: language === 'es' ? 'Cine & Pantalla' : 'Cinema & Screen', icon: Film, glazeColor: '#c2410c', tintClass: 'hover:bg-[#fff7ed]' },
-    { id: 'Prehistoric', label: language === 'es' ? 'Prehistoria' : 'Prehistoric', glazeColor: '#c05a3e', tintClass: 'hover:bg-[#fdf2ee]' },
-    { id: 'Photography', label: language === 'es' ? 'Fotografía 35mm' : '35mm Optics', icon: Camera, glazeColor: '#334155', tintClass: 'hover:bg-[#f8fafc]' },
+    { id: 'Cinema', label: language === 'es' ? 'Cine y fotografía' : 'Cinema & Photography', icon: Film, glazeColor: '#c2410c', tintClass: 'hover:bg-[#fff7ed]' },
+    { id: 'Prehistoric', label: language === 'es' ? 'Prehistoria' : 'Prehistoric', icon: DinosaurIcon, glazeColor: '#c05a3e', tintClass: 'hover:bg-[#fdf2ee]' },
     { id: 'Architecture', label: language === 'es' ? 'Arquitectura' : 'Architecture', icon: Building2, glazeColor: '#475569', tintClass: 'hover:bg-[#f1f5f9]' },
     { id: 'Minerals', label: language === 'es' ? 'Minerales & Origen' : 'Minerals & Clay', icon: Gem, glazeColor: '#0f766e', tintClass: 'hover:bg-[#f0fdfa]' },
     { id: 'Sculptural', label: language === 'es' ? 'Escultura' : 'Sculptural', icon: Palette, glazeColor: '#b45309', tintClass: 'hover:bg-[#fefce8]' },
@@ -69,22 +85,6 @@ export const CategoryPillBar: React.FC<CategoryPillBarProps> = ({
               );
             })}
           </div>
-        </div>
-
-        {/* In-Stock Only Quick Filter (Docked & Persistently Reachable) */}
-        <div className="shrink-0 pl-3 border-l border-[#e8e3da] flex items-center">
-          <button
-            onClick={onToggleStockFilter}
-            className={`flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 min-h-[36px] rounded-full text-xs font-medium border transition-colors cursor-pointer ${
-              activeFilterStockOnly
-                ? 'bg-[#3d5948]/10 border-[#3d5948] text-[#2d4235] font-semibold'
-                : 'bg-[#f4efea] border-[#e8e3da] text-[#4b463f] hover:border-[#151413] hover:text-[#151413]'
-            }`}
-          >
-            <span className={`w-2 h-2 rounded-full shrink-0 ${activeFilterStockOnly ? 'bg-[#3d5948]' : 'bg-[#a39c91]'}`} />
-            <span className="hidden sm:inline">{language === 'es' ? 'Disponibles ahora' : 'In Stock Only'}</span>
-            <span className="sm:hidden">{language === 'es' ? 'Disponibles' : 'In Stock'}</span>
-          </button>
         </div>
 
       </div>

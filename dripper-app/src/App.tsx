@@ -25,7 +25,6 @@ function MainApp() {
   const [currentView, setCurrentView] = useState<'explore' | 'boards'>('explore');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
-  const [activeFilterStockOnly, setActiveFilterStockOnly] = useState(false);
   const [isSavedOnly, setIsSavedOnly] = useState(false);
   const [infoDrawerType, setInfoDrawerType] = useState<InfoDrawerType>(null);
   
@@ -122,13 +121,6 @@ function MainApp() {
         return false;
       }
 
-      // In stock filter
-      if (activeFilterStockOnly) {
-        if (!drip.stockStatus || (drip.stockStatus !== 'available' && drip.stockStatus !== 'low_stock')) {
-          return false;
-        }
-      }
-
       // Search Query filter
       if (deferredSearchQuery.trim()) {
         const q = deferredSearchQuery.toLowerCase().trim();
@@ -142,7 +134,7 @@ function MainApp() {
 
       return true;
     });
-  }, [selectedCategory, activeFilterStockOnly, deferredSearchQuery, isSavedOnly, savedDripIds]);
+  }, [selectedCategory, deferredSearchQuery, isSavedOnly, savedDripIds]);
 
   // Board click handler
   const handleSelectBoard = useCallback((board: PinterestBoard) => {
@@ -181,24 +173,24 @@ function MainApp() {
         }}
       />
 
-      {/* Category Pills & Quick Filter Bar */}
+      {/* Category Pills Bar */}
       <CategoryPillBar
         selectedCategory={selectedCategory}
         onSelectCategory={setSelectedCategory}
-        activeFilterStockOnly={activeFilterStockOnly}
-        onToggleStockFilter={() => setActiveFilterStockOnly(prev => !prev)}
       />
 
       <main id="main-feed" className="flex-1">
-        {/* Drop Status Live Banner (Pinterest style) */}
-        <DropPinterestBanner
-          currentPhase={currentPhase}
-          onOpenNotify={() => setIsNotifyOpen(true)}
-          onExploreDrop={() => {
-            setSelectedCategory('Prehistoric');
-            setCurrentView('explore');
-          }}
-        />
+        {/* Drop Status Live Banner (Oculto temporalmente: cambiar a true para reactivar) */}
+        {false && (
+          <DropPinterestBanner
+            currentPhase={currentPhase}
+            onOpenNotify={() => setIsNotifyOpen(true)}
+            onExploreDrop={() => {
+              setSelectedCategory('Prehistoric');
+              setCurrentView('explore');
+            }}
+          />
+        )}
 
         {/* View Switch: Explore Masonry Feed vs Curated Boards */}
         {currentView === 'explore' ? (
@@ -212,7 +204,6 @@ function MainApp() {
             isSavedOnly={isSavedOnly}
             onResetFilters={() => {
               setSelectedCategory('All');
-              setActiveFilterStockOnly(false);
               setIsSavedOnly(false);
               setSearchQuery('');
             }}

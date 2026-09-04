@@ -58,9 +58,9 @@ export type DrypBoard = PinterestBoard;
 export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-music',
-    title: 'Música & Sonido Analógico',
+    title: 'Música',
     description: 'Surcos de vinilo a 33 RPM y reflejos de discos compactos traducidos a dinámica de vertido pour-over.',
-    tag: 'Audiofilia',
+    tag: 'Música',
     category: 'Music',
     coverImage: '/images/products/vinyl-groove.jpg',
     previewImages: [
@@ -72,9 +72,9 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   },
   {
     id: 'board-cosmos',
-    title: 'Cosmos & Órbita Estelar',
+    title: 'Universo',
     description: 'Anillos planetarios de Saturno y regolito lunar Apollo 11 en conos cerámicos de alta inercia térmica.',
-    tag: 'Astronomía',
+    tag: 'Universo',
     category: 'Cosmos',
     coverImage: '/images/products/saturn-rings.jpg',
     previewImages: [
@@ -99,17 +99,18 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   },
   {
     id: 'board-cinema',
-    title: 'Cine & Cultura Pop',
-    description: 'Monolitos enigmáticos de Kubrick y simetrías pasteles de Wes Anderson convertidas en cafeteras de autor.',
-    tag: 'Séptimo Arte',
+    title: 'Cine y Fotografía',
+    description: 'Monolitos enigmáticos de Kubrick, simetrías pasteles de Wes Anderson y ópticas concéntricas de 35mm convertidas en cafeteras de autor.',
+    tag: 'Cine & Foto',
     category: 'Cinema',
     coverImage: '/images/products/monolith-cinema.jpg',
     previewImages: [
       '/images/products/monolith-cinema.jpg',
-      '/images/products/wes-anderson.jpg'
+      '/images/products/wes-anderson.jpg',
+      '/images/products/lens-50-v.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 3,
+    dripsCount: 3
   },
   {
     id: 'board-prehistoric',
@@ -124,19 +125,6 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
     ],
     pinsCount: 2,
     dripsCount: 2
-  },
-  {
-    id: 'board-optics',
-    title: 'Fotografía & Óptica 35mm',
-    description: 'Anillos concéntricos de diafragma y ópticas vintage de 35mm para un control milimétrico del caudal.',
-    tag: 'Analógico 35mm',
-    category: 'Photography',
-    coverImage: '/images/products/lens-50-v.jpg',
-    previewImages: [
-      '/images/products/lens-50-v.jpg'
-    ],
-    pinsCount: 1,
-    dripsCount: 1
   },
   {
     id: 'board-architecture',
@@ -155,7 +143,7 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-minerals',
     title: 'Minerales & Arcillas de Origen',
-    description: 'Vetas de esmeralda de Muzo, barros rojos de Santa Elena y basalto negro volcánico.',
+    description: 'Vetas de esmeralda de cumbre, barros rojos de Neblaria y basalto negro volcánico.',
     tag: 'Geología Viva',
     category: 'Minerals',
     coverImage: '/images/products/emerald-vein.jpg',
@@ -210,7 +198,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     title: '01 / Vinyl Groove 33 RPM — Cono Concéntrico Mate',
     subtitle: 'Micro-estrías inspiradas en discos de vinilo que desaceleran el agua para resaltar notas dulces.',
     category: 'Music',
-    categoryLabel: 'Música & Sonido',
+    categoryLabel: 'Música',
     imageSrc: '/images/products/vinyl-groove.jpg',
     aspectRatio: 'aspect-square',
     author: {
@@ -236,7 +224,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     title: '02 / Compact Disc 120mm — Esmalte Iridiscente Arcoíris',
     subtitle: 'Vidriado cristalino con reflejo prismático que refracta la luz matutina como un audio CD de los 90.',
     category: 'Music',
-    categoryLabel: 'Música & Sonido',
+    categoryLabel: 'Música',
     imageSrc: '/images/products/cd-polycarbonate.jpg',
     aspectRatio: 'aspect-square',
     author: {
@@ -264,7 +252,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     title: '03 / Saturn Cassini Rings — Collar Orbital Suspendido',
     subtitle: 'Cono cónico de basalto cenizo coronado por un anillo concéntrico exterior en suspensión.',
     category: 'Cosmos',
-    categoryLabel: 'Cosmos & Espacio',
+    categoryLabel: 'Universo',
     imageSrc: '/images/products/saturn-rings.jpg',
     aspectRatio: 'aspect-square',
     author: {
@@ -290,7 +278,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     title: '04 / Orbit — Regolito Lunar Apollo 11',
     subtitle: 'Surcos inspirados en las trayectorias elípticas de la misión Apollo. Esmalte ceniza perlado con titanio.',
     category: 'Cosmos',
-    categoryLabel: 'Cosmos & Espacio',
+    categoryLabel: 'Universo',
     imageSrc: '/images/products/orbit.jpg',
     aspectRatio: 'aspect-square',
     author: {
@@ -329,11 +317,11 @@ export const DRYP_DRIPS: DrypDrip[] = [
     },
     price: 88,
     stockStatus: 'available',
-    stockLabel: 'Disponible (Santa Elena)',
+    stockLabel: 'Disponible (Cumbres de Neblaria)',
     likesCount: 2450,
     savesCount: 6120,
     boardIds: ['board-nature'],
-    tags: ['Colibrí', 'Andes', 'Esmeralda', 'Aves', 'Bosque de Niebla'],
+    tags: ['Colibrí', 'Cumbres', 'Esmeralda', 'Aves', 'Bosque de Niebla'],
     badge: 'BIODIVERSIDAD',
     dropCode: 'BIO 01',
     level01Emotion: 'El zumbido fugaz en el bebedero del jardín antes de que la niebla cubra la montaña.'
@@ -346,7 +334,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     title: '06 / 2001 Monolith Basalt — Geometría Basalto Kubrick',
     subtitle: 'Inspirado en el monolito negro de Odisea del Espacio. Bloque geométrico en gres basalto negro con cono a 60°.',
     category: 'Cinema',
-    categoryLabel: 'Cine & Pantalla',
+    categoryLabel: 'Cine y fotografía',
     imageSrc: '/images/products/monolith-cinema.jpg',
     aspectRatio: 'aspect-square',
     author: {
@@ -372,7 +360,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     title: '07 / Grand Budapest Pastel — Simetría Rosa & Menta',
     subtitle: 'Composición milimétricamente simétrica en tono rosa empolvado con cuello menta pastel estilo Wes Anderson.',
     category: 'Cinema',
-    categoryLabel: 'Cine & Pantalla',
+    categoryLabel: 'Cine y fotografía',
     imageSrc: '/images/products/wes-anderson.jpg',
     aspectRatio: 'aspect-square',
     author: {
@@ -447,14 +435,14 @@ export const DRYP_DRIPS: DrypDrip[] = [
     level01Emotion: 'Velocidad, filo y huesos enterrados que hoy vuelven al agua caliente.'
   },
 
-  // ── FOTOGRAFÍA (1 drip único) ─────────────────────────────────────────────
+  // ── CINE Y FOTOGRAFÍA (Objeto 05 Lens) ────────────────────────────────────
   {
     id: 'drip-lens-50',
     productId: 'lens-50',
     title: '10 / 05 Lens 50mm f/1.4 — Anillos Concéntricos',
     subtitle: 'Nostalgia de ópticas analógicas de 35mm. Estrías concéntricas que desaceleran el paso del agua.',
-    category: 'Photography',
-    categoryLabel: 'Fotografía 35mm',
+    category: 'Cinema',
+    categoryLabel: 'Cine y fotografía',
     imageSrc: '/images/products/lens-50-v.jpg',
     aspectRatio: 'aspect-square',
     author: {
@@ -468,7 +456,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     stockLabel: 'Casi agotado (4 restantes)',
     likesCount: 1940,
     savesCount: 4890,
-    boardIds: ['board-optics'],
+    boardIds: ['board-cinema'],
     tags: ['35mm', 'Fotografía', 'Lente 50mm', 'Cono 02'],
     badge: 'OBJETO 05',
     dropCode: 'OBJECT 05',
@@ -533,8 +521,8 @@ export const DRYP_DRIPS: DrypDrip[] = [
   {
     id: 'drip-mineral-emerald',
     productId: 'mineral-emerald-muzo',
-    title: '13 / Esmeralda Muzo Verde — Veta de Cristal en Caolín',
-    subtitle: 'Porcelana caolín blanca con veta orgánica de cristal verde esmeralda colombiano que resalta al tacto.',
+    title: '13 / Esmeralda de Cumbre — Veta de Cristal en Caolín',
+    subtitle: 'Porcelana caolín blanca con veta orgánica de cristal verde esmeralda de las altas cumbres que resalta al tacto.',
     category: 'Minerals',
     categoryLabel: 'Minerales & Origen',
     imageSrc: '/images/products/emerald-vein.jpg',
@@ -551,10 +539,10 @@ export const DRYP_DRIPS: DrypDrip[] = [
     likesCount: 3420,
     savesCount: 8910,
     boardIds: ['board-minerals'],
-    tags: ['Esmeralda', 'Muzo', 'Veta', 'Caolín', 'Colombia', 'Lujo'],
-    badge: 'ESMERALDA COLOMBIANA',
+    tags: ['Esmeralda', 'Veta Mística', 'Caolín', 'Cumbres', 'Lujo Ancestral'],
+    badge: 'ESMERALDA DE CUMBRE',
     dropCode: 'GEO 01',
-    level01Emotion: 'La veta verde encendida entre la roca caliza que solo la cordillera oriental sabe parir.'
+    level01Emotion: 'La veta verde encendida entre la roca caliza que solo la cordillera ancestral sabe parir.'
   },
   {
     id: 'drip-core-01',
@@ -611,16 +599,16 @@ export const DRYP_DRIPS: DrypDrip[] = [
   {
     id: 'drip-medellin',
     productId: 'medellin-01',
-    title: '16 / 09 Medellín — Esmalte Ladrillo de Comuna',
-    subtitle: 'El tono exacto del barro cocido de las laderas que forman el anfiteatro natural del valle de Aburrá.',
+    title: '16 / 09 Neblaria — Esmalte Arcilla Ancestral',
+    subtitle: 'El tono exacto del barro sagrado de las laderas que forman el anfiteatro de las Cumbres de Neblaria.',
     category: 'Minerals',
     categoryLabel: 'Minerales & Origen',
     imageSrc: '/images/products/medellin.jpg',
     aspectRatio: 'aspect-square',
     author: {
-      name: 'DRYP. Medellín',
+      name: 'DRYP. Cumbres de Neblaria',
       avatar: '/favicon.svg',
-      handle: '@drip_medellin',
+      handle: '@drip_neblaria',
       verified: true
     },
     price: 72,
@@ -629,10 +617,10 @@ export const DRYP_DRIPS: DrypDrip[] = [
     likesCount: 1810,
     savesCount: 4790,
     boardIds: ['board-minerals'],
-    tags: ['Medellín', 'Terracota', 'Montaña', 'Ladrillo'],
-    badge: 'EDICIÓN TERRITORIO',
+    tags: ['Neblaria', 'Terracota', 'Montaña Sagrada', 'Arcilla'],
+    badge: 'EDICIÓN CUMBRES',
     dropCode: 'CITY 01',
-    level01Emotion: 'El color de una ciudad que florece sobre colinas de barro rojo.'
+    level01Emotion: 'El color de un santuario ancestral que florece sobre colinas de arcilla sagrada.'
   },
 
   // ── ESCULTURA (3 drips únicos) ────────────────────────────────────────────
@@ -692,7 +680,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     id: 'drip-artist-001',
     productId: 'artist-001-camilo',
     title: '19 / 08 Artist 001 — Camilo Restrepo (50 Piezas)',
-    subtitle: 'Colaboración escultórica con barro extraído a mano en Santa Elena. Cada pieza es única y numerada.',
+    subtitle: 'Colaboración escultórica con barro extraído a mano en las Cumbres de Neblaria. Cada pieza es única y numerada.',
     category: 'Sculptural',
     categoryLabel: 'Escultura & Vanguardia',
     imageSrc: '/images/products/artist-001.jpg',

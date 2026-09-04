@@ -20,12 +20,12 @@ export const BoardsView: React.FC<BoardsViewProps> = ({ onSelectBoard }) => {
           <span>{language === 'es' ? 'Colecciones Curadas' : 'Curated Collections'}</span>
         </div>
         <h2 className="font-serif text-3xl md:text-4xl text-[#151413] tracking-tight mt-1">
-          {language === 'es' ? 'Tableros de Inspiración & Memoria' : 'Inspiration & Memory Boards'}
+          {language === 'es' ? 'Catálogo de Colecciones DRYP' : 'DRYP Collection Catalog'}
         </h2>
         <p className="text-sm text-[#4b514d] mt-1 max-w-2xl">
           {language === 'es'
-            ? 'Explora las 50 cafeteras de goteo agrupadas en 10 universos temáticos: vinilos, cosmos, naturaleza, cine, prehistoria, óptica 35mm, arquitectura, minerales, escultura y wabi-sabi.'
-            : 'Explore all 50 conical pour-over drippers grouped across 10 thematic universes: vinyl music, cosmos, nature, cinema, prehistory, 35mm optics, architecture, minerals, sculpture, and wabi-sabi.'}
+            ? 'Explora las cafeteras de goteo cónicas artesanales agrupadas por colecciones temáticas: vinilos, universo, naturaleza, cine y fotografía, prehistoria, arquitectura, minerales, escultura y wabi-sabi.'
+            : 'Explore handcrafted conical pour-over drippers grouped across curated thematic collections: vinyl music, universe, nature, cinema & photography, prehistory, architecture, minerals, sculpture, and wabi-sabi.'}
         </p>
       </div>
 
@@ -108,7 +108,7 @@ export const BoardsView: React.FC<BoardsViewProps> = ({ onSelectBoard }) => {
                 </p>
 
                 <div className="flex items-center justify-between text-xs font-semibold text-[#151413] pt-2 border-t border-[#e8e3da]">
-                  <span>{language === 'es' ? 'Ver tablero completo' : 'View board'}</span>
+                  <span>{language === 'es' ? 'Ver colección' : 'View collection'}</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform text-[#c05a3e]" />
                 </div>
               </div>

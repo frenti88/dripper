@@ -1,12 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Search, Bookmark, ShoppingBag, X, Sparkles, Bell, Compass, Grid, Volume2, VolumeX } from 'lucide-react';
+import { Search, Bookmark, ShoppingBag, X, Sparkles, Compass, Grid } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { LanguageToggle } from './LanguageToggle';
-import { isSoundEnabled, setSoundEnabled, playCeramicChime } from '../utils/audioSynth';
 
 interface PinterestHeaderProps {
   onOpenCart: () => void;
-  onOpenNotify: () => void;
+  onOpenNotify?: () => void;
   cartCount: number;
   savedCount: number;
   searchQuery: string;
@@ -19,7 +18,6 @@ interface PinterestHeaderProps {
 
 export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
   onOpenCart,
-  onOpenNotify,
   cartCount,
   savedCount,
   searchQuery,
@@ -31,7 +29,6 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
 }) => {
   const { language } = useLanguage();
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const [soundActive, setSoundActive] = useState(() => isSoundEnabled());
   const searchContainerRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
 
@@ -51,18 +48,9 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
     return () => window.removeEventListener('keydown', handleGlobalKeyDown);
   }, []);
 
-  const handleToggleSound = () => {
-    const next = !soundActive;
-    setSoundActive(next);
-    setSoundEnabled(next);
-    if (next) {
-      playCeramicChime();
-    }
-  };
-
   const quickSearchTags = language === 'es'
-    ? ['Fósil T', '50mm', 'Santa Elena', 'V60 Cono 02', 'Ceniza Volcánica', 'Porcelana Hueso', 'Ritual Lento', 'Drop 001']
-    : ['Fossil T', '50mm Lens', 'Santa Elena', 'V60 Cone 02', 'Volcanic Ash', 'Bone Porcelain', 'Slow Ritual', 'Drop 001'];
+    ? ['Fósil T', '50mm', 'Neblaria', 'V60 Cono 02', 'Ceniza Volcánica', 'Porcelana Hueso', 'Ritual Lento', 'Drop 001']
+    : ['Fossil T', '50mm Lens', 'Neblaria', 'V60 Cone 02', 'Volcanic Ash', 'Bone Porcelain', 'Slow Ritual', 'Drop 001'];
 
   // Click outside search suggestion box to close
   useEffect(() => {
@@ -84,7 +72,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
           <button 
             onClick={() => onViewChange('explore')} 
             className="flex items-center group text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#151413] rounded-lg px-1.5 py-1 transition-all cursor-pointer"
-            title="DRYP. Coffee meets memory"
+            title="DRYP. Tienda Catálogo de Goteros de Café"
             aria-label="DRYP. Inicio"
           >
             <span className="font-bold text-[21px] sm:text-[22px] tracking-tight text-[#151413] leading-none select-none group-hover:text-[#c05a3e] transition-colors">
@@ -92,32 +80,34 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
             </span>
           </button>
 
-          {/* Navigation View Switcher (Pinterest style) */}
-          <nav className="flex items-center gap-1 bg-[#f4efea] p-1 rounded-full text-xs font-semibold border border-[#e8e3da]">
-            <button
-              onClick={() => onViewChange('explore')}
-              className={`flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 min-h-[34px] rounded-full transition-all cursor-pointer ${
-                currentView === 'explore'
-                  ? 'bg-[#151413] text-[#faf8f5] shadow-xs'
-                  : 'text-[#4b463f] hover:text-[#151413]'
-              }`}
-            >
-              <Compass className="w-3.5 h-3.5 shrink-0" />
-              <span className="hidden xs:inline">{language === 'es' ? 'Explorar' : 'Explore'}</span>
-            </button>
+          {/* Navigation View Switcher (Oculto temporalmente) */}
+          {false && (
+            <nav className="flex items-center gap-1 bg-[#f4efea] p-1 rounded-full text-xs font-semibold border border-[#e8e3da]">
+              <button
+                onClick={() => onViewChange('explore')}
+                className={`flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 min-h-[34px] rounded-full transition-all cursor-pointer ${
+                  currentView === 'explore'
+                    ? 'bg-[#151413] text-[#faf8f5] shadow-xs'
+                    : 'text-[#4b463f] hover:text-[#151413]'
+                }`}
+              >
+                <Compass className="w-3.5 h-3.5 shrink-0" />
+                <span className="hidden xs:inline">{language === 'es' ? 'Explorar' : 'Explore'}</span>
+              </button>
 
-            <button
-              onClick={() => onViewChange('boards')}
-              className={`flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 min-h-[34px] rounded-full transition-all cursor-pointer ${
-                currentView === 'boards'
-                  ? 'bg-[#151413] text-[#faf8f5] shadow-xs'
-                  : 'text-[#4b463f] hover:text-[#151413]'
-              }`}
-            >
-              <Grid className="w-3.5 h-3.5 shrink-0" />
-              <span className="hidden xs:inline">{language === 'es' ? 'Tableros' : 'Boards'}</span>
-            </button>
-          </nav>
+              <button
+                onClick={() => onViewChange('boards')}
+                className={`flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 min-h-[34px] rounded-full transition-all cursor-pointer ${
+                  currentView === 'boards'
+                    ? 'bg-[#151413] text-[#faf8f5] shadow-xs'
+                    : 'text-[#4b463f] hover:text-[#151413]'
+                }`}
+              >
+                <Grid className="w-3.5 h-3.5 shrink-0" />
+                <span className="hidden xs:inline">{language === 'es' ? 'Tableros' : 'Boards'}</span>
+              </button>
+            </nav>
+          )}
         </div>
 
         {/* Omnipresent Pinterest Search Bar */}
@@ -136,8 +126,8 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
               onChange={(e) => onSearchChange(e.target.value)}
               onFocus={() => setIsSearchFocused(true)}
               placeholder={language === 'es' 
-                ? "Buscar recuerdos, fósiles, lentes 50mm, cerámica de Medellín, recetas 02..." 
-                : "Search memories, fossils, 50mm lenses, Medellín pottery, 02 recipes..."
+                ? "Buscar drips en el catálogo (fósil, vinilo, cerámicas, recetas 02)..." 
+                : "Search drips in the catalog (fossil, vinyl, ceramics, 02 recipes)..."
               }
               className="w-full py-2.5 pl-3 pr-10 bg-transparent text-base sm:text-sm text-[#151413] placeholder-[#8c857b] focus:outline-none font-sans"
               maxLength={120}
@@ -187,37 +177,9 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
           )}
         </div>
 
-        {/* Right Actions: Kiln Alerts, Saved Counter, Audio, Bag */}
+        {/* Right Actions: Saved Counter, Language, Bag */}
         <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 shrink-0">
           
-          {/* Tactile Audio Mute Toggle */}
-          <button
-            onClick={handleToggleSound}
-            className="hidden sm:flex w-10 h-10 rounded-full text-[#4b463f] hover:text-[#151413] hover:bg-[#f4efea] transition-colors items-center justify-center shrink-0 cursor-pointer"
-            title={soundActive 
-              ? (language === 'es' ? 'Sonido háptico activado (Click para silenciar)' : 'Tactile sound active (Click to mute)')
-              : (language === 'es' ? 'Sonido silenciado (Click para activar)' : 'Sound muted (Click to enable)')
-            }
-            aria-label={soundActive ? 'Silenciar sonidos' : 'Activar sonidos'}
-          >
-            {soundActive ? (
-              <Volume2 className="w-4 h-4 text-[#151413]" />
-            ) : (
-              <VolumeX className="w-4 h-4 text-[#a39c91]" />
-            )}
-          </button>
-
-          {/* Drop Kiln Notifications */}
-          <button
-            onClick={onOpenNotify}
-            className="relative w-10 h-10 rounded-full text-[#4b463f] hover:text-[#151413] hover:bg-[#f4efea] transition-colors flex items-center justify-center shrink-0 cursor-pointer"
-            title={language === 'es' ? 'Alertas de Horno (Drops)' : 'Kiln Drop Alerts'}
-            aria-label="Alertas de Horno"
-          >
-            <Bell className="w-5 h-5" />
-            <span className="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-[#c05a3e] ring-1.5 ring-white/90" />
-          </button>
-
           {/* Saved Drips Counter Filter */}
           {onToggleSavedOnly ? (
             <button 
