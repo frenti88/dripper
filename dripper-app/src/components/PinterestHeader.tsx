@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Search, Bookmark, ShoppingBag, X, Sparkles, Bell, Compass, Grid, Volume2, VolumeX, HelpCircle } from 'lucide-react';
+import { Search, Bookmark, ShoppingBag, X, Sparkles, Bell, Compass, Grid, Volume2, VolumeX } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { LanguageToggle } from './LanguageToggle';
 import { isSoundEnabled, setSoundEnabled, playCeramicChime } from '../utils/audioSynth';
@@ -7,7 +7,6 @@ import { isSoundEnabled, setSoundEnabled, playCeramicChime } from '../utils/audi
 interface PinterestHeaderProps {
   onOpenCart: () => void;
   onOpenNotify: () => void;
-  onOpenOnboarding?: () => void;
   cartCount: number;
   savedCount: number;
   searchQuery: string;
@@ -21,7 +20,6 @@ interface PinterestHeaderProps {
 export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
   onOpenCart,
   onOpenNotify,
-  onOpenOnboarding,
   cartCount,
   savedCount,
   searchQuery,
@@ -189,21 +187,9 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
           )}
         </div>
 
-        {/* Right Actions: Help Guide, Kiln Alerts, Saved Counter, Audio, Bag */}
+        {/* Right Actions: Kiln Alerts, Saved Counter, Audio, Bag */}
         <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 shrink-0">
           
-          {/* Atelier Onboarding Guide */}
-          {onOpenOnboarding && (
-            <button
-              onClick={onOpenOnboarding}
-              className="w-10 h-10 rounded-full text-[#4b463f] hover:text-[#151413] hover:bg-[#f4efea] transition-colors cursor-pointer flex items-center justify-center shrink-0"
-              title={language === 'es' ? 'Guía del Atelier DRYP' : 'DRYP Atelier Guide'}
-              aria-label="Guía del Atelier"
-            >
-              <HelpCircle className="w-5 h-5" />
-            </button>
-          )}
-
           {/* Tactile Audio Mute Toggle */}
           <button
             onClick={handleToggleSound}

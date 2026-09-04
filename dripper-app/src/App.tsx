@@ -18,7 +18,6 @@ const PinDetailModal = lazy(() => import('./components/PinDetailModal').then(m =
 const CartDrawer = lazy(() => import('./components/CartDrawer').then(m => ({ default: m.CartDrawer })));
 const NotifyModal = lazy(() => import('./components/NotifyModal').then(m => ({ default: m.NotifyModal })));
 const InfoDrawer = lazy(() => import('./components/InfoDrawer').then(m => ({ default: m.InfoDrawer })));
-const OnboardingGuide = lazy(() => import('./components/OnboardingGuide').then(m => ({ default: m.OnboardingGuide })));
 import type { InfoDrawerType } from './components/InfoDrawer';
 
 function MainApp() {
@@ -29,14 +28,6 @@ function MainApp() {
   const [activeFilterStockOnly, setActiveFilterStockOnly] = useState(false);
   const [isSavedOnly, setIsSavedOnly] = useState(false);
   const [infoDrawerType, setInfoDrawerType] = useState<InfoDrawerType>(null);
-  const [isOnboardingOpen, setIsOnboardingOpen] = useState(() => {
-    try {
-      if (typeof window === 'undefined') return false;
-      return localStorage.getItem('dryp_onboarded_v1') !== 'true';
-    } catch {
-      return false;
-    }
-  });
   
   // Non-blocking deferred search query for high INP responsiveness
   const deferredSearchQuery = useDeferredValue(searchQuery);
@@ -177,7 +168,6 @@ function MainApp() {
       <PinterestHeader
         onOpenCart={() => setIsCartOpen(true)}
         onOpenNotify={() => setIsNotifyOpen(true)}
-        onOpenOnboarding={() => setIsOnboardingOpen(true)}
         cartCount={totalCartCount}
         savedCount={savedDripIds.size}
         searchQuery={searchQuery}
@@ -245,7 +235,6 @@ function MainApp() {
         onOpenFAQ={() => setInfoDrawerType('faq')}
         onOpenExtraction={() => setInfoDrawerType('extraction')}
         onOpenStory={() => setInfoDrawerType('story')}
-        onOpenOnboarding={() => setIsOnboardingOpen(true)}
         onSelectCategory={(cat) => setSelectedCategory(cat)}
         onNavigateView={(view) => setCurrentView(view)}
       />
@@ -286,18 +275,6 @@ function MainApp() {
             isOpen={Boolean(infoDrawerType)}
             type={infoDrawerType}
             onClose={() => setInfoDrawerType(null)}
-          />
-        )}
-
-        {isOnboardingOpen && (
-          <OnboardingGuide
-            isOpen={isOnboardingOpen}
-            onClose={() => setIsOnboardingOpen(false)}
-            onExploreDrips={() => {
-              setIsOnboardingOpen(false);
-              setCurrentView('explore');
-              setIsSavedOnly(false);
-            }}
           />
         )}
       </Suspense>

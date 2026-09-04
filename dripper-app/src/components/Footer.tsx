@@ -7,7 +7,6 @@ interface FooterProps {
   onOpenFAQ?: () => void;
   onOpenExtraction?: () => void;
   onOpenStory?: () => void;
-  onOpenOnboarding?: () => void;
   onSelectCategory?: (category: string) => void;
   onNavigateView?: (view: 'explore' | 'boards') => void;
 }
@@ -17,7 +16,6 @@ export const Footer: React.FC<FooterProps> = ({
   onOpenFAQ = () => {},
   onOpenExtraction = () => {},
   onOpenStory = () => {},
-  onOpenOnboarding = () => {},
   onSelectCategory = () => {},
   onNavigateView = () => {}
 }) => {
@@ -117,13 +115,6 @@ export const Footer: React.FC<FooterProps> = ({
               className="py-1 hover:text-[#c05a3e] transition-colors cursor-pointer"
             >
               {t('navFaq')} & {language === 'es' ? 'Garantía' : 'Guarantee'}
-            </button>
-            <button 
-              type="button"
-              onClick={onOpenOnboarding} 
-              className="py-1 hover:text-[#c05a3e] transition-colors cursor-pointer text-[#c05a3e] font-medium"
-            >
-              {language === 'es' ? 'Guía del Atelier' : 'Atelier Guide'}
             </button>
           </nav>
 
