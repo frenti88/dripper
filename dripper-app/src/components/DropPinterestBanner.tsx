@@ -5,14 +5,12 @@ import { Flame, ChevronRight, X } from 'lucide-react';
 
 interface DropPinterestBannerProps {
   currentPhase: DropPhase;
-  onPhaseChange: (phase: DropPhase) => void;
   onOpenNotify: () => void;
   onExploreDrop: () => void;
 }
 
 export const DropPinterestBanner: React.FC<DropPinterestBannerProps> = ({
   currentPhase,
-  onPhaseChange,
   onOpenNotify,
   onExploreDrop
 }) => {
@@ -40,25 +38,8 @@ export const DropPinterestBanner: React.FC<DropPinterestBannerProps> = ({
           </p>
         </div>
 
-        {/* Phase Simulation Controls & Action */}
+        {/* Primary Action Button & Dismiss */}
         <div className="flex items-center gap-2 shrink-0">
-          
-          {/* Phase Selector */}
-          <div className="flex items-center gap-0.5 bg-[#ebe6dc] p-0.5 rounded-full text-[10px] font-mono">
-            {(['T-7', 'T-3', 'T-1', 'LIVE'] as DropPhase[]).map((phase) => (
-              <button
-                key={phase}
-                onClick={() => onPhaseChange(phase)}
-                className={`px-2.5 py-1 min-h-[24px] rounded-full transition-all cursor-pointer ${
-                  currentPhase === phase
-                    ? 'bg-[#121613] text-white font-medium shadow-2xs'
-                    : 'text-[#666f68] hover:text-[#121613]'
-                }`}
-              >
-                {phase}
-              </button>
-            ))}
-          </div>
 
           {/* Primary Action Button */}
           {currentPhase === 'LIVE' ? (

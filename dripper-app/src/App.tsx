@@ -21,7 +21,7 @@ const InfoDrawer = lazy(() => import('./components/InfoDrawer').then(m => ({ def
 import type { InfoDrawerType } from './components/InfoDrawer';
 
 function MainApp() {
-  const [currentPhase, setCurrentPhase] = useState<DropPhase>('LIVE');
+  const [currentPhase] = useState<DropPhase>('LIVE');
   const [currentView, setCurrentView] = useState<'explore' | 'boards'>('explore');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -193,7 +193,6 @@ function MainApp() {
         {/* Drop Status Live Banner (Pinterest style) */}
         <DropPinterestBanner
           currentPhase={currentPhase}
-          onPhaseChange={setCurrentPhase}
           onOpenNotify={() => setIsNotifyOpen(true)}
           onExploreDrop={() => {
             setSelectedCategory('Prehistoric');
