@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { X, Check, Bell, Shield } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { X, Check, Bell, Shield } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 
 interface NotifyModalProps {
@@ -125,14 +126,14 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
           aria-label={t('closeModal')}
           className="absolute top-5 right-5 w-10 h-10 min-w-[40px] min-h-[40px] rounded-full border border-[#e8e3da] hover:border-[#151413] hover:bg-[#f4efea] flex items-center justify-center text-[#151413] transition-colors cursor-pointer shrink-0"
         >
-          <X className="w-4 h-4" strokeWidth={1.5} />
+          <MorphIcon icon={X} size={16} strokeWidth={1.5} reducedMotion="user" />
         </button>
 
         {submitted ? (
           /* Confirmation State */
           <div className="py-8 text-center space-y-4" role="status" aria-live="polite">
             <div className="w-14 h-14 rounded-2xl bg-[#151413] text-white flex items-center justify-center mx-auto shadow-md">
-              <Check className="w-7 h-7 text-[#c05a3e]" strokeWidth={2.5} />
+              <MorphIcon icon={Check} size={28} strokeWidth={2.5} spring="snappy" reducedMotion="user" className="text-[#c05a3e]" />
             </div>
             <div className="space-y-1">
               <h3 className="font-serif text-2xl font-medium text-[#151413]">
@@ -148,7 +149,7 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
           <form onSubmit={handleSubmit} className="space-y-5" noValidate>
             <div className="space-y-1 pr-6">
               <div className="flex items-center gap-1.5 text-xs font-mono uppercase tracking-wider text-[#c05a3e] font-bold">
-                <Bell className="w-3.5 h-3.5 text-[#c05a3e]" strokeWidth={2} />
+                <MorphIcon icon={Bell} size={14} strokeWidth={2} spring="snappy" reducedMotion="user" className="text-[#c05a3e]" />
                 <span>{t('dropAlerts')}</span>
               </div>
               <h3 id="notify-modal-title" className="font-serif text-2xl font-medium text-[#151413] pt-1">
@@ -226,7 +227,7 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
             </button>
 
             <div className="flex items-center justify-center gap-1.5 text-[11px] text-[#5a625c] pt-1">
-              <Shield className="w-3.5 h-3.5 text-[#121613]" strokeWidth={1.5} />
+              <MorphIcon icon={Shield} size={14} strokeWidth={1.5} reducedMotion="user" className="text-[#121613]" />
               <span>{t('privacyNotice')}</span>
             </div>
           </form>

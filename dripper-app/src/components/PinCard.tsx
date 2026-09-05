@@ -1,6 +1,7 @@
 import React, { useState, memo } from 'react';
 import type { DrypDrip, PinterestPin } from '../data/pinterestPinsData';
-import { Bookmark, ShoppingBag, Share2, Check } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { Bookmark, ShoppingBag, Share2, Check } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export interface DripCardProps {
@@ -158,7 +159,14 @@ export const DripCard = memo<DripCardProps>(({
                     : 'text-[#756f66] hover:text-[#151413] hover:bg-[#eae5dd]'
                 }`}
               >
-                {isAdded ? <Check className="w-3.5 h-3.5" /> : <ShoppingBag className="w-3.5 h-3.5" />}
+                <MorphIcon 
+                  icon={isAdded ? Check : ShoppingBag} 
+                  size={14} 
+                  strokeWidth={2}
+                  spring="snappy"
+                  reducedMotion="user"
+                  className="w-3.5 h-3.5" 
+                />
               </button>
             )}
 
@@ -169,7 +177,14 @@ export const DripCard = memo<DripCardProps>(({
               title={copiedShare ? (language === 'es' ? '¡Enlace copiado!' : 'Link copied!') : (language === 'es' ? 'Compartir drip' : 'Share drip')}
               aria-label={copiedShare ? (language === 'es' ? 'Enlace copiado' : 'Link copied') : (language === 'es' ? 'Compartir drip' : 'Share drip')}
             >
-              {copiedShare ? <Check className="w-3.5 h-3.5 text-[#c05a3e]" /> : <Share2 className="w-3.5 h-3.5" />}
+              <MorphIcon 
+                icon={copiedShare ? Check : Share2} 
+                size={14} 
+                strokeWidth={2}
+                spring="snappy"
+                reducedMotion="user"
+                className={`w-3.5 h-3.5 ${copiedShare ? 'text-[#c05a3e]' : ''}`} 
+              />
             </button>
 
             <button
@@ -183,7 +198,14 @@ export const DripCard = memo<DripCardProps>(({
               title={isSaved ? (language === 'es' ? 'Drip guardado' : 'Saved drip') : (language === 'es' ? 'Guardar drip' : 'Save drip')}
               aria-label={isSaved ? (language === 'es' ? 'Drip guardado' : 'Saved drip') : (language === 'es' ? 'Guardar drip' : 'Save drip')}
             >
-              <Bookmark className={`w-3.5 h-3.5 ${isSaved ? 'fill-[#c05a3e]' : ''}`} />
+              <MorphIcon 
+                icon={isSaved ? Check : Bookmark} 
+                size={14} 
+                strokeWidth={2}
+                spring="snappy"
+                reducedMotion="user"
+                className="w-3.5 h-3.5" 
+              />
             </button>
           </div>
         </div>

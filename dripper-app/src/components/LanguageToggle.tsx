@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
-import { Globe } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { Globe } from 'lucide';
 import { playCeramicChime } from '../utils/audioSynth';
 
 interface LanguageToggleProps {
@@ -37,7 +38,7 @@ export const LanguageToggle: React.FC<LanguageToggleProps> = ({
     >
       {showIcon && (
         <span className={`pl-1 ${isDark ? 'text-[#ffffff]' : 'text-[#8e9194]'}`} aria-hidden="true">
-          <Globe className="w-3.5 h-3.5" strokeWidth={1.5} />
+          <MorphIcon icon={Globe} size={14} strokeWidth={1.5} reducedMotion="user" />
         </span>
       )}
 

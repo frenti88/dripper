@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Plus, Minus, ShieldCheck } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { Plus, Minus, ShieldCheck } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export const FAQSection: React.FC = () => {
@@ -55,7 +56,13 @@ export const FAQSection: React.FC = () => {
                     {faq.question}
                   </span>
                   <div className="w-8 h-8 rounded-[8px] border border-[#d8d8d8] flex items-center justify-center text-[#000000] shrink-0" aria-hidden="true">
-                    {isOpen ? <Minus className="w-4 h-4" strokeWidth={1.5} /> : <Plus className="w-4 h-4" strokeWidth={1.5} />}
+                    <MorphIcon 
+                      icon={isOpen ? Minus : Plus} 
+                      size={16} 
+                      strokeWidth={1.5} 
+                      spring="snappy" 
+                      reducedMotion="user" 
+                    />
                   </div>
                 </button>
 
@@ -79,7 +86,7 @@ export const FAQSection: React.FC = () => {
         {/* 30-Day Risk Reversal Guarantee Card (8px radius, 1px Aluminum Hairline) */}
         <div className="max-w-3xl mx-auto mt-12 p-6 rounded-[8px] border border-[#d8d8d8] bg-[#ffffff] flex items-center gap-5">
           <div className="w-12 h-12 rounded-[8px] border border-[#000000] text-[#000000] flex items-center justify-center shrink-0">
-            <ShieldCheck className="w-6 h-6" strokeWidth={1.5} />
+            <MorphIcon icon={ShieldCheck} size={24} strokeWidth={1.5} reducedMotion="user" />
           </div>
           <div>
             <h3 className="text-[16px] font-medium text-[#000000]">

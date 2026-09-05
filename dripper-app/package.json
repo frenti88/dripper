@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "lucide": "^1.41.0",
     "lucide-react": "^1.35.0",
+    "morphicons": "^1.7.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "tailwind-merge": "^3.6.0"

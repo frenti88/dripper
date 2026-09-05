@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Search, Bookmark, ShoppingBag, X, Sparkles, Compass, Grid } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { Search, Bookmark, ShoppingBag, X, Sparkles, Compass, Grid } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 import { LanguageToggle } from './LanguageToggle';
 
@@ -91,7 +92,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
                     : 'text-[#4b463f] hover:text-[#151413]'
                 }`}
               >
-                <Compass className="w-3.5 h-3.5 shrink-0" />
+                <MorphIcon icon={Compass} size={14} strokeWidth={2} reducedMotion="user" className="shrink-0" />
                 <span className="hidden xs:inline">{language === 'es' ? 'Explorar' : 'Explore'}</span>
               </button>
 
@@ -103,7 +104,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
                     : 'text-[#4b463f] hover:text-[#151413]'
                 }`}
               >
-                <Grid className="w-3.5 h-3.5 shrink-0" />
+                <MorphIcon icon={Grid} size={14} strokeWidth={2} reducedMotion="user" className="shrink-0" />
                 <span className="hidden xs:inline">{language === 'es' ? 'Tableros' : 'Boards'}</span>
               </button>
             </nav>
@@ -117,7 +118,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
               ? 'bg-white border-[#151413] ring-1 ring-[#151413]/30 shadow-xs' 
               : 'bg-[#f4efea] border-[#e8e3da] hover:border-[#dcd6cb]'
           }`}>
-            <Search className="w-4 h-4 ml-4 text-[#756f66] shrink-0" />
+            <MorphIcon icon={Search} size={16} strokeWidth={2} reducedMotion="user" className="ml-4 text-[#756f66] shrink-0" />
             
             <input
               ref={searchInputRef}
@@ -147,7 +148,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
                 className="absolute right-3 p-1 rounded-full text-[#756f66] hover:text-[#151413] hover:bg-[#e8e3da] transition-colors cursor-pointer"
                 aria-label="Limpiar búsqueda"
               >
-                <X className="w-3.5 h-3.5" />
+                <MorphIcon icon={X} size={14} strokeWidth={2} spring="snappy" reducedMotion="user" />
               </button>
             )}
           </div>
@@ -156,7 +157,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
           {isSearchFocused && (
             <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-[#faf8f5] rounded-2xl shadow-lg border border-[#e8e3da] z-50 animate-in fade-in slide-in-from-top-1 duration-150">
               <div className="flex items-center gap-1.5 text-xs font-mono uppercase tracking-wider text-[#756f66] mb-2.5">
-                <Sparkles className="w-3.5 h-3.5 text-[#c05a3e]" />
+                <MorphIcon icon={Sparkles} size={14} strokeWidth={2} reducedMotion="user" className="text-[#c05a3e]" />
                 <span>{language === 'es' ? 'Búsquedas sugeridas' : 'Popular tags'}</span>
               </div>
               <div className="flex flex-wrap gap-1.5">
@@ -194,7 +195,14 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
                 : (isSavedOnly ? 'Viewing saved (click for all)' : 'Filter saved only')
               }
             >
-              <Bookmark className={`w-3.5 h-3.5 ${isSavedOnly ? 'fill-white text-white' : 'fill-[#151413] text-[#151413]'}`} />
+              <MorphIcon 
+                icon={Bookmark} 
+                size={14} 
+                strokeWidth={2} 
+                spring="snappy" 
+                reducedMotion="user" 
+                className={isSavedOnly ? 'fill-white text-white' : 'fill-[#151413] text-[#151413]'} 
+              />
               <span>{savedCount}</span>
             </button>
           ) : (
@@ -202,7 +210,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
               className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 min-h-[34px] rounded-full bg-[#f4efea] border border-[#e8e3da] text-xs font-semibold text-[#151413]"
               title={language === 'es' ? 'Drips guardados' : 'Saved drips'}
             >
-              <Bookmark className="w-3.5 h-3.5 fill-[#151413] text-[#151413]" />
+              <MorphIcon icon={Bookmark} size={14} strokeWidth={2} reducedMotion="user" className="fill-[#151413] text-[#151413]" />
               <span>{savedCount}</span>
             </div>
           )}
@@ -218,7 +226,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
             className="relative flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 min-h-[40px] rounded-full bg-[#151413] text-[#faf8f5] hover:bg-[#252c26] active:scale-[0.98] transition-all shadow-2xs font-medium text-xs tracking-tight shrink-0 cursor-pointer"
             aria-label="Abrir bolsa de compras"
           >
-            <ShoppingBag className="w-4 h-4 text-[#faf8f5] shrink-0" />
+            <MorphIcon icon={ShoppingBag} size={16} strokeWidth={2} reducedMotion="user" className="text-[#faf8f5] shrink-0" />
             <span className="hidden md:inline">{language === 'es' ? 'Bolsa' : 'Bag'}</span>
             {cartCount > 0 && (
               <span className="flex items-center justify-center min-w-[18px] h-[18px] px-1 text-[11px] font-mono font-bold bg-[#c05a3e] text-white rounded-full">

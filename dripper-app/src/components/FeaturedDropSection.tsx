@@ -1,6 +1,7 @@
 import React from 'react';
 import { DripperVisual } from './DripperVisual';
-import { Plus, Check } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { Plus, Check } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 
 interface FeaturedDropSectionProps {
@@ -102,17 +103,15 @@ export const FeaturedDropSection: React.FC<FeaturedDropSectionProps> = ({
                         isAdded ? 'bg-[#ffffff] text-[#000000]' : ''
                       }`}
                     >
-                      {isAdded ? (
-                        <>
-                          <Check className="w-3.5 h-3.5 mr-1.5" strokeWidth={2} />
-                          <span>{t('addedToBag')}</span>
-                        </>
-                      ) : (
-                        <>
-                          <Plus className="w-3.5 h-3.5 mr-1.5" strokeWidth={2} />
-                          <span>{t('addToBag')}</span>
-                        </>
-                      )}
+                      <MorphIcon 
+                        icon={isAdded ? Check : Plus} 
+                        size={14} 
+                        strokeWidth={2} 
+                        spring="snappy" 
+                        reducedMotion="user" 
+                        className="mr-1.5" 
+                      />
+                      <span>{isAdded ? t('addedToBag') : t('addToBag')}</span>
                     </button>
                   </div>
                 </div>

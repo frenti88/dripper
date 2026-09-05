@@ -1,7 +1,8 @@
 import React from 'react';
 import type { Product } from '../types';
 import { DripperVisual } from './DripperVisual';
-import { ArrowUpRight, Plus, Sparkles, Check } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { ArrowUpRight, Plus, Sparkles, Check } from 'lucide';
 
 interface ProductCardProps {
   product: Product;
@@ -47,7 +48,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           
           {/* Quick view hover icon */}
           <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-[#FBF9F5]/90 backdrop-blur-sm border border-[#E6E1D8] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-            <ArrowUpRight className="w-4 h-4 text-[#151413]" strokeWidth={1.5} />
+            <MorphIcon icon={ArrowUpRight} size={16} strokeWidth={1.5} reducedMotion="user" className="text-[#151413]" />
           </div>
         </div>
 
@@ -99,17 +100,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               : 'bg-[#151413] text-[#FBF9F5] hover:bg-[#2C2A28]'
           }`}
         >
-          {isAdded ? (
-            <>
-              <Check className="w-3.5 h-3.5" strokeWidth={1.5} />
-              <span>Nice choice. Added!</span>
-            </>
-          ) : (
-            <>
-              <Plus className="w-3.5 h-3.5 text-[#C05A3E]" strokeWidth={1.5} />
-              <span>Add to Bag</span>
-            </>
-          )}
+          <MorphIcon 
+            icon={isAdded ? Check : Plus} 
+            size={14} 
+            strokeWidth={1.5} 
+            spring="snappy" 
+            reducedMotion="user" 
+            className={isAdded ? "text-white" : "text-[#C05A3E]"} 
+          />
+          <span>{isAdded ? 'Nice choice. Added!' : 'Add to Bag'}</span>
         </button>
 
         <button
@@ -118,7 +117,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           className="w-11 h-11 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full border border-[#DDD6C8] hover:border-[#151413] text-[#151413] hover:bg-[#F3EFE6] transition-colors duration-200 active:scale-[0.96] active:transition-transform cursor-pointer"
           title="See full story & brewing specs"
         >
-          <Sparkles className="w-4 h-4 text-[#75726B]" strokeWidth={1.5} />
+          <MorphIcon icon={Sparkles} size={16} strokeWidth={1.5} reducedMotion="user" className="text-[#75726B]" />
         </button>
       </div>
 

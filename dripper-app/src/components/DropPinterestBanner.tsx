@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import type { DropPhase } from '../types';
 import { useLanguage } from '../i18n/LanguageContext';
-import { Flame, ChevronRight, X } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { Flame, ChevronRight, X } from 'lucide';
 
 interface DropPinterestBannerProps {
   currentPhase: DropPhase;
@@ -28,7 +29,7 @@ export const DropPinterestBanner: React.FC<DropPinterestBannerProps> = ({
         {/* Drop Status & Headline */}
         <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
           <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-semibold uppercase tracking-wider bg-[#c05a3e]/10 text-[#c05a3e] border border-[#c05a3e]/25 shrink-0">
-            <Flame className="w-3 h-3" />
+            <MorphIcon icon={Flame} size={12} strokeWidth={2} reducedMotion="user" />
             <span>{currentStage.badge}</span>
           </span>
 
@@ -48,7 +49,7 @@ export const DropPinterestBanner: React.FC<DropPinterestBannerProps> = ({
               className="flex items-center gap-1 px-3.5 py-1 min-h-[28px] rounded-full bg-[#121613] hover:bg-[#252c26] text-white font-medium text-xs transition-colors cursor-pointer shadow-2xs"
             >
               <span>{language === 'es' ? 'Ver piezas' : 'Explore'}</span>
-              <ChevronRight className="w-3 h-3" />
+              <MorphIcon icon={ChevronRight} size={12} strokeWidth={2} reducedMotion="user" />
             </button>
           ) : (
             <button
@@ -65,7 +66,7 @@ export const DropPinterestBanner: React.FC<DropPinterestBannerProps> = ({
             className="w-7 h-7 flex items-center justify-center rounded-full text-[#8e9890] hover:text-[#121613] hover:bg-[#ebe6dc] transition-colors cursor-pointer"
             aria-label="Cerrar aviso"
           >
-            <X className="w-3.5 h-3.5" />
+            <MorphIcon icon={X} size={14} strokeWidth={2} spring="snappy" reducedMotion="user" />
           </button>
 
         </div>

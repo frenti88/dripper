@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { DripperVisual } from './DripperVisual';
-import { Plus, Check, Search } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { Plus, Check, Search } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 
 interface FirstTenCatalogSectionProps {
@@ -147,7 +148,7 @@ export const FirstTenCatalogSection: React.FC<FirstTenCatalogSectionProps> = ({
                       aria-label={`Details for ${product.name}`}
                       title={t('storySpecs')}
                     >
-                      <Search className="w-4 h-4" strokeWidth={1.5} />
+                      <MorphIcon icon={Search} size={16} strokeWidth={1.5} reducedMotion="user" />
                     </button>
 
                     <button
@@ -156,17 +157,15 @@ export const FirstTenCatalogSection: React.FC<FirstTenCatalogSectionProps> = ({
                         isAdded ? 'bg-[#000000] text-[#ffffff]' : ''
                       }`}
                     >
-                      {isAdded ? (
-                        <>
-                          <Check className="w-3.5 h-3.5 mr-1" strokeWidth={2} />
-                          <span>{t('addedToBag')}</span>
-                        </>
-                      ) : (
-                        <>
-                          <Plus className="w-3.5 h-3.5 mr-1" strokeWidth={2} />
-                          <span>{t('addToBag')}</span>
-                        </>
-                      )}
+                      <MorphIcon 
+                        icon={isAdded ? Check : Plus} 
+                        size={14} 
+                        strokeWidth={2} 
+                        spring="snappy" 
+                        reducedMotion="user" 
+                        className="mr-1" 
+                      />
+                      <span>{isAdded ? t('addedToBag') : t('addToBag')}</span>
                     </button>
                   </div>
                 </div>

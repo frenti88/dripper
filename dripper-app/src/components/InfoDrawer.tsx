@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { X, Plus, Minus, ShieldCheck, Flame } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { X, Plus, Minus, ShieldCheck, Flame } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export type InfoDrawerType = 'faq' | 'extraction' | 'story' | null;
@@ -120,7 +121,7 @@ export const InfoDrawer: React.FC<InfoDrawerProps> = ({
               aria-label="Cerrar panel"
               className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-full border border-[#d8dcd8] hover:border-[#121613] hover:bg-[#f0f2f0] flex items-center justify-center transition-colors cursor-pointer text-[#121613] shrink-0"
             >
-              <X className="w-4 h-4" strokeWidth={1.5} />
+              <MorphIcon icon={X} size={16} strokeWidth={1.5} reducedMotion="user" />
             </button>
           </div>
 
@@ -133,7 +134,7 @@ export const InfoDrawer: React.FC<InfoDrawerProps> = ({
                 {/* Transit Safe Highlight Banner */}
                 <div className="p-5 rounded-2xl bg-[#faf8f5] border border-[#e6e1d8] flex items-start gap-4">
                   <div className="p-2.5 rounded-xl bg-white border border-[#e2e5e2] text-[#c05a3e] shrink-0">
-                    <ShieldCheck className="w-6 h-6" />
+                    <MorphIcon icon={ShieldCheck} size={24} strokeWidth={1.5} reducedMotion="user" />
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-serif text-base font-medium text-[#121613]">
@@ -165,7 +166,13 @@ export const InfoDrawer: React.FC<InfoDrawerProps> = ({
                             {faq.question}
                           </span>
                           <div className="w-7 h-7 rounded-full border border-[#d8dcd8] flex items-center justify-center text-[#121613] shrink-0">
-                            {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
+                            <MorphIcon 
+                              icon={isOpen ? Minus : Plus} 
+                              size={14} 
+                              strokeWidth={1.5} 
+                              spring="snappy" 
+                              reducedMotion="user" 
+                            />
                           </div>
                         </button>
 
@@ -288,7 +295,7 @@ export const InfoDrawer: React.FC<InfoDrawerProps> = ({
               <div className="space-y-6">
                 <div className="p-6 rounded-3xl bg-[#121613] text-white space-y-4">
                   <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#c05a3e]">
-                    <Flame className="w-4 h-4" />
+                    <MorphIcon icon={Flame} size={16} strokeWidth={2} reducedMotion="user" />
                     <span>{artistFeature.location} • 1.280°C</span>
                   </div>
                   <h3 className="font-serif text-2xl font-medium tracking-tight">

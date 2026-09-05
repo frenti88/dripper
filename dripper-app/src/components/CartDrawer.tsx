@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import type { CartItem } from '../types';
-import { X, Trash2, Plus, Minus, ArrowRight, ShieldCheck, Check, Package } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { X, Trash2, Plus, Minus, ArrowRight, ShieldCheck, Check, Package } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 import { playPressStamp } from '../utils/audioSynth';
 
@@ -134,7 +135,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               aria-label={t('closeBag')}
               className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-full border border-[#e8e3da] hover:border-[#151413] hover:bg-[#f4efea] flex items-center justify-center transition-colors cursor-pointer text-[#151413] shrink-0"
             >
-              <X className="w-4 h-4" strokeWidth={1.5} />
+              <MorphIcon icon={X} size={16} strokeWidth={1.5} reducedMotion="user" />
             </button>
           </div>
 
@@ -144,7 +145,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               /* Reassuring In-Drawer Order Receipt */
               <div className="py-4 space-y-6 animate-in fade-in duration-200">
                 <div className="w-14 h-14 rounded-2xl bg-[#121613] text-white flex items-center justify-center mx-auto shadow-md">
-                  <Check className="w-7 h-7 text-[#c05a3e]" strokeWidth={2.5} />
+                  <MorphIcon icon={Check} size={28} strokeWidth={2.5} spring="snappy" reducedMotion="user" className="text-[#c05a3e]" />
                 </div>
 
                 <div className="text-center space-y-1">
@@ -165,7 +166,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 <div className="p-4 rounded-2xl bg-[#f4efea] border border-[#e8e3da] space-y-3">
                   <div className="flex items-start gap-3">
                     <div className="p-2 rounded-xl bg-white border border-[#e8e3da] text-[#c05a3e] shrink-0">
-                      <ShieldCheck className="w-5 h-5" />
+                      <MorphIcon icon={ShieldCheck} size={20} strokeWidth={1.5} reducedMotion="user" />
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-[#151413]">
@@ -181,7 +182,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
                   <div className="flex items-start gap-3 pt-2 border-t border-[#e8e3da]">
                     <div className="p-2 rounded-xl bg-white border border-[#e8e3da] text-[#151413] shrink-0">
-                      <Package className="w-5 h-5" />
+                      <MorphIcon icon={Package} size={20} strokeWidth={1.5} reducedMotion="user" />
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-[#151413]">
@@ -277,7 +278,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                         aria-label={`${t('removeItem')}: ${item.product.name}`}
                         title={t('removeItem')}
                       >
-                        <Trash2 className="w-4 h-4" strokeWidth={1.5} />
+                        <MorphIcon icon={Trash2} size={16} strokeWidth={1.5} spring="snappy" reducedMotion="user" />
                       </button>
 
                       <div className="flex items-center border border-[#e8e3da] rounded-full px-1.5 py-0.5 bg-[#f4efea]">
@@ -286,7 +287,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                           className="w-7 h-7 flex items-center justify-center text-[#4b463f] hover:text-[#151413] cursor-pointer rounded-full hover:bg-white transition-colors"
                           aria-label="Decrease quantity"
                         >
-                          <Minus className="w-3 h-3" strokeWidth={1.5} />
+                          <MorphIcon 
+                            icon={item.quantity === 1 ? Trash2 : Minus} 
+                            size={12} 
+                            strokeWidth={1.5} 
+                            spring="snappy" 
+                            reducedMotion="user" 
+                          />
                         </button>
                         <span className="px-2 text-xs font-mono font-semibold text-[#151413]">
                           {item.quantity}
@@ -296,7 +303,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                           className="w-7 h-7 flex items-center justify-center text-[#4b463f] hover:text-[#151413] cursor-pointer rounded-full hover:bg-white transition-colors"
                           aria-label="Increase quantity"
                         >
-                          <Plus className="w-3 h-3" strokeWidth={1.5} />
+                          <MorphIcon icon={Plus} size={12} strokeWidth={1.5} spring="snappy" reducedMotion="user" />
                         </button>
                       </div>
                     </div>
@@ -337,11 +344,11 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 }`}
               >
                 <span>{isCheckingOut ? (language === 'es' ? 'Asignando Horno...' : 'Allocating Kiln...') : t('proceedCheckout')}</span>
-                <ArrowRight className="w-4 h-4" strokeWidth={2} />
+                <MorphIcon icon={isCheckingOut ? Check : ArrowRight} size={16} strokeWidth={2} spring="snappy" reducedMotion="user" />
               </button>
 
               <div className="flex items-center justify-center gap-2 text-[11px] text-[#4b463f]">
-                <ShieldCheck className="w-4 h-4 text-[#151413]" strokeWidth={1.5} />
+                <MorphIcon icon={ShieldCheck} size={16} strokeWidth={1.5} reducedMotion="user" className="text-[#151413]" />
                 <span>{t('transitSafeNotice')}</span>
               </div>
             </div>

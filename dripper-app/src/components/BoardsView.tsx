@@ -1,6 +1,7 @@
 import React from 'react';
 import { PINTEREST_BOARDS, type PinterestBoard } from '../data/pinterestPinsData';
-import { Layers, ArrowRight } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { Layers, ArrowRight } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 
 interface BoardsViewProps {
@@ -16,7 +17,7 @@ export const BoardsView: React.FC<BoardsViewProps> = ({ onSelectBoard }) => {
       {/* Boards Section Header */}
       <div className="mb-8">
         <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#666f68] mb-1">
-          <Layers className="w-4 h-4 text-[#c05a3e]" />
+          <MorphIcon icon={Layers} size={16} strokeWidth={2} reducedMotion="user" className="text-[#c05a3e]" />
           <span>{language === 'es' ? 'Colecciones Curadas' : 'Curated Collections'}</span>
         </div>
         <h2 className="font-serif text-3xl md:text-4xl text-[#151413] tracking-tight mt-1">
@@ -109,7 +110,7 @@ export const BoardsView: React.FC<BoardsViewProps> = ({ onSelectBoard }) => {
 
                 <div className="flex items-center justify-between text-xs font-semibold text-[#151413] pt-2 border-t border-[#e8e3da]">
                   <span>{language === 'es' ? 'Ver colección' : 'View collection'}</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform text-[#c05a3e]" />
+                  <MorphIcon icon={ArrowRight} size={14} strokeWidth={2} spring="snappy" reducedMotion="user" className="group-hover:translate-x-1 transition-transform text-[#c05a3e]" />
                 </div>
               </div>
 

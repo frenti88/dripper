@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { DripperVisual } from './DripperVisual';
-import { Check, Lock, ArrowRight } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { Check, Lock, ArrowRight } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export const UpcomingDropSection: React.FC = () => {
@@ -20,7 +21,7 @@ export const UpcomingDropSection: React.FC = () => {
         
         {/* Eyebrow */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-[8px] border border-[#ffffff]/30 text-[13px] text-[#ffffff] mb-8">
-          <Lock className="w-3.5 h-3.5" strokeWidth={1.5} />
+          <MorphIcon icon={Lock} size={14} strokeWidth={1.5} reducedMotion="user" />
           <span>{t('upcomingBadge')}</span>
         </div>
 
@@ -42,7 +43,7 @@ export const UpcomingDropSection: React.FC = () => {
         <div className="max-w-md mx-auto">
           {submitted ? (
             <div className="p-4 rounded-[8px] border border-[#ffffff] bg-[#4b514d] flex items-center justify-center gap-2 text-[15px] text-[#ffffff]" role="status">
-              <Check className="w-4 h-4" strokeWidth={2} />
+              <MorphIcon icon={Check} size={16} strokeWidth={2} spring="snappy" reducedMotion="user" />
               <span>{t('subscribedThankYou')}</span>
             </div>
           ) : (
@@ -67,7 +68,7 @@ export const UpcomingDropSection: React.FC = () => {
                 className="btn-pill-ghost-gunmetal whitespace-nowrap cursor-pointer"
               >
                 <span>{t('notifyMeButton')}</span>
-                <ArrowRight className="w-4 h-4 ml-1.5" strokeWidth={1.5} />
+                <MorphIcon icon={ArrowRight} size={16} strokeWidth={1.5} reducedMotion="user" className="ml-1.5" />
               </button>
             </form>
           )}

@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import type { DrypDrip, PinterestPin } from '../data/pinterestPinsData';
 import { DRYP_DRIPS, PINTEREST_PINS } from '../data/pinterestPinsData';
 import type { Product } from '../types';
-import { X, Bookmark, ShoppingBag, Share2, Check, Droplets } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { X, Bookmark, ShoppingBag, Share2, Check, Droplets } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 import { playWaterDrop, playSteamExhale } from '../utils/audioSynth';
 
@@ -185,7 +186,7 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
           <div className="w-full mt-3 p-3.5 bg-[#faf8f5] rounded-xl border border-[#e8e3da] flex flex-col gap-2.5">
             <div className="flex items-center justify-between gap-2 text-xs">
               <div className="flex items-center gap-2 text-[#151413]">
-                <Droplets className="w-4 h-4 text-[#c05a3e]" />
+                <MorphIcon icon={Droplets} size={16} strokeWidth={2} reducedMotion="user" className="text-[#c05a3e]" />
                 <span className="font-semibold">{language === 'es' ? 'Simular Vertido (93°C)' : 'Simulate Pour (93°C)'}</span>
               </div>
               <button
@@ -247,7 +248,14 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                   title="Copiar enlace"
                   aria-label="Compartir drip"
                 >
-                  {copiedLink ? <Check className="w-4 h-4 text-[#c05a3e]" /> : <Share2 className="w-4 h-4" />}
+                  <MorphIcon 
+                    icon={copiedLink ? Check : Share2} 
+                    size={16} 
+                    strokeWidth={2} 
+                    spring="snappy" 
+                    reducedMotion="user" 
+                    className={copiedLink ? "text-[#c05a3e]" : ""} 
+                  />
                 </button>
 
                 <button
@@ -258,7 +266,13 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                       : 'bg-[#c05a3e] hover:bg-[#a64726] text-white'
                   }`}
                 >
-                  <Bookmark className={`w-3.5 h-3.5 ${isSaved ? 'fill-white' : ''}`} />
+                  <MorphIcon 
+                    icon={isSaved ? Check : Bookmark} 
+                    size={14} 
+                    strokeWidth={2} 
+                    spring="snappy" 
+                    reducedMotion="user" 
+                  />
                   <span>{isSaved ? (language === 'es' ? 'Drip Guardado' : 'Saved') : (language === 'es' ? 'Guardar Drip' : 'Save Drip')}</span>
                 </button>
 
@@ -268,7 +282,7 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                   className="w-10 h-10 rounded-full hover:bg-[#f0f2f0] text-[#4b514d] hover:text-[#121613] transition-colors flex items-center justify-center cursor-pointer shrink-0"
                   aria-label="Cerrar modal"
                 >
-                  <X className="w-5 h-5" />
+                  <MorphIcon icon={X} size={20} strokeWidth={2} reducedMotion="user" />
                 </button>
               </div>
 
@@ -430,17 +444,19 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                       : 'bg-[#121613] hover:bg-[#252c26] text-white'
                   }`}
                 >
-                  {isAdded ? (
-                    <>
-                      <Check className="w-4 h-4" />
-                      <span>{language === 'es' ? 'Añadido a la Bolsa' : 'Added to Bag'}</span>
-                    </>
-                  ) : item.stockStatus === 'sold_out' ? (
+                  {item.stockStatus === 'sold_out' ? (
                     <span>{language === 'es' ? 'Agotado por ahora' : 'Gone for now'}</span>
                   ) : (
                     <>
-                      <ShoppingBag className="w-4 h-4 text-white" />
-                      <span>{language === 'es' ? 'Añadir a la Bolsa' : 'Add to Bag'}</span>
+                      <MorphIcon 
+                        icon={isAdded ? Check : ShoppingBag} 
+                        size={16} 
+                        strokeWidth={2} 
+                        spring="snappy" 
+                        reducedMotion="user" 
+                        className="text-white" 
+                      />
+                      <span>{isAdded ? (language === 'es' ? 'Añadido a la Bolsa' : 'Added to Bag') : (language === 'es' ? 'Añadir a la Bolsa' : 'Add to Bag')}</span>
                     </>
                   )}
                 </button>

@@ -1,7 +1,8 @@
 import React from 'react';
 import type { DrypDrip, PinterestPin } from '../data/pinterestPinsData';
 import { PinCard } from './PinCard';
-import { SearchX, Bookmark } from 'lucide-react';
+import { MorphIcon } from 'morphicons/react';
+import { SearchX, Bookmark } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 
 interface MasonryFeedProps {
@@ -41,7 +42,7 @@ export const MasonryFeed: React.FC<MasonryFeedProps> = ({
       return (
         <div className="w-full py-24 flex flex-col items-center justify-center text-center px-4 animate-in fade-in duration-200">
           <div className="w-16 h-16 rounded-2xl bg-[#faf8f5] border border-[#e8e4dc] flex items-center justify-center text-[#c05a3e] mb-4 shadow-sm">
-            <Bookmark className="w-8 h-8" />
+            <MorphIcon icon={Bookmark} size={32} strokeWidth={1.5} reducedMotion="user" />
           </div>
           <h3 className="font-serif text-2xl font-medium text-[#121613] mb-1">
             {language === 'es' ? 'Tu repisa está vacía por ahora' : 'Your shelf is empty for now'}
@@ -64,7 +65,7 @@ export const MasonryFeed: React.FC<MasonryFeedProps> = ({
     return (
       <div role="status" aria-live="polite" className="w-full py-24 flex flex-col items-center justify-center text-center px-4 animate-in fade-in duration-200">
         <div className="w-16 h-16 rounded-2xl bg-[#faf8f5] border border-[#e8e4dc] flex items-center justify-center text-[#666f68] mb-4">
-          <SearchX className="w-8 h-8" />
+          <MorphIcon icon={SearchX} size={32} strokeWidth={1.5} reducedMotion="user" />
         </div>
         <h3 className="font-serif text-2xl font-medium text-[#121613] mb-1 break-words max-w-lg">
           {language === 'es' ? 'No encontramos ningún drip con esa búsqueda en el catálogo' : 'No drips found for that search in the catalog'}
