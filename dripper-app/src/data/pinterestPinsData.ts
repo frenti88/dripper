@@ -542,7 +542,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     id: 'drip-arch-bauhaus',
     productId: 'arch-bauhaus-dessau',
     title: '11 / Bauhaus Dessau',
-    subtitle: 'Gres arena con asa trapezoidal y estrías de extracción directa. Funcionalismo puro horneado a 1.280°C.',
+    subtitle: 'Gres marfil con bloques geométricos primarios (círculo rojo, cuña amarilla y negro), asa ergonómica ovalada y base arquitectónica calada.',
     category: 'Architecture',
     categoryLabel: 'Arquitectura',
     imageSrc: '/images/products/bauhaus-dessau.jpg',

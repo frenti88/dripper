@@ -882,16 +882,18 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'ARCH 01',
       name: 'Bauhaus Dessau 1925',
       headline: 'Form strictly following coffee extraction physics.',
-      story: 'Sand grog refractory stoneware with a crisp trapezoidal triangular handle and flat circular base. Faithful to Walter Gropius: eliminate all superficial ornament so pure structural truth guides the pour.',
-      objectDescription: 'Equidistant interior drainage flutes hold standard conical filters in gentle air suspension, achieving smooth drawdown and clinical flavor clarity.',
+      story: 'Ivory grog stoneware dripper celebrating the quintessential Bauhaus chromatic grammar: pure red circle, golden yellow wedge, and deep carbon black quadrants, paired with an ergonomic black-accented tab handle and a slotted architectural base stamped with DRYP.',
+      objectDescription: 'Internal vertical drainage flutes guide continuous laminar drawdown, while the pierced geometric pedestal allows full visual monitoring of your coffee stream.',
       price: 88,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Available • Bauhaus Edition',
       stockCountRemaining: 30,
       paletteColors: [
-        { name: 'Grog Sand Beige', hex: '#DCD4C4' },
-        { name: 'Matte Raw Terracotta', hex: '#A85A3C' }
+        { name: 'Bauhaus Ivory Cream', hex: '#EDE8DF' },
+        { name: 'Primary Cadmium Red', hex: '#D62828' },
+        { name: 'Geometric Mustard Yellow', hex: '#D4A017' },
+        { name: 'Carbon Black', hex: '#1C1C1C' }
       ],
       specs: {
         extractionStyle: 'Clean, transparent, crisp geometric separation of notes',
@@ -1987,16 +1989,18 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'ARQUITECTURA 01',
       name: 'Bauhaus Dessau 1925',
       headline: 'La forma sigue estrictamente a la física del café.',
-      story: 'Cono de gres refractario arena con asa triangular trapezoidal y peana circular plana. Fiel al manifiesto de Walter Gropius: eliminar todo ornamento superficial para que la estructura pura calibre el caudal del café.',
-      objectDescription: 'Las paredes interiores con nervaduras equidistantes sostienen el filtro cónico en suspensión aérea, logrando un drenaje uniforme y una taza de extrema claridad geométrica.',
+      story: 'Gotero cerámico en gres marfil chamotado que rinde homenaje a la gramática cromática pura de la Bauhaus: círculo rojo primario, cuña amarillo mostaza y cuadrantes en negro carbón, con asa ergonómica ovalada y base arquitectónica perforada con el grabado DRYP.',
+      objectDescription: 'Nervaduras verticales interiores que sostienen el filtro en suspensión uniforme para un drenaje continuo, mientras que la peana calada permite supervisar visualmente la caída de cada gota.',
       price: 88,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Disponible • Edición Bauhaus',
       stockCountRemaining: 30,
       paletteColors: [
-        { name: 'Gres Arena Chamotado', hex: '#DCD4C4' },
-        { name: 'Terracota Natural Mate', hex: '#A85A3C' }
+        { name: 'Gres Marfil Bauhaus', hex: '#EDE8DF' },
+        { name: 'Rojo Cadmio Primario', hex: '#D62828' },
+        { name: 'Amarillo Mostaza Geométrico', hex: '#D4A017' },
+        { name: 'Negro Carbón Mate', hex: '#1C1C1C' }
       ],
       specs: {
         extractionStyle: 'Claridad cristalina, notas dulces definidas y balance limpio',
