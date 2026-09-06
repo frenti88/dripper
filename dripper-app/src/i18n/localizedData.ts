@@ -1046,18 +1046,18 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'BIO 02',
       eyebrow: 'BIO 02',
-      name: 'Nervadura Botánica & Alas de Libélula',
-      headline: 'Fractal perfection inspired by dragonfly wings and mountain foliage.',
-      story: 'Sculpted in ivory porcelain with delicate raised venation ridges evoking dragonfly wing cellular structures and high-altitude flora, highlighted by toasted caramel reactive glaze.',
-      objectDescription: 'External and internal relief ribs act as natural convective channels, promoting optimal degassing during pre-infusion while retaining bright floral aromatics.',
+      name: 'Alas de Mariposa Monarca',
+      headline: 'Weightless elegance inspired by monarch butterfly wings and morning forest light.',
+      story: 'Sculpted in velvety matte charcoal-black ceramic with wing-cellular panels filled in rich amber-orange reactive glaze, an undulating petal rim, an extended wing-tip grip, and an open helical base stamped with DRYP.',
+      objectDescription: 'The fluted wing ribs create natural air-relief channels that promote uniform extraction and optimal thermal stability, accentuating bright floral notes, peach sweetness, and sparkling citrus acidity.',
       price: 90,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Available (Cumbres de Neblaria)',
       stockCountRemaining: 20,
       paletteColors: [
-        { name: 'Ivory Porcelain', hex: '#F5F2EA' },
-        { name: 'Toasted Caramel Reactive Glaze', hex: '#B87A3E' }
+        { name: 'Monarch Amber Orange', hex: '#E07A2B' },
+        { name: 'Matte Wing Charcoal', hex: '#1F1F1F' }
       ],
       specs: {
         extractionStyle: 'Silky mouthfeel, intense jasmine florals, and sparkling acidity',
@@ -2113,18 +2113,18 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'BIO 02',
       eyebrow: 'BIO 02',
-      name: 'Nervadura Botánica & Alas de Libélula',
-      headline: 'Perfección fractal inspirada en alas de libélula y botánica de alta montaña.',
-      story: 'Esculpido en porcelana marfil con venaciones biomiméticas en relieve que recrean la estructura celular de las alas de libélula, acentuadas con esmalte reactivo tostado.',
-      objectDescription: 'Las costillas exteriores e interiores actúan como canales de respiración térmica, permitiendo una desgasificación óptima durante la preinfusión y resaltando notas florales vivas.',
+      name: 'Alas de Mariposa Monarca',
+      headline: 'La delicadeza ingrávida de las alas de mariposa abriéndose a la luz matutina.',
+      story: 'Esculpido en cerámica negra aterciopelada con celdas aladas esmaltadas en un vivo naranja ambarino, borde ondulado en pétalos, vertedor de apoyo en ala y base helicoidal calada con el sello grabado DRYP.',
+      objectDescription: 'Las nervaduras interiores acanaladas actúan como conductos de ventilación natural, logrando una extracción uniforme y una gran estabilidad térmica que resalta notas florales, dulzor a melocotón y una acidez brillante.',
       price: 90,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Disponible (Cumbres de Neblaria)',
       stockCountRemaining: 20,
       paletteColors: [
-        { name: 'Porcelana Marfil', hex: '#F5F2EA' },
-        { name: 'Esmalte Caramelo Reactivo', hex: '#B87A3E' }
+        { name: 'Naranja Monarca Ámbar', hex: '#E07A2B' },
+        { name: 'Negro Carbón Aterciopelado', hex: '#1F1F1F' }
       ],
       specs: {
         extractionStyle: 'Sensación sedosa en boca, intensas notas florales de jazmín y acidez brillante',

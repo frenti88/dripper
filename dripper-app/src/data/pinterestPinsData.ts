@@ -319,11 +319,12 @@ export const DRYP_DRIPS: DrypDrip[] = [
     dropCode: 'BIO 01',
     level01Emotion: 'El rocío fresco sobre las hojas verdes del bosque de niebla y el aleteo fugaz de las aves al amanecer.'
   },
+
   {
     id: 'drip-nature-venation',
     productId: 'nature-botanical-wings',
-    title: '06 / Alas de Libélula',
-    subtitle: 'Porcelana marfil con relieve biomimético y canales de ventilación. Extracción dulce de máxima claridad aromática.',
+    title: '06 / Alas de Mariposa Monarca',
+    subtitle: 'Cerámica negra mate con paneles alados en esmalte naranja ambarino, festón biomimético, vertedor alado y base helicoidal con sello DRYP.',
     category: 'Nature',
     categoryLabel: 'Naturaleza',
     imageSrc: '/images/products/nature-venation.jpg',
@@ -337,13 +338,13 @@ export const DRYP_DRIPS: DrypDrip[] = [
     price: 90,
     stockStatus: 'available',
     stockLabel: 'Disponible (Cumbres de Neblaria)',
-    likesCount: 3120,
-    savesCount: 7450,
+    likesCount: 3890,
+    savesCount: 9140,
     boardIds: ['board-nature'],
-    tags: ['Naturaleza', 'Nervadura', 'Libélula', 'Botánica', 'Marfil', 'Caramelo'],
-    badge: 'BOTÁNICA VIVA',
+    tags: ['Naturaleza', 'Mariposa', 'Monarca', 'Alas', 'Naranja', 'Negro Mate', 'Biomimético'],
+    badge: 'MONARCH WINGS',
     dropCode: 'BIO 02',
-    level01Emotion: 'La perfección fractal de las alas de una libélula posada sobre el agua cristalina del río al amanecer.'
+    level01Emotion: 'La delicadeza ingrávida de las alas de mariposa abriéndose hacia la luz del sol en las mañanas de bosque.'
   },
 
   // ── PREHISTORIA (3 drips únicos) ──────────────────────────────────────────
