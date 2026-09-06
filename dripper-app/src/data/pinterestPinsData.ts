@@ -485,6 +485,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
   },
 
   {
+    id: 'drip-retro-super-mushroom',
+    productId: 'retro-super-mushroom',
+    title: '28 / Super Mushroom 1-UP',
+    subtitle: 'Cono de cerámica rojo carmín con lunares blancos moteados y base con los icónicos ojos de Champiñón de Nintendo. Sube de nivel en cada taza.',
+    category: 'Retro',
+    categoryLabel: 'Retro',
+    imageSrc: '/images/products/retro-super-mushroom.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Retro Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_retro',
+      verified: true
+    },
+    price: 90,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición 1-UP)',
+    likesCount: 6210,
+    savesCount: 13400,
+    boardIds: ['board-retro'],
+    tags: ['Nintendo', 'Mario', 'Super Mushroom', 'Champiñón', 'Retro', 'Gaming', '8-bit', 'Rojo'],
+    badge: 'SUPER MUSHROOM',
+    dropCode: 'RETRO 03',
+    level01Emotion: 'Ese sonido inconfundible al conseguir una vida extra: energía instantánea para conquistar la mañana.'
+  },
+
+  {
     id: 'drip-arch-bauhaus',
     productId: 'arch-bauhaus-dessau',
     title: '11 / Bauhaus Dessau',

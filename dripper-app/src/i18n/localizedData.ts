@@ -995,6 +995,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core'
     },
     {
+      id: 'retro-super-mushroom',
+      numberCode: '28',
+      collection: 'Retro',
+      categoryTag: 'Editions',
+      dropCode: 'RETRO 03',
+      eyebrow: 'RETRO 03',
+      name: 'Super Mushroom 1-UP',
+      headline: 'Level up your morning brew.',
+      story: 'High-fire ceramic dripper directly honoring Nintendo\'s iconic Super Mushroom. Finished in vibrant crimson-red glaze with large speckled cream polka dots, paired with a hollow arch base sporting the legendary oval black eyes and engraved DRYP. logotype.',
+      objectDescription: 'Vertical internal ribs promote fast, even aeration and drawdown. The rounded cap architecture traps aromatic volatiles while preserving peak bloom temperatures for sweet, berry-forward extractions.',
+      price: 90,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • 1-UP Edition',
+      stockCountRemaining: 24,
+      paletteColors: [
+        { name: 'Mushroom Crimson Red', hex: '#D62828' },
+        { name: 'Speckled Cream White', hex: '#EBE7DF' },
+        { name: '8-bit Eye Black', hex: '#111111' }
+      ],
+      specs: {
+        extractionStyle: 'Juicy, fruit-forward acidity with a plush body and caramel finish',
+        flowRate: 'Medium-fast energetic drainage',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire glossy glazed stoneware with matte arch base',
+        origin: 'Retro Lab • Cumbres de Neblaria',
+        weight: '375g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:35 min',
+          ratio: '1:16.25',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Extra life for your morning routine.',
+      visualType: 'core'
+    },
+    {
       id: 'nature-botanical-wings',
       numberCode: '15',
       collection: 'Nature',
@@ -2014,6 +2055,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Brew Play Repeat.',
+      visualType: 'core'
+    },
+    {
+      id: 'retro-super-mushroom',
+      numberCode: '28',
+      collection: 'Retro',
+      categoryTag: 'Editions',
+      dropCode: 'RETRO 03',
+      eyebrow: 'RETRO 03',
+      name: 'Super Mushroom 1-UP',
+      headline: 'Ese sonido inconfundible al conseguir una vida extra: energía instantánea para conquistar la mañana.',
+      story: 'Gotero cerámico cocido a 1.280°C que homenajea directamente al legendario Super Champiñón de Nintendo. Esmaltado en rojo carmín vibrante con grandes lunares blanco crema moteados, sobre una base arqueada con los icónicos ojos negros ovalados y el grabado DRYP.',
+      objectDescription: 'Nervaduras verticales interiores que favorecen una oxigenación constante y drenaje equilibrado. La silueta redondeada tipo cúpula ayuda a concentrar los aromas más dulces y frutales del café.',
+      price: 90,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición 1-UP',
+      stockCountRemaining: 24,
+      paletteColors: [
+        { name: 'Rojo Carmín Champiñón', hex: '#D62828' },
+        { name: 'Blanco Crema Moteado', hex: '#EBE7DF' },
+        { name: 'Negro Ojo 8-bit', hex: '#111111' }
+      ],
+      specs: {
+        extractionStyle: 'Acidez jugosa y brillante con notas de frutos rojos y final acaramelado',
+        flowRate: 'Drenaje medio-rápido y enérgico',
+        capacity: '1–2 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres esmaltado brillante con base arqueada mate',
+        origin: 'Retro Lab • Cumbres de Neblaria',
+        weight: '375g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:35 min',
+          ratio: '1:16.25',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Una vida extra para tu ritual de cada mañana.',
       visualType: 'core'
     },
     {
