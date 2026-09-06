@@ -187,7 +187,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     id: 'drip-music-vinyl',
     productId: 'music-vinyl-33',
     title: '01 / Vinyl Groove 33',
-    subtitle: 'Gres negro mate con microsurcos de vinilo y núcleo de latón. Calibrado para notas dulces y cuerpo balanceado.',
+    subtitle: 'Cerámica negro piano brillante con microsurcos concéntricos de vinilo, galleta central rojo carmín y asa geométrica ergonómica.',
     category: 'Music',
     categoryLabel: 'Música',
     imageSrc: '/images/products/vinyl-groove.jpg',

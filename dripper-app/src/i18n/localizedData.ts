@@ -763,16 +763,16 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'AUDIO 01',
       name: 'Vinyl Groove 33 RPM',
       headline: 'The warm tactile crackle before the morning melody begins.',
-      story: 'Matte black conical dripper with concentric vinyl micro-grooves spiraling inward and a polished solid brass center core label disc. Engineered to laminarize water flow.',
-      objectDescription: 'Micro-concentric ridges slow down channel bypassing, maximizing sweetness extraction in medium-dark and washed specialty coffees.',
+      story: 'High-gloss piano black ceramic conical dripper sculpted with concentric 33 RPM vinyl micro-grooves spiraling inward and a vibrant crimson-red center label disc. Features a geometric loop handle and an arched pedestal base stamped with DRYP.',
+      objectDescription: 'Micro-concentric exterior and interior ridges slow down channel bypassing, maximizing sweetness extraction and caramel notes in medium-dark and washed specialty coffees.',
       price: 84,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Available (80 pieces)',
       stockCountRemaining: 80,
       paletteColors: [
-        { name: 'Matte Vinyl Black', hex: '#1C1C1C' },
-        { name: 'Solid Brass Disc', hex: '#C9A050' }
+        { name: 'Piano Gloss Black', hex: '#111111' },
+        { name: 'Record Label Crimson', hex: '#D62828' }
       ],
       specs: {
         extractionStyle: 'High sweetness, rich body, controlled acidity',
@@ -1830,7 +1830,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'AUDIO 01',
       name: 'Vinyl Groove 33 RPM',
       headline: 'El crujido cálido del vinilo antes de que inicie la melodía.',
-      story: 'Gotero cónico negro mate con microsurcos concéntricos inspirados en discos de vinilo a 33 RPM y disco central de latón macizo. Diseñado para laminar el caudal del agua.',
+      story: 'Gotero cerámico cónico en negro piano brillante con microsurcos concéntricos inspirados en discos de vinilo de 33 RPM y galleta central roja. Cuenta con asa geométrica de perfil plano y base arqueada con sello DRYP.',
       objectDescription: 'Las micro-estrías concéntricas reducen los canales de bypass acelerado, prolongando el contacto hidrodinámico para resaltar notas achocolatadas, melazas y cuerpo dulce.',
       price: 84,
       currency: 'USD',
@@ -1838,8 +1838,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       stockLabel: 'Disponible (80 piezas)',
       stockCountRemaining: 80,
       paletteColors: [
-        { name: 'Negro Vinilo Mate', hex: '#1C1C1C' },
-        { name: 'Núcleo Latón Pulido', hex: '#C9A050' }
+        { name: 'Negro Piano Brillante', hex: '#111111' },
+        { name: 'Galleta Rojo Carmín', hex: '#D62828' }
       ],
       specs: {
         extractionStyle: 'Dulzura profunda, cuerpo aterciopelado y acidez redonda',
