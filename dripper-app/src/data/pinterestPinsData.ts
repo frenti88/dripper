@@ -487,8 +487,8 @@ export const DRYP_DRIPS: DrypDrip[] = [
   {
     id: 'drip-retro-nes',
     productId: 'retro-nes-8bit',
-    title: '20 / NES — Brew Play Repeat',
-    subtitle: 'Gres blanco humo con asa angular inspirada en el gamepad de 8 bits. El vertido más icónico de tu infancia.',
+    title: '20 / Retro Sunset Arcade',
+    subtitle: 'Gres crema moteado con bandas curvadas en ocre, naranja y terracota, interior negro brillante y base trípode arqueada con sello DRYP.',
     category: 'Retro',
     categoryLabel: 'Retro',
     imageSrc: '/images/products/retro-nes.jpg',
@@ -501,14 +501,14 @@ export const DRYP_DRIPS: DrypDrip[] = [
     },
     price: 92,
     stockStatus: 'available',
-    stockLabel: 'Disponible (Edición 8-bit)',
-    likesCount: 3840,
-    savesCount: 7210,
+    stockLabel: 'Disponible (Edición Sunset)',
+    likesCount: 4210,
+    savesCount: 8940,
     boardIds: ['board-retro'],
-    tags: ['Retro', 'Vintage', '8-bit', 'Gaming', 'NES', 'Pixel', 'Arcade', 'Consola'],
-    badge: 'RETRO 8-BIT',
+    tags: ['Retro', 'Vintage', '70s', '80s', 'Sunset Stripes', 'Arcade', 'Gres Moteado', 'Rayas'],
+    badge: 'RETRO SUNSET',
     dropCode: 'RETRO 02',
-    level01Emotion: 'El sábado por la mañana de 1988: cafetera encendida, cartucho insertado, el día empieza en pausa.'
+    level01Emotion: 'La energía solar de los atardeceres analógicos: líneas cálidas que abrazan la geometría de cada vertido.'
   },
 
   {

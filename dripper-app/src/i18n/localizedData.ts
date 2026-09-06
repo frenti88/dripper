@@ -1001,26 +1001,27 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'RETRO 02',
       eyebrow: 'RETRO 02',
-      name: 'NES — Brew Play Repeat',
-      headline: 'Saturday morning, 1988: coffee brewing, cartridge loaded, the world on pause.',
-      story: 'Smoke-white stoneware cone with an angular handle inspired by the classic 8-bit gamepad. D-pad and A/B button motifs fired in deep charcoal and red on the base ring.',
-      objectDescription: 'High-fire ceramic with matte smoke-white glaze and precision-painted gaming iconography. The angular handle echoes the geometric grammar of 1980s console design.',
+      name: 'Retro Sunset Arcade',
+      headline: 'Golden hour warmth from the analog arcade era.',
+      story: 'Speckled cream stoneware dripper decorated with sweeping retro sunset curved stripes in yellow ochre, warm amber orange, and deep burnt terracotta. Contrasted with a deep gloss black interior and an arched tripod pedestal stamped with DRYP.',
+      objectDescription: 'The glossy black interior ribs ensure effortless, channel-free drawdown, while the thick ceramic walls provide stellar heat stability for sweet, full-bodied morning extractions.',
       price: 92,
       currency: 'USD',
       stockStatus: 'available',
-      stockLabel: 'Available • 8-bit Edition',
+      stockLabel: 'Available • Sunset Edition',
       stockCountRemaining: 28,
       paletteColors: [
-        { name: 'Smoke White', hex: '#E8E5E0' },
-        { name: 'Charcoal 8-bit', hex: '#2D2D2D' },
-        { name: 'A-Button Red', hex: '#CC2929' }
+        { name: 'Speckled Oatmeal Cream', hex: '#EAE5D9' },
+        { name: 'Sunset Amber & Ochre', hex: '#D97706' },
+        { name: 'Burnt Terracotta', hex: '#9C3D24' },
+        { name: 'Gloss Obsidian Black', hex: '#161616' }
       ],
       specs: {
         extractionStyle: 'Clean, structured body with bright acidity and a long finish',
         flowRate: 'Medium-fast single pour',
         capacity: '1–2 Cups (14g–28g dose)',
         filterType: 'Standard 02 Conical filters',
-        material: 'High-fire stoneware with ceramic glaze detailing',
+        material: 'High-fire speckled stoneware with gloss interior and ceramic stripe glazes',
         origin: 'Retro Lab • Cumbres de Neblaria',
         weight: '360g',
         idealRecipe: {
@@ -1032,7 +1033,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
           grindSize: 'Medium'
         }
       },
-      tagline: 'Brew Play Repeat.',
+      tagline: 'Warm sunsets, slow mornings, deliberate coffee.',
       visualType: 'core'
     },
     {
@@ -2105,26 +2106,27 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'RETRO 02',
       eyebrow: 'RETRO 02',
-      name: 'NES — Brew Play Repeat',
-      headline: 'El sábado por la mañana de 1988: cafetera encendida, cartucho insertado, el día empieza en pausa.',
-      story: 'Cono de gres blanco humo con asa angular inspirada en el gamepad de 8 bits clásico. Iconografía de cruceta y botones A/B horneada en carbón profundo y rojo sobre el anillo de base.',
-      objectDescription: 'Cerámica de alta temperatura con esmalte blanco humo mate e iconografía gamer pintada con precisión. El asa angular refleja la gramática geométrica del diseño de consolas de los años ochenta.',
+      name: 'Retro Sunset Arcade',
+      headline: 'La calidez de la hora dorada nacida en la era de los arcades analógicos.',
+      story: 'Gotero cerámico de gres crema moteado decorado con franjas curvadas al estilo atardecer setentero en ocre, ámbar cálido y terracota quemado. Contrasta con un interior esmaltado en negro brillante y una base trípode arqueada con el sello DRYP.',
+      objectDescription: 'Las nervaduras interiores en negro brillante aseguran un paso de agua fluido y libre de canalizaciones, mientras que las paredes gruesas de gres ofrecen una gran estabilidad térmica para extracciones dulces y con cuerpo redondo.',
       price: 92,
       currency: 'USD',
       stockStatus: 'available',
-      stockLabel: 'Disponible • Edición 8-bit',
+      stockLabel: 'Disponible • Edición Sunset',
       stockCountRemaining: 28,
       paletteColors: [
-        { name: 'Blanco Humo', hex: '#E8E5E0' },
-        { name: 'Carbón 8-bit', hex: '#2D2D2D' },
-        { name: 'Rojo Botón A', hex: '#CC2929' }
+        { name: 'Crema Avena Moteada', hex: '#EAE5D9' },
+        { name: 'Ámbar & Ocre Sunset', hex: '#D97706' },
+        { name: 'Terracota Tostado', hex: '#9C3D24' },
+        { name: 'Negro Obsidiana Brillante', hex: '#161616' }
       ],
       specs: {
         extractionStyle: 'Cuerpo limpio y estructurado, acidez brillante y final largo',
         flowRate: 'Medio-rápido, vertido único',
         capacity: '1–2 Tazas (dosis 14g–28g)',
         filterType: 'Filtros cónicos estándar 02',
-        material: 'Gres de alta temperatura con detallado en esmalte cerámico',
+        material: 'Gres de alta temperatura con interior esmaltado brillante y franjas cerámicas',
         origin: 'Retro Lab • Cumbres de Neblaria',
         weight: '360g',
         idealRecipe: {
@@ -2136,7 +2138,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
           grindSize: 'Media'
         }
       },
-      tagline: 'Brew Play Repeat.',
+      tagline: 'Atardeceres cálidos, mañanas lentas, café consciente.',
       visualType: 'core'
     },
     {
