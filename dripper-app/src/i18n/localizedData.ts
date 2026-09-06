@@ -396,8 +396,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'LENS 01',
       name: 'Lens 50mm f/1.4',
       headline: 'Click into focus.',
-      story: 'Crafted from matte black stoneware inspired by vintage 35mm prime lenses. Features knurled focus rings, engraved white aperture marks from f/2.8 to f/16, and a precision red index mount dot.',
-      objectDescription: 'Internal stepped geometric fluting simulates optical diaphragm regulation, calibrating flow dwell time to draw deep sweetness and velvety body from specialty roasts.',
+      story: 'Crafted from matte black stoneware directly celebrating classic Leica and rangefinder prime lenses. Features a precision-knurled focus barrel ring, iconic red index alignment dot, a tactile shutter button thumb rest, and an arched architectural base stamped with DRYP.',
+      objectDescription: 'Internal geometric vertical drainage flutes ensure uniform air circulation and laminar flow, translating precision optical mechanical discipline into balanced, sweet coffee extractions.',
       price: 74,
       currency: 'USD',
       stockStatus: 'available',
@@ -405,7 +405,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       stockCountRemaining: 18,
       paletteColors: [
         { name: 'Matte Barrel Black', hex: '#1C1B1A' },
-        { name: 'Aperture White Engraving', hex: '#FFFFFF' }
+        { name: 'Rangefinder Red Dot', hex: '#D62828' },
+        { name: 'Knurled Silver Rim', hex: '#C0C0C0' }
       ],
       specs: {
         extractionStyle: 'Deep caramelized sweetness, dense syrupy mouthfeel',
@@ -1462,8 +1463,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'OBJETO 05',
       name: 'Lens 50mm f/1.4',
       headline: 'El clic mecánico del diafragma antes de congelar un segundo irrepetible.',
-      story: 'Inspirado en los míticos objetivos analógicos para fotografía de 35mm. Cerámica negra mate de alta densidad con estrías de enfoque táctil, escala de aperturas f/2.8 a f/16 serigrafiada y punto rojo de montaje.',
-      objectDescription: 'El cuello cónico estriado interior desacelera progresivamente el paso del agua emulando el diafragmado óptico, potenciando el cuerpo y la dulzura profunda de los granos.',
+      story: 'Inspirado en los objetivos analógicos telemétricos tipo Leica. Fabricado en gres negro mate semi-vitrificado con anillo de enfoque moleteado, el icónico punto rojo de montaje índice, botón disparador texturizado de apoyo y base arquitectónica calada con el sello DRYP.',
+      objectDescription: 'Nervaduras interiores verticales que aseguran un flujo de aire continuo y drenaje laminar limpio, traduciendo la disciplina de la mecánica óptica en una taza balanceada, dulce y cristalina.',
       price: 74,
       currency: 'USD',
       stockStatus: 'available',
@@ -1471,7 +1472,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       stockCountRemaining: 18,
       paletteColors: [
         { name: 'Negro Anodizado Mate', hex: '#1C1B1A' },
-        { name: 'Grabado Blanco Óptico', hex: '#FFFFFF' }
+        { name: 'Punto Rojo Telemétrico', hex: '#D62828' },
+        { name: 'Borde Plateado Moleteado', hex: '#C0C0C0' }
       ],
       specs: {
         extractionStyle: 'Dulzura profunda, cuerpo aterciopelado y acidez balanceada',

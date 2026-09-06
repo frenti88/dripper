@@ -379,7 +379,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     id: 'drip-lens-50',
     productId: 'lens-50',
     title: '10 / Lens 50mm',
-    subtitle: 'Cuerpo cerámico negro mate con escala de diafragma y estrías de enfoque. Geometría óptica de vertido milimétrico.',
+    subtitle: 'Cerámica negra mate con aro de enfoque moleteado, punto rojo de montaje índice, botón disparador texturizado y base calada con sello DRYP.',
     category: 'Cinema',
     categoryLabel: 'Fotografía y cine',
     imageSrc: '/images/products/lens-50.jpg',
