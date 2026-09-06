@@ -559,16 +559,16 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'SPACE 01',
       name: 'Orbit Lunar Crater',
       headline: 'Looking up at things far away.',
-      story: 'Cratered basalt stoneware cone with hand-sculpted lunar topography, tactile rim loop handle, and a solid brushed brass pedestal base debossed with the studio hallmark.',
-      objectDescription: 'Porous volcanic stoneware creates deep thermal retention while the precision machined brass ring anchors steady, vibration-free manual drawdown.',
+      story: 'Speckled lunar regolith stoneware cone deeply sculpted with impact craters, an integrated circular crater loop handle, a contrasting matte dark chamber with spiraled drainage flutes, and an arched pedestal base stamped with DRYP.',
+      objectDescription: 'The micro-textured lunar surface provides natural finger grip and tactile wonder, while internal aerodynamic spiral flutes guide uniform extraction down to a silky, balanced cup.',
       price: 92,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Available • Lunar Edition',
       stockCountRemaining: 14,
       paletteColors: [
-        { name: 'Basalt Black Crater', hex: '#2A2928' },
-        { name: 'Turned Solid Brass', hex: '#C59A45' }
+        { name: 'Lunar Regolith Grey', hex: '#D1CEC7' },
+        { name: 'Crater Shadow Carbon', hex: '#2A2928' }
       ],
       specs: {
         extractionStyle: 'Clean, sweet, transparent cup with prolonged finish',
@@ -1626,16 +1626,16 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'ESPACIO 01',
       name: 'Orbit Lunar Crater',
       headline: 'La inmensidad silenciosa del regolito lunar.',
-      story: 'Cono de gres basalto volcánico con cráteres esculpidos a mano, micro-asa táctil y peana circular de latón macizo cepillado grabada con el sello DRYP.',
-      objectDescription: 'El cuerpo de basalto poroso retiene el calor de extracción de forma uniforme, mientras la peana de latón torneado proporciona un centro de gravedad bajo y estabilidad milimétrica.',
+      story: 'Cono de gres cerámico en acabado regolito lunar esculpido con cráteres de impacto, asa circular integrada, cámara interior en carbono oscuro con estrías espirales de drenaje y base arqueada con sello grabado DRYP.',
+      objectDescription: 'La superficie lunar micro-texturizada ofrece un agarre táctil inigualable, mientras que las estrías aerodinámicas interiores aseguran un drenaje uniforme y una taza balanceada, dulce y sedosa.',
       price: 92,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Disponible • Edición Lunar',
       stockCountRemaining: 14,
       paletteColors: [
-        { name: 'Basalto Lunar Mate', hex: '#2A2928' },
-        { name: 'Peana Latón Cepillado', hex: '#C59A45' }
+        { name: 'Regolito Lunar Gris', hex: '#D1CEC7' },
+        { name: 'Sombra de Cráter Carbón', hex: '#2A2928' }
       ],
       specs: {
         extractionStyle: 'Taza limpia, dulce y balanceada con cuerpo sedoso',

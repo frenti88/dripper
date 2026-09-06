@@ -241,8 +241,8 @@ export const DRYP_DRIPS: DrypDrip[] = [
   {
     id: 'drip-cosmos-orbit',
     productId: 'orbit-space',
-    title: '04 / Orbit Lunar',
-    subtitle: 'Basalto volcánico texturizado con cráteres esculpidos y base de latón. Inercia térmica superior para extracciones limpias.',
+    title: '04 / Orbit Lunar Crater',
+    subtitle: 'Cerámica de regolito lunar con cráteres esculpidos, cámara interior negra estriada, asa circular lunar y base arqueada con sello DRYP.',
     category: 'Cosmos',
     categoryLabel: 'Universo',
     imageSrc: '/images/products/orbit.jpg',
