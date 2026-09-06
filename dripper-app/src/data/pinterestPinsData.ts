@@ -265,6 +265,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     level01Emotion: 'La inmensidad silenciosa del regolito lunar bajo la luz de estrellas distantes.'
   },
 
+  {
+    id: 'drip-cosmos-lunar-lander',
+    productId: 'cosmos-lunar-lander',
+    title: '29 / Apollo Lunar Lander',
+    subtitle: 'Cerámica aeroespacial blanco hueso con paneles modulares, acentos terracota y base trípode de alunizaje con sello DRYP.',
+    category: 'Cosmos',
+    categoryLabel: 'Universo',
+    imageSrc: '/images/products/cosmos-lunar-lander.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Space Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_space',
+      verified: true
+    },
+    price: 98,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Apolo)',
+    likesCount: 4890,
+    savesCount: 11200,
+    boardIds: ['board-cosmos'],
+    tags: ['Apolo', 'NASA', 'Lunar Lander', 'Módulo Lunar', 'Espacio', 'Aeroespacial', 'Gres Blanco', 'Universo'],
+    badge: 'APOLLO LANDER',
+    dropCode: 'SPACE 03',
+    level01Emotion: 'Contacto confirmado en el Mar de la Tranquilidad: la física del alunizaje convertida en tu ritual matutino.'
+  },
+
   // ── NATURALEZA (2 drips únicos) ──────────────────────────────────────────────
   {
     id: 'drip-nature-hummingbird',

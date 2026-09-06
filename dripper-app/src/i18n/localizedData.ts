@@ -590,6 +590,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'orbit'
     },
     {
+      id: 'cosmos-lunar-lander',
+      numberCode: '29',
+      collection: 'Space',
+      categoryTag: 'Editions',
+      dropCode: 'SPACE 03',
+      eyebrow: 'SPACE 02',
+      name: 'Apollo Lunar Lander',
+      headline: 'Contact light in the Sea of Tranquility: aerospace engineering meets ceramic ritual.',
+      story: 'High-density ceramic dripper modeled directly after the Apollo lunar descent module. Features modular heat-shield paneling, subtle terracotta-orange thruster markers, and an articulated tripod descent landing gear with the engraved DRYP. hallmark.',
+      objectDescription: 'Vertical internal flutes emulate aerospace rocket nozzle aerodynamics, maintaining balanced thermal stability and an agile drawdown that highlights crisp floral and fruit aromatics.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Apollo Edition',
+      stockCountRemaining: 18,
+      paletteColors: [
+        { name: 'Heatshield Bone White', hex: '#EDE9E2' },
+        { name: 'Thruster Terracotta', hex: '#B85D35' },
+        { name: 'Spacecraft Black', hex: '#222222' }
+      ],
+      specs: {
+        extractionStyle: 'Crisp, crystalline acidity with balanced sweet finish',
+        flowRate: 'Aero-calibrated linear flow',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire semi-vitrified ceramic with tripod landing struts',
+        origin: 'Space Lab • Valle de Silaria',
+        weight: '410g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '94°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.6',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'One small pour for your cup, one giant leap for your morning.',
+      visualType: 'orbit'
+    },
+    {
       id: 'artist-001-camilo',
       numberCode: '08',
       collection: 'Artists',
@@ -1650,6 +1691,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Un pedazo de cosmos en tu ritual matutino.',
+      visualType: 'orbit'
+    },
+    {
+      id: 'cosmos-lunar-lander',
+      numberCode: '29',
+      collection: 'Space',
+      categoryTag: 'Editions',
+      dropCode: 'SPACE 03',
+      eyebrow: 'ESPACIO 02',
+      name: 'Apollo Lunar Lander',
+      headline: 'Contacto confirmado en el Mar de la Tranquilidad: ingeniería aeroespacial convertida en ritual de café.',
+      story: 'Gotero cerámico de alta densidad inspirado directamente en el módulo de descenso lunar de las misiones Apolo. Destaca por sus paneles con aspecto de escudo térmico, detalles terracota que evocan los propulsores y una base trípode de aterrizaje con el grabado DRYP.',
+      objectDescription: 'Sus nervaduras verticales interiores emulan la aerodinámica de toberas espaciales, favoreciendo una oxigenación constante y un drenaje ágil que resalta notas florales y frutales cristalinas.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Apolo',
+      stockCountRemaining: 18,
+      paletteColors: [
+        { name: 'Blanco Escudo Térmico', hex: '#EDE9E2' },
+        { name: 'Terracota Propulsor', hex: '#B85D35' },
+        { name: 'Negro Aeroespacial', hex: '#222222' }
+      ],
+      specs: {
+        extractionStyle: 'Acidez nítida y cristalina con final dulce y balanceado',
+        flowRate: 'Flujo lineal aerocalibrado',
+        capacity: '1–2 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Cerámica semi-vitrificada de alta temperatura con patas trípode de apoyo',
+        origin: 'Space Lab • Valle de Silaria',
+        weight: '410g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '94°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.6',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Un pequeño vertido para tu taza, un gran salto para tu mañana.',
       visualType: 'orbit'
     },
     {
