@@ -456,34 +456,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     level01Emotion: 'El crujido dulce en la sala oscura antes de que se apaguen las luces y comience la función.'
   },
 
-  // ── RETRO (1 drip único - Categoría Nueva) ────────────────────────────────
-  {
-    id: 'drip-retro-stripes',
-    productId: 'retro-stripes-70s',
-    title: '19 / Retro Stripes 1974',
-    subtitle: 'Gres moteado beige con bandas cromáticas setenteras. Estética rally vintage con estabilidad térmica constante.',
-    category: 'Retro',
-    categoryLabel: 'Retro',
-    imageSrc: '/images/products/retro-stripes.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Retro Lab',
-      avatar: '/favicon.svg',
-      handle: '@dryp_retro',
-      verified: true
-    },
-    price: 86,
-    stockStatus: 'available',
-    stockLabel: 'Disponible (Edición Retro)',
-    likesCount: 2780,
-    savesCount: 5920,
-    boardIds: ['board-retro'],
-    tags: ['Retro', 'Vintage', '70s', 'Speed Stripes', 'Rally', 'Gres Moteado'],
-    badge: 'RETRO 1974',
-    dropCode: 'RETRO 01',
-    level01Emotion: 'La calidez nostálgica de las cintas de cassette, vinilos y autos deportivos en las carreteras del 74.'
-  },
-
+  // ── RETRO ───────────────────────────────────────────────────────────────
   {
     id: 'drip-retro-nes',
     productId: 'retro-nes-8bit',

@@ -956,47 +956,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'brutalist'
     },
     {
-      id: 'retro-stripes-70s',
-      numberCode: '14',
-      collection: 'Retro',
-      categoryTag: 'Editions',
-      dropCode: 'RETRO 01',
-      eyebrow: 'RETRO 01',
-      name: 'Retro Speed Stripes 1974',
-      headline: 'The nostalgic warmth of 1970s analog speedways and cassette tapes.',
-      story: 'Speckled cream stoneware cone decorated with bold horizontal racing stripes in ochre yellow, warm orange, rich terracotta, and midnight navy blue.',
-      objectDescription: 'High-temperature glazed pigments fired atop natural speckled mountain clay deliver vibrant vintage personality combined with a calibrated conical pour-over dynamic.',
-      price: 86,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Available • 1974 Edition',
-      stockCountRemaining: 40,
-      paletteColors: [
-        { name: 'Speckled Oat Cream', hex: '#EAE5D9' },
-        { name: 'Rally Ochre & Orange', hex: '#D97706' },
-        { name: 'Midnight Navy', hex: '#1E293B' }
-      ],
-      specs: {
-        extractionStyle: 'Balanced, round body, lively citrus and sweet caramel finish',
-        flowRate: 'Balanced medium drainage',
-        capacity: '1–2 Cups (15g–30g dose)',
-        filterType: 'Standard 02 Conical filters',
-        material: 'High-fire speckled stoneware with hand-painted ceramic glazes',
-        origin: 'Retro Lab • Cumbres de Neblaria',
-        weight: '350g',
-        idealRecipe: {
-          dose: '16g',
-          water: '260ml',
-          temperature: '93°C',
-          brewTime: '2:50 min',
-          ratio: '1:16.25',
-          grindSize: 'Medium'
-        }
-      },
-      tagline: 'Vintage 1970s soul with modern specialty coffee precision.',
-      visualType: 'core'
-    },
-    {
       id: 'retro-nes-8bit',
       numberCode: '20',
       collection: 'Retro',
@@ -2061,47 +2020,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Doce pliegues. Un vertido perfecto.',
       visualType: 'brutalist'
-    },
-    {
-      id: 'retro-stripes-70s',
-      numberCode: '14',
-      collection: 'Retro',
-      categoryTag: 'Editions',
-      dropCode: 'RETRO 01',
-      eyebrow: 'RETRO 01',
-      name: 'Retro Speed Stripes 1974',
-      headline: 'La calidez nostálgica de las pistas y cintas analógicas de los años setenta.',
-      story: 'Cono de gres crema moteado decorado con audaces bandas de velocidad en amarillo ocre, naranja cálido, terracota y azul marino profundo. Inspiración rally y gráfica vintage setentera.',
-      objectDescription: 'Pigmentos horneados a alta temperatura sobre barro moteado natural que combinan una personalidad retro vibrante con una dinámica de extracción cónica balanceada.',
-      price: 86,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Disponible • Edición 1974',
-      stockCountRemaining: 40,
-      paletteColors: [
-        { name: 'Crema Avena Moteada', hex: '#EAE5D9' },
-        { name: 'Ocre & Naranja Rally', hex: '#D97706' },
-        { name: 'Azul Noche Profundo', hex: '#1E293B' }
-      ],
-      specs: {
-        extractionStyle: 'Cuerpo redondo, acidez cítrica viva y final dulce acaramelado',
-        flowRate: 'Drenaje medio balanceado',
-        capacity: '1–2 Tazas (dosis de 15g–30g)',
-        filterType: 'Filtros cónicos estándar 02',
-        material: 'Gres de montaña moteado con esmaltes pigmentados horneados',
-        origin: 'Retro Lab • Cumbres de Neblaria',
-        weight: '350g',
-        idealRecipe: {
-          dose: '16g',
-          water: '260ml',
-          temperature: '93°C',
-          brewTime: '2:50 min',
-          ratio: '1:16.25',
-          grindSize: 'Media'
-        }
-      },
-      tagline: 'Alma vintage de 1974 con precisión moderna de especialidad.',
-      visualType: 'core'
     },
     {
       id: 'retro-nes-8bit',
