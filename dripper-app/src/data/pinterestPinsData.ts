@@ -297,7 +297,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     id: 'drip-nature-hummingbird',
     productId: 'nature-colibri-andes',
     title: '05 / Colibrí Andino',
-    subtitle: 'Gres crema con nervaduras verde esmeralda y asa ergonómica. Flujo ágil que resalta notas florales y cítricas.',
+    subtitle: 'Gres crema moteado con nervaduras en ala aerodinámica, cámara interior en esmalte verde esmeralda brillante, pico alado y peana calada con sello DRYP.',
     category: 'Nature',
     categoryLabel: 'Naturaleza',
     imageSrc: '/images/products/colibri-andes.jpg',

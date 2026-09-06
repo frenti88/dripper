@@ -843,8 +843,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'BIO 01',
       name: 'Colibrí & Bosque de Niebla',
       headline: 'Morning dew on mountain leaves and swift hummingbird wings.',
-      story: 'Speckled ivory stoneware with hand-carved spiral feather ribs in reactive emerald green glaze, internal drainage grooves, and an ergonomic loop handle.',
-      objectDescription: 'Spiral fluting mimics aerodynamic hummingbird feathering, providing smooth air venting and rapid extraction that preserves floral and citrus aromatics.',
+      story: 'Sculpted from speckled ivory cloud stoneware with sweeping aerodynamic wing-feather contours on the exterior, an extended wing-tip pouring grip, and a deep glossy emerald-forest green glazed interior chamber, resting on a helical arched base debossed with DRYP.',
+      objectDescription: 'Internal vertical emerald flutes guide fast, laminar water drainage with zero dry-channel stalling, highlighting intense floral aromatics, jasmine, and sparkling citrus clarity.',
       price: 88,
       currency: 'USD',
       stockStatus: 'available',
@@ -852,7 +852,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       stockCountRemaining: 25,
       paletteColors: [
         { name: 'Speckled Cloud Cream', hex: '#EAE5D9' },
-        { name: 'Reactive Emerald Glaze', hex: '#2A6A4E' }
+        { name: 'Deep Emerald Forest Glaze', hex: '#1C4B3A' }
       ],
       specs: {
         extractionStyle: 'High clarity, pronounced floral and bright fruit aromatics',
@@ -1910,8 +1910,8 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'BIO 01',
       name: 'Colibrí & Bosque de Niebla',
       headline: 'El rocío fresco sobre las hojas verdes y el aleteo fugaz al amanecer.',
-      story: 'Gres crema moteado con nervaduras espirales en esmalte verde esmeralda reactivo, estrías internas de drenaje y asa ergonómica curva inspirada en el vuelo del colibrí.',
-      objectDescription: 'Las nervaduras talladas a mano en espiral favorecen una circulación de aire óptima entre el filtro y la pared cerámica, acelerando el paso del agua para preservar notas florales, cítricas y jazmín.',
+      story: 'Esculpido en gres crema moteado con nervaduras exteriores en forma de alas aerodinámicas, un agarre en pico alado y una cámara interior en esmalte verde bosque esmeralda brillante, apoyado sobre una peana calada helicoidal con el sello grabado DRYP.',
+      objectDescription: 'Las nervaduras interiores verticales bañadas en esmalte esmeralda canalizan un drenaje laminar rápido sin estancamientos, reteniendo la acidez viva, notas florales de jazmín y perfiles cítricos cristalinos.',
       price: 88,
       currency: 'USD',
       stockStatus: 'available',
@@ -1919,7 +1919,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       stockCountRemaining: 25,
       paletteColors: [
         { name: 'Gres Crema Moteado', hex: '#EAE5D9' },
-        { name: 'Esmalte Esmeralda Reactivo', hex: '#2A6A4E' }
+        { name: 'Verde Bosque Esmeralda', hex: '#1C4B3A' }
       ],
       specs: {
         extractionStyle: 'Claridad floral brillante, notas cítricas vivas y final limpio',
