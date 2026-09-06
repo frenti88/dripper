@@ -323,8 +323,8 @@ export const DRYP_DRIPS: DrypDrip[] = [
   {
     id: 'drip-fossil-skull',
     productId: 'fossil-skull-trex',
-    title: '07 / Fossil Skull',
-    subtitle: 'Gres arenisca esculpido con fósil de terópodo y estrías verticales. Flujo constante y profundo para cafés intensos.',
+    title: '07 / Fossil Skull T-Rex',
+    subtitle: 'Gres chamotado verde musgo fosilizado con cráneo de terópodo grabado y base trípode en garra. Borde festoneado con estrías de drenaje continuo.',
     category: 'Prehistoric',
     categoryLabel: 'Prehistoria',
     imageSrc: '/images/products/fossil-skull.jpg',

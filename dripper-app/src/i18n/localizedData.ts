@@ -1084,16 +1084,16 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'PALEO 03',
       name: 'Fossil Skull T-Rex',
       headline: 'Millions of years of apex evolution awakening with the first hot pour.',
-      story: 'Heavily textured sedimentary sandstone stoneware sculpted with an authentic theropod dinosaur skull in high relief, complete with hollow cranial orbits and serrated predatory teeth.',
-      objectDescription: 'Vertical drainage flutes line the interior chamber, ensuring consistent linear hydraulic flow through the coffee bed despite the wild prehistoric exterior relief.',
+      story: 'Sculpted in deep moss-green fossilized grog stoneware with an engraved theropod skull profile, scalloped vertebrae rim, and a sturdy tripod claw base stamped with the DRYP. seal.',
+      objectDescription: 'Cream-glazed interior chamber with vertical vertebral flutes delivers clean, regulated drainage, while the heavy volcanic grog stoneware ensures extraordinary thermal inertia.',
       price: 96,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Available (042 / 100 numbered pieces)',
       stockCountRemaining: 42,
       paletteColors: [
-        { name: 'Sedimentary Fossil Sandstone', hex: '#8B7355' },
-        { name: 'Weathered Bone Ash', hex: '#D2B48C' }
+        { name: 'Fossil Moss Green', hex: '#3E4E43' },
+        { name: 'Bone Cream Glaze', hex: '#EAE5D9' }
       ],
       specs: {
         extractionStyle: 'Deep, rich extraction with bold caramelized body and low astringency',
@@ -2147,16 +2147,16 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       eyebrow: 'PALEO 03',
       name: 'Fossil Skull T-Rex',
       headline: 'Millones de años de evolución colosal despertando con la primera gota de agua hirviendo.',
-      story: 'Gres arenisca sedimentario de textura rústica profunda, esculpido con un cráneo fósil de terópodo en alto relieve, cuencas craneales huecas y dentadura carnívora aserrada.',
-      objectDescription: 'El interior incorpora estrías verticales de drenaje lineal calibrado, asegurando una extracción hidrodinámica balanceada que compensa la fuerza salvaje de la escultura exterior.',
+      story: 'Esculpido en gres chamotado verde musgo fosilizado con el perfil grabado de un cráneo de terópodo, borde festoneado en vértebras y una robusta base trípode en garra con el sello DRYP.',
+      objectDescription: 'El interior esmaltado en crema con nervaduras vertebrales verticales asegura un drenaje lineal equilibrado, mientras que el denso gres volcánico proporciona una inercia térmica excepcional.',
       price: 96,
       currency: 'USD',
       stockStatus: 'available',
       stockLabel: 'Disponible (042 / 100 piezas numeradas)',
       stockCountRemaining: 42,
       paletteColors: [
-        { name: 'Arenisca Fósil Sedimentaria', hex: '#8B7355' },
-        { name: 'Ceniza de Hueso Ancestral', hex: '#D2B48C' }
+        { name: 'Verde Musgo Fosilizado', hex: '#3E4E43' },
+        { name: 'Esmalte Hueso Crema', hex: '#EAE5D9' }
       ],
       specs: {
         extractionStyle: 'Extracción profunda y dulce, cuerpo caramelizado denso y acidez redonda',
