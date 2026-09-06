@@ -469,6 +469,46 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'lens-50'
     },
     {
+      id: 'series-springfield-spikes',
+      numberCode: '30',
+      collection: 'Series & TV',
+      categoryTag: 'Editions',
+      dropCode: 'SERIES 01',
+      eyebrow: 'SERIES 01',
+      name: 'Springfield Spikes',
+      headline: 'The irreverent pop silhouette of animated television, cast in vibrant yellow ceramic.',
+      story: 'High-fire ceramic in vibrant Springfield cartoon yellow with a signature jagged spike rim inspired by iconic animated TV crowns. Features vertical interior extraction flutes, a bold circular loop handle, and an arched dual-window pedestal base stamped with the DRYP seal.',
+      objectDescription: 'The fluted interior ribs ensure smooth and steady conical extraction, while the thermal mass of 1,280°C fired ceramic keeps brew temperatures dialed in for bright, punchy citrus and caramelized sweetness.',
+      price: 88,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Series Edition',
+      stockCountRemaining: 24,
+      paletteColors: [
+        { name: 'Springfield Yellow', hex: '#F2CD24' },
+        { name: 'Clay Biscuit', hex: '#D6A83C' }
+      ],
+      specs: {
+        extractionStyle: 'Vibrant, bright fruit acidity with clean caramelized finish',
+        flowRate: 'Medium conical flow, even drawdown',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-temperature glazed stoneware (1,280°C)',
+        origin: 'Pop TV Atelier • Medellín',
+        weight: '360g',
+        idealRecipe: {
+          dose: '16.5g',
+          water: '270ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.3',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Don’t have a cow, man. Just pour slow.',
+      visualType: 'core'
+    },
+    {
       id: 'brutalist-01',
       numberCode: '06',
       collection: 'Architecture',
@@ -1494,6 +1534,46 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Cada mañana es una escena que vale la pena rodar.',
       visualType: 'lens-50'
+    },
+    {
+      id: 'series-springfield-spikes',
+      numberCode: '30',
+      collection: 'Series y TV',
+      categoryTag: 'Editions',
+      dropCode: 'SERIES 01',
+      eyebrow: 'SERIES 01',
+      name: 'Springfield Spikes',
+      headline: 'La irreverente silueta pop de la televisión animada, horneada en cerámica amarillo Springfield.',
+      story: 'Cerámica de alta temperatura en amarillo Springfield brillante con un característico borde superior dentado en picos que evoca la silueta más icónica de la televisión animada. Cuenta con nervaduras interiores verticales de extracción uniforme, asa circular ergonómica y una peana arqueada con doble ventana grabada con el sello DRYP.',
+      objectDescription: 'Nervaduras interiores que guían el flujo de manera constante y fluida. La cerámica horneada a 1.280°C retiene el calor de manera óptima para resaltar la acidez cítrica brillante y el dulzor acaramelado de cafés de especialidad.',
+      price: 88,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Series',
+      stockCountRemaining: 24,
+      paletteColors: [
+        { name: 'Amarillo Springfield', hex: '#F2CD24' },
+        { name: 'Bizcocho Cerámico', hex: '#D6A83C' }
+      ],
+      specs: {
+        extractionStyle: 'Acidez brillante, notas frutales vivas y final dulce acaramelado',
+        flowRate: 'Medio y fluido, drenaje uniforme',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres esmaltado de alta temperatura (1.280°C)',
+        origin: 'Taller Pop TV • Medellín',
+        weight: '360g',
+        idealRecipe: {
+          dose: '16.5g',
+          water: '270ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.3',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Empieza la mañana con humor y buen café.',
+      visualType: 'core'
     },
     {
       id: 'brutalist-01',

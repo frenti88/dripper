@@ -38,6 +38,7 @@ export const BoardsView: React.FC<BoardsViewProps> = ({ onSelectBoard }) => {
             board.category === 'Cosmos' ? 'bg-[#1e293b]/85 text-[#faf8f5] border-[#1e293b]/40' :
             board.category === 'Nature' ? 'bg-[#15803d]/85 text-[#faf8f5] border-[#15803d]/40' :
             board.category === 'Cinema' ? 'bg-[#c2410c]/85 text-[#faf8f5] border-[#c2410c]/40' :
+            board.category === 'Series' ? 'bg-[#ca8a04]/85 text-[#faf8f5] border-[#ca8a04]/40' :
             board.category === 'Retro' ? 'bg-[#d97706]/85 text-[#faf8f5] border-[#d97706]/40' :
             board.category === 'Experimental' ? 'bg-[#2563eb]/85 text-[#faf8f5] border-[#2563eb]/40' :
             board.category === 'Prehistoric' ? 'bg-[#c05a3e]/85 text-[#faf8f5] border-[#c05a3e]/40' :

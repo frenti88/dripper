@@ -4,6 +4,7 @@ export type DripCategory =
   | 'Cosmos'
   | 'Nature'
   | 'Cinema'
+  | 'Series'
   | 'Retro'
   | 'Prehistoric'
   | 'Photography'
@@ -107,6 +108,19 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
     coverImage: '/images/products/lens-50.jpg',
     previewImages: [
       '/images/products/lens-50.jpg'
+    ],
+    pinsCount: 1,
+    dripsCount: 1
+  },
+  {
+    id: 'board-series',
+    title: 'Series y TV',
+    description: 'Iconografía televisiva de culto, siluetas pop animadas y esmaltes de alta temperatura a 1.280 °C.',
+    tag: 'Series & TV',
+    category: 'Series',
+    coverImage: '/images/products/series-springfield.jpg',
+    previewImages: [
+      '/images/products/series-springfield.jpg'
     ],
     pinsCount: 1,
     dripsCount: 1
@@ -428,6 +442,34 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: '35MM FILM',
     dropCode: 'CINEMA 01',
     level01Emotion: 'El avance cuadro a cuadro de la película analógica: cada gota de café, un fotograma irrepetible.'
+  },
+
+  // ── SERIES Y TV ──────────────────────────────────────────────────────────
+  {
+    id: 'drip-series-springfield',
+    productId: 'series-springfield-spikes',
+    title: '30 / Springfield Spikes',
+    subtitle: 'Gres cerámico amarillo Springfield brillante con borde superior en corona de picos dentados, asa circular ergonómica y peana arqueada con sello DRYP.',
+    category: 'Series',
+    categoryLabel: 'Series y TV',
+    imageSrc: '/images/products/series-springfield.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Pop TV Atelier',
+      avatar: '/favicon.svg',
+      handle: '@dryp_tv',
+      verified: true
+    },
+    price: 88,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Series)',
+    likesCount: 4320,
+    savesCount: 9780,
+    boardIds: ['board-series'],
+    tags: ['Series', 'TV', 'Springfield', 'Amarillo', 'Picos', 'Pop Culture', 'Animación', 'Drop 30'],
+    badge: 'SERIES TV',
+    dropCode: 'SERIES 01',
+    level01Emotion: 'La chispa irreverente de la televisión animada de sobremesa vertida en tu primer café del día.'
   },
 
   // ── RETRO ───────────────────────────────────────────────────────────────
