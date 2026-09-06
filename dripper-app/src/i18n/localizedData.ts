@@ -468,6 +468,46 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'lens-50'
     },
     {
+      id: 'cinema-popcorn-yellow',
+      numberCode: '26',
+      collection: 'Cinema',
+      categoryTag: 'Editions',
+      dropCode: 'CINEMA 02',
+      eyebrow: 'CINEMA 02',
+      name: 'Matinée Popcorn Yellow',
+      headline: 'The sweet crunch in the dim cinema hall before the projector turns on.',
+      story: 'High-fire ceramic in two-tone buttery yellow and pure milk white. Features a playful scalloped rim and a zigzag interlocking base inspired by classic theater popcorn buckets, with an ergonomic circular loop handle.',
+      objectDescription: 'The fluted interior ribs ensure smooth water flow, while the thick ceramic walls offer exceptional heat retention for rich, dessert-like coffee extractions.',
+      price: 86,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Matinée Edition',
+      stockCountRemaining: 20,
+      paletteColors: [
+        { name: 'Butter Popcorn Yellow', hex: '#F2BD35' },
+        { name: 'Porcelain Milk White', hex: '#FDFEFE' }
+      ],
+      specs: {
+        extractionStyle: 'Sweet, rich and buttery mouthfeel with caramelized finish',
+        flowRate: 'Smooth, balanced conical flow',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'Two-tone glazed stoneware with scalloped rim',
+        origin: 'Cinema Lab • Medellín',
+        weight: '350g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.25',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Take your seat, enjoy the show and the pour.',
+      visualType: 'core'
+    },
+    {
       id: 'brutalist-01',
       numberCode: '06',
       collection: 'Architecture',
@@ -1405,6 +1445,46 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Cada mañana es una escena que vale la pena rodar.',
       visualType: 'lens-50'
+    },
+    {
+      id: 'cinema-popcorn-yellow',
+      numberCode: '26',
+      collection: 'Cinema',
+      categoryTag: 'Editions',
+      dropCode: 'CINEMA 02',
+      eyebrow: 'CINE 02',
+      name: 'Matinée Popcorn Yellow',
+      headline: 'El crujido dulce en la sala oscura antes de que se apaguen las luces y comience la función.',
+      story: 'Cerámica cocida a 1.280°C en esmalte bicolor amarillo manteca y blanco puro. Presenta un borde festoneado ondulado y una base dentada en zigzag inspirada en los tradicionales cubos de palomitas de cine clásico, con asa circular ergonómica.',
+      objectDescription: 'Las nervaduras interiores acanaladas aseguran un flujo de agua uniforme, mientras las paredes de cerámica gruesa proporcionan una gran inercia térmica que potencia la dulzura y el cuerpo acaramelado en taza.',
+      price: 86,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Matinée',
+      stockCountRemaining: 20,
+      paletteColors: [
+        { name: 'Amarillo Palomitas', hex: '#F2BD35' },
+        { name: 'Blanco Porcelana', hex: '#FDFEFE' }
+      ],
+      specs: {
+        extractionStyle: 'Textura dulce y sedosa con notas acarameladas y acidez suave',
+        flowRate: 'Drenaje cónico fluido y balanceado',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres esmaltado bicolor con borde festoneado',
+        origin: 'Cinema Lab • Medellín',
+        weight: '350g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.25',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Toma asiento, disfruta la función y el café.',
+      visualType: 'core'
     },
     {
       id: 'brutalist-01',
