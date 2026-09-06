@@ -430,33 +430,6 @@ export const DRYP_DRIPS: DrypDrip[] = [
     level01Emotion: 'El avance cuadro a cuadro de la película analógica: cada gota de café, un fotograma irrepetible.'
   },
 
-  {
-    id: 'drip-cinema-popcorn-yellow',
-    productId: 'cinema-popcorn-yellow',
-    title: '26 / Matinée Popcorn Yellow',
-    subtitle: 'Cerámica bicolor amarillo manteca y blanco con borde festoneado y base dentada inspirada en los cubos de palomitas del cine clásico.',
-    category: 'Cinema',
-    categoryLabel: 'Fotografía y cine',
-    imageSrc: '/images/products/cinema-popcorn-yellow.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Cinema Lab',
-      avatar: '/favicon.svg',
-      handle: '@dryp_cinema',
-      verified: true
-    },
-    price: 86,
-    stockStatus: 'available',
-    stockLabel: 'Disponible (Edición Matinée)',
-    likesCount: 3980,
-    savesCount: 7850,
-    boardIds: ['board-cinema'],
-    tags: ['Cine', 'Matinée', 'Popcorn', 'Amarillo', 'Festoneado', 'Palomitas', 'Vintage Cinema'],
-    badge: 'MATINÉE YELLOW',
-    dropCode: 'CINEMA 02',
-    level01Emotion: 'El crujido dulce en la sala oscura antes de que se apaguen las luces y comience la función.'
-  },
-
   // ── RETRO ───────────────────────────────────────────────────────────────
   {
     id: 'drip-retro-nes',
