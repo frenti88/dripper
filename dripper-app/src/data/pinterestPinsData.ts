@@ -542,8 +542,8 @@ export const DRYP_DRIPS: DrypDrip[] = [
   {
     id: 'drip-arch-origami',
     productId: 'arch-origami-fold',
-    title: '22 / Origami Fold',
-    subtitle: 'Gres moteado blanco arena con facetas plegadas inspiradas en el origami japonés. Base de nogal macizo. Geometría que honra el agua.',
+    title: '22 / Pagoda Eaves — Kioto',
+    subtitle: 'Gres arena moteado con aleros superpuestos inspirados en las pagodas de Kioto, asa geométrica en ébano y base calada en pilares Torii con sello DRYP.',
     category: 'Architecture',
     categoryLabel: 'Arquitectura',
     imageSrc: '/images/products/arch-origami.jpg',
@@ -556,14 +556,14 @@ export const DRYP_DRIPS: DrypDrip[] = [
     },
     price: 94,
     stockStatus: 'available',
-    stockLabel: 'Disponible (Edición Origami)',
-    likesCount: 3290,
-    savesCount: 8140,
+    stockLabel: 'Disponible (Edición Kioto)',
+    likesCount: 3820,
+    savesCount: 9450,
     boardIds: ['board-architecture'],
-    tags: ['Arquitectura', 'Origami', 'Japón', 'Facetado', 'Nogal', 'Gres Blanco', 'Geometría'],
-    badge: 'ORIGAMI FOLD',
+    tags: ['Arquitectura', 'Japón', 'Pagoda', 'Kioto', 'Aleros', 'Torii', 'Gres Moteado', 'Geometría'],
+    badge: 'PAGODA KIOTO',
     dropCode: 'ARCH 02',
-    level01Emotion: 'El silencio de un pliegue perfecto: cada faceta dirige el agua como los ángulos de un tejado japonés guían la lluvia.'
+    level01Emotion: 'La calma milenaria de los templos de madera de Kioto: aleros escalonados que guían el agua con serenidad zen.'
   },
 
   // ── EXPERIMENTAL (1 drip único) ──────────────────────────────────────────

@@ -923,26 +923,26 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'ARCH 02',
       eyebrow: 'ARCH 02',
-      name: 'Origami Fold',
-      headline: 'The silence of a perfect fold: geometry that honors water.',
-      story: 'Speckled white sand stoneware with angular faceted panels inspired by Japanese origami. Twelve planar folds converge at the base, resting on a turned solid walnut disc.',
-      objectDescription: 'High-fire speckled stoneware with a matte raw finish. The faceted exterior creates micro air channels that regulate thermal retention, while the walnut base provides visual warmth and counter stability.',
+      name: 'Pagoda Eaves — Kyoto',
+      headline: 'Tiered architectural roofs taming water into mindful extraction.',
+      story: 'Speckled sand-beige stoneware dripper directly drawing from the stepped rooflines of classical Kyoto pagodas. Features cascading cantilevered ceramic eaves, dual spouts, an ebony-black geometric handle, and an open timber-framed Torii-inspired base stamped with DRYP.',
+      objectDescription: 'Vertical internal flutes emulate classical Japanese wooden beam joinery, promoting balanced airflow and an even drawdown that coaxes gentle sweetness and low acidity from light to medium roasts.',
       price: 94,
       currency: 'USD',
       stockStatus: 'available',
-      stockLabel: 'Available • Origami Edition',
+      stockLabel: 'Available • Kyoto Edition',
       stockCountRemaining: 22,
       paletteColors: [
-        { name: 'Speckled Sand White', hex: '#E6E2D9' },
-        { name: 'Walnut Brown', hex: '#6B4226' }
+        { name: 'Kyoto Sandstone Beige', hex: '#DDD8CE' },
+        { name: 'Charred Ebony Black', hex: '#1C1B1A' }
       ],
       specs: {
         extractionStyle: 'Soft, rounded body with gentle sweetness and low acidity',
         flowRate: 'Slow-medium even drawdown',
         capacity: '1–2 Cups (15g–28g dose)',
         filterType: 'Standard 02 Conical filters',
-        material: 'High-fire speckled stoneware with solid walnut base',
-        origin: 'Atelier Bauhaus • Cumbres de Neblaria',
+        material: 'High-fire speckled stoneware with Torii-framed base',
+        origin: 'Architecture Unit • Cumbres de Neblaria',
         weight: '380g',
         idealRecipe: {
           dose: '17g',
@@ -953,7 +953,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
           grindSize: 'Medium-coarse'
         }
       },
-      tagline: 'Twelve folds. One perfect pour.',
+      tagline: 'Stepped pagoda eaves. One mindful morning pour.',
       visualType: 'brutalist'
     },
     {
@@ -1990,26 +1990,26 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'ARCH 02',
       eyebrow: 'ARQUITECTURA 02',
-      name: 'Origami Fold',
-      headline: 'El silencio de un pliegue perfecto: geometría que honra el agua.',
-      story: 'Cono de gres moteado blanco arena con paneles facetados angulares inspirados en el origami japonés. Doce planos convergentes en la base, apoyados sobre un disco de nogal macizo torneado a mano.',
-      objectDescription: 'Gres de alta temperatura con acabado mate crudo. El exterior facetado genera microcanales de aire que regulan la retención térmica, mientras la base de nogal aporta calidez visual y estabilidad sobre la barra.',
+      name: 'Pagoda Eaves — Kioto',
+      headline: 'Aleros arquitectónicos escalonados que guían el agua con serenidad zen.',
+      story: 'Gotero cerámico de gres arena moteado inspirado en los aleros voladizos de las pagodas clásicas de Kioto. Cuenta con techumbre cerámica escalonada, doble pico vertedor, asa geométrica en ébano negro y una peana calada en pilares estilo Torii con sello DRYP.',
+      objectDescription: 'Nervaduras interiores verticales que emulan la carpintería tradicional de vigas japonesas, permitiendo una desgasificación uniforme y un drenaje continuo que resalta la dulzura delicada y baja acidez del café.',
       price: 94,
       currency: 'USD',
       stockStatus: 'available',
-      stockLabel: 'Disponible • Edición Origami',
+      stockLabel: 'Disponible • Edición Kioto',
       stockCountRemaining: 22,
       paletteColors: [
-        { name: 'Blanco Arena Moteado', hex: '#E6E2D9' },
-        { name: 'Nogal Oscuro', hex: '#6B4226' }
+        { name: 'Gres Arena Kioto', hex: '#DDD8CE' },
+        { name: 'Ébano Negro Quemado', hex: '#1C1B1A' }
       ],
       specs: {
         extractionStyle: 'Cuerpo suave y redondo con dulzura delicada y baja acidez',
         flowRate: 'Lento-medio, drenaje uniforme',
         capacity: '1–2 Tazas (dosis 15g–28g)',
         filterType: 'Filtros cónicos estándar 02',
-        material: 'Gres moteado de alta temperatura con base de nogal macizo',
-        origin: 'Atelier Bauhaus • Cumbres de Neblaria',
+        material: 'Gres moteado de alta temperatura con base calada estilo Torii',
+        origin: 'Unidad de Arquitectura • Cumbres de Neblaria',
         weight: '380g',
         idealRecipe: {
           dose: '17g',
@@ -2020,7 +2020,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
           grindSize: 'Media-gruesa'
         }
       },
-      tagline: 'Doce pliegues. Un vertido perfecto.',
+      tagline: 'Aleros de pagoda escalonados. Un vertido consciente cada mañana.',
       visualType: 'brutalist'
     },
     {
