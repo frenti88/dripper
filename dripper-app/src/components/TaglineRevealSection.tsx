@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export const TaglineRevealSection: React.FC = () => {
@@ -6,28 +6,31 @@ export const TaglineRevealSection: React.FC = () => {
   const [revealedIndex, setRevealedIndex] = useState<number>(-1);
   const { language, t } = useLanguage();
 
-  const textLines = language === 'es' 
-    ? [
-        "El café se volvió parte de nuestras vidas.",
-        "Cosas que recuerdas, hechas para café."
-      ]
-    : [
-        "Coffee became part of our lives.",
-        "Things you remember, made for coffee."
-      ];
-
-  const words = textLines.join(" ").split(" ");
+  const words = useMemo(() => {
+    const textLines = language === 'es' 
+      ? [
+          "El café se volvió parte de nuestras vidas.",
+          "Cosas que recuerdas, hechas para café."
+        ]
+      : [
+          "Coffee became part of our lives.",
+          "Things you remember, made for coffee."
+        ];
+    return textLines.join(" ").split(" ");
+  }, [language]);
 
   useEffect(() => {
-    setRevealedIndex(-1);
+    const timers: ReturnType<typeof setTimeout>[] = [];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            setRevealedIndex(-1);
             words.forEach((_, idx) => {
-              setTimeout(() => {
+              const timer = setTimeout(() => {
                 setRevealedIndex((prev) => Math.max(prev, idx));
               }, idx * 60);
+              timers.push(timer);
             });
           }
         });
@@ -39,8 +42,11 @@ export const TaglineRevealSection: React.FC = () => {
       observer.observe(containerRef.current);
     }
 
-    return () => observer.disconnect();
-  }, [language, words.length]);
+    return () => {
+      timers.forEach(clearTimeout);
+      observer.disconnect();
+    };
+  }, [words]);
 
   return (
     <section 

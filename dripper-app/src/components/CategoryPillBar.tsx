@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
-import { Sparkles, Disc, Compass, Feather, Film, Building2, Gem, Palette, Sun } from 'lucide-react';
+import { Sparkles, Disc, Compass, Feather, Film, Building2, Palette, Radio, FlaskConical } from 'lucide-react';
 
 // Lucide-style Dinosaur icon (Sauropod / Diplodocus)
 const DinosaurIcon: React.FC<{ className?: string; style?: React.CSSProperties }> = ({ className, style }) => (
@@ -36,15 +36,15 @@ export const CategoryPillBar: React.FC<CategoryPillBarProps> = ({
 
   const categories = [
     { id: 'All', label: language === 'es' ? 'Todos los Drips' : 'All Drips', icon: Sparkles, glazeColor: '#c05a3e', tintClass: 'hover:bg-[#f4efea]' },
+    { id: 'Architecture', label: language === 'es' ? 'Arquitectura' : 'Architecture', icon: Building2, glazeColor: '#475569', tintClass: 'hover:bg-[#f1f5f9]' },
+    { id: 'Cinema', label: language === 'es' ? 'Fotografía y cine' : 'Cinema & Photography', icon: Film, glazeColor: '#c2410c', tintClass: 'hover:bg-[#fff7ed]' },
+    { id: 'Retro', label: language === 'es' ? 'Retro' : 'Retro 70s', icon: Radio, glazeColor: '#d97706', tintClass: 'hover:bg-[#fffbeb]' },
+    { id: 'Experimental', label: language === 'es' ? 'Experimental' : 'Experimental', icon: FlaskConical, glazeColor: '#2563eb', tintClass: 'hover:bg-[#eff6ff]' },
+    { id: 'Nature', label: language === 'es' ? 'Naturaleza' : 'Nature & Fauna', icon: Feather, glazeColor: '#15803d', tintClass: 'hover:bg-[#f0fdf4]' },
     { id: 'Music', label: language === 'es' ? 'Música' : 'Music', icon: Disc, glazeColor: '#6d28d9', tintClass: 'hover:bg-[#f5f3ff]' },
     { id: 'Cosmos', label: language === 'es' ? 'Universo' : 'Universe', icon: Compass, glazeColor: '#1e293b', tintClass: 'hover:bg-[#f1f5f9]' },
-    { id: 'Nature', label: language === 'es' ? 'Naturaleza' : 'Nature & Fauna', icon: Feather, glazeColor: '#15803d', tintClass: 'hover:bg-[#f0fdf4]' },
-    { id: 'Cinema', label: language === 'es' ? 'Cine y fotografía' : 'Cinema & Photography', icon: Film, glazeColor: '#c2410c', tintClass: 'hover:bg-[#fff7ed]' },
     { id: 'Prehistoric', label: language === 'es' ? 'Prehistoria' : 'Prehistoric', icon: DinosaurIcon, glazeColor: '#c05a3e', tintClass: 'hover:bg-[#fdf2ee]' },
-    { id: 'Architecture', label: language === 'es' ? 'Arquitectura' : 'Architecture', icon: Building2, glazeColor: '#475569', tintClass: 'hover:bg-[#f1f5f9]' },
-    { id: 'Minerals', label: language === 'es' ? 'Minerales & Origen' : 'Minerals & Clay', icon: Gem, glazeColor: '#0f766e', tintClass: 'hover:bg-[#f0fdfa]' },
-    { id: 'Sculptural', label: language === 'es' ? 'Escultura' : 'Sculptural', icon: Palette, glazeColor: '#b45309', tintClass: 'hover:bg-[#fefce8]' },
-    { id: 'WabiSabi', label: language === 'es' ? 'Wabi-Sabi' : 'Wabi-Sabi', icon: Sun, glazeColor: '#78350f', tintClass: 'hover:bg-[#fef3c7]' }
+    { id: 'Art', label: language === 'es' ? 'Arte' : 'Art', icon: Palette, glazeColor: '#b45309', tintClass: 'hover:bg-[#fefce8]' }
   ];
 
   return (

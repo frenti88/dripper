@@ -48,9 +48,6 @@ export const Footer: React.FC<FooterProps> = ({
           <div className="space-y-1">
             <div className="flex items-center gap-1.5 text-lg font-black tracking-tight text-[#121613]">
               <span className="font-sans">DRYP.</span>
-              <span className="text-[#4b514d] font-normal text-xs ml-1 font-mono tracking-normal">
-                — Atelier & Archivo Cerámico de las Cumbres
-              </span>
             </div>
             <p className="text-xs text-[#5a625c] max-w-md leading-relaxed">
               {language === 'es'

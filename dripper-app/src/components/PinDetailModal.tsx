@@ -3,9 +3,9 @@ import type { DrypDrip, PinterestPin } from '../data/pinterestPinsData';
 import { DRYP_DRIPS, PINTEREST_PINS } from '../data/pinterestPinsData';
 import type { Product } from '../types';
 import { MorphIcon } from 'morphicons/react';
-import { X, Bookmark, ShoppingBag, Share2, Check, Droplets } from 'lucide';
+import { X, Bookmark, ShoppingBag, Share2, Check, Compass } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
-import { playWaterDrop, playSteamExhale } from '../utils/audioSynth';
+import { playCeramicChime, playPressStamp } from '../utils/audioSynth';
 
 export interface DripDetailModalProps {
   drip?: DrypDrip | null;
@@ -37,59 +37,42 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
   const [selectedColor, setSelectedColor] = useState<string>('');
   const [copiedLink, setCopiedLink] = useState(false);
   const [activeImage, setActiveImage] = useState<string>(item?.imageSrc || '');
-  const [isPouring, setIsPouring] = useState(false);
-  const [pourStep, setPourStep] = useState(0);
+  const [modalImgError, setModalImgError] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
   const closeBtnRef = useRef<HTMLButtonElement>(null);
-
-  const handleSimulatePour = () => {
-    if (isPouring) return;
-    setIsPouring(true);
-    setPourStep(1);
-    playWaterDrop();
-
-    setTimeout(() => {
-      setPourStep(2);
-      playWaterDrop();
-    }, 1100);
-
-    setTimeout(() => {
-      setPourStep(3);
-      playSteamExhale();
-    }, 2200);
-
-    setTimeout(() => {
-      setIsPouring(false);
-      setPourStep(0);
-    }, 3600);
-  };
 
   // Link to full product data if applicable
   const product: Product | undefined = item?.productId 
     ? products.find(p => p.id === item.productId) 
     : undefined;
 
+  // Adjust state during render when item changes to avoid cascading renders
+  const [prevItemId, setPrevItemId] = useState<string | null>(null);
+  if (item && item.id !== prevItemId) {
+    setPrevItemId(item.id);
+    setActiveImage(item.imageSrc);
+    if (product && product.paletteColors.length > 0) {
+      setSelectedColor(product.paletteColors[0].name);
+    }
+  }
+
   useEffect(() => {
     if (item) {
-      setActiveImage(item.imageSrc);
-      if (product && product.paletteColors.length > 0) {
-        setSelectedColor(product.paletteColors[0].name);
-      }
       document.body.style.overflow = 'hidden';
-      setTimeout(() => closeBtnRef.current?.focus(), 50);
+      const timer = setTimeout(() => closeBtnRef.current?.focus(), 50);
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') onClose();
+      };
+      window.addEventListener('keydown', handleKeyDown);
+      return () => {
+        clearTimeout(timer);
+        window.removeEventListener('keydown', handleKeyDown);
+        document.body.style.overflow = '';
+      };
     } else {
       document.body.style.overflow = '';
     }
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = '';
-    };
-  }, [item, product]);
+  }, [item, onClose]);
 
   if (!item) return null;
 
@@ -103,13 +86,12 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
     p => p.id !== item.id && (p.category === item.category || p.tags.some(t => item.tags.includes(t)))
   ).slice(0, 4);
 
-  const [modalImgError, setModalImgError] = useState(false);
-
   const handleShare = () => {
     try {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(window.location.href).catch(() => {});
         setCopiedLink(true);
+        playCeramicChime();
         setTimeout(() => setCopiedLink(false), 2000);
       }
     } catch {
@@ -117,15 +99,21 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
     }
   };
 
-  const handleAddToCart = () => {
+  const handleToggleSaveClick = () => {
+    onToggleSave(item.id);
+    if (!isSaved) playCeramicChime();
+  };
+
+  const handleAddToCartClick = () => {
     if (item.productId) {
+      playPressStamp();
       onAddToCart(item.productId, selectedColor || 'Default');
     }
   };
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 md:p-10 bg-[#121613]/55 backdrop-blur-xs animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 md:p-8 bg-[#121613]/55 backdrop-blur-xs animate-in fade-in duration-200"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -133,48 +121,47 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
       <div 
         ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-5xl max-h-[92vh] bg-white rounded-3xl shadow-xl overflow-y-auto md:overflow-hidden flex flex-col md:flex-row border border-[#d8dcd8]"
+        className="relative w-full max-w-5xl max-h-[92vh] bg-[#faf8f5] rounded-[16px] shadow-2xl overflow-y-auto md:overflow-hidden flex flex-col md:flex-row border border-[#d8dcd8]"
       >
-        {/* Left Column: Visual Pin Gallery (Pinterest Style) */}
-        <div className="w-full md:w-[50%] bg-[#f2f4f2] flex flex-col items-center justify-between p-5 sm:p-7 md:p-8 border-b md:border-b-0 md:border-r border-[#e2e5e2] md:overflow-y-auto shrink-0">
+        {/* ── LEFT COLUMN: VISUAL GALLERY & CRAFT FOUNDATION ─────────────────── */}
+        <div className="w-full md:w-[48%] bg-[#f4efea] flex flex-col justify-between p-5 sm:p-6 md:p-7 border-b md:border-b-0 md:border-e border-[#e8e3da] md:overflow-y-auto shrink-0 space-y-4">
           
-          <div className="relative w-full flex-1 flex items-center justify-center min-h-[320px] max-h-[540px] rounded-2xl overflow-hidden shadow-2xs bg-white">
+          {/* Main Visual Display Frame */}
+          <div className="relative w-full flex-1 flex items-center justify-center min-h-[280px] sm:min-h-[340px] max-h-[460px] rounded-[16px] overflow-hidden bg-[#faf8f5] border border-[#e8e3da] shadow-2xs group">
             {item && (activeImage || item.imageSrc) && (
               modalImgError ? (
-                <div className="w-full h-full flex flex-col items-center justify-center bg-[#f0ede6] text-[#7d8680] p-6 text-center">
-                  <span className="font-serif text-base font-medium text-[#121613]">{item.title}</span>
-                  <span className="font-mono text-xs text-[#8a948c] mt-1">DRYP Atelier Archive</span>
+                <div className="w-full h-full flex flex-col items-center justify-center bg-[#f4efea] text-[#756f66] p-6 text-center">
+                  <span className="font-headline text-lg font-bold text-[#151413]">{item.title}</span>
+                  <span className="font-mono text-xs text-[#756f66] mt-1">DRYP Atelier Archive</span>
                 </div>
               ) : (
                 <img
                   src={activeImage || item.imageSrc}
                   alt={item.title}
                   onError={() => setModalImgError(true)}
-                  className="w-full h-full object-contain p-2"
+                  className="w-full h-full object-cover group-hover:scale-[1.015] transition-transform duration-500 ease-out"
                 />
               )
             )}
-            {/* Discrete atelier brand watermark */}
-            <div className="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-[#151413]/60 backdrop-blur-xs text-[10px] font-mono font-bold tracking-widest text-[#faf8f5]/90 border border-white/10 pointer-events-none select-none shadow-2xs">
-              DRYP.
-            </div>
           </div>
 
-          {/* Alternate Dripper Perspective Thumbnails */}
+          {/* Alternate Perspective Thumbnails */}
           {product && (
-            <div className="flex items-center gap-2 mt-4">
+            <div className="flex items-center gap-3 w-full">
               <button
+                type="button"
                 onClick={() => setActiveImage(item.imageSrc)}
-                className={`w-12 h-12 rounded-xl overflow-hidden border-2 transition-all ${
-                  activeImage === item.imageSrc ? 'border-[#121613] scale-105' : 'border-transparent opacity-70 hover:opacity-100'
+                className={`flex-1 aspect-[4/3] rounded-[12px] overflow-hidden border-2 bg-[#faf8f5] transition-all cursor-pointer ${
+                  activeImage === item.imageSrc ? 'border-[#151413] ring-1 ring-[#151413]/20 scale-[1.01]' : 'border-[#e8e3da] opacity-75 hover:opacity-100 hover:border-[#b8b0a2]'
                 }`}
               >
                 <img src={item.imageSrc} alt="Vista Principal" className="w-full h-full object-cover" />
               </button>
               <button
+                type="button"
                 onClick={() => setActiveImage('/images/products/ritual-morning.jpg')}
-                className={`w-12 h-12 rounded-xl overflow-hidden border-2 transition-all ${
-                  activeImage === '/images/products/ritual-morning.jpg' ? 'border-[#121613] scale-105' : 'border-transparent opacity-70 hover:opacity-100'
+                className={`flex-1 aspect-[4/3] rounded-[12px] overflow-hidden border-2 bg-[#faf8f5] transition-all cursor-pointer ${
+                  activeImage === '/images/products/ritual-morning.jpg' ? 'border-[#151413] ring-1 ring-[#151413]/20 scale-[1.01]' : 'border-[#e8e3da] opacity-75 hover:opacity-100 hover:border-[#b8b0a2]'
                 }`}
               >
                 <img src="/images/products/ritual-morning.jpg" alt="Ritual Pour" className="w-full h-full object-cover" />
@@ -182,71 +169,23 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
             </div>
           )}
 
-          {/* Tactile Brewing Simulation */}
-          <div className="w-full mt-3 p-3.5 bg-[#faf8f5] rounded-xl border border-[#e8e3da] flex flex-col gap-2.5">
-            <div className="flex items-center justify-between gap-2 text-xs">
-              <div className="flex items-center gap-2 text-[#151413]">
-                <MorphIcon icon={Droplets} size={16} strokeWidth={2} reducedMotion="user" className="text-[#c05a3e]" />
-                <span className="font-semibold">{language === 'es' ? 'Simular Vertido (93°C)' : 'Simulate Pour (93°C)'}</span>
-              </div>
-              <button
-                type="button"
-                onClick={handleSimulatePour}
-                disabled={isPouring}
-                className="text-[11px] font-mono px-3 py-1 rounded-full border border-[#121613] text-[#121613] hover:bg-[#121613] hover:text-white transition-all disabled:opacity-50 cursor-pointer"
-              >
-                {isPouring ? (language === 'es' ? 'Vertiendo...' : 'Pouring...') : (language === 'es' ? 'Iniciar vertido' : 'Start pour')}
-              </button>
-            </div>
-
-            {/* Pour Step Visualizer */}
-            <div className="grid grid-cols-3 gap-1.5 pt-1">
-              <div className={`h-1.5 rounded-full transition-colors ${pourStep >= 1 ? 'bg-[#c05a3e]' : 'bg-[#e2e5e2]'}`} />
-              <div className={`h-1.5 rounded-full transition-colors ${pourStep >= 2 ? 'bg-[#c05a3e]' : 'bg-[#e2e5e2]'}`} />
-              <div className={`h-1.5 rounded-full transition-colors ${pourStep >= 3 ? 'bg-[#c05a3e]' : 'bg-[#e2e5e2]'}`} />
-            </div>
-
-            <p className="text-[11px] text-[#666f68] leading-tight">
-              {pourStep === 0 && (language === 'es' ? 'Pre-infusión seca: prepara 30g de café molido fino-medio.' : 'Dry pre-wet: prepare 30g medium-fine coffee.')}
-              {pourStep === 1 && (language === 'es' ? 'Fase 1: Primer vertido concéntrico de 60ml. Floración activa.' : 'Phase 1: 60ml concentric bloom.')}
-              {pourStep === 2 && (language === 'es' ? 'Fase 2: Vertido continuo a 4.2 ml/s manteniendo cama plana.' : 'Phase 2: Continuous 4.2 ml/s pour.')}
-              {pourStep === 3 && (language === 'es' ? 'Fase 3: Caída final por gravedad. Taza limpia y aromática.' : 'Phase 3: Gravity drawdown.')}
-            </p>
-          </div>
-
-          {/* Guaranteed Safe Delivery Micro-Badge */}
-          <div className="w-full mt-3 flex items-center justify-center gap-1.5 text-[11px] font-mono text-[#5a625c]">
-            <span>{language === 'es' ? 'Envío asegurado • Reposición 100% inmediata sin costo' : '100% insured transit • Free immediate replacement'}</span>
-          </div>
         </div>
 
-        {/* Right Column: Drip Details & Storytelling (Editorial Style) */}
-        <div className="w-full md:w-[50%] p-5 sm:p-7 md:p-8 flex flex-col justify-between md:overflow-y-auto md:max-h-[92vh]">
+        {/* ── RIGHT COLUMN: NARRATIVE, SPECS & INTEGRATED ACTION ─────────────── */}
+        <div className="w-full md:w-[52%] p-5 sm:p-7 md:p-8 flex flex-col justify-between md:overflow-y-auto md:max-h-[92vh] space-y-6 bg-[#faf8f5]">
           
-          <div>
-            {/* Header Actions */}
-            <div className="flex items-center justify-between gap-3 pb-5 border-b border-[#f0f2f0]">
-              
-              {/* Atelier Provenance */}
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-full bg-[#121613] flex items-center justify-center text-white shrink-0">
-                  <span className="text-xs font-mono font-bold text-[#c05a3e]">D</span>
-                </div>
-                <div>
-                  <h4 className="text-xs font-bold text-[#121613] leading-none">{item.author.name}</h4>
-                  <span className="text-[11px] text-[#666f68] font-mono">
-                    {language === 'es' ? 'Cumbres de Neblaria • 1.280°C' : 'Heights of Neblaria • 1,280°C'}
-                  </span>
-                </div>
-              </div>
-
-              {/* Action Buttons: Share, Save, Close */}
-              <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="space-y-6">
+            
+            {/* Header Navigation Bar */}
+            <div className="flex items-center justify-end gap-3">
+              {/* Action Controls: Share, Save, Close */}
+              <div className="flex items-center gap-2 shrink-0">
                 <button
+                  type="button"
                   onClick={handleShare}
-                  className="w-10 h-10 rounded-full hover:bg-[#f0f2f0] text-[#4b514d] hover:text-[#121613] transition-colors flex items-center justify-center cursor-pointer shrink-0"
-                  title="Copiar enlace"
-                  aria-label="Compartir drip"
+                  className="w-9 h-9 rounded-full bg-[#f4efea] hover:bg-[#eae3d8] border border-[#e8e3da] text-[#4b463f] hover:text-[#151413] transition-colors flex items-center justify-center cursor-pointer shrink-0"
+                  title={language === 'es' ? 'Copiar enlace' : 'Copy link'}
+                  aria-label={language === 'es' ? 'Compartir drip' : 'Share drip'}
                 >
                   <MorphIcon 
                     icon={copiedLink ? Check : Share2} 
@@ -254,227 +193,207 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                     strokeWidth={2} 
                     spring="snappy" 
                     reducedMotion="user" 
-                    className={copiedLink ? "text-[#c05a3e]" : ""} 
+                    className={copiedLink ? "text-[#15803d]" : ""} 
                   />
                 </button>
 
                 <button
-                  onClick={() => onToggleSave(item.id)}
-                  className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 min-h-[40px] rounded-full text-xs font-bold transition-all shadow-xs cursor-pointer shrink-0 ${
+                  type="button"
+                  onClick={handleToggleSaveClick}
+                  className={`flex items-center gap-1.5 px-3.5 py-1.5 min-h-[38px] rounded-full text-xs font-mono font-bold transition-all shadow-xs cursor-pointer shrink-0 ${
                     isSaved
-                      ? 'bg-[#121613] text-white'
-                      : 'bg-[#c05a3e] hover:bg-[#a64726] text-white'
+                      ? 'bg-[#151413] text-[#faf8f5]'
+                      : 'bg-[#f4efea] hover:bg-[#eae3d8] text-[#151413] border border-[#e8e3da]'
                   }`}
                 >
                   <MorphIcon 
                     icon={isSaved ? Check : Bookmark} 
-                    size={14} 
+                    size={15} 
                     strokeWidth={2} 
                     spring="snappy" 
                     reducedMotion="user" 
                   />
-                  <span>{isSaved ? (language === 'es' ? 'Drip Guardado' : 'Saved') : (language === 'es' ? 'Guardar Drip' : 'Save Drip')}</span>
+                  <span>{isSaved ? (language === 'es' ? 'En tu repisa' : 'Saved') : (language === 'es' ? 'Guardar' : 'Save')}</span>
                 </button>
 
                 <button
                   ref={closeBtnRef}
+                  type="button"
                   onClick={onClose}
-                  className="w-10 h-10 rounded-full hover:bg-[#f0f2f0] text-[#4b514d] hover:text-[#121613] transition-colors flex items-center justify-center cursor-pointer shrink-0"
-                  aria-label="Cerrar modal"
+                  className="w-9 h-9 rounded-full bg-[#f4efea] hover:bg-[#eae3d8] border border-[#e8e3da] text-[#4b463f] hover:text-[#151413] transition-colors flex items-center justify-center cursor-pointer shrink-0"
+                  aria-label={language === 'es' ? 'Cerrar modal' : 'Close modal'}
                 >
-                  <MorphIcon icon={X} size={20} strokeWidth={2} reducedMotion="user" />
+                  <MorphIcon icon={X} size={18} strokeWidth={2} reducedMotion="user" />
                 </button>
               </div>
 
             </div>
 
-            {/* Title & Drop info */}
-            <div className="mt-5">
-              <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-                {item.badge && (
-                  <span className="text-[10px] font-mono uppercase tracking-wider text-[#c05a3e] font-bold px-2 py-0.5 rounded-full bg-[#c05a3e]/10 border border-[#c05a3e]/25">
-                    {item.badge}
-                  </span>
-                )}
-                <span className="text-[11px] font-mono uppercase tracking-widest text-[#756f66] font-medium">
+            {/* ── 1. EDITORIAL IDENTITY & NARRATIVE BLOCK ───────────────────── */}
+            <div className="space-y-3.5">
+              
+              {/* Category & Availability Tag Row */}
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="card-category-badge px-2.5 py-0.5 rounded-full text-xs font-mono font-medium tracking-wider uppercase border border-[#e8e3da] bg-[#f4efea] text-[#4b463f] whitespace-nowrap">
                   {item.categoryLabel}
                 </span>
-                {item.dropCode && (
-                  <>
-                    <span className="text-xs text-[#a7aaad]">•</span>
-                    <span className="text-[11px] font-mono text-[#666f68]">{item.dropCode}</span>
-                  </>
-                )}
+
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold bg-[#15803d]/10 text-[#15803d] border border-[#15803d]/25 whitespace-nowrap tabular-nums">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#15803d] animate-pulse" />
+                  {item.stockLabel || (language === 'es' ? 'Disponible (Cumbres de Neblaria)' : 'Available (Neblaria Highlands)')}
+                </span>
               </div>
 
-              <h1 className="text-xl sm:text-2xl font-bold text-[#121613] tracking-tight leading-snug">
+              {/* Title */}
+              <h1 className="text-2xl sm:text-3xl font-headline font-bold text-[#151413] tracking-tight leading-[1.15] text-balance">
                 {item.title}
               </h1>
 
-              {/* Level 01: Emotion Quote */}
-              <div className="mt-3 p-3.5 bg-[#f4efea] rounded-2xl border border-[#e8e3da]">
-                <p className="font-serif italic text-base sm:text-lg text-[#151413] leading-relaxed">
-                  "{item.level01Emotion || item.subtitle}"
+              {/* Sensorial Emotion Quote */}
+              <div className="ps-3.5 border-s-2 border-[#c05a3e]">
+                <p className="font-serif italic text-lg sm:text-xl text-[#151413] leading-relaxed text-pretty">
+                  “{item.level01Emotion || item.subtitle}”
                 </p>
               </div>
-            </div>
 
-            {/* Narrative Story */}
-            <div className="mt-4 space-y-3">
-              <p className="text-xs sm:text-sm text-[#4b463f] leading-relaxed">
-                {product ? product.story : item.subtitle}
+              {/* Synthesized Narrative Concept */}
+              <p className="text-base text-[#4b463f] leading-[1.65] font-sans max-w-[65ch] text-pretty">
+                {item.subtitle}
               </p>
-              {product && (
-                <p className="text-xs text-[#756f66] leading-relaxed">
-                  {product.objectDescription}
-                </p>
-              )}
+
             </div>
 
-            {/* Specs & Ceramic Dynamics */}
+            {/* ── 2. TECHNICAL SPECIFICATIONS CARD ──────────────────────────── */}
             {product && (
-              <div className="mt-4">
-
-                {/* Specs Pill Grid */}
-                <div className="grid grid-cols-2 gap-2 text-xs font-mono p-3 bg-[#f4efea] rounded-xl border border-[#e8e3da]">
-                  <div>
-                    <span className="text-[10px] text-[#756f66] block uppercase">
-                      {language === 'es' ? 'Filtro' : 'Filter'}
-                    </span>
-                    <span className="font-semibold text-[#151413]">{product.specs.filterType}</span>
-                  </div>
-                  <div>
-                    <span className="text-[10px] text-[#756f66] block uppercase">
-                      {language === 'es' ? 'Flujo' : 'Flow'}
-                    </span>
-                    <span className="font-semibold text-[#151413]">{product.specs.flowRate}</span>
-                  </div>
-                  <div>
-                    <span className="text-[10px] text-[#756f66] block uppercase">
-                      {language === 'es' ? 'Capacidad' : 'Capacity'}
-                    </span>
-                    <span className="font-semibold text-[#151413]">{product.specs.capacity}</span>
-                  </div>
-                  <div>
-                    <span className="text-[10px] text-[#756f66] block uppercase">
-                      {language === 'es' ? 'Origen' : 'Origin'}
-                    </span>
-                    <span className="font-semibold text-[#151413]">{product.specs.origin}</span>
-                  </div>
+              <div className="p-4 sm:p-4.5 bg-[#f4efea] rounded-[16px] border border-[#e8e3da] space-y-2.5">
+                <div className="text-xs font-mono uppercase tracking-wider font-semibold text-[#756f66] flex items-center gap-2">
+                  <MorphIcon icon={Compass} size={15} strokeWidth={2} reducedMotion="user" />
+                  <span>{language === 'es' ? 'Extracción' : 'Extraction'}</span>
                 </div>
 
-                {/* Color Palette Picker */}
-                {product.paletteColors.length > 0 && (
-                  <div className="mt-4">
-                    <div className="flex items-center justify-between text-xs mb-2">
-                      <span className="font-medium text-[#4b463f]">
-                        {language === 'es' ? 'Esmalte & Acabado:' : 'Glaze & Finish:'}
-                      </span>
-                      <span className="font-mono font-bold text-[#151413]">{selectedColor}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      {product.paletteColors.map((color) => (
-                        <button
-                          key={color.name}
-                          onClick={() => setSelectedColor(color.name)}
-                          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono border transition-all cursor-pointer ${
-                            selectedColor === color.name
-                              ? 'border-[#151413] bg-[#151413] text-[#faf8f5] shadow-xs'
-                              : 'border-[#e8e3da] bg-[#faf8f5] text-[#4b463f] hover:border-[#151413] hover:text-[#151413]'
-                          }`}
-                        >
-                          <span className="w-2.5 h-2.5 rounded-full border border-black/10" style={{ backgroundColor: color.hex }} />
-                          <span>{color.name}</span>
-                        </button>
-                      ))}
-                    </div>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-3.5 text-xs sm:text-sm font-mono">
+                  <div className="min-w-0">
+                    <span className="text-[11px] text-[#756f66] block uppercase font-mono tracking-wider mb-0.5">{language === 'es' ? 'Filtro' : 'Filter'}</span>
+                    <span className="font-bold text-[#151413] block leading-snug break-words tabular-nums">{product.specs.filterType}</span>
                   </div>
-                )}
+                  <div className="min-w-0">
+                    <span className="text-[11px] text-[#756f66] block uppercase font-mono tracking-wider mb-0.5">{language === 'es' ? 'Flujo' : 'Flow'}</span>
+                    <span className="font-bold text-[#151413] block leading-snug break-words">{product.specs.flowRate}</span>
+                  </div>
+                  <div className="min-w-0">
+                    <span className="text-[11px] text-[#756f66] block uppercase font-mono tracking-wider mb-0.5">{language === 'es' ? 'Capacidad' : 'Capacity'}</span>
+                    <span className="font-bold text-[#151413] block leading-snug break-words tabular-nums">{product.specs.capacity.replace('-', '–')}</span>
+                  </div>
+                  <div className="min-w-0">
+                    <span className="text-[11px] text-[#756f66] block uppercase font-mono tracking-wider mb-0.5">{language === 'es' ? 'Origen' : 'Origin'}</span>
+                    <span className="font-bold text-[#151413] block leading-snug break-words">{product.specs.origin}</span>
+                  </div>
+                </div>
               </div>
             )}
 
-            {/* Related Drips Section */}
+            {/* ── 3. INTEGRATED PURCHASE & GLAZE CONSOLE ─────────────────────── */}
+            {item.productId && item.price ? (
+              <div className="p-4 sm:p-5 bg-white rounded-[16px] border border-[#e8e3da] shadow-sm space-y-4">
+                
+                {/* Price */}
+                <div className="flex items-end justify-between gap-4">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-2xl sm:text-3xl font-bold font-mono text-[#151413] tabular-nums tracking-tight">
+                      ${item.price}
+                    </span>
+                    <span className="text-xs font-mono text-[#756f66] tracking-normal">USD</span>
+                  </div>
+                </div>
+
+                {/* Primary Add to Bag Action CTA */}
+                <div className="pt-1">
+                  <button
+                    type="button"
+                    onClick={handleAddToCartClick}
+                    disabled={item.stockStatus === 'sold_out'}
+                    className={`w-full min-h-[48px] py-3 px-6 rounded-full font-bold text-xs uppercase tracking-wider transition-all shadow-sm flex items-center justify-center gap-2 active:scale-98 cursor-pointer whitespace-nowrap ${
+                      item.stockStatus === 'sold_out'
+                        ? 'bg-[#d8dcd8] text-[#8e9194] cursor-not-allowed'
+                        : isAdded
+                        ? 'bg-[#15803d] text-white shadow-md'
+                        : 'bg-[#151413] hover:bg-[#252c26] text-[#faf8f5]'
+                    }`}
+                  >
+                    <MorphIcon 
+                      icon={isAdded ? Check : ShoppingBag} 
+                      size={17} 
+                      strokeWidth={2.2} 
+                      spring="snappy" 
+                      reducedMotion="user" 
+                      className="text-white" 
+                    />
+                    <span>
+                      {item.stockStatus === 'sold_out'
+                        ? (language === 'es' ? 'Agotado por ahora' : 'Gone for now')
+                        : isAdded
+                        ? (language === 'es' ? 'Añadido a la bolsa' : 'Added to bag')
+                        : (language === 'es' ? 'Añadir a la bolsa' : 'Add to bag')}
+                    </span>
+                  </button>
+                </div>
+
+                {/* Trust Points */}
+                <div className="pt-2 border-t border-[#e8e3da]/70 grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs text-[#756f66] font-mono tabular-nums">
+                  <span className="flex items-center gap-1.5 whitespace-nowrap">
+                    <span className="text-[#15803d]">✓</span> {language === 'es' ? 'Cerámica 1.280\u00A0°C' : '1,280\u00A0°C Ceramic'}
+                  </span>
+                  <span className="flex items-center gap-1.5 whitespace-nowrap">
+                    <span className="text-[#15803d]">✓</span> {language === 'es' ? 'Envío asegurado' : 'Insured shipping'}
+                  </span>
+                  <span className="flex items-center gap-1.5 whitespace-nowrap col-span-2 sm:col-span-1">
+                    <span className="text-[#15803d]">✓</span> {language === 'es' ? 'Taller Medellín' : 'Medellín Atelier'}
+                  </span>
+                </div>
+
+              </div>
+            ) : (
+              <div className="p-4 bg-white rounded-[16px] border border-[#e8e3da] shadow-2xs flex items-center justify-between gap-4">
+                <span className="text-xs text-[#756f66] font-mono tracking-wide">
+                  {language === 'es' ? 'Drip de Archivo & Cultura DRYP.' : 'DRYP. Cultural & Archive Drip'}
+                </span>
+                <button
+                  type="button"
+                  onClick={handleToggleSaveClick}
+                  className="px-4 py-2 min-h-[40px] rounded-full bg-[#151413] hover:bg-[#252c26] text-[#faf8f5] text-xs font-mono font-bold transition-all cursor-pointer shadow-xs whitespace-nowrap"
+                >
+                  {isSaved ? (language === 'es' ? 'En tu repisa' : 'Saved') : (language === 'es' ? 'Guardar' : 'Save')}
+                </button>
+              </div>
+            )}
+
+            {/* ── 4. RELATED DRIPS SECTION ─────────────────────────────────── */}
             {relatedDrips.length > 0 && (
-              <div className="mt-6 pt-5 border-t border-[#f0f2f0]">
-                <h4 className="text-xs font-mono uppercase tracking-wider text-[#666f68] mb-3">
-                  {language === 'es' ? 'Más drips como este' : 'More like this'}
+              <div className="space-y-3 pt-2">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-[#756f66]">
+                  {language === 'es' ? 'Más drips del taller' : 'More atelier drips'}
                 </h4>
-                <div className="grid grid-cols-4 gap-2">
+                <div className="grid grid-cols-4 gap-2.5">
                   {relatedDrips.map((rDrip) => (
-                    <div
+                    <button
                       key={rDrip.id}
+                      type="button"
                       onClick={() => handleSelectRelated(rDrip)}
-                      className="group/rel cursor-pointer rounded-xl overflow-hidden aspect-square bg-[#e5e8e5] relative shadow-2xs hover:shadow-sm transition-all"
+                      className="group/rel cursor-pointer rounded-[12px] overflow-hidden aspect-square bg-[#f4efea] border border-[#e8e3da] relative shadow-2xs hover:shadow-xs transition-all text-start"
                     >
-                      <img src={rDrip.imageSrc} alt={rDrip.title} className="w-full h-full object-cover group-hover/rel:scale-[1.02] transition-transform duration-500" />
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/rel:opacity-100 transition-opacity flex items-end p-1.5">
-                        <span className="text-[9px] text-white font-medium line-clamp-1 leading-tight">
+                      <img src={rDrip.imageSrc} alt={rDrip.title} className="w-full h-full object-cover group-hover/rel:scale-[1.03] transition-transform duration-500" />
+                      <div className="absolute inset-0 bg-[#151413]/40 opacity-0 group-hover/rel:opacity-100 transition-opacity flex items-end p-2">
+                        <span className="text-xs text-white font-medium line-clamp-1 leading-tight text-pretty font-headline">
                           {rDrip.title}
                         </span>
                       </div>
-                    </div>
+                    </button>
                   ))}
                 </div>
               </div>
             )}
 
           </div>
-
-          {/* Bottom Checkout / Add to Bag Action */}
-          {item.productId && item.price ? (
-            <div className="mt-6 pt-4 pb-[max(0.5rem,env(safe-area-inset-bottom))] border-t border-[#e2e5e2] flex items-center justify-between gap-4">
-              <div>
-                <span className="text-[11px] font-mono uppercase text-[#666f68] block">
-                  {language === 'es' ? 'Precio de Edición' : 'Edition Price'}
-                </span>
-                <span className="text-2xl font-bold font-mono text-[#121613]">
-                  ${item.price} <span className="text-xs font-normal text-[#666f68]">USD</span>
-                </span>
-              </div>
-
-              <div className="flex-1 max-w-xs">
-                <button
-                  onClick={handleAddToCart}
-                  disabled={item.stockStatus === 'sold_out'}
-                  className={`w-full py-3.5 px-6 min-h-[44px] rounded-full font-bold text-xs tracking-wider uppercase transition-all shadow-md flex items-center justify-center gap-2 active:scale-95 cursor-pointer ${
-                    item.stockStatus === 'sold_out'
-                      ? 'bg-[#d8dcd8] text-[#8e9194] cursor-not-allowed'
-                      : isAdded
-                      ? 'bg-[#c05a3e] text-white'
-                      : 'bg-[#121613] hover:bg-[#252c26] text-white'
-                  }`}
-                >
-                  {item.stockStatus === 'sold_out' ? (
-                    <span>{language === 'es' ? 'Agotado por ahora' : 'Gone for now'}</span>
-                  ) : (
-                    <>
-                      <MorphIcon 
-                        icon={isAdded ? Check : ShoppingBag} 
-                        size={16} 
-                        strokeWidth={2} 
-                        spring="snappy" 
-                        reducedMotion="user" 
-                        className="text-white" 
-                      />
-                      <span>{isAdded ? (language === 'es' ? 'Añadido a la Bolsa' : 'Added to Bag') : (language === 'es' ? 'Añadir a la Bolsa' : 'Add to Bag')}</span>
-                    </>
-                  )}
-                </button>
-              </div>
-            </div>
-          ) : (
-            <div className="mt-6 pt-4 pb-[max(0.5rem,env(safe-area-inset-bottom))] border-t border-[#e2e5e2] flex items-center justify-between">
-              <span className="text-xs text-[#666f68] font-mono">
-                {language === 'es' ? 'Drip de Archivo & Cultura DRYP.' : 'DRYP. Cultural & Archive Drip'}
-              </span>
-              <button
-                onClick={() => onToggleSave(item.id)}
-                className="px-5 py-2.5 min-h-[40px] rounded-full bg-[#121613] hover:bg-[#252c26] text-white text-xs font-bold transition-all cursor-pointer shadow-xs"
-              >
-                {isSaved ? (language === 'es' ? 'Drip guardado' : 'Saved') : (language === 'es' ? 'Guardar drip' : 'Save drip')}
-              </button>
-            </div>
-          )}
 
         </div>
 

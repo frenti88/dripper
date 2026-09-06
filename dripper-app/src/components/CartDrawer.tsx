@@ -27,12 +27,14 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   const [receiptNumber, setReceiptNumber] = useState<string | null>(null);
   const [isCheckingOut, setIsCheckingOut] = useState(false);
 
+  const handleClose = React.useCallback(() => {
+    setReceiptNumber(null);
+    setIsCheckingOut(false);
+    onClose();
+  }, [onClose]);
+
   useEffect(() => {
-    if (!isOpen) {
-      setReceiptNumber(null);
-      setIsCheckingOut(false);
-      return;
-    }
+    if (!isOpen) return;
 
     previousActiveElement.current = document.activeElement as HTMLElement;
     document.body.style.overflow = 'hidden';
@@ -43,7 +45,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        onClose();
+        handleClose();
         return;
       }
 
@@ -76,7 +78,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
       window.removeEventListener('keydown', handleKeyDown);
       previousActiveElement.current?.focus();
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, handleClose]);
 
   if (!isOpen) return null;
 
@@ -102,7 +104,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
     >
       {/* Backdrop */}
       <div 
-        onClick={onClose}
+        onClick={handleClose}
         aria-hidden="true"
         className="absolute inset-0 bg-[#121613]/45 backdrop-blur-xs transition-opacity"
       />
@@ -131,7 +133,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
             <button
               ref={closeButtonRef}
-              onClick={onClose}
+              onClick={handleClose}
               aria-label={t('closeBag')}
               className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-full border border-[#e8e3da] hover:border-[#151413] hover:bg-[#f4efea] flex items-center justify-center transition-colors cursor-pointer text-[#151413] shrink-0"
             >
@@ -285,7 +287,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                         <button
                           onClick={() => onUpdateQuantity(item.product.id, -1)}
                           className="w-7 h-7 flex items-center justify-center text-[#4b463f] hover:text-[#151413] cursor-pointer rounded-full hover:bg-white transition-colors"
-                          aria-label="Decrease quantity"
+                          aria-label={language === 'es' ? 'Reducir cantidad' : 'Decrease quantity'}
                         >
                           <MorphIcon 
                             icon={item.quantity === 1 ? Trash2 : Minus} 
@@ -301,7 +303,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                         <button
                           onClick={() => onUpdateQuantity(item.product.id, 1)}
                           className="w-7 h-7 flex items-center justify-center text-[#4b463f] hover:text-[#151413] cursor-pointer rounded-full hover:bg-white transition-colors"
-                          aria-label="Increase quantity"
+                          aria-label={language === 'es' ? 'Aumentar cantidad' : 'Increase quantity'}
                         >
                           <MorphIcon icon={Plus} size={12} strokeWidth={1.5} spring="snappy" reducedMotion="user" />
                         </button>

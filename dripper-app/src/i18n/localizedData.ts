@@ -388,43 +388,83 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'fossil-raptor'
     },
     {
-      id: 'lens-50-retro',
+      id: 'lens-50',
       numberCode: '05',
       collection: 'Lens',
       categoryTag: 'Editions',
       dropCode: 'EDITION 02',
       eyebrow: 'LENS 01',
-      name: 'Lens 50',
+      name: 'Lens 50mm f/1.4',
       headline: 'Click into focus.',
-      story: 'Inspired by 1970s manual prime camera lenses. Knurled aperture rings on the exterior wall act as thermal heat sinks, letting you hold the dripper immediately after a boiling 96°C pour.',
-      objectDescription: 'Heavy-gauge ceramic body with ribbed metal-style outer texture. Inner chamber features stepped geometric flow ribs that mimic mechanical aperture blades.',
+      story: 'Crafted from matte black stoneware inspired by vintage 35mm prime lenses. Features knurled focus rings, engraved white aperture marks from f/2.8 to f/16, and a precision red index mount dot.',
+      objectDescription: 'Internal stepped geometric fluting simulates optical diaphragm regulation, calibrating flow dwell time to draw deep sweetness and velvety body from specialty roasts.',
       price: 74,
       currency: 'USD',
       stockStatus: 'available',
-      stockLabel: 'In stock',
-      stockCountRemaining: 24,
+      stockLabel: 'In stock • Low inventory',
+      stockCountRemaining: 18,
       paletteColors: [
-        { name: 'Vintage Barrel Black', hex: '#1C1B1A' },
-        { name: 'Anodized Silver Rim', hex: '#C0BCB6' }
+        { name: 'Matte Barrel Black', hex: '#1C1B1A' },
+        { name: 'Aperture White Engraving', hex: '#FFFFFF' }
       ],
       specs: {
         extractionStyle: 'Deep caramelized sweetness, dense syrupy mouthfeel',
         flowRate: 'Regulated stepped dwell with single central restriction aperture',
-        capacity: '1–3 Cups (18g–36g coffee bed)',
-        filterType: 'Flat bottom basket filters (Kalita 185) or 02 Cone',
-        material: 'Semi-vitrified stoneware with knurled grip rings and food-grade mineral glaze',
-        origin: 'Neblaria Studio',
+        capacity: '1–2 Cups (15g–30g coffee bed)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'Matte black semi-vitrified stoneware with knurled grip rings',
+        origin: 'Valle de Silaria',
         weight: '345g',
         idealRecipe: {
-          dose: '20g',
-          water: '320ml',
-          temperature: '92°C',
-          brewTime: '3:15 min',
-          ratio: '1:16',
-          grindSize: 'Medium-Coarse'
+          dose: '18g',
+          water: '300ml',
+          temperature: '93°C',
+          brewTime: '3:00 min',
+          ratio: '1:16.6',
+          grindSize: 'Medium'
         }
       },
       tagline: 'Coffee tastes better with stories around it.',
+      visualType: 'lens-50'
+    },
+    {
+      id: 'cinema-35mm-film',
+      numberCode: '25',
+      collection: 'Cinema',
+      categoryTag: 'Editions',
+      dropCode: 'CINEMA 01',
+      eyebrow: 'CINEMA 01',
+      name: '35mm Film',
+      headline: 'Frame by frame, drop by drop: each pour, an unrepeatable take.',
+      story: 'Matte black stoneware cone with hand-fired film perforation cutouts circling the upper rim and a knurled base ring engraved with DRYP. — a direct translation of 35mm celluloid into functional ceramic.',
+      objectDescription: 'The perforated rim creates air ventilation channels that regulate internal thermal convection during the bloom phase. A brass dial knob on the tripod leg is purely decorative — a nod to vintage camera mechanics.',
+      price: 89,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Celluloid Edition',
+      stockCountRemaining: 24,
+      paletteColors: [
+        { name: 'Matte Film Black', hex: '#1A1A1A' },
+        { name: 'Brass Dial Gold', hex: '#C9A050' }
+      ],
+      specs: {
+        extractionStyle: 'Bold, rich body with dark chocolate and toasted grain notes',
+        flowRate: 'Medium-slow controlled drawdown',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'Matte black high-fire stoneware with brass accent',
+        origin: 'Valle de Silaria',
+        weight: '370g',
+        idealRecipe: {
+          dose: '17g',
+          water: '280ml',
+          temperature: '92°C',
+          brewTime: '3:10 min',
+          ratio: '1:16.5',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Every morning is a scene worth shooting.',
       visualType: 'lens-50'
     },
     {
@@ -476,27 +516,27 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'OBJECT 07',
       eyebrow: 'SPACE 01',
-      name: 'Orbit',
+      name: 'Orbit Lunar Crater',
       headline: 'Looking up at things far away.',
-      story: 'Textures inspired by Apollo command module heat shields and lunar regolith. A spherical base collar meets a conical ceramic funnel.',
-      objectDescription: 'Hand-stippled porous surface glaze creates a micro-insulating air layer between the ceramic and the barista’s hand.',
-      price: 82,
+      story: 'Cratered basalt stoneware cone with hand-sculpted lunar topography, tactile rim loop handle, and a solid brushed brass pedestal base debossed with the studio hallmark.',
+      objectDescription: 'Porous volcanic stoneware creates deep thermal retention while the precision machined brass ring anchors steady, vibration-free manual drawdown.',
+      price: 92,
       currency: 'USD',
-      stockStatus: 'low_stock',
-      stockLabel: 'Almost gone • 4 units left',
-      stockCountRemaining: 4,
+      stockStatus: 'available',
+      stockLabel: 'Available • Lunar Edition',
+      stockCountRemaining: 14,
       paletteColors: [
-        { name: 'Lunar Dust Grey', hex: '#D5D0C7' },
-        { name: 'Solar Gold Rim', hex: '#C59A45' }
+        { name: 'Basalt Black Crater', hex: '#2A2928' },
+        { name: 'Turned Solid Brass', hex: '#C59A45' }
       ],
       specs: {
         extractionStyle: 'Clean, sweet, transparent cup with prolonged finish',
         flowRate: 'Medium-fast circular centrifugal drainage',
         capacity: '1–2 Cups (15g–28g dose)',
         filterType: 'Standard 02 Conical filters',
-        material: 'High-fire mineral composite ceramic',
+        material: 'Porous basalt stoneware with machined solid brass base',
         origin: 'Cumbres de Neblaria',
-        weight: '330g',
+        weight: '380g',
         idealRecipe: {
           dose: '18g',
           water: '300ml',
@@ -631,6 +671,492 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Lab tested for extreme clarity.',
       visualType: 'flow-01'
+    },
+    {
+      id: 'music-vinyl-33',
+      numberCode: '11',
+      collection: 'Music',
+      categoryTag: 'Editions',
+      dropCode: 'AUDIO 01',
+      eyebrow: 'AUDIO 01',
+      name: 'Vinyl Groove 33 RPM',
+      headline: 'The warm tactile crackle before the morning melody begins.',
+      story: 'Matte black conical dripper with concentric vinyl micro-grooves spiraling inward and a polished solid brass center core label disc. Engineered to laminarize water flow.',
+      objectDescription: 'Micro-concentric ridges slow down channel bypassing, maximizing sweetness extraction in medium-dark and washed specialty coffees.',
+      price: 84,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available (80 pieces)',
+      stockCountRemaining: 80,
+      paletteColors: [
+        { name: 'Matte Vinyl Black', hex: '#1C1C1C' },
+        { name: 'Solid Brass Disc', hex: '#C9A050' }
+      ],
+      specs: {
+        extractionStyle: 'High sweetness, rich body, controlled acidity',
+        flowRate: 'Controlled medium laminar drainage',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Conical 01 / 02 filters',
+        material: 'High-density matte ceramic with brass center insert',
+        origin: 'Valle de Silaria',
+        weight: '340g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '92°C',
+          brewTime: '3:05 min',
+          ratio: '1:16.25',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Acoustic concentric geometry for deliberate morning rituals.',
+      visualType: 'core-black'
+    },
+    {
+      id: 'music-waveform-gold',
+      numberCode: '23',
+      collection: 'Music',
+      categoryTag: 'Editions',
+      dropCode: 'AUDIO 02',
+      eyebrow: 'AUDIO 02',
+      name: 'Waveform Gold',
+      headline: 'The moment silence becomes frequency: the wave that draws the morning before the first sip.',
+      story: 'Ivory white porcelain cone with a precision screen-printed golden sound-wave motif and a matte brass accent ring at the base. A small brass dial stud marks the handle grip.',
+      objectDescription: 'High-fire porcelain with a smooth matte ivory glaze. The waveform is applied with metallic gold luster fired at a second temperature, creating a tactile relief against the raw white surface.',
+      price: 96,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Gold Edition',
+      stockCountRemaining: 18,
+      paletteColors: [
+        { name: 'Ivory Matte White', hex: '#F0EDE6' },
+        { name: 'Matte Gold Luster', hex: '#C9A050' }
+      ],
+      specs: {
+        extractionStyle: 'Delicate, floral clarity with a long resonant finish',
+        flowRate: 'Medium even drawdown',
+        capacity: '1–2 Cups (14g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire porcelain with gold luster detailing and brass ring',
+        origin: 'Valle de Silaria',
+        weight: '330g',
+        idealRecipe: {
+          dose: '15g',
+          water: '250ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.7',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Every pour, a frequency.',
+      visualType: 'core-black'
+    },
+    {
+      id: 'nature-colibri-andes',
+      numberCode: '12',
+      collection: 'Nature',
+      categoryTag: 'Editions',
+      dropCode: 'BIO 01',
+      eyebrow: 'BIO 01',
+      name: 'Colibrí & Bosque de Niebla',
+      headline: 'Morning dew on mountain leaves and swift hummingbird wings.',
+      story: 'Speckled ivory stoneware with hand-carved spiral feather ribs in reactive emerald green glaze, internal drainage grooves, and an ergonomic loop handle.',
+      objectDescription: 'Spiral fluting mimics aerodynamic hummingbird feathering, providing smooth air venting and rapid extraction that preserves floral and citrus aromatics.',
+      price: 88,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available (Cumbres de Neblaria)',
+      stockCountRemaining: 25,
+      paletteColors: [
+        { name: 'Speckled Cloud Cream', hex: '#EAE5D9' },
+        { name: 'Reactive Emerald Glaze', hex: '#2A6A4E' }
+      ],
+      specs: {
+        extractionStyle: 'High clarity, pronounced floral and bright fruit aromatics',
+        flowRate: 'Agile aerodynamic spiral flow',
+        capacity: '1–2 Cups (15g–25g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'Speckled mountain stoneware with reactive botanical glaze',
+        origin: 'Cumbres de Neblaria',
+        weight: '310g',
+        idealRecipe: {
+          dose: '15g',
+          water: '250ml',
+          temperature: '94°C',
+          brewTime: '2:20 min',
+          ratio: '1:16.6',
+          grindSize: 'Medium-Fine'
+        }
+      },
+      tagline: 'Aerodynamic vitality born from high mist-covered peaks.',
+      visualType: 'artist-001'
+    },
+    {
+      id: 'arch-bauhaus-dessau',
+      numberCode: '13',
+      collection: 'Architecture',
+      categoryTag: 'Editions',
+      dropCode: 'ARCH 01',
+      eyebrow: 'ARCH 01',
+      name: 'Bauhaus Dessau 1925',
+      headline: 'Form strictly following coffee extraction physics.',
+      story: 'Sand grog refractory stoneware with a crisp trapezoidal triangular handle and flat circular base. Faithful to Walter Gropius: eliminate all superficial ornament so pure structural truth guides the pour.',
+      objectDescription: 'Equidistant interior drainage flutes hold standard conical filters in gentle air suspension, achieving smooth drawdown and clinical flavor clarity.',
+      price: 88,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Bauhaus Edition',
+      stockCountRemaining: 30,
+      paletteColors: [
+        { name: 'Grog Sand Beige', hex: '#DCD4C4' },
+        { name: 'Matte Raw Terracotta', hex: '#A85A3C' }
+      ],
+      specs: {
+        extractionStyle: 'Clean, transparent, crisp geometric separation of notes',
+        flowRate: 'Medium-fast direct linear descent',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'Refractory sand-grog stoneware fired at 1280°C',
+        origin: 'Atelier Bauhaus • Cumbres de Neblaria',
+        weight: '360g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '94°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.6',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Pure functionalist architecture for your morning counter.',
+      visualType: 'brutalist'
+    },
+    {
+      id: 'arch-origami-fold',
+      numberCode: '22',
+      collection: 'Architecture',
+      categoryTag: 'Editions',
+      dropCode: 'ARCH 02',
+      eyebrow: 'ARCH 02',
+      name: 'Origami Fold',
+      headline: 'The silence of a perfect fold: geometry that honors water.',
+      story: 'Speckled white sand stoneware with angular faceted panels inspired by Japanese origami. Twelve planar folds converge at the base, resting on a turned solid walnut disc.',
+      objectDescription: 'High-fire speckled stoneware with a matte raw finish. The faceted exterior creates micro air channels that regulate thermal retention, while the walnut base provides visual warmth and counter stability.',
+      price: 94,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Origami Edition',
+      stockCountRemaining: 22,
+      paletteColors: [
+        { name: 'Speckled Sand White', hex: '#E6E2D9' },
+        { name: 'Walnut Brown', hex: '#6B4226' }
+      ],
+      specs: {
+        extractionStyle: 'Soft, rounded body with gentle sweetness and low acidity',
+        flowRate: 'Slow-medium even drawdown',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire speckled stoneware with solid walnut base',
+        origin: 'Atelier Bauhaus • Cumbres de Neblaria',
+        weight: '380g',
+        idealRecipe: {
+          dose: '17g',
+          water: '280ml',
+          temperature: '93°C',
+          brewTime: '3:00 min',
+          ratio: '1:16.5',
+          grindSize: 'Medium-coarse'
+        }
+      },
+      tagline: 'Twelve folds. One perfect pour.',
+      visualType: 'brutalist'
+    },
+    {
+      id: 'retro-stripes-70s',
+      numberCode: '14',
+      collection: 'Retro',
+      categoryTag: 'Editions',
+      dropCode: 'RETRO 01',
+      eyebrow: 'RETRO 01',
+      name: 'Retro Speed Stripes 1974',
+      headline: 'The nostalgic warmth of 1970s analog speedways and cassette tapes.',
+      story: 'Speckled cream stoneware cone decorated with bold horizontal racing stripes in ochre yellow, warm orange, rich terracotta, and midnight navy blue.',
+      objectDescription: 'High-temperature glazed pigments fired atop natural speckled mountain clay deliver vibrant vintage personality combined with a calibrated conical pour-over dynamic.',
+      price: 86,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • 1974 Edition',
+      stockCountRemaining: 40,
+      paletteColors: [
+        { name: 'Speckled Oat Cream', hex: '#EAE5D9' },
+        { name: 'Rally Ochre & Orange', hex: '#D97706' },
+        { name: 'Midnight Navy', hex: '#1E293B' }
+      ],
+      specs: {
+        extractionStyle: 'Balanced, round body, lively citrus and sweet caramel finish',
+        flowRate: 'Balanced medium drainage',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire speckled stoneware with hand-painted ceramic glazes',
+        origin: 'Retro Lab • Cumbres de Neblaria',
+        weight: '350g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.25',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Vintage 1970s soul with modern specialty coffee precision.',
+      visualType: 'core'
+    },
+    {
+      id: 'retro-nes-8bit',
+      numberCode: '20',
+      collection: 'Retro',
+      categoryTag: 'Editions',
+      dropCode: 'RETRO 02',
+      eyebrow: 'RETRO 02',
+      name: 'NES — Brew Play Repeat',
+      headline: 'Saturday morning, 1988: coffee brewing, cartridge loaded, the world on pause.',
+      story: 'Smoke-white stoneware cone with an angular handle inspired by the classic 8-bit gamepad. D-pad and A/B button motifs fired in deep charcoal and red on the base ring.',
+      objectDescription: 'High-fire ceramic with matte smoke-white glaze and precision-painted gaming iconography. The angular handle echoes the geometric grammar of 1980s console design.',
+      price: 92,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • 8-bit Edition',
+      stockCountRemaining: 28,
+      paletteColors: [
+        { name: 'Smoke White', hex: '#E8E5E0' },
+        { name: 'Charcoal 8-bit', hex: '#2D2D2D' },
+        { name: 'A-Button Red', hex: '#CC2929' }
+      ],
+      specs: {
+        extractionStyle: 'Clean, structured body with bright acidity and a long finish',
+        flowRate: 'Medium-fast single pour',
+        capacity: '1–2 Cups (14g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire stoneware with ceramic glaze detailing',
+        origin: 'Retro Lab • Cumbres de Neblaria',
+        weight: '360g',
+        idealRecipe: {
+          dose: '15g',
+          water: '250ml',
+          temperature: '93°C',
+          brewTime: '2:40 min',
+          ratio: '1:16.7',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Brew Play Repeat.',
+      visualType: 'core'
+    },
+    {
+      id: 'nature-botanical-wings',
+      numberCode: '15',
+      collection: 'Nature',
+      categoryTag: 'Editions',
+      dropCode: 'BIO 02',
+      eyebrow: 'BIO 02',
+      name: 'Nervadura Botánica & Alas de Libélula',
+      headline: 'Fractal perfection inspired by dragonfly wings and mountain foliage.',
+      story: 'Sculpted in ivory porcelain with delicate raised venation ridges evoking dragonfly wing cellular structures and high-altitude flora, highlighted by toasted caramel reactive glaze.',
+      objectDescription: 'External and internal relief ribs act as natural convective channels, promoting optimal degassing during pre-infusion while retaining bright floral aromatics.',
+      price: 90,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available (Cumbres de Neblaria)',
+      stockCountRemaining: 20,
+      paletteColors: [
+        { name: 'Ivory Porcelain', hex: '#F5F2EA' },
+        { name: 'Toasted Caramel Reactive Glaze', hex: '#B87A3E' }
+      ],
+      specs: {
+        extractionStyle: 'Silky mouthfeel, intense jasmine florals, and sparkling acidity',
+        flowRate: 'Aerodynamic convective drainage',
+        capacity: '1–2 Cups (15g–26g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'Fine ivory porcelain with botanical reactive glaze relief',
+        origin: 'Bio Atelier • Cumbres de Neblaria',
+        weight: '320g',
+        idealRecipe: {
+          dose: '15g',
+          water: '250ml',
+          temperature: '94°C',
+          brewTime: '2:25 min',
+          ratio: '1:16.6',
+          grindSize: 'Medium-Fine'
+        }
+      },
+      tagline: 'Biomimetic wing venation translating nature into liquid craft.',
+      visualType: 'artist-001'
+    },
+    {
+      id: 'fossil-skull-trex',
+      numberCode: '16',
+      collection: 'Prehistoric',
+      categoryTag: 'Editions',
+      dropCode: 'DROP 001',
+      eyebrow: 'PALEO 03',
+      name: 'Fossil Skull T-Rex',
+      headline: 'Millions of years of apex evolution awakening with the first hot pour.',
+      story: 'Heavily textured sedimentary sandstone stoneware sculpted with an authentic theropod dinosaur skull in high relief, complete with hollow cranial orbits and serrated predatory teeth.',
+      objectDescription: 'Vertical drainage flutes line the interior chamber, ensuring consistent linear hydraulic flow through the coffee bed despite the wild prehistoric exterior relief.',
+      price: 96,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available (042 / 100 numbered pieces)',
+      stockCountRemaining: 42,
+      paletteColors: [
+        { name: 'Sedimentary Fossil Sandstone', hex: '#8B7355' },
+        { name: 'Weathered Bone Ash', hex: '#D2B48C' }
+      ],
+      specs: {
+        extractionStyle: 'Deep, rich extraction with bold caramelized body and low astringency',
+        flowRate: 'Steady linear vertical drainage',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire porous sandstone stoneware fired at 1280°C',
+        origin: 'Paleo Atelier • Valle de Silaria',
+        weight: '390g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '94°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.6',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Apex predator architecture translated into artisanal coffee ritual.',
+      visualType: 'fossil-t'
+    },
+    {
+      id: 'orbital-gyro-kinetic',
+      numberCode: '21',
+      collection: 'Experimental',
+      categoryTag: 'Lab',
+      dropCode: 'EXP 01',
+      eyebrow: 'EXPERIMENTAL 01',
+      name: '21 / Orbital Gyro',
+      headline: 'Orbital physics and gyroscopic suspension sculpted in volcanic stoneware and brass.',
+      story: 'Speckled sand stoneware cone with a ventilated helical exoskeleton and solid brass orbital ring. Inspired by nautical gyroscopes and celestial orbits to keep pour dynamics suspended in equilibrium.',
+      objectDescription: 'Internal spiral flutes guide 93°C water in a continuous laminar stream, while the metallic ring mass acts as kinetic counterweight and exterior thermal stabilizer.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Experimental Edition',
+      stockCountRemaining: 25,
+      paletteColors: [
+        { name: 'Speckled Sand Stoneware', hex: '#E2DDD3' },
+        { name: 'Raw Solid Brass', hex: '#C4A35A' },
+        { name: 'Raw Terracotta', hex: '#A85A3C' }
+      ],
+      specs: {
+        extractionStyle: 'Constant laminar flow, bright sweetness and silky suspended body',
+        flowRate: '3.8 ml/s continuous laminar stream',
+        capacity: '1–3 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire speckled stoneware (1,280°C) with solid brass orbital axis',
+        origin: 'Kinetic Atelier • Medellín',
+        weight: '390g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '93°C',
+          brewTime: '2:40 min',
+          ratio: '1:16.6',
+          grindSize: 'Medium-Fine'
+        }
+      },
+      tagline: 'Experimental gyroscopic sculpture engineered for mindful slow coffee rituals.',
+      visualType: 'core'
+    },
+    {
+      id: 'art-classical-muse',
+      numberCode: '22',
+      collection: 'Art',
+      categoryTag: 'Artists',
+      dropCode: 'ART 01',
+      eyebrow: 'ART 01',
+      name: '22 / Musa Clásica',
+      headline: 'Classical Hellenic marble sculpture translated into functional pour-over geometry.',
+      story: 'Textured marble-grog stoneware with a hand-sculpted Hellenic muse bust. The cascading hair waves guide internal extraction flutes for a sweet, crystalline cup.',
+      objectDescription: 'Interior vertical ribs seamlessly emerge from the classical sculpted hair locks, providing balanced air suspension and smooth drawdown for conical filters.',
+      price: 94,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Art Edition',
+      stockCountRemaining: 20,
+      paletteColors: [
+        { name: 'Classical Ivory Marble', hex: '#E6E0D4' },
+        { name: 'Warm Cream Sandstone', hex: '#D8CEBE' },
+        { name: 'Raw Terracotta', hex: '#A85A3C' }
+      ],
+      specs: {
+        extractionStyle: 'Clear, balanced, sweet aromatics with silky mouthfeel',
+        flowRate: '4.0 ml/s steady spiral descent',
+        capacity: '1–3 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'Fine ivory grog stoneware & quartz powder fired at 1,280°C',
+        origin: 'Classical Art Atelier • Medellín',
+        weight: '410g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.6',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Hand-sculpted classical bust honoring the timeless ritual of coffee extraction.',
+      visualType: 'artist-001'
+    },
+    {
+      id: 'art-calder-primary',
+      numberCode: '24',
+      collection: 'Art',
+      categoryTag: 'Artists',
+      dropCode: 'ART 02',
+      eyebrow: 'ART 02',
+      name: 'Calder Primary',
+      headline: 'The impossible balance of a Calder mobile suspended mid-air: gravity tamed by the grace of form.',
+      story: 'Speckled white stoneware cone painted with bold primary geometric shapes — red, blue, black, yellow — divided by thin painted lines, inspired by Alexander Calder\'s kinetic mobiles. Tripod base with black accent ring.',
+      objectDescription: 'High-fire speckled stoneware with hand-applied ceramic underglaze. Each geometric field is painted individually before the final firing, making each piece a unique composition within the same pattern.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Art Edition',
+      stockCountRemaining: 16,
+      paletteColors: [
+        { name: 'Speckled Natural White', hex: '#EAE7E1' },
+        { name: 'Calder Red', hex: '#CC2929' },
+        { name: 'Primary Blue', hex: '#1A3A6B' },
+        { name: 'Golden Yellow', hex: '#D4A017' }
+      ],
+      specs: {
+        extractionStyle: 'Vivid, bright acidity balanced with a sweet rounded body',
+        flowRate: 'Medium balanced drawdown',
+        capacity: '1–3 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire speckled stoneware with ceramic underglaze',
+        origin: 'Classical Art Atelier • Medellín',
+        weight: '390g',
+        idealRecipe: {
+          dose: '17g',
+          water: '280ml',
+          temperature: '93°C',
+          brewTime: '2:55 min',
+          ratio: '1:16.5',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Primary colors. Pure form. One perfect pour.',
+      visualType: 'artist-001'
     }
   ],
   es: [
@@ -807,37 +1333,77 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'OBJECT 05',
       eyebrow: 'OBJETO 05',
-      name: 'Lens 50',
-      headline: 'Algunos momentos duraban solo 36 fotos.',
-      story: 'Antes de que todo viviera en pantallas, los momentos sabían esperar. Lens 50 toma las formas concéntricas de los lentes manuales clásicos de 50mm y las traslada al ritual del café.',
-      objectDescription: 'Canales de apertura escalonados concéntricos que regulan el paso del agua y prolongan el contacto. Entrega dulzura profunda, cuerpo caramelizado y notas a chocolate.',
+      name: 'Lens 50mm f/1.4',
+      headline: 'El clic mecánico del diafragma antes de congelar un segundo irrepetible.',
+      story: 'Inspirado en los míticos objetivos analógicos para fotografía de 35mm. Cerámica negra mate de alta densidad con estrías de enfoque táctil, escala de aperturas f/2.8 a f/16 serigrafiada y punto rojo de montaje.',
+      objectDescription: 'El cuello cónico estriado interior desacelera progresivamente el paso del agua emulando el diafragmado óptico, potenciando el cuerpo y la dulzura profunda de los granos.',
       price: 74,
       currency: 'USD',
       stockStatus: 'available',
-      stockLabel: 'Elige tu favorito',
-      stockCountRemaining: 23,
+      stockLabel: 'Disponible • Pocas unidades',
+      stockCountRemaining: 18,
       paletteColors: [
-        { name: 'Negro Óptico Mate', hex: '#1C1B1A' },
-        { name: 'Borde Plata Anodizado', hex: '#C0BCB6' }
+        { name: 'Negro Anodizado Mate', hex: '#1C1B1A' },
+        { name: 'Grabado Blanco Óptico', hex: '#FFFFFF' }
       ],
       specs: {
-        extractionStyle: 'Dulzura caramelizada profunda y sensación en boca densa',
-        flowRate: 'Tiempo de contacto regulado con orificio de restricción central',
-        capacity: '1–3 Tazas (cama de café de 18g–36g)',
-        filterType: 'Filtros de fondo plano (Kalita 185) o cono 02',
-        material: 'Gres semi-vitrificado con anillos estriados y esmalte mineral apto para alimentos',
-        origin: 'Taller de Neblaria',
+        extractionStyle: 'Dulzura profunda, cuerpo aterciopelado y acidez balanceada',
+        flowRate: 'Tiempo de contacto regulado con extracción laminar',
+        capacity: '1–2 Tazas (cama de café de 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres negro mate semi-vitrificado con anillos estriados de agarre',
+        origin: 'Valle de Silaria',
         weight: '345g',
         idealRecipe: {
-          dose: '20g',
-          water: '320ml',
-          temperature: '92°C',
-          brewTime: '3:15 min',
-          ratio: '1:16',
-          grindSize: 'Media-Gruesa'
+          dose: '18g',
+          water: '300ml',
+          temperature: '93°C',
+          brewTime: '3:00 min',
+          ratio: '1:16.6',
+          grindSize: 'Media'
         }
       },
-      tagline: 'El café sabe mejor cuando tiene historias alrededor.',
+      tagline: 'Fotografía analógica y ritual de café en una sola pieza de autor.',
+      visualType: 'lens-50'
+    },
+    {
+      id: 'cinema-35mm-film',
+      numberCode: '25',
+      collection: 'Cinema',
+      categoryTag: 'Editions',
+      dropCode: 'CINEMA 01',
+      eyebrow: 'CINE 01',
+      name: '35mm Film',
+      headline: 'Cuadro a cuadro, gota a gota: cada vertido, una toma irrepetible.',
+      story: 'Cono de gres negro mate con perforaciones de tira de película de 35mm horneadas en el borde superior y base moleteada con el sello DRYP. grabado — una traducción directa del celuloide analógico en cerámica funcional.',
+      objectDescription: 'El borde perforado crea canales de ventilación de aire que regulan la convección térmica interna durante la fase de preinfusión. El botón de latón en la pata del trípode es puramente decorativo — un guiño a la mecánica de las cámaras vintage.',
+      price: 89,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Celuloide',
+      stockCountRemaining: 24,
+      paletteColors: [
+        { name: 'Negro Película Mate', hex: '#1A1A1A' },
+        { name: 'Latón Dorado', hex: '#C9A050' }
+      ],
+      specs: {
+        extractionStyle: 'Cuerpo robusto y profundo con notas de chocolate negro y grano tostado',
+        flowRate: 'Medio-lento, drenaje controlado',
+        capacity: '1–2 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres negro de alta temperatura con detalle en latón',
+        origin: 'Valle de Silaria',
+        weight: '370g',
+        idealRecipe: {
+          dose: '17g',
+          water: '280ml',
+          temperature: '92°C',
+          brewTime: '3:10 min',
+          ratio: '1:16.5',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Cada mañana es una escena que vale la pena rodar.',
       visualType: 'lens-50'
     },
     {
@@ -889,27 +1455,27 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Editions',
       dropCode: 'OBJECT 07',
       eyebrow: 'ESPACIO 01',
-      name: 'Orbit',
-      headline: 'Mirando hacia cosas lejanas.',
-      story: 'Texturas inspiradas en los escudos térmicos del módulo de comando Apolo y el regolito lunar. Un collar base esférico que sostiene un embudo cerámico cónico.',
-      objectDescription: 'Esmalte poroso punteado a mano que genera una micro-capa de aire aislante entre la cerámica y la mano del barista.',
-      price: 82,
+      name: 'Orbit Lunar Crater',
+      headline: 'La inmensidad silenciosa del regolito lunar.',
+      story: 'Cono de gres basalto volcánico con cráteres esculpidos a mano, micro-asa táctil y peana circular de latón macizo cepillado grabada con el sello DRYP.',
+      objectDescription: 'El cuerpo de basalto poroso retiene el calor de extracción de forma uniforme, mientras la peana de latón torneado proporciona un centro de gravedad bajo y estabilidad milimétrica.',
+      price: 92,
       currency: 'USD',
-      stockStatus: 'low_stock',
-      stockLabel: 'Casi agotado • 4 unidades disponibles',
-      stockCountRemaining: 4,
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Lunar',
+      stockCountRemaining: 14,
       paletteColors: [
-        { name: 'Gris Polvo Lunar', hex: '#D5D0C7' },
-        { name: 'Borde Oro Solar', hex: '#C59A45' }
+        { name: 'Basalto Lunar Mate', hex: '#2A2928' },
+        { name: 'Peana Latón Cepillado', hex: '#C59A45' }
       ],
       specs: {
-        extractionStyle: 'Taza limpia, dulce y transparente con final prolongado',
+        extractionStyle: 'Taza limpia, dulce y balanceada con cuerpo sedoso',
         flowRate: 'Drenaje centrífugo circular medio-rápido',
         capacity: '1–2 Tazas (dosis de 15g–28g)',
         filterType: 'Filtros cónicos estándar 02',
-        material: 'Compuesto cerámico mineral de alta temperatura',
+        material: 'Gres de basalto poroso y peana de latón macizo mecanizado',
         origin: 'Cumbres de Neblaria',
-        weight: '330g',
+        weight: '380g',
         idealRecipe: {
           dose: '18g',
           water: '300ml',
@@ -919,7 +1485,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
           grindSize: 'Media'
         }
       },
-      tagline: 'Un poco de cosmos con tu café matutino.',
+      tagline: 'Un pedazo de cosmos en tu ritual matutino.',
       visualType: 'orbit'
     },
     {
@@ -1044,6 +1610,492 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Probado en laboratorio para una claridad extrema.',
       visualType: 'flow-01'
+    },
+    {
+      id: 'music-vinyl-33',
+      numberCode: '11',
+      collection: 'Music',
+      categoryTag: 'Editions',
+      dropCode: 'AUDIO 01',
+      eyebrow: 'AUDIO 01',
+      name: 'Vinyl Groove 33 RPM',
+      headline: 'El crujido cálido del vinilo antes de que inicie la melodía.',
+      story: 'Gotero cónico negro mate con microsurcos concéntricos inspirados en discos de vinilo a 33 RPM y disco central de latón macizo. Diseñado para laminar el caudal del agua.',
+      objectDescription: 'Las micro-estrías concéntricas reducen los canales de bypass acelerado, prolongando el contacto hidrodinámico para resaltar notas achocolatadas, melazas y cuerpo dulce.',
+      price: 84,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible (80 piezas)',
+      stockCountRemaining: 80,
+      paletteColors: [
+        { name: 'Negro Vinilo Mate', hex: '#1C1C1C' },
+        { name: 'Núcleo Latón Pulido', hex: '#C9A050' }
+      ],
+      specs: {
+        extractionStyle: 'Dulzura profunda, cuerpo aterciopelado y acidez redonda',
+        flowRate: 'Drenaje laminar controlado medio',
+        capacity: '1–2 Tazas (dosis de 15g–30g)',
+        filterType: 'Filtros cónicos estándar 01 / 02',
+        material: 'Cerámica negra mate de alta densidad con núcleo de latón',
+        origin: 'Valle de Silaria',
+        weight: '340g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '92°C',
+          brewTime: '3:05 min',
+          ratio: '1:16.25',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Acústica concéntrica para rituales matutinos conscientes.',
+      visualType: 'core-black'
+    },
+    {
+      id: 'music-waveform-gold',
+      numberCode: '23',
+      collection: 'Music',
+      categoryTag: 'Editions',
+      dropCode: 'AUDIO 02',
+      eyebrow: 'AUDIO 02',
+      name: 'Waveform Gold',
+      headline: 'El instante en que el silencio se convierte en frecuencia: la onda que dibuja la mañana antes del primer sorbo.',
+      story: 'Cono de porcelana blanca marfil con una onda de sonido serigrafíada en oro mate de precisión y un anillo base dorado en latón mate. Un pequeño tachón de latón marca el grip del asa.',
+      objectDescription: 'Porcelana de alta temperatura con esmalte marfil liso y mate. La forma de onda se aplica con lustre metálico dorado cocido en una segunda temperatura, creando un relieve táctil sobre la superficie blanca cruda.',
+      price: 96,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Oro',
+      stockCountRemaining: 18,
+      paletteColors: [
+        { name: 'Blanco Marfil Mate', hex: '#F0EDE6' },
+        { name: 'Lustre Oro Mate', hex: '#C9A050' }
+      ],
+      specs: {
+        extractionStyle: 'Delicado, claridad floral con un final largo y resonante',
+        flowRate: 'Drenaje uniforme medio',
+        capacity: '1–2 Tazas (dosis 14g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Porcelana de alta temperatura con detallado en lustre dorado y anillo de latón',
+        origin: 'Valle de Silaria',
+        weight: '330g',
+        idealRecipe: {
+          dose: '15g',
+          water: '250ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.7',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Cada vertido, una frecuencia.',
+      visualType: 'core-black'
+    },
+    {
+      id: 'nature-colibri-andes',
+      numberCode: '12',
+      collection: 'Nature',
+      categoryTag: 'Editions',
+      dropCode: 'BIO 01',
+      eyebrow: 'BIO 01',
+      name: 'Colibrí & Bosque de Niebla',
+      headline: 'El rocío fresco sobre las hojas verdes y el aleteo fugaz al amanecer.',
+      story: 'Gres crema moteado con nervaduras espirales en esmalte verde esmeralda reactivo, estrías internas de drenaje y asa ergonómica curva inspirada en el vuelo del colibrí.',
+      objectDescription: 'Las nervaduras talladas a mano en espiral favorecen una circulación de aire óptima entre el filtro y la pared cerámica, acelerando el paso del agua para preservar notas florales, cítricas y jazmín.',
+      price: 88,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible (Cumbres de Neblaria)',
+      stockCountRemaining: 25,
+      paletteColors: [
+        { name: 'Gres Crema Moteado', hex: '#EAE5D9' },
+        { name: 'Esmalte Esmeralda Reactivo', hex: '#2A6A4E' }
+      ],
+      specs: {
+        extractionStyle: 'Claridad floral brillante, notas cítricas vivas y final limpio',
+        flowRate: 'Flujo espiral aerodinámico ágil',
+        capacity: '1–2 Tazas (dosis de 15g–25g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres de alta montaña con esmalte vegetal reactivo',
+        origin: 'Cumbres de Neblaria',
+        weight: '310g',
+        idealRecipe: {
+          dose: '15g',
+          water: '250ml',
+          temperature: '94°C',
+          brewTime: '2:20 min',
+          ratio: '1:16.6',
+          grindSize: 'Media-Fina'
+        }
+      },
+      tagline: 'Vitalidad aerodinámica nacida en los bosques de niebla.',
+      visualType: 'artist-001'
+    },
+    {
+      id: 'arch-bauhaus-dessau',
+      numberCode: '13',
+      collection: 'Architecture',
+      categoryTag: 'Editions',
+      dropCode: 'ARCH 01',
+      eyebrow: 'ARQUITECTURA 01',
+      name: 'Bauhaus Dessau 1925',
+      headline: 'La forma sigue estrictamente a la física del café.',
+      story: 'Cono de gres refractario arena con asa triangular trapezoidal y peana circular plana. Fiel al manifiesto de Walter Gropius: eliminar todo ornamento superficial para que la estructura pura calibre el caudal del café.',
+      objectDescription: 'Las paredes interiores con nervaduras equidistantes sostienen el filtro cónico en suspensión aérea, logrando un drenaje uniforme y una taza de extrema claridad geométrica.',
+      price: 88,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Bauhaus',
+      stockCountRemaining: 30,
+      paletteColors: [
+        { name: 'Gres Arena Chamotado', hex: '#DCD4C4' },
+        { name: 'Terracota Natural Mate', hex: '#A85A3C' }
+      ],
+      specs: {
+        extractionStyle: 'Claridad cristalina, notas dulces definidas y balance limpio',
+        flowRate: 'Descenso directo lineal medio-rápido',
+        capacity: '1–2 Tazas (dosis de 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres refractario arena cocido a 1280°C',
+        origin: 'Atelier Bauhaus • Cumbres de Neblaria',
+        weight: '360g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '94°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.6',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Arquitectura funcionalista pura para tu mesa de café.',
+      visualType: 'brutalist'
+    },
+    {
+      id: 'arch-origami-fold',
+      numberCode: '22',
+      collection: 'Architecture',
+      categoryTag: 'Editions',
+      dropCode: 'ARCH 02',
+      eyebrow: 'ARQUITECTURA 02',
+      name: 'Origami Fold',
+      headline: 'El silencio de un pliegue perfecto: geometría que honra el agua.',
+      story: 'Cono de gres moteado blanco arena con paneles facetados angulares inspirados en el origami japonés. Doce planos convergentes en la base, apoyados sobre un disco de nogal macizo torneado a mano.',
+      objectDescription: 'Gres de alta temperatura con acabado mate crudo. El exterior facetado genera microcanales de aire que regulan la retención térmica, mientras la base de nogal aporta calidez visual y estabilidad sobre la barra.',
+      price: 94,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Origami',
+      stockCountRemaining: 22,
+      paletteColors: [
+        { name: 'Blanco Arena Moteado', hex: '#E6E2D9' },
+        { name: 'Nogal Oscuro', hex: '#6B4226' }
+      ],
+      specs: {
+        extractionStyle: 'Cuerpo suave y redondo con dulzura delicada y baja acidez',
+        flowRate: 'Lento-medio, drenaje uniforme',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres moteado de alta temperatura con base de nogal macizo',
+        origin: 'Atelier Bauhaus • Cumbres de Neblaria',
+        weight: '380g',
+        idealRecipe: {
+          dose: '17g',
+          water: '280ml',
+          temperature: '93°C',
+          brewTime: '3:00 min',
+          ratio: '1:16.5',
+          grindSize: 'Media-gruesa'
+        }
+      },
+      tagline: 'Doce pliegues. Un vertido perfecto.',
+      visualType: 'brutalist'
+    },
+    {
+      id: 'retro-stripes-70s',
+      numberCode: '14',
+      collection: 'Retro',
+      categoryTag: 'Editions',
+      dropCode: 'RETRO 01',
+      eyebrow: 'RETRO 01',
+      name: 'Retro Speed Stripes 1974',
+      headline: 'La calidez nostálgica de las pistas y cintas analógicas de los años setenta.',
+      story: 'Cono de gres crema moteado decorado con audaces bandas de velocidad en amarillo ocre, naranja cálido, terracota y azul marino profundo. Inspiración rally y gráfica vintage setentera.',
+      objectDescription: 'Pigmentos horneados a alta temperatura sobre barro moteado natural que combinan una personalidad retro vibrante con una dinámica de extracción cónica balanceada.',
+      price: 86,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición 1974',
+      stockCountRemaining: 40,
+      paletteColors: [
+        { name: 'Crema Avena Moteada', hex: '#EAE5D9' },
+        { name: 'Ocre & Naranja Rally', hex: '#D97706' },
+        { name: 'Azul Noche Profundo', hex: '#1E293B' }
+      ],
+      specs: {
+        extractionStyle: 'Cuerpo redondo, acidez cítrica viva y final dulce acaramelado',
+        flowRate: 'Drenaje medio balanceado',
+        capacity: '1–2 Tazas (dosis de 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres de montaña moteado con esmaltes pigmentados horneados',
+        origin: 'Retro Lab • Cumbres de Neblaria',
+        weight: '350g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.25',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Alma vintage de 1974 con precisión moderna de especialidad.',
+      visualType: 'core'
+    },
+    {
+      id: 'retro-nes-8bit',
+      numberCode: '20',
+      collection: 'Retro',
+      categoryTag: 'Editions',
+      dropCode: 'RETRO 02',
+      eyebrow: 'RETRO 02',
+      name: 'NES — Brew Play Repeat',
+      headline: 'El sábado por la mañana de 1988: cafetera encendida, cartucho insertado, el día empieza en pausa.',
+      story: 'Cono de gres blanco humo con asa angular inspirada en el gamepad de 8 bits clásico. Iconografía de cruceta y botones A/B horneada en carbón profundo y rojo sobre el anillo de base.',
+      objectDescription: 'Cerámica de alta temperatura con esmalte blanco humo mate e iconografía gamer pintada con precisión. El asa angular refleja la gramática geométrica del diseño de consolas de los años ochenta.',
+      price: 92,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición 8-bit',
+      stockCountRemaining: 28,
+      paletteColors: [
+        { name: 'Blanco Humo', hex: '#E8E5E0' },
+        { name: 'Carbón 8-bit', hex: '#2D2D2D' },
+        { name: 'Rojo Botón A', hex: '#CC2929' }
+      ],
+      specs: {
+        extractionStyle: 'Cuerpo limpio y estructurado, acidez brillante y final largo',
+        flowRate: 'Medio-rápido, vertido único',
+        capacity: '1–2 Tazas (dosis 14g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres de alta temperatura con detallado en esmalte cerámico',
+        origin: 'Retro Lab • Cumbres de Neblaria',
+        weight: '360g',
+        idealRecipe: {
+          dose: '15g',
+          water: '250ml',
+          temperature: '93°C',
+          brewTime: '2:40 min',
+          ratio: '1:16.7',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Brew Play Repeat.',
+      visualType: 'core'
+    },
+    {
+      id: 'nature-botanical-wings',
+      numberCode: '15',
+      collection: 'Nature',
+      categoryTag: 'Editions',
+      dropCode: 'BIO 02',
+      eyebrow: 'BIO 02',
+      name: 'Nervadura Botánica & Alas de Libélula',
+      headline: 'Perfección fractal inspirada en alas de libélula y botánica de alta montaña.',
+      story: 'Esculpido en porcelana marfil con venaciones biomiméticas en relieve que recrean la estructura celular de las alas de libélula, acentuadas con esmalte reactivo tostado.',
+      objectDescription: 'Las costillas exteriores e interiores actúan como canales de respiración térmica, permitiendo una desgasificación óptima durante la preinfusión y resaltando notas florales vivas.',
+      price: 90,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible (Cumbres de Neblaria)',
+      stockCountRemaining: 20,
+      paletteColors: [
+        { name: 'Porcelana Marfil', hex: '#F5F2EA' },
+        { name: 'Esmalte Caramelo Reactivo', hex: '#B87A3E' }
+      ],
+      specs: {
+        extractionStyle: 'Sensación sedosa en boca, intensas notas florales de jazmín y acidez brillante',
+        flowRate: 'Drenaje aerodinámico convectivo',
+        capacity: '1–2 Tazas (dosis de 15g–26g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Porcelana fina marfil con relieve botánico en esmalte reactivo',
+        origin: 'Bio Atelier • Cumbres de Neblaria',
+        weight: '320g',
+        idealRecipe: {
+          dose: '15g',
+          water: '250ml',
+          temperature: '94°C',
+          brewTime: '2:25 min',
+          ratio: '1:16.6',
+          grindSize: 'Media-Fina'
+        }
+      },
+      tagline: 'Venación biomimética que traduce la naturaleza en café extraordinario.',
+      visualType: 'artist-001'
+    },
+    {
+      id: 'fossil-skull-trex',
+      numberCode: '16',
+      collection: 'Prehistoric',
+      categoryTag: 'Editions',
+      dropCode: 'DROP 001',
+      eyebrow: 'PALEO 03',
+      name: 'Fossil Skull T-Rex',
+      headline: 'Millones de años de evolución colosal despertando con la primera gota de agua hirviendo.',
+      story: 'Gres arenisca sedimentario de textura rústica profunda, esculpido con un cráneo fósil de terópodo en alto relieve, cuencas craneales huecas y dentadura carnívora aserrada.',
+      objectDescription: 'El interior incorpora estrías verticales de drenaje lineal calibrado, asegurando una extracción hidrodinámica balanceada que compensa la fuerza salvaje de la escultura exterior.',
+      price: 96,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible (042 / 100 piezas numeradas)',
+      stockCountRemaining: 42,
+      paletteColors: [
+        { name: 'Arenisca Fósil Sedimentaria', hex: '#8B7355' },
+        { name: 'Ceniza de Hueso Ancestral', hex: '#D2B48C' }
+      ],
+      specs: {
+        extractionStyle: 'Extracción profunda y dulce, cuerpo caramelizado denso y acidez redonda',
+        flowRate: 'Drenaje vertical directo constante',
+        capacity: '1–2 Tazas (dosis de 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres arenisca poroso de alta temperatura horneado a 1280°C',
+        origin: 'Paleo Atelier • Valle de Silaria',
+        weight: '390g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '94°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.6',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Anatomía de depredador mesozoico traducida en un ritual de café inolvidable.',
+      visualType: 'fossil-t'
+    },
+    {
+      id: 'orbital-gyro-kinetic',
+      numberCode: '21',
+      collection: 'Experimental',
+      categoryTag: 'Lab',
+      dropCode: 'EXP 01',
+      eyebrow: 'EXPERIMENTAL 01',
+      name: '21 / Orbital Gyro',
+      headline: 'La física orbital y la suspensión giroscópica esculpidas en gres volcánico y latón.',
+      story: 'Cono de gres moteado arena con exoesqueleto helicoidal ventilado y anillo orbital de latón macizo. Inspirado en giroscopios náuticos y órbitas celestes para mantener la inercia del vertido suspendida en equilibrio.',
+      objectDescription: 'Las estrías espirales interiores guían el agua a 93\u00A0°C con un caudal laminar continuo, mientras la masa del anillo metálico actúa como contrapeso cinético y estabilizador térmico exterior.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Experimental',
+      stockCountRemaining: 25,
+      paletteColors: [
+        { name: 'Gres Arena Moteado', hex: '#E2DDD3' },
+        { name: 'Latón Macizo Dorado', hex: '#C4A35A' },
+        { name: 'Terracota Volcánico', hex: '#A85A3C' }
+      ],
+      specs: {
+        extractionStyle: 'Flujo laminar constante, acidez brillante y cuerpo sedoso suspendido',
+        flowRate: '3.8 ml/s continuo laminar',
+        capacity: '1–3 Tazas (dosis de 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres chamotado arena horneado a 1.280\u00A0°C con eje y esfera de latón macizo',
+        origin: 'Atelier Experimental • Medellín',
+        weight: '390g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '93°C',
+          brewTime: '2:40 min',
+          ratio: '1:16.6',
+          grindSize: 'Media-Fina'
+        }
+      },
+      tagline: 'Escultura giroscópica experimental para el ritual de café lento.',
+      visualType: 'core'
+    },
+    {
+      id: 'art-classical-muse',
+      numberCode: '22',
+      collection: 'Art',
+      categoryTag: 'Artists',
+      dropCode: 'ART 01',
+      eyebrow: 'ARTE 01',
+      name: '22 / Musa Clásica',
+      headline: 'La escultura clásica helénica traducida a geometría de vertido funcional.',
+      story: 'Gres marmóreo texturizado con busto helénico esculpido a mano. Las ondas del cabello guían el flujo interior hacia un vertido dulce y cristalino.',
+      objectDescription: 'Las nervaduras interiores nacen orgánicamente del cabello esculpido clásico, suspendiendo el filtro cónico en cámara de aire para una extracción homogénea y limpia.',
+      price: 94,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Arte',
+      stockCountRemaining: 20,
+      paletteColors: [
+        { name: 'Mármol Marfil Clásico', hex: '#E6E0D4' },
+        { name: 'Arenisca Crema Cálida', hex: '#D8CEBE' },
+        { name: 'Terracota Volcánico', hex: '#A85A3C' }
+      ],
+      specs: {
+        extractionStyle: 'Extracción cristalina, dulzor floral equilibrado y tacto sedoso en boca',
+        flowRate: '4.0 ml/s espiral fluido continuo',
+        capacity: '1–3 Tazas (dosis de 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres fino chamotado marfil y polvo de cuarzo cocido a 1.280\u00A0°C',
+        origin: 'Atelier de Arte Clásico • Medellín',
+        weight: '410g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.6',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Busto clásico esculpido a mano en homenaje al ritual eterno del café.',
+      visualType: 'artist-001'
+    },
+    {
+      id: 'art-calder-primary',
+      numberCode: '24',
+      collection: 'Art',
+      categoryTag: 'Artists',
+      dropCode: 'ART 02',
+      eyebrow: 'ARTE 02',
+      name: 'Calder Primary',
+      headline: 'El equilibrio imposible de un móvil de Calder suspendido en el aire: gravedad domada por la gracia de la forma.',
+      story: 'Cono de gres blanco moteado pintado con formas geométricas primarias en rojo, azul, negro y amarillo — divididas por líneas pintadas a mano — inspiradas en los móviles cinéticos de Alexander Calder. Base trípode con anillo negro.',
+      objectDescription: 'Gres moteado de alta temperatura con esmalte bajo cubierta aplicado a mano. Cada campo de color es pintado individualmente antes de la cocción final, haciendo de cada pieza una composición única dentro del mismo patrón.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Arte',
+      stockCountRemaining: 16,
+      paletteColors: [
+        { name: 'Blanco Natural Moteado', hex: '#EAE7E1' },
+        { name: 'Rojo Calder', hex: '#CC2929' },
+        { name: 'Azul Primario', hex: '#1A3A6B' },
+        { name: 'Amarillo Dorado', hex: '#D4A017' }
+      ],
+      specs: {
+        extractionStyle: 'Acidez viva y brillante balanceada con un cuerpo dulce y redondo',
+        flowRate: 'Drenaje equilibrado medio',
+        capacity: '1–3 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres moteado de alta temperatura con esmalte bajo cubierta',
+        origin: 'Atelier de Arte Clásico • Medellín',
+        weight: '390g',
+        idealRecipe: {
+          dose: '17g',
+          water: '280ml',
+          temperature: '93°C',
+          brewTime: '2:55 min',
+          ratio: '1:16.5',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Colores primarios. Forma pura. Un vertido perfecto.',
+      visualType: 'artist-001'
     }
   ]
 };

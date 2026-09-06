@@ -4,12 +4,14 @@ export type DripCategory =
   | 'Cosmos'
   | 'Nature'
   | 'Cinema'
+  | 'Retro'
   | 'Prehistoric'
   | 'Photography'
   | 'Architecture'
+  | 'Experimental'
   | 'Minerals'
-  | 'Sculptural'
-  | 'WabiSabi';
+  | 'Art'
+  | 'Sculptural';
 
 export interface DrypDrip {
   id: string;
@@ -59,131 +61,120 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-music',
     title: 'Música',
-    description: 'Surcos de vinilo a 33 RPM y reflejos de discos compactos traducidos a dinámica de vertido pour-over.',
+    description: 'Surcos de vinilo a 33 RPM y acústica concéntrica traducidos a dinámica de vertido pour-over.',
     tag: 'Música',
     category: 'Music',
     coverImage: '/images/products/vinyl-groove.jpg',
     previewImages: [
-      '/images/products/vinyl-groove.jpg',
-      '/images/products/cd-polycarbonate.jpg'
-    ],
-    pinsCount: 2,
-    dripsCount: 2
-  },
-  {
-    id: 'board-cosmos',
-    title: 'Universo',
-    description: 'Anillos planetarios de Saturno y regolito lunar Apollo 11 en conos cerámicos de alta inercia térmica.',
-    tag: 'Universo',
-    category: 'Cosmos',
-    coverImage: '/images/products/saturn-rings.jpg',
-    previewImages: [
-      '/images/products/saturn-rings.jpg',
-      '/images/products/orbit.jpg'
-    ],
-    pinsCount: 2,
-    dripsCount: 2
-  },
-  {
-    id: 'board-nature',
-    title: 'Naturaleza & Biodiversidad',
-    description: 'Plumajes iridiscentes de colibríes andinos que canalizan el agua con fluidez aerodinámica viva.',
-    tag: 'Botánica & Fauna',
-    category: 'Nature',
-    coverImage: '/images/products/colibri-andes.jpg',
-    previewImages: [
-      '/images/products/colibri-andes.jpg'
+      '/images/products/vinyl-groove.jpg'
     ],
     pinsCount: 1,
     dripsCount: 1
   },
   {
+    id: 'board-cosmos',
+    title: 'Universo',
+    description: 'Regolito lunar Apollo y basalto volcánico texturizado en conos cerámicos de alta inercia térmica.',
+    tag: 'Universo',
+    category: 'Cosmos',
+    coverImage: '/images/products/orbit.jpg',
+    previewImages: [
+      '/images/products/orbit.jpg'
+    ],
+    pinsCount: 1,
+    dripsCount: 1
+  },
+  {
+    id: 'board-nature',
+    title: 'Naturaleza & Biodiversidad',
+    description: 'Plumajes de colibríes andinos y venaciones biomiméticas de alas de libélula en porcelana marfil.',
+    tag: 'Botánica & Fauna',
+    category: 'Nature',
+    coverImage: '/images/products/nature-venation.jpg',
+    previewImages: [
+      '/images/products/nature-venation.jpg',
+      '/images/products/colibri-andes.jpg'
+    ],
+    pinsCount: 2,
+    dripsCount: 2
+  },
+  {
     id: 'board-cinema',
-    title: 'Cine y Fotografía',
-    description: 'Monolitos enigmáticos de Kubrick, simetrías pasteles de Wes Anderson y ópticas concéntricas de 35mm convertidas en cafeteras de autor.',
+    title: 'Fotografía y cine',
+    description: 'Ópticas concéntricas de 35mm, escala de diafragma y cuerpo cerámico negro anodizado.',
     tag: 'Cine & Foto',
     category: 'Cinema',
-    coverImage: '/images/products/monolith-cinema.jpg',
+    coverImage: '/images/products/lens-50.jpg',
     previewImages: [
-      '/images/products/monolith-cinema.jpg',
-      '/images/products/wes-anderson.jpg',
-      '/images/products/lens-50-v.jpg'
+      '/images/products/lens-50.jpg'
     ],
-    pinsCount: 3,
-    dripsCount: 3
+    pinsCount: 1,
+    dripsCount: 1
+  },
+  {
+    id: 'board-retro',
+    title: 'Retro & Vintage',
+    description: 'Líneas de velocidad setenteras, diseño analógico y estética vintage en gres de autor.',
+    tag: 'Retro 1974',
+    category: 'Retro',
+    coverImage: '/images/products/retro-stripes.jpg',
+    previewImages: [
+      '/images/products/retro-stripes.jpg'
+    ],
+    pinsCount: 1,
+    dripsCount: 1
   },
   {
     id: 'board-prehistoric',
     title: 'Prehistoria & Paleontología',
-    description: 'Vértebras fósiles y garras de raptor esculpidas en gres vivo de alta temperatura.',
+    description: 'Cráneos fósiles de terópodo esculpidos a mano en gres vivo de arenisca a alta temperatura.',
     tag: 'Drop 001',
     category: 'Prehistoric',
-    coverImage: '/images/products/fossil-t-v.jpg',
+    coverImage: '/images/products/fossil-skull.jpg',
     previewImages: [
-      '/images/products/fossil-t-v.jpg',
-      '/images/products/fossil-raptor-v.jpg'
+      '/images/products/fossil-skull.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 1,
+    dripsCount: 1
   },
   {
     id: 'board-architecture',
-    title: 'Arquitectura & Estructura',
-    description: 'Geometría funcional de la Bauhaus y brutalismo en hormigón cerámico con salidas calibradas.',
+    title: 'Arquitectura',
+    description: 'Geometría funcional de la Bauhaus de Dessau: minimalismo estructural y estrías de extracción directa.',
     tag: 'Arquitectura',
     category: 'Architecture',
     coverImage: '/images/products/bauhaus-dessau.jpg',
     previewImages: [
-      '/images/products/bauhaus-dessau.jpg',
-      '/images/products/brutalist.jpg'
+      '/images/products/bauhaus-dessau.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 1,
+    dripsCount: 1
   },
   {
-    id: 'board-minerals',
-    title: 'Minerales & Arcillas de Origen',
-    description: 'Vetas de esmeralda de cumbre, barros rojos de Neblaria y basalto negro volcánico.',
-    tag: 'Geología Viva',
-    category: 'Minerals',
-    coverImage: '/images/products/emerald-vein.jpg',
+    id: 'board-experimental',
+    title: 'Experimental & Cinético',
+    description: 'Estructuras giroscópicas, exoesqueletos cerámicos y anillos de latón en suspensión para desafiar las leyes del vertido.',
+    tag: 'Experimental',
+    category: 'Experimental',
+    coverImage: '/images/products/orbital-kinetic.jpg',
     previewImages: [
-      '/images/products/emerald-vein.jpg',
-      '/images/products/core.jpg',
-      '/images/products/core-black-v.jpg',
-      '/images/products/medellin.jpg'
+      '/images/products/orbital-kinetic.jpg'
     ],
-    pinsCount: 4,
-    dripsCount: 4
+    pinsCount: 1,
+    dripsCount: 1
   },
   {
-    id: 'board-sculptural',
-    title: 'Escultura & Vanguardias',
-    description: 'Pliegues geométricos de origami, dinámica de fluidos y cerámicas torneadas a mano en Medellín.',
-    tag: 'Arte Contemporáneo',
-    category: 'Sculptural',
-    coverImage: '/images/products/origami-folded.jpg',
+    id: 'board-art',
+    title: 'Arte',
+    description: 'Bustos clásicos helénicos y escultura anatómica esculpida a mano en gres cerámico a 1.280 °C.',
+    tag: 'Arte',
+    category: 'Art',
+    coverImage: '/images/products/art-classical-muse.jpg',
     previewImages: [
-      '/images/products/origami-folded.jpg',
-      '/images/products/flow-01.jpg',
-      '/images/products/artist-001.jpg'
+      '/images/products/art-classical-muse.jpg'
     ],
-    pinsCount: 3,
-    dripsCount: 3
-  },
-  {
-    id: 'board-wabisabi',
-    title: 'Wabi-Sabi & Maestría Oriental',
-    description: 'Reparaciones de oro puro Kintsugi de 24k y rituales de vertido matutino que celebran lo auténtico.',
-    tag: 'Maestría Zen',
-    category: 'WabiSabi',
-    coverImage: '/images/products/kintsugi-gold.jpg',
-    previewImages: [
-      '/images/products/kintsugi-gold.jpg',
-      '/images/products/ritual-morning.jpg'
-    ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 1,
+    dripsCount: 1
   }
 ];
 
@@ -191,12 +182,12 @@ export const DRYP_BOARDS = PINTEREST_BOARDS;
 
 // Catálogo curado: CERO repetidos, cada pieza con fotografía única y tamaño uniforme cuadrado
 export const DRYP_DRIPS: DrypDrip[] = [
-  // ── MÚSICA (2 drips únicos) ────────────────────────────────────────────────
+  // ── MÚSICA (1 drip único) ──────────────────────────────────────────────────
   {
     id: 'drip-music-vinyl',
     productId: 'music-vinyl-33',
-    title: '01 / Vinyl Groove 33 RPM — Cono Concéntrico Mate',
-    subtitle: 'Micro-estrías inspiradas en discos de vinilo que desaceleran el agua para resaltar notas dulces.',
+    title: '01 / Vinyl Groove 33',
+    subtitle: 'Gres negro mate con microsurcos de vinilo y núcleo de latón. Calibrado para notas dulces y cuerpo balanceado.',
     category: 'Music',
     categoryLabel: 'Música',
     imageSrc: '/images/products/vinyl-groove.jpg',
@@ -213,19 +204,20 @@ export const DRYP_DRIPS: DrypDrip[] = [
     likesCount: 1420,
     savesCount: 3840,
     boardIds: ['board-music'],
-    tags: ['Vinilo', 'Música', '33 RPM', 'Concéntrico', 'Negro Mate'],
+    tags: ['Vinilo', 'Música', '33 RPM', 'Concéntrico', 'Negro Mate', 'Latón'],
     badge: 'EDICIÓN VINILO',
     dropCode: 'AUDIO 01',
-    level01Emotion: 'El crujido de la aguja tocando el primer surco antes de que empiece la melodía.'
+    level01Emotion: 'El crujido cálido del vinilo cuando la aguja toca el primer surco antes de que inicie la melodía matutina.'
   },
+
   {
-    id: 'drip-music-cd',
-    productId: 'music-cd-120',
-    title: '02 / Compact Disc 120mm — Esmalte Iridiscente Arcoíris',
-    subtitle: 'Vidriado cristalino con reflejo prismático que refracta la luz matutina como un audio CD de los 90.',
+    id: 'drip-music-waveform',
+    productId: 'music-waveform-gold',
+    title: '23 / Waveform Gold',
+    subtitle: 'Porcelana blanca marfil con onda de sonido serigrafíada en oro mate y anillo base dorado. El pulso de la música traducido en gres.',
     category: 'Music',
     categoryLabel: 'Música',
-    imageSrc: '/images/products/cd-polycarbonate.jpg',
+    imageSrc: '/images/products/music-waveform.jpg',
     aspectRatio: 'aspect-square',
     author: {
       name: 'DRYP. Sound Lab',
@@ -233,50 +225,24 @@ export const DRYP_DRIPS: DrypDrip[] = [
       handle: '@dryp_sound',
       verified: true
     },
-    price: 89,
-    stockStatus: 'low_stock',
-    stockLabel: 'Últimas 5 unidades',
-    likesCount: 1890,
-    savesCount: 4210,
+    price: 96,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Oro)',
+    likesCount: 4120,
+    savesCount: 9380,
     boardIds: ['board-music'],
-    tags: ['Compact Disc', '90s', 'Iridiscente', 'Arcoíris', 'Luz'],
-    badge: 'BRILLO PRISMÁTICO',
+    tags: ['Música', 'Onda de Sonido', 'Oro', 'Porcelana', 'Waveform', 'Minimalista', 'Latón'],
+    badge: 'WAVEFORM GOLD',
     dropCode: 'AUDIO 02',
-    level01Emotion: 'Ese haz de arcoíris que aparecía en el techo de tu cuarto cuando la luz del sol tocaba un CD.'
+    level01Emotion: 'El instante en que el silencio se convierte en frecuencia: la onda que dibuja la mañana antes del primer sorbo.'
   },
 
-  // ── COSMOS (2 drips únicos) ────────────────────────────────────────────────
-  {
-    id: 'drip-cosmos-saturn',
-    productId: 'cosmos-saturn-rings',
-    title: '03 / Saturn Cassini Rings — Collar Orbital Suspendido',
-    subtitle: 'Cono cónico de basalto cenizo coronado por un anillo concéntrico exterior en suspensión.',
-    category: 'Cosmos',
-    categoryLabel: 'Universo',
-    imageSrc: '/images/products/saturn-rings.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Space Lab',
-      avatar: '/favicon.svg',
-      handle: '@dryp_cosmos',
-      verified: true
-    },
-    price: 94,
-    stockStatus: 'low_stock',
-    stockLabel: 'Quedan 4 piezas',
-    likesCount: 2310,
-    savesCount: 5620,
-    boardIds: ['board-cosmos'],
-    tags: ['Saturno', 'Anillos', 'Cosmos', 'Gravedad', 'Espacio'],
-    badge: 'EDICIÓN ORBITAL',
-    dropCode: 'SPACE 01',
-    level01Emotion: 'La calma silenciosa de las trayectorias gravitacionales en el vacío exterior.'
-  },
+  // ── COSMOS (1 drip único) ──────────────────────────────────────────────────
   {
     id: 'drip-cosmos-orbit',
-    productId: 'orbit-01',
-    title: '04 / Orbit — Regolito Lunar Apollo 11',
-    subtitle: 'Surcos inspirados en las trayectorias elípticas de la misión Apollo. Esmalte ceniza perlado con titanio.',
+    productId: 'orbit-space',
+    title: '04 / Orbit Lunar',
+    subtitle: 'Basalto volcánico texturizado con cráteres esculpidos y base de latón. Inercia térmica superior para extracciones limpias.',
     category: 'Cosmos',
     categoryLabel: 'Universo',
     imageSrc: '/images/products/orbit.jpg',
@@ -287,26 +253,26 @@ export const DRYP_DRIPS: DrypDrip[] = [
       handle: '@dryp_space',
       verified: true
     },
-    price: 85,
+    price: 92,
     stockStatus: 'available',
-    stockLabel: 'Disponible',
-    likesCount: 1640,
-    savesCount: 3890,
+    stockLabel: 'Disponible (Edición Lunar)',
+    likesCount: 1980,
+    savesCount: 4320,
     boardIds: ['board-cosmos'],
-    tags: ['Luna', 'Apollo 11', 'Regolito', 'Titanio', 'Órbita'],
-    badge: 'LUNAR REGOLITH',
+    tags: ['Luna', 'Regolito', 'Basalto', 'Latón', 'Universo', 'Cráteres'],
+    badge: 'LUNAR CRATER',
     dropCode: 'SPACE 02',
-    level01Emotion: 'Mirar al cielo oscuro en los sesenta sabiendo que pronto estaríamos allá arriba.'
+    level01Emotion: 'La inmensidad silenciosa del regolito lunar bajo la luz de estrellas distantes.'
   },
 
-  // ── NATURALEZA (1 drip único) ──────────────────────────────────────────────
+  // ── NATURALEZA (2 drips únicos) ──────────────────────────────────────────────
   {
     id: 'drip-nature-hummingbird',
     productId: 'nature-colibri-andes',
-    title: '05 / Colibrí Andino — Plumaje Verde Esmeralda & Caoba',
-    subtitle: 'Estrías espirales fluidas inspiradas en el aleteo veloz del colibrí andino sobre base de nogal.',
+    title: '05 / Colibrí Andino',
+    subtitle: 'Gres crema con nervaduras verde esmeralda y asa ergonómica. Flujo ágil que resalta notas florales y cítricas.',
     category: 'Nature',
-    categoryLabel: 'Naturaleza Viva',
+    categoryLabel: 'Naturaleza',
     imageSrc: '/images/products/colibri-andes.jpg',
     aspectRatio: 'aspect-square',
     author: {
@@ -321,134 +287,80 @@ export const DRYP_DRIPS: DrypDrip[] = [
     likesCount: 2450,
     savesCount: 6120,
     boardIds: ['board-nature'],
-    tags: ['Colibrí', 'Cumbres', 'Esmeralda', 'Aves', 'Bosque de Niebla'],
-    badge: 'BIODIVERSIDAD',
+    tags: ['Colibrí', 'Cumbres de Neblaria', 'Esmeralda', 'Gres Moteado', 'Bosque de Niebla'],
+    badge: 'BOSQUE DE NIEBLA',
     dropCode: 'BIO 01',
-    level01Emotion: 'El zumbido fugaz en el bebedero del jardín antes de que la niebla cubra la montaña.'
+    level01Emotion: 'El rocío fresco sobre las hojas verdes del bosque de niebla y el aleteo fugaz de las aves al amanecer.'
   },
-
-  // ── CINE (2 drips únicos) ──────────────────────────────────────────────────
   {
-    id: 'drip-cinema-monolith',
-    productId: 'cinema-2001-monolith',
-    title: '06 / 2001 Monolith Basalt — Geometría Basalto Kubrick',
-    subtitle: 'Inspirado en el monolito negro de Odisea del Espacio. Bloque geométrico en gres basalto negro con cono a 60°.',
-    category: 'Cinema',
-    categoryLabel: 'Cine y fotografía',
-    imageSrc: '/images/products/monolith-cinema.jpg',
+    id: 'drip-nature-venation',
+    productId: 'nature-botanical-wings',
+    title: '06 / Alas de Libélula',
+    subtitle: 'Porcelana marfil con relieve biomimético y canales de ventilación. Extracción dulce de máxima claridad aromática.',
+    category: 'Nature',
+    categoryLabel: 'Naturaleza',
+    imageSrc: '/images/products/nature-venation.jpg',
     aspectRatio: 'aspect-square',
     author: {
-      name: 'DRYP. Cinema Archives',
+      name: 'DRYP. Bio Atelier',
       avatar: '/favicon.svg',
-      handle: '@dryp_cinema',
+      handle: '@dryp_nature',
       verified: true
     },
-    price: 95,
+    price: 90,
     stockStatus: 'available',
-    stockLabel: 'Disponible (Numerado)',
-    likesCount: 2890,
-    savesCount: 7120,
-    boardIds: ['board-cinema'],
-    tags: ['2001', 'Kubrick', 'Monolito', 'Basalto', 'Ciencia Ficción'],
-    badge: 'MONOLITO BASALTO',
-    dropCode: 'CINE 01',
-    level01Emotion: 'Ese momento en que la pantalla se queda negra y los timbales retumban en el pecho.'
-  },
-  {
-    id: 'drip-cinema-wes',
-    productId: 'cinema-wes-budapest',
-    title: '07 / Grand Budapest Pastel — Simetría Rosa & Menta',
-    subtitle: 'Composición milimétricamente simétrica en tono rosa empolvado con cuello menta pastel estilo Wes Anderson.',
-    category: 'Cinema',
-    categoryLabel: 'Cine y fotografía',
-    imageSrc: '/images/products/wes-anderson.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Cinema Archives',
-      avatar: '/favicon.svg',
-      handle: '@dryp_cinema',
-      verified: true
-    },
-    price: 89,
-    stockStatus: 'low_stock',
-    stockLabel: 'Quedan 3 piezas',
+    stockLabel: 'Disponible (Cumbres de Neblaria)',
     likesCount: 3120,
-    savesCount: 8450,
-    boardIds: ['board-cinema'],
-    tags: ['Wes Anderson', 'Pastel', 'Simetría', 'Budapest', 'Diseño'],
-    badge: 'SIMETRÍA PASTEL',
-    dropCode: 'CINE 02',
-    level01Emotion: 'La felicidad obsesiva de que todo en la mesa esté perfectamente alineado.'
+    savesCount: 7450,
+    boardIds: ['board-nature'],
+    tags: ['Naturaleza', 'Nervadura', 'Libélula', 'Botánica', 'Marfil', 'Caramelo'],
+    badge: 'BOTÁNICA VIVA',
+    dropCode: 'BIO 02',
+    level01Emotion: 'La perfección fractal de las alas de una libélula posada sobre el agua cristalina del río al amanecer.'
   },
 
-  // ── PREHISTORIA (2 drips únicos) ──────────────────────────────────────────
+  // ── PREHISTORIA (3 drips únicos) ──────────────────────────────────────────
   {
-    id: 'drip-fossil-t',
-    productId: 'fossil-t',
-    title: '08 / 03 Fossil T — Vértebras & Porcelana Calibrada',
-    subtitle: 'Inspirado en la estructura torácica de dinosaurios de infancia. Canalización espiral con flujo uniforme.',
+    id: 'drip-fossil-skull',
+    productId: 'fossil-skull-trex',
+    title: '07 / Fossil Skull',
+    subtitle: 'Gres arenisca esculpido con fósil de terópodo y estrías verticales. Flujo constante y profundo para cafés intensos.',
     category: 'Prehistoric',
-    categoryLabel: 'Drop 001: Prehistoria',
-    imageSrc: '/images/products/fossil-t-v.jpg',
+    categoryLabel: 'Prehistoria',
+    imageSrc: '/images/products/fossil-skull.jpg',
     aspectRatio: 'aspect-square',
     author: {
-      name: 'DRYP. Studio Medellín',
+      name: 'DRYP. Paleo Atelier',
       avatar: '/favicon.svg',
-      handle: '@drip_objects',
+      handle: '@dryp_paleo',
       verified: true
     },
-    price: 78,
+    price: 96,
     stockStatus: 'available',
-    stockLabel: '037 / 150 piezas',
-    likesCount: 2890,
-    savesCount: 6490,
+    stockLabel: 'Disponible (042 / 100 piezas)',
+    likesCount: 3450,
+    savesCount: 8120,
     boardIds: ['board-prehistoric'],
-    tags: ['Fósil T', 'Porcelana', 'Drop 001', 'Cono 02', 'Dinosaurios'],
-    badge: 'DROP 001 LIVE',
+    tags: ['T-Rex', 'Cráneo Fósil', 'Prehistoria', 'Arenisca', 'Dinosaurios', 'Drop 001'],
+    badge: 'PALEO SCULPT',
     dropCode: 'DROP 001',
-    level01Emotion: 'Nunca dejamos de asombrarnos con los dinosaurios. Solo cambiamos de juguetes.'
-  },
-  {
-    id: 'drip-fossil-raptor',
-    productId: 'fossil-raptor',
-    title: '09 / 04 Fossil Raptor — Gres Basalto Volcánico',
-    subtitle: 'Silueta esculpida inspirada en falanges de raptor. Extracción ágil para notas frutales y florales nítidas.',
-    category: 'Prehistoric',
-    categoryLabel: 'Drop 001: Prehistoria',
-    imageSrc: '/images/products/fossil-raptor-v.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Studio',
-      avatar: '/favicon.svg',
-      handle: '@drip_objects',
-      verified: true
-    },
-    price: 82,
-    stockStatus: 'available',
-    stockLabel: '068 / 150 piezas',
-    likesCount: 1740,
-    savesCount: 4180,
-    boardIds: ['board-prehistoric'],
-    tags: ['Raptor', 'Basalto', 'Negro Mate', 'Drop 001'],
-    badge: 'EDICIÓN NUMERADA',
-    dropCode: 'DROP 001',
-    level01Emotion: 'Velocidad, filo y huesos enterrados que hoy vuelven al agua caliente.'
+    level01Emotion: 'Millones de años de evolución y fósiles colosales despertando con la primera gota de agua hirviendo.'
   },
 
-  // ── CINE Y FOTOGRAFÍA (Objeto 05 Lens) ────────────────────────────────────
+  // ── FOTOGRAFÍA Y CINE (Objeto 05 Lens) ───────────────────────────────────
   {
     id: 'drip-lens-50',
     productId: 'lens-50',
-    title: '10 / 05 Lens 50mm f/1.4 — Anillos Concéntricos',
-    subtitle: 'Nostalgia de ópticas analógicas de 35mm. Estrías concéntricas que desaceleran el paso del agua.',
+    title: '10 / Lens 50mm',
+    subtitle: 'Cuerpo cerámico negro mate con escala de diafragma y estrías de enfoque. Geometría óptica de vertido milimétrico.',
     category: 'Cinema',
-    categoryLabel: 'Cine y fotografía',
-    imageSrc: '/images/products/lens-50-v.jpg',
+    categoryLabel: 'Fotografía y cine',
+    imageSrc: '/images/products/lens-50.jpg',
     aspectRatio: 'aspect-square',
     author: {
-      name: 'DRYP. Studio Medellín',
+      name: 'DRYP. Optics Studio',
       avatar: '/favicon.svg',
-      handle: '@drip_objects',
+      handle: '@dryp_optics',
       verified: true
     },
     price: 74,
@@ -457,18 +369,99 @@ export const DRYP_DRIPS: DrypDrip[] = [
     likesCount: 1940,
     savesCount: 4890,
     boardIds: ['board-cinema'],
-    tags: ['35mm', 'Fotografía', 'Lente 50mm', 'Cono 02'],
-    badge: 'OBJETO 05',
+    tags: ['35mm', 'Fotografía', 'Lente 50mm', 'Apertura', 'Cine', 'Negro Mate'],
+    badge: 'APERTURE 50MM',
     dropCode: 'OBJECT 05',
-    level01Emotion: 'El clic del anillo de diafragma antes de congelar un segundo irrepetible.'
+    level01Emotion: 'El clic mecánico del anillo de apertura antes de congelar un segundo irrepetible con tu café.'
   },
 
-  // ── ARQUITECTURA (2 drips únicos) ─────────────────────────────────────────
+  {
+    id: 'drip-cinema-35mm',
+    productId: 'cinema-35mm-film',
+    title: '25 / 35mm Film',
+    subtitle: 'Gres negro mate con perforaciones de tira de película en el borde superior y base moleteada con sello DRYP. El fotograma que contiene el vertido.',
+    category: 'Cinema',
+    categoryLabel: 'Fotografía y cine',
+    imageSrc: '/images/products/cinema-35mm.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Optics Studio',
+      avatar: '/favicon.svg',
+      handle: '@dryp_optics',
+      verified: true
+    },
+    price: 89,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Celuloide)',
+    likesCount: 4750,
+    savesCount: 10200,
+    boardIds: ['board-cinema'],
+    tags: ['Cine', 'Película 35mm', 'Fotograma', 'Negro Mate', 'Celuloide', 'Fotografía', 'Latón'],
+    badge: '35MM FILM',
+    dropCode: 'CINEMA 01',
+    level01Emotion: 'El avance cuadro a cuadro de la película analógica: cada gota de café, un fotograma irrepetible.'
+  },
+
+  // ── RETRO (1 drip único - Categoría Nueva) ────────────────────────────────
+  {
+    id: 'drip-retro-stripes',
+    productId: 'retro-stripes-70s',
+    title: '19 / Retro Stripes 1974',
+    subtitle: 'Gres moteado beige con bandas cromáticas setenteras. Estética rally vintage con estabilidad térmica constante.',
+    category: 'Retro',
+    categoryLabel: 'Retro',
+    imageSrc: '/images/products/retro-stripes.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Retro Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_retro',
+      verified: true
+    },
+    price: 86,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Retro)',
+    likesCount: 2780,
+    savesCount: 5920,
+    boardIds: ['board-retro'],
+    tags: ['Retro', 'Vintage', '70s', 'Speed Stripes', 'Rally', 'Gres Moteado'],
+    badge: 'RETRO 1974',
+    dropCode: 'RETRO 01',
+    level01Emotion: 'La calidez nostálgica de las cintas de cassette, vinilos y autos deportivos en las carreteras del 74.'
+  },
+
+  {
+    id: 'drip-retro-nes',
+    productId: 'retro-nes-8bit',
+    title: '20 / NES — Brew Play Repeat',
+    subtitle: 'Gres blanco humo con asa angular inspirada en el gamepad de 8 bits. El vertido más icónico de tu infancia.',
+    category: 'Retro',
+    categoryLabel: 'Retro',
+    imageSrc: '/images/products/retro-nes.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Retro Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_retro',
+      verified: true
+    },
+    price: 92,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición 8-bit)',
+    likesCount: 3840,
+    savesCount: 7210,
+    boardIds: ['board-retro'],
+    tags: ['Retro', 'Vintage', '8-bit', 'Gaming', 'NES', 'Pixel', 'Arcade', 'Consola'],
+    badge: 'RETRO 8-BIT',
+    dropCode: 'RETRO 02',
+    level01Emotion: 'El sábado por la mañana de 1988: cafetera encendida, cartucho insertado, el día empieza en pausa.'
+  },
+
   {
     id: 'drip-arch-bauhaus',
     productId: 'arch-bauhaus-dessau',
-    title: '11 / Bauhaus Dessau 1925 — Cono & Cilindro Puro',
-    subtitle: 'La forma sigue estrictamente a la función. Cono de gres refractario arena con asa geométrica y base plana.',
+    title: '11 / Bauhaus Dessau',
+    subtitle: 'Gres arena con asa trapezoidal y estrías de extracción directa. Funcionalismo puro horneado a 1.280°C.',
     category: 'Architecture',
     categoryLabel: 'Arquitectura',
     imageSrc: '/images/products/bauhaus-dessau.jpg',
@@ -485,276 +478,120 @@ export const DRYP_DRIPS: DrypDrip[] = [
     likesCount: 2540,
     savesCount: 6890,
     boardIds: ['board-architecture'],
-    tags: ['Bauhaus', 'Geometría', 'Dessau', 'Funcionalismo', 'Arena'],
+    tags: ['Bauhaus', 'Geometría', 'Dessau 1925', 'Funcionalismo', 'Arena', 'Asa Triangular'],
     badge: 'BAUHAUS 1925',
     dropCode: 'ARCH 01',
-    level01Emotion: 'Eliminar cualquier ornamento superfluo hasta que solo quede la verdad estructural.'
+    level01Emotion: 'Eliminar cualquier ornamento superfluo hasta que solo quede la verdad estructural del vertido.'
   },
+
   {
-    id: 'drip-brutalist',
-    productId: 'brutalist-01',
-    title: '12 / 06 Brutalist Monolito — Hormigón Cerámico 70s',
-    subtitle: 'Fondo plano con tres orificios calibrados. Geometría brutalista de ángulos limpios y hormigón cerámico.',
+    id: 'drip-arch-origami',
+    productId: 'arch-origami-fold',
+    title: '22 / Origami Fold',
+    subtitle: 'Gres moteado blanco arena con facetas plegadas inspiradas en el origami japonés. Base de nogal macizo. Geometría que honra el agua.',
     category: 'Architecture',
     categoryLabel: 'Arquitectura',
-    imageSrc: '/images/products/brutalist.jpg',
+    imageSrc: '/images/products/arch-origami.jpg',
     aspectRatio: 'aspect-square',
     author: {
-      name: 'DRYP. Lab',
+      name: 'DRYP. Architecture Unit',
       avatar: '/favicon.svg',
-      handle: '@drip_objects',
+      handle: '@dryp_arch',
       verified: true
     },
-    price: 79,
+    price: 94,
     stockStatus: 'available',
-    stockLabel: 'Disponible',
-    likesCount: 1480,
-    savesCount: 3680,
+    stockLabel: 'Disponible (Edición Origami)',
+    likesCount: 3290,
+    savesCount: 8140,
     boardIds: ['board-architecture'],
-    tags: ['Brutalismo', 'Fondo Plano', 'Hormigón', 'Kalita', 'Estructura'],
-    badge: 'FONDO PLANO',
-    dropCode: 'OBJECT 06',
-    level01Emotion: 'La contundencia del concreto armado de los años setenta convertida en café.'
+    tags: ['Arquitectura', 'Origami', 'Japón', 'Facetado', 'Nogal', 'Gres Blanco', 'Geometría'],
+    badge: 'ORIGAMI FOLD',
+    dropCode: 'ARCH 02',
+    level01Emotion: 'El silencio de un pliegue perfecto: cada faceta dirige el agua como los ángulos de un tejado japonés guían la lluvia.'
   },
 
-  // ── MINERALES (4 drips únicos) ────────────────────────────────────────────
+  // ── EXPERIMENTAL (1 drip único) ──────────────────────────────────────────
   {
-    id: 'drip-mineral-emerald',
-    productId: 'mineral-emerald-muzo',
-    title: '13 / Esmeralda de Cumbre — Veta de Cristal en Caolín',
-    subtitle: 'Porcelana caolín blanca con veta orgánica de cristal verde esmeralda de las altas cumbres que resalta al tacto.',
-    category: 'Minerals',
-    categoryLabel: 'Minerales & Origen',
-    imageSrc: '/images/products/emerald-vein.jpg',
+    id: 'drip-exp-orbital-gyro',
+    productId: 'orbital-gyro-kinetic',
+    title: '21 / Orbital Gyro',
+    subtitle: 'Gres moteado arena con exoesqueleto helicoidal y anillo orbital de latón macizo. Suspensión cinética para un vertido laminar continuo.',
+    category: 'Experimental',
+    categoryLabel: 'Experimental',
+    imageSrc: '/images/products/orbital-kinetic.jpg',
     aspectRatio: 'aspect-square',
     author: {
-      name: 'DRYP. Geological Studio',
+      name: 'DRYP. Kinetic Lab',
       avatar: '/favicon.svg',
-      handle: '@dryp_minerals',
+      handle: '@dryp_kinetic',
       verified: true
     },
     price: 98,
-    stockStatus: 'low_stock',
-    stockLabel: 'Quedan 3 piezas',
-    likesCount: 3420,
-    savesCount: 8910,
-    boardIds: ['board-minerals'],
-    tags: ['Esmeralda', 'Veta Mística', 'Caolín', 'Cumbres', 'Lujo Ancestral'],
-    badge: 'ESMERALDA DE CUMBRE',
-    dropCode: 'GEO 01',
-    level01Emotion: 'La veta verde encendida entre la roca caliza que solo la cordillera ancestral sabe parir.'
-  },
-  {
-    id: 'drip-core-01',
-    productId: 'core-01',
-    title: '14 / 01 Core 01 — Porcelana Hueso & Terracota Cruda',
-    subtitle: 'El punto de partida. La máxima pureza en extracción cónica sin adornos superficiales.',
-    category: 'Minerals',
-    categoryLabel: 'Minerales & Origen',
-    imageSrc: '/images/products/core.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Studio',
-      avatar: '/favicon.svg',
-      handle: '@drip_objects',
-      verified: true
-    },
-    price: 65,
     stockStatus: 'available',
-    stockLabel: 'Colección Permanente',
-    likesCount: 1650,
-    savesCount: 3620,
-    boardIds: ['board-minerals'],
-    tags: ['Core', 'Terracota', 'Porcelana', 'Minimal'],
-    badge: 'ORIGEN 01',
-    dropCode: 'ORIGIN',
-    level01Emotion: 'Sin filtros decorativos. Solo tierra, fuego, agua y café.'
-  },
-  {
-    id: 'drip-core-black',
-    productId: 'core-black',
-    title: '15 / 02 Core Basalt — Ceniza Mineral & Carbón',
-    subtitle: 'Pasta cerámica negra de alta densidad térmica. Mantiene el agua a temperatura constante hasta la última gota.',
-    category: 'Minerals',
-    categoryLabel: 'Minerales & Origen',
-    imageSrc: '/images/products/core-black-v.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Studio',
-      avatar: '/favicon.svg',
-      handle: '@drip_objects',
-      verified: true
-    },
-    price: 68,
-    stockStatus: 'available',
-    stockLabel: 'Disponible',
-    likesCount: 1520,
-    savesCount: 3390,
-    boardIds: ['board-minerals'],
-    tags: ['Basalto', 'Térmico', 'Mineral', 'Negro'],
-    badge: 'MINERAL TÉRMICO',
-    dropCode: 'CORE BLACK',
-    level01Emotion: 'El peso mineral que se siente en la palma de la mano cada mañana.'
-  },
-  {
-    id: 'drip-medellin',
-    productId: 'medellin-01',
-    title: '16 / 09 Neblaria — Esmalte Arcilla Ancestral',
-    subtitle: 'El tono exacto del barro sagrado de las laderas que forman el anfiteatro de las Cumbres de Neblaria.',
-    category: 'Minerals',
-    categoryLabel: 'Minerales & Origen',
-    imageSrc: '/images/products/medellin.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Cumbres de Neblaria',
-      avatar: '/favicon.svg',
-      handle: '@drip_neblaria',
-      verified: true
-    },
-    price: 72,
-    stockStatus: 'available',
-    stockLabel: 'Disponible',
-    likesCount: 1810,
-    savesCount: 4790,
-    boardIds: ['board-minerals'],
-    tags: ['Neblaria', 'Terracota', 'Montaña Sagrada', 'Arcilla'],
-    badge: 'EDICIÓN CUMBRES',
-    dropCode: 'CITY 01',
-    level01Emotion: 'El color de un santuario ancestral que florece sobre colinas de arcilla sagrada.'
+    stockLabel: 'Disponible (Edición Experimental)',
+    likesCount: 3120,
+    savesCount: 7450,
+    boardIds: ['board-experimental'],
+    tags: ['Experimental', 'Cinético', 'Giroscopio', 'Latón', 'Gres Moteado', 'Orbital', 'Drop EXP'],
+    badge: 'KINETIC LAB',
+    dropCode: 'EXP 01',
+    level01Emotion: 'La gravedad suspendida en el aire mientras el anillo de latón orbita el gres caliente en pleno vertido.'
   },
 
-  // ── ESCULTURA (3 drips únicos) ────────────────────────────────────────────
+  // ── ARTE (1 drip único) ──────────────────────────────────────────────────
   {
-    id: 'drip-sculpt-origami',
-    productId: 'sculpt-origami-20',
-    title: '17 / Origami 20 Pliegues — Facetas Geométricas Blancas',
-    subtitle: 'Veinte pliegues precisos en porcelana hueso ultrafina que sostienen el filtro en puntos milimétricos.',
-    category: 'Sculptural',
-    categoryLabel: 'Escultura & Vanguardia',
-    imageSrc: '/images/products/origami-folded.jpg',
+    id: 'drip-art-classical-muse',
+    productId: 'art-classical-muse',
+    title: '22 / Musa Clásica',
+    subtitle: 'Gres marmóreo texturizado con busto helénico esculpido a mano. Las ondas del cabello guían el flujo interior hacia un vertido dulce y cristalino.',
+    category: 'Art',
+    categoryLabel: 'Arte',
+    imageSrc: '/images/products/art-classical-muse.jpg',
     aspectRatio: 'aspect-square',
     author: {
-      name: 'DRYP. Sculpture Lab',
+      name: 'DRYP. Classical Arts',
       avatar: '/favicon.svg',
-      handle: '@dryp_sculpt',
+      handle: '@dryp_art',
       verified: true
     },
-    price: 89,
+    price: 94,
     stockStatus: 'available',
-    stockLabel: 'Disponible',
-    likesCount: 2940,
-    savesCount: 7890,
-    boardIds: ['board-sculptural'],
-    tags: ['Origami', '20 Pliegues', 'Porcelana', 'Geometría', 'Rápido'],
-    badge: 'GEOMETRÍA ORIGAMI',
-    dropCode: 'SCULPT 01',
-    level01Emotion: 'La pureza de transformar un plano de papel en un objeto tridimensional que desafía la gravedad.'
-  },
-  {
-    id: 'drip-flow-01',
-    productId: 'flow-01-lab',
-    title: '18 / 10 Flow 01 Lab — Parabólica Azul Cobalto',
-    subtitle: 'Diseñado con simulación computacional de fluidos para acelerar la extracción en granos de proceso natural.',
-    category: 'Sculptural',
-    categoryLabel: 'Escultura & Vanguardia',
-    imageSrc: '/images/products/flow-01.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Café Lab',
-      avatar: '/favicon.svg',
-      handle: '@dripper_lab',
-      verified: true
-    },
-    price: 76,
-    stockStatus: 'available',
-    stockLabel: 'Disponible',
-    likesCount: 1670,
-    savesCount: 4430,
-    boardIds: ['board-sculptural'],
-    tags: ['Laboratorio', 'Azul Cobalto', 'Fluido', 'Rápido'],
-    badge: 'LAB EXPERIMENTAL',
-    dropCode: 'LAB 01',
-    level01Emotion: 'La física de fluidos al servicio de la dulzura del café de origen.'
-  },
-  {
-    id: 'drip-artist-001',
-    productId: 'artist-001-camilo',
-    title: '19 / 08 Artist 001 — Camilo Restrepo (50 Piezas)',
-    subtitle: 'Colaboración escultórica con barro extraído a mano en las Cumbres de Neblaria. Cada pieza es única y numerada.',
-    category: 'Sculptural',
-    categoryLabel: 'Escultura & Vanguardia',
-    imageSrc: '/images/products/artist-001.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'Camilo Restrepo',
-      avatar: '/favicon.svg',
-      handle: '@camilo_ceramista',
-      verified: true
-    },
-    price: 95,
-    stockStatus: 'low_stock',
-    stockLabel: 'Quedan 3 piezas',
-    likesCount: 2240,
-    savesCount: 5980,
-    boardIds: ['board-sculptural'],
-    tags: ['Arte', 'Camilo Restrepo', 'Exclusivo', 'Firmado'],
-    badge: 'EDICIÓN DE AUTOR',
-    dropCode: 'COLLAB 01',
-    level01Emotion: 'Cuando la escultura abandona la galería para entrar en tu cocina.'
+    stockLabel: 'Disponible (Edición Arte)',
+    likesCount: 2890,
+    savesCount: 6540,
+    boardIds: ['board-art'],
+    tags: ['Arte', 'Escultura', 'Musa', 'Helénico', 'Mármol', 'Gres Moteado', 'Busto Clásico'],
+    badge: 'MUSE SCULPT',
+    dropCode: 'ART 01',
+    level01Emotion: 'La serenidad del mármol clásico despertando bajo el aroma del café recién tostado.'
   },
 
-  // ── WABI-SABI (2 drips únicos) ─────────────────────────────────────────────
   {
-    id: 'drip-wabi-kintsugi',
-    productId: 'wabi-kintsugi-gold-24k',
-    title: '20 / Kintsugi Oro 24K — Fracturas Selladas con Oro',
-    subtitle: 'Fracturas intencionales selladas a mano con laca urushi y polvo de oro de 24k. Exalta las cicatrices de la pieza.',
-    category: 'WabiSabi',
-    categoryLabel: 'Wabi-Sabi & Zen',
-    imageSrc: '/images/products/kintsugi-gold.jpg',
+    id: 'drip-art-calder-primary',
+    productId: 'art-calder-primary',
+    title: '24 / Calder Primary',
+    subtitle: 'Gres blanco moteado con formas geométricas primarias inspiradas en los móviles de Calder. Rojo, azul, negro y amarillo: el equilibrio que mueve el mundo.',
+    category: 'Art',
+    categoryLabel: 'Arte',
+    imageSrc: '/images/products/art-calder.jpg',
     aspectRatio: 'aspect-square',
     author: {
-      name: 'DRYP. Master Kiln',
+      name: 'DRYP. Classical Arts',
       avatar: '/favicon.svg',
-      handle: '@dryp_wabisabi',
+      handle: '@dryp_art',
       verified: true
     },
     price: 98,
-    stockStatus: 'low_stock',
-    stockLabel: 'Quedan 2 piezas únicas',
-    likesCount: 3890,
-    savesCount: 9450,
-    boardIds: ['board-wabisabi'],
-    tags: ['Kintsugi', 'Oro 24K', 'Wabi-Sabi', 'Japón', 'Resiliencia'],
-    badge: 'KINTSUGI ORO 24K',
-    dropCode: 'WABI 01',
-    level01Emotion: 'Las cicatrices son los renglones donde el tiempo escribió nuestra historia.'
-  },
-  {
-    id: 'drip-ritual-morning',
-    productId: 'ritual-morning-93c',
-    title: '21 / Ritual Matutino 93°C — Vertido Lento & Vapor',
-    subtitle: 'Cono de gres cálido para vertido constante de 4.2 ml/s. Diseñado para vivir en la repisa abierta.',
-    category: 'WabiSabi',
-    categoryLabel: 'Wabi-Sabi & Zen',
-    imageSrc: '/images/products/ritual-morning.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Café Lab',
-      avatar: '/favicon.svg',
-      handle: '@dripper_lab',
-      verified: true
-    },
-    price: 82,
     stockStatus: 'available',
-    stockLabel: 'Disponible',
-    likesCount: 1980,
-    savesCount: 4890,
-    boardIds: ['board-wabisabi'],
-    tags: ['Ritual', 'Vertido Lento', '93°C', 'Calma', 'Mañana'],
-    badge: 'RITUAL LENTO',
-    dropCode: 'RITUAL 01',
-    level01Emotion: 'Verter con calma mientras la luz del amanecer entra por la ventana.'
+    stockLabel: 'Disponible (Edición Arte)',
+    likesCount: 3610,
+    savesCount: 8920,
+    boardIds: ['board-art'],
+    tags: ['Arte', 'Calder', 'Abstracto', 'Colores Primarios', 'Geométrico', 'Móvil', 'Bauhaus'],
+    badge: 'CALDER PRIMARY',
+    dropCode: 'ART 02',
+    level01Emotion: 'El equilibrio imposible de un móvil de Calder suspendido en el aire: gravedad domada por la gracia de la forma.'
   }
 ];
 

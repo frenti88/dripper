@@ -1,12 +1,12 @@
-import { useState, useMemo, useCallback, useDeferredValue, lazy, Suspense } from 'react';
-import type { DropPhase, CartItem } from './types';
+import { useState, useEffect, useMemo, useCallback, useDeferredValue, lazy, Suspense } from 'react';
+import type { CartItem } from './types';
 import { LanguageProvider, useLanguage } from './i18n/LanguageContext';
 import { DRYP_DRIPS, type DrypDrip, type PinterestBoard } from './data/pinterestPinsData';
+import { navigateWithTransition } from './utils/viewTransitions';
 
 // Pinterest Style Components (Critical path, loaded eagerly)
 import { PinterestHeader } from './components/PinterestHeader';
 import { CategoryPillBar } from './components/CategoryPillBar';
-import { DropPinterestBanner } from './components/DropPinterestBanner';
 import { MasonryFeed } from './components/MasonryFeed';
 import { Footer } from './components/Footer';
 import { ErrorBoundary } from './components/ErrorBoundary';
@@ -14,14 +14,38 @@ import { playPressStamp, playCeramicChime } from './utils/audioSynth';
 
 // Heavy secondary views & dialogs (Code-split asynchronously)
 const BoardsView = lazy(() => import('./components/BoardsView').then(m => ({ default: m.BoardsView })));
-const PinDetailModal = lazy(() => import('./components/PinDetailModal').then(m => ({ default: m.PinDetailModal })));
 const CartDrawer = lazy(() => import('./components/CartDrawer').then(m => ({ default: m.CartDrawer })));
 const NotifyModal = lazy(() => import('./components/NotifyModal').then(m => ({ default: m.NotifyModal })));
 const InfoDrawer = lazy(() => import('./components/InfoDrawer').then(m => ({ default: m.InfoDrawer })));
+const DripDetailPage = lazy(() => import('./components/DripDetailPage').then(m => ({ default: m.DripDetailPage })));
 import type { InfoDrawerType } from './components/InfoDrawer';
 
+// Idle prefetch of product detail chunk for instant transition
+if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+  window.requestIdleCallback(() => {
+    import('./components/DripDetailPage');
+  });
+}
+
+function parseRouteFromLocation(): { route: 'explore' | 'boards' | 'drip'; dripId: string | null } {
+  if (typeof window === 'undefined') return { route: 'explore', dripId: null };
+  const path = window.location.pathname;
+  const match = path.match(/^\/drip\/([a-zA-Z0-9_-]+)/);
+  if (match) {
+    return { route: 'drip', dripId: match[1] };
+  }
+  const hash = window.location.hash;
+  const hashMatch = hash.match(/^#\/?drip\/([a-zA-Z0-9_-]+)/);
+  if (hashMatch) {
+    return { route: 'drip', dripId: hashMatch[1] };
+  }
+  if (path === '/boards' || hash === '#/boards') {
+    return { route: 'boards', dripId: null };
+  }
+  return { route: 'explore', dripId: null };
+}
+
 function MainApp() {
-  const [currentPhase] = useState<DropPhase>('LIVE');
   const [currentView, setCurrentView] = useState<'explore' | 'boards'>('explore');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -31,17 +55,100 @@ function MainApp() {
   // Non-blocking deferred search query for high INP responsiveness
   const deferredSearchQuery = useDeferredValue(searchQuery);
 
-  // Saved Drips State (Shelf Curation)
-  const [savedDripIds, setSavedDripIds] = useState<Set<string>>(() => new Set(['drip-fossil-t', 'drip-wabi-kintsugi']));
-  
-  // Selected Drip Modal
-  const [selectedDrip, setSelectedDrip] = useState<DrypDrip | null>(null);
+  // Dedicated Route State (/drip/:id, /boards, /)
+  const [routeInfo, setRouteInfo] = useState(() => parseRouteFromLocation());
+  const [transitionDripId, setTransitionDripId] = useState<string | null>(() => parseRouteFromLocation().dripId);
 
+  // Saved Drips State (Shelf Curation)
+  const [savedDripIds, setSavedDripIds] = useState<Set<string>>(() => new Set(['drip-music-vinyl', 'drip-arch-bauhaus']));
+  
   // Cart State
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isNotifyOpen, setIsNotifyOpen] = useState(false);
   const [addedProductId, setAddedProductId] = useState<string | null>(null);
+
+  // Sincronización del historial del navegador (Back/Forward y URLs directas)
+  useEffect(() => {
+    const handlePopState = () => {
+      const parsed = parseRouteFromLocation();
+      if (parsed.dripId) {
+        setTransitionDripId(parsed.dripId);
+      }
+      navigateWithTransition(() => {
+        setRouteInfo(parsed);
+      });
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  // Drip activo derivado de la URL
+  const activeDrip = useMemo(() => {
+    if (routeInfo.route !== 'drip' || !routeInfo.dripId) return null;
+    return DRYP_DRIPS.find(d => d.id === routeInfo.dripId || d.productId === routeInfo.dripId) || null;
+  }, [routeInfo]);
+
+  const isDripView = routeInfo.route === 'drip' && activeDrip !== null;
+
+  // Redirección en historial si la URL del drip no existe en el catálogo activo
+  useEffect(() => {
+    if (routeInfo.route === 'drip' && !activeDrip) {
+      window.history.replaceState(null, '', '/');
+    }
+  }, [routeInfo.route, activeDrip]);
+
+  // Handlers de navegación cinemática
+  const handleSelectDrip = useCallback((drip: DrypDrip) => {
+    setTransitionDripId(drip.id);
+    navigateWithTransition(() => {
+      setRouteInfo({ route: 'drip', dripId: drip.id });
+      window.history.pushState({ dripId: drip.id }, '', `/drip/${drip.id}`);
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    });
+  }, []);
+
+  const handleBackToCatalog = useCallback(() => {
+    navigateWithTransition(() => {
+      setRouteInfo({ route: 'explore', dripId: null });
+      if (window.history.state?.dripId) {
+        window.history.back();
+      } else {
+        window.history.pushState(null, '', '/');
+      }
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    });
+  }, []);
+
+  const handleSelectCategory = useCallback((cat: string) => {
+    navigateWithTransition(() => {
+      setSelectedCategory(cat);
+      if (routeInfo.route === 'drip') {
+        setRouteInfo({ route: 'explore', dripId: null });
+        window.history.pushState(null, '', '/');
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    });
+  }, [routeInfo.route]);
+
+  const handleViewChange = useCallback((view: 'explore' | 'boards') => {
+    navigateWithTransition(() => {
+      setCurrentView(view);
+      setRouteInfo({ route: view, dripId: null });
+      window.history.pushState(null, '', view === 'boards' ? '/boards' : '/');
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    });
+  }, []);
+
+  const handleSelectBoard = useCallback((board: PinterestBoard) => {
+    navigateWithTransition(() => {
+      setSelectedCategory(board.category);
+      setCurrentView('explore');
+      setRouteInfo({ route: 'explore', dripId: null });
+      window.history.pushState(null, '', '/');
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    });
+  }, []);
 
   const { products, t } = useLanguage();
 
@@ -136,13 +243,6 @@ function MainApp() {
     });
   }, [selectedCategory, deferredSearchQuery, isSavedOnly, savedDripIds]);
 
-  // Board click handler
-  const handleSelectBoard = useCallback((board: PinterestBoard) => {
-    setSelectedCategory(board.category);
-    setCurrentView('explore');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
-
   const totalCartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
@@ -164,43 +264,56 @@ function MainApp() {
         savedCount={savedDripIds.size}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
-        currentView={currentView}
-        onViewChange={setCurrentView}
+        currentView={routeInfo.route === 'boards' ? 'boards' : currentView}
+        onViewChange={handleViewChange}
         isSavedOnly={isSavedOnly}
         onToggleSavedOnly={() => {
           setIsSavedOnly(prev => !prev);
+          if (routeInfo.route === 'drip') {
+            setRouteInfo({ route: 'explore', dripId: null });
+            window.history.pushState(null, '', '/');
+          }
           if (currentView !== 'explore') setCurrentView('explore');
         }}
       />
 
-      {/* Category Pills Bar */}
-      <CategoryPillBar
-        selectedCategory={selectedCategory}
-        onSelectCategory={setSelectedCategory}
-      />
+      {/* Category Pills Bar (Oculto en página de drip individual para máxima inmersión editorial) */}
+      {routeInfo.route !== 'drip' && (
+        <CategoryPillBar
+          selectedCategory={selectedCategory}
+          onSelectCategory={handleSelectCategory}
+        />
+      )}
 
       <main id="main-feed" className="flex-1">
-        {/* Drop Status Live Banner (Oculto temporalmente: cambiar a true para reactivar) */}
-        {false && (
-          <DropPinterestBanner
-            currentPhase={currentPhase}
-            onOpenNotify={() => setIsNotifyOpen(true)}
-            onExploreDrop={() => {
-              setSelectedCategory('Prehistoric');
-              setCurrentView('explore');
-            }}
-          />
-        )}
-
-        {/* View Switch: Explore Masonry Feed vs Curated Boards */}
-        {currentView === 'explore' ? (
+        {/* Renderizado de vista condicional: Página de Detalle de Drip vs Feed vs Tableros */}
+        {isDripView && activeDrip ? (
+          <Suspense fallback={
+            <div className="w-full min-h-[60vh] flex items-center justify-center">
+              <div className="w-8 h-8 rounded-full border-2 border-[#151413] border-t-transparent animate-spin" />
+            </div>
+          }>
+            <DripDetailPage
+              drip={activeDrip}
+              onBack={handleBackToCatalog}
+              onSelectDrip={handleSelectDrip}
+              isSaved={savedDripIds.has(activeDrip.id)}
+              onToggleSave={handleToggleSaveDrip}
+              onAddToCart={handleAddToCart}
+              isAdded={activeDrip.productId === addedProductId}
+              savedDripIds={savedDripIds}
+              addedProductId={addedProductId}
+            />
+          </Suspense>
+        ) : currentView === 'explore' ? (
           <MasonryFeed
             drips={filteredDrips}
             savedDripIds={savedDripIds}
             onToggleSave={handleToggleSaveDrip}
-            onSelectDrip={setSelectedDrip}
+            onSelectDrip={handleSelectDrip}
             onQuickAddToCart={(prodId) => handleAddToCart(prodId)}
             addedProductId={addedProductId}
+            transitionDripId={transitionDripId}
             isSavedOnly={isSavedOnly}
             onResetFilters={() => {
               setSelectedCategory('All');
@@ -225,24 +338,12 @@ function MainApp() {
         onOpenFAQ={() => setInfoDrawerType('faq')}
         onOpenExtraction={() => setInfoDrawerType('extraction')}
         onOpenStory={() => setInfoDrawerType('story')}
-        onSelectCategory={(cat) => setSelectedCategory(cat)}
-        onNavigateView={(view) => setCurrentView(view)}
+        onSelectCategory={(cat) => handleSelectCategory(cat)}
+        onNavigateView={(view) => handleViewChange(view)}
       />
 
-      {/* Heavy Modals & Dialogs (Loaded on Demand) */}
+      {/* Modals & Drawers */}
       <Suspense fallback={null}>
-        {selectedDrip && (
-          <PinDetailModal
-            drip={selectedDrip}
-            onClose={() => setSelectedDrip(null)}
-            isSaved={savedDripIds.has(selectedDrip.id)}
-            onToggleSave={handleToggleSaveDrip}
-            onAddToCart={handleAddToCart}
-            onSelectDrip={setSelectedDrip}
-            isAdded={selectedDrip.productId === addedProductId}
-          />
-        )}
-
         {isCartOpen && (
           <CartDrawer
             isOpen={isCartOpen}

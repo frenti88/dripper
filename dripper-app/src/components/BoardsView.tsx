@@ -25,8 +25,8 @@ export const BoardsView: React.FC<BoardsViewProps> = ({ onSelectBoard }) => {
         </h2>
         <p className="text-sm text-[#4b514d] mt-1 max-w-2xl">
           {language === 'es'
-            ? 'Explora las cafeteras de goteo cónicas artesanales agrupadas por colecciones temáticas: vinilos, universo, naturaleza, cine y fotografía, prehistoria, arquitectura, minerales, escultura y wabi-sabi.'
-            : 'Explore handcrafted conical pour-over drippers grouped across curated thematic collections: vinyl music, universe, nature, cinema & photography, prehistory, architecture, minerals, sculpture, and wabi-sabi.'}
+            ? 'Explora las cafeteras de goteo cónicas artesanales agrupadas por colecciones temáticas: arquitectura, fotografía y cine, retro, naturaleza, música, universo y prehistoria.'
+            : 'Explore handcrafted conical pour-over drippers grouped across curated thematic collections: architecture, cinema & photography, retro, nature, music, universe, and prehistory.'}
         </p>
       </div>
 
@@ -38,12 +38,13 @@ export const BoardsView: React.FC<BoardsViewProps> = ({ onSelectBoard }) => {
             board.category === 'Cosmos' ? 'bg-[#1e293b]/85 text-[#faf8f5] border-[#1e293b]/40' :
             board.category === 'Nature' ? 'bg-[#15803d]/85 text-[#faf8f5] border-[#15803d]/40' :
             board.category === 'Cinema' ? 'bg-[#c2410c]/85 text-[#faf8f5] border-[#c2410c]/40' :
+            board.category === 'Retro' ? 'bg-[#d97706]/85 text-[#faf8f5] border-[#d97706]/40' :
+            board.category === 'Experimental' ? 'bg-[#2563eb]/85 text-[#faf8f5] border-[#2563eb]/40' :
             board.category === 'Prehistoric' ? 'bg-[#c05a3e]/85 text-[#faf8f5] border-[#c05a3e]/40' :
             board.category === 'Photography' ? 'bg-[#334155]/85 text-[#faf8f5] border-[#334155]/40' :
             board.category === 'Architecture' ? 'bg-[#475569]/85 text-[#faf8f5] border-[#475569]/40' :
             board.category === 'Minerals' ? 'bg-[#0f766e]/85 text-[#faf8f5] border-[#0f766e]/40' :
-            board.category === 'Sculptural' ? 'bg-[#b45309]/85 text-[#faf8f5] border-[#b45309]/40' :
-            board.category === 'WabiSabi' ? 'bg-[#78350f]/85 text-[#faf8f5] border-[#78350f]/40' :
+            board.category === 'Art' || board.category === 'Sculptural' ? 'bg-[#b45309]/85 text-[#faf8f5] border-[#b45309]/40' :
             'bg-[#151413]/75 text-[#faf8f5] border-white/20';
 
           return (

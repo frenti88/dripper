@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Work+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -33,9 +34,11 @@
   --color-linen-mist: #a39c91;
   --color-aluminum-hairline: #e8e3da;
 
-  /* Typography System — DRYP. */
-  --font-serif: 'Newsreader', Georgia, serif;
-  --font-sans: 'DM Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Typography System — Work Sans (Headlines/Sans) & Bitter (Body/Serif) based on Fontpair */
+  --font-headline: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'Bitter', Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: 'Bitter', Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   /* Typography — Scale */
@@ -90,8 +93,13 @@
   --color-linen-mist: #a39c91;
   --color-aluminum-hairline: #e8e3da;
 
-  /* Typography */
-  --font-pp-neue-montreal: 'DM Sans', 'Manrope', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Typography System — Work Sans (Headlines/Sans) & Bitter (Body/Serif) based on Fontpair */
+  --font-headline: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'Bitter', Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: 'Bitter', Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-pp-neue-montreal: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   /* Typography — Scale */
   --text-caption: 15px;
@@ -157,6 +165,10 @@ body {
   color: #151413;
 }
 
+h1, h2, h3, h4, h5, h6, .font-headline {
+  font-family: var(--font-headline);
+}
+
 /* ==========================================================================
    THEMED BROWSER SURFACES (SELECTION, SCROLLBARS, FOCUS)
    ========================================================================== */
@@ -189,11 +201,11 @@ body {
    ========================================================================== */
 
 .font-display-custo {
-  font-family: var(--font-pp-neue-montreal);
+  font-family: var(--font-headline);
   font-size: 57px;
   line-height: 1.00;
   letter-spacing: normal;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @media (max-width: 640px) {
@@ -204,11 +216,11 @@ body {
 }
 
 .font-heading-custo {
-  font-family: var(--font-pp-neue-montreal);
+  font-family: var(--font-headline);
   font-size: 38px;
   line-height: 1.15;
   letter-spacing: normal;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 @media (max-width: 640px) {
@@ -219,33 +231,38 @@ body {
 }
 
 .font-heading-sm-custo {
-  font-family: var(--font-pp-neue-montreal);
+  font-family: var(--font-headline);
   font-size: 30px;
   line-height: 1.25;
   letter-spacing: normal;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .font-subheading-custo {
-  font-family: var(--font-pp-neue-montreal);
+  font-family: var(--font-headline);
   font-size: 20px;
   line-height: 1.38;
   letter-spacing: normal;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .font-body-custo {
-  font-family: var(--font-pp-neue-montreal);
+  font-family: var(--font-sans);
   font-size: 19px;
   line-height: 1.42;
   font-weight: 400;
 }
 
 .font-caption-custo {
-  font-family: var(--font-pp-neue-montreal);
+  font-family: var(--font-sans);
   font-size: 15px;
   line-height: 1.43;
   font-weight: 400;
+}
+
+.card-category-badge {
+  font-size: 12px !important;
+  line-height: 1.2 !important;
 }
 
 /* ==========================================================================
@@ -444,4 +461,111 @@ body {
 
 .animate-drawer-in {
   animation: drawerIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ==========================================================================
+   ⚡ OVERDRIVE: VIEW TRANSITIONS API CINEMATIC MOTION SYSTEM
+   ========================================================================== */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(root) {
+  animation-duration: 380ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+::view-transition-old(root) {
+  animation: 200ms cubic-bezier(0.4, 0, 1, 1) both vt-fade-out;
+}
+
+::view-transition-new(root) {
+  animation: 320ms cubic-bezier(0, 0, 0.2, 1) 60ms both vt-fade-in;
+}
+
+/* Shared Element: Hero Ceramic Artwork */
+::view-transition-group(drip-hero-image) {
+  animation-duration: 440ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  border-radius: 16px;
+  z-index: 50;
+}
+
+::view-transition-old(drip-hero-image),
+::view-transition-new(drip-hero-image) {
+  animation-duration: 440ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  object-fit: cover;
+  border-radius: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+/* Shared Element: Hero Title Typography */
+::view-transition-group(drip-hero-title) {
+  animation-duration: 380ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+::view-transition-old(drip-hero-title),
+::view-transition-new(drip-hero-title) {
+  animation-duration: 380ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Shared Element: Glaze / Origin Badge */
+::view-transition-group(drip-hero-badge) {
+  animation-duration: 340ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+::view-transition-old(drip-hero-badge),
+::view-transition-new(drip-hero-badge) {
+  animation-duration: 340ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes vt-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes vt-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modern @starting-style progressive enhancement for overlay surfaces */
+@starting-style {
+  .modal-surface-starting {
+    opacity: 0;
+    transform: scale(0.96) translateY(4px);
+  }
+  .drawer-surface-starting {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* Accessibility: Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
 }

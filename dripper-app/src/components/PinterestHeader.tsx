@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MorphIcon } from 'morphicons/react';
-import { Search, Bookmark, ShoppingBag, X, Sparkles, Compass, Grid } from 'lucide';
+import { Search, Bookmark, ShoppingBag, X, Sparkles } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
 import { LanguageToggle } from './LanguageToggle';
 
@@ -23,7 +23,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
   savedCount,
   searchQuery,
   onSearchChange,
-  currentView,
+  currentView: _currentView,
   onViewChange,
   isSavedOnly = false,
   onToggleSavedOnly
@@ -80,35 +80,6 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
               DRYP.
             </span>
           </button>
-
-          {/* Navigation View Switcher (Oculto temporalmente) */}
-          {false && (
-            <nav className="flex items-center gap-1 bg-[#f4efea] p-1 rounded-full text-xs font-semibold border border-[#e8e3da]">
-              <button
-                onClick={() => onViewChange('explore')}
-                className={`flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 min-h-[34px] rounded-full transition-all cursor-pointer ${
-                  currentView === 'explore'
-                    ? 'bg-[#151413] text-[#faf8f5] shadow-xs'
-                    : 'text-[#4b463f] hover:text-[#151413]'
-                }`}
-              >
-                <MorphIcon icon={Compass} size={14} strokeWidth={2} reducedMotion="user" className="shrink-0" />
-                <span className="hidden xs:inline">{language === 'es' ? 'Explorar' : 'Explore'}</span>
-              </button>
-
-              <button
-                onClick={() => onViewChange('boards')}
-                className={`flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 min-h-[34px] rounded-full transition-all cursor-pointer ${
-                  currentView === 'boards'
-                    ? 'bg-[#151413] text-[#faf8f5] shadow-xs'
-                    : 'text-[#4b463f] hover:text-[#151413]'
-                }`}
-              >
-                <MorphIcon icon={Grid} size={14} strokeWidth={2} reducedMotion="user" className="shrink-0" />
-                <span className="hidden xs:inline">{language === 'es' ? 'Tableros' : 'Boards'}</span>
-              </button>
-            </nav>
-          )}
         </div>
 
         {/* Omnipresent Pinterest Search Bar */}
@@ -127,8 +98,8 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
               onChange={(e) => onSearchChange(e.target.value)}
               onFocus={() => setIsSearchFocused(true)}
               placeholder={language === 'es' 
-                ? "Buscar drips en el catálogo (fósil, vinilo, cerámicas, recetas 02)..." 
-                : "Search drips in the catalog (fossil, vinyl, ceramics, 02 recipes)..."
+                ? "Buscar goteros en el catálogo (arte, vinilo, fósil, recetas 02)..." 
+                : "Search drippers in the catalog (art, vinyl, fossil, 02 recipes)..."
               }
               className="w-full py-2.5 pl-3 pr-10 bg-transparent text-base sm:text-sm text-[#151413] placeholder-[#8c857b] focus:outline-none font-sans"
               maxLength={120}
@@ -224,7 +195,10 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
           <button
             onClick={onOpenCart}
             className="relative flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 min-h-[40px] rounded-full bg-[#151413] text-[#faf8f5] hover:bg-[#252c26] active:scale-[0.98] transition-all shadow-2xs font-medium text-xs tracking-tight shrink-0 cursor-pointer"
-            aria-label="Abrir bolsa de compras"
+            aria-label={language === 'es' 
+              ? (cartCount > 0 ? `Bolsa de compra con ${cartCount} ${cartCount === 1 ? 'pieza' : 'piezas'}` : 'Bolsa de compra vacía')
+              : (cartCount > 0 ? `Shopping bag with ${cartCount} ${cartCount === 1 ? 'item' : 'items'}` : 'Shopping bag is empty')
+            }
           >
             <MorphIcon icon={ShoppingBag} size={16} strokeWidth={2} reducedMotion="user" className="text-[#faf8f5] shrink-0" />
             <span className="hidden md:inline">{language === 'es' ? 'Bolsa' : 'Bag'}</span>

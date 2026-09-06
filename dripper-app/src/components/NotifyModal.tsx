@@ -25,12 +25,14 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const previousActiveElement = useRef<HTMLElement | null>(null);
 
+  const handleClose = React.useCallback(() => {
+    setValidationError(null);
+    setIsSubmitting(false);
+    onClose();
+  }, [onClose]);
+
   useEffect(() => {
-    if (!isOpen) {
-      setValidationError(null);
-      setIsSubmitting(false);
-      return;
-    }
+    if (!isOpen) return;
 
     previousActiveElement.current = document.activeElement as HTMLElement;
     document.body.style.overflow = 'hidden';
@@ -41,7 +43,7 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        onClose();
+        handleClose();
         return;
       }
 
@@ -74,7 +76,7 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
       window.removeEventListener('keydown', handleKeyDown);
       previousActiveElement.current?.focus();
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, handleClose]);
 
   if (!isOpen) return null;
 
@@ -102,7 +104,7 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
         setSubmitted(false);
         setEmail('');
         setName('');
-        onClose();
+        handleClose();
       }, 2400);
     }, 400);
   };
@@ -110,6 +112,7 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
   return (
     <div 
       className="fixed inset-0 z-50 overflow-y-auto bg-[#121613]/50 backdrop-blur-xs flex items-center justify-center p-4 animate-fadeIn"
+      onClick={handleClose}
       role="dialog"
       aria-modal="true"
       aria-labelledby="notify-modal-title"
@@ -122,7 +125,7 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
         {/* Close Button */}
         <button
           ref={closeButtonRef}
-          onClick={onClose}
+          onClick={handleClose}
           aria-label={t('closeModal')}
           className="absolute top-5 right-5 w-10 h-10 min-w-[40px] min-h-[40px] rounded-full border border-[#e8e3da] hover:border-[#151413] hover:bg-[#f4efea] flex items-center justify-center text-[#151413] transition-colors cursor-pointer shrink-0"
         >
@@ -188,7 +191,7 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
                   }`}
                 />
                 {validationError && (
-                  <p className="text-[11px] text-[#c05a3e] font-medium mt-1 animate-in fade-in duration-150">
+                  <p role="alert" className="text-[11px] text-[#c05a3e] font-medium mt-1 animate-in fade-in duration-150">
                     {validationError}
                   </p>
                 )}
@@ -203,7 +206,7 @@ export const NotifyModal: React.FC<NotifyModalProps> = ({
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder={language === 'es' ? 'Ej. Mateo' : 'e.g. Mateo'}
+                  placeholder={language === 'es' ? 'Ej. Mateo Gómez' : 'e.g. Mateo Gomez'}
                   maxLength={60}
                   className="w-full px-4 py-2.5 rounded-xl border border-[#e8e3da] bg-white focus:border-[#151413] focus:outline-none focus:ring-1 focus:ring-[#151413] text-base sm:text-xs text-[#151413]"
                 />

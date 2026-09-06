@@ -17,6 +17,7 @@ interface MasonryFeedProps {
   addedProductId: string | null;
   onResetFilters: () => void;
   isSavedOnly?: boolean;
+  transitionDripId?: string | null;
 }
 
 export const MasonryFeed: React.FC<MasonryFeedProps> = ({
@@ -30,7 +31,8 @@ export const MasonryFeed: React.FC<MasonryFeedProps> = ({
   onQuickAddToCart,
   addedProductId,
   onResetFilters,
-  isSavedOnly = false
+  isSavedOnly = false,
+  transitionDripId
 }) => {
   const { language } = useLanguage();
   const items = drips || pins || [];
@@ -49,14 +51,14 @@ export const MasonryFeed: React.FC<MasonryFeedProps> = ({
           </h3>
           <p className="text-xs text-[#5a625c] max-w-md mb-6 leading-relaxed">
             {language === 'es'
-              ? 'Colecciona drips cerámicos haciendo clic en "Coleccionar" sobre cualquier pieza para armar tu selección personal y escuchar el timbre acústico de porcelana.'
-              : 'Save ceramic drips by clicking "Collect" on any piece to curate your morning ritual and hear the acoustic porcelain chime.'}
+              ? 'Guarda goteros cerámicos seleccionando el icono de guardar en cualquier pieza para crear tu selección personal de piezas de café.'
+              : 'Save ceramic drippers by selecting the save icon on any piece to curate your personal coffee collection.'}
           </p>
           <button
             onClick={onResetFilters}
             className="px-6 py-3 rounded-full bg-[#121613] hover:bg-[#252c26] text-white text-xs font-semibold transition-all cursor-pointer shadow-md active:scale-95"
           >
-            {language === 'es' ? 'Explorar drips del taller' : 'Explore atelier drips'}
+            {language === 'es' ? 'Explorar catálogo de goteros' : 'Explore drippers catalog'}
           </button>
         </div>
       );
@@ -68,18 +70,18 @@ export const MasonryFeed: React.FC<MasonryFeedProps> = ({
           <MorphIcon icon={SearchX} size={32} strokeWidth={1.5} reducedMotion="user" />
         </div>
         <h3 className="font-serif text-2xl font-medium text-[#121613] mb-1 break-words max-w-lg">
-          {language === 'es' ? 'No encontramos ningún drip con esa búsqueda en el catálogo' : 'No drips found for that search in the catalog'}
+          {language === 'es' ? 'No encontramos ningún gotero con esos términos' : 'No drippers found matching your search'}
         </h3>
         <p className="text-xs text-[#5a625c] max-w-md mb-6 leading-relaxed">
           {language === 'es' 
-            ? 'Prueba con otros términos como "fósil", "vinilo", "50mm", "cerámica" o restablece los filtros para ver el catálogo completo.' 
-            : 'Try searching for "fossil", "vinyl", "50mm", "ceramics", or reset filters to explore the full catalog.'}
+            ? 'Prueba buscando por "arte", "vinilo", "fósil", "arquitectura" o restablece los filtros para ver todo el catálogo.' 
+            : 'Try searching for "art", "vinyl", "fossil", "architecture", or reset filters to view the full catalog.'}
         </p>
         <button
           onClick={onResetFilters}
           className="px-6 py-3 rounded-full bg-[#121613] hover:bg-[#252c26] text-white text-xs font-semibold transition-all cursor-pointer shadow-md active:scale-95"
         >
-          {language === 'es' ? 'Ver todos los Drips' : 'View all Drips'}
+          {language === 'es' ? 'Ver todos los goteros' : 'View all drippers'}
         </button>
       </div>
     );
@@ -101,6 +103,7 @@ export const MasonryFeed: React.FC<MasonryFeedProps> = ({
             onSelectPin={handleSelect}
             onQuickAddToCart={onQuickAddToCart}
             isAdded={item.productId === addedProductId}
+            isTransitionActive={transitionDripId === item.id}
           />
         ))}
       </div>
