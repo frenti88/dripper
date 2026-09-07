@@ -102,15 +102,16 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-cinema',
     title: 'Fotografía y cine',
-    description: 'Ópticas concéntricas de 35mm, escala de diafragma y cuerpo cerámico negro anodizado.',
+    description: 'Ópticas concéntricas de 35mm, cintas de celuloide helicoidales y bobinas de cine en gres horneado a 1.280 °C.',
     tag: 'Cine & Foto',
     category: 'Cinema',
-    coverImage: '/images/products/lens-50.jpg',
+    coverImage: '/images/products/cinema-film-reel.jpg',
     previewImages: [
+      '/images/products/cinema-film-reel.jpg',
       '/images/products/lens-50.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 2,
+    dripsCount: 2
   },
   {
     id: 'board-series',
@@ -417,6 +418,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'APERTURE 50MM',
     dropCode: 'OBJECT 05',
     level01Emotion: 'El clic mecánico del anillo de apertura antes de congelar un segundo irrepetible con tu café.'
+  },
+
+  {
+    id: 'drip-cinema-film-reel',
+    productId: 'cinema-film-reel',
+    title: '25 / Cinema Reel 35mm',
+    subtitle: 'Gres hueso moteado con cinta de celuloide helicoidal, cámara interior en esmalte negro acanalado, asa en carrete de cine y peana con sello DRYP.',
+    category: 'Cinema',
+    categoryLabel: 'Fotografía y cine',
+    imageSrc: '/images/products/cinema-film-reel.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Cinema Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_cinema',
+      verified: true
+    },
+    price: 92,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Celuloide)',
+    likesCount: 3870,
+    savesCount: 9140,
+    boardIds: ['board-cinema'],
+    tags: ['Cine', 'Fotografía', 'Celuloide', '35mm', 'Carrete', 'Cinta de Cine', 'Gres Moteado', 'Negro Esmaltado'],
+    badge: 'CINEMA 35MM',
+    dropCode: 'CINEMA 02',
+    level01Emotion: 'El giro continuo de la bobina de 35mm proyectando cada gota de extracción como un fotograma de autor.'
   },
 
   // ── SERIES Y TV ──────────────────────────────────────────────────────────

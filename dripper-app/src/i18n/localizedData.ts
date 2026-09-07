@@ -429,6 +429,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'lens-50'
     },
     {
+      id: 'cinema-film-reel',
+      numberCode: '25',
+      collection: 'Cinema & Photography',
+      categoryTag: 'Editions',
+      dropCode: 'CINEMA 02',
+      eyebrow: 'CINEMA 02',
+      name: 'Cinema Reel 35mm',
+      headline: 'The spinning celluloid reel meets artisanal stoneware: every pour, a classic frame.',
+      story: 'Sculpted from speckled bone stoneware with an iconic black 35mm celluloid film strip winding spirally around the cone and circling the top rim. Features a precision ceramic film-reel handle with spoke cutouts, a high-gloss black fluted interior chamber, and a movie-projector arched pedestal base debossed with the DRYP mark.',
+      objectDescription: 'The glossy black interior with deep vertical ribs guides laminar water flow with optimal aeration, preventing filter adhesion and producing a cup with sparkling fruit clarity, delicate caramel notes, and an unforgettable cinematic finish.',
+      price: 92,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Celluloid Edition',
+      stockCountRemaining: 22,
+      paletteColors: [
+        { name: 'Speckled Bone Stoneware', hex: '#E6E1D7' },
+        { name: 'Celluloid Film Black', hex: '#161616' },
+        { name: 'Pure Negative White', hex: '#FAF9F6' }
+      ],
+      specs: {
+        extractionStyle: 'Sparkling citrus clarity, sweet caramel balance, and clean resonant finish',
+        flowRate: 'Medium-fast continuous laminar drawdown',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire speckled stoneware (1,280°C) with dual-tone black glaze',
+        origin: 'Cinema & Optics Atelier • Medellín',
+        weight: '385g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.25',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Frame by frame, pour by pour. Pure cinematic extraction.',
+      visualType: 'lens-50'
+    },
+    {
       id: 'series-springfield-spikes',
       numberCode: '30',
       collection: 'Series & TV',
@@ -1366,6 +1407,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Fotografía analógica y ritual de café en una sola pieza de autor.',
+      visualType: 'lens-50'
+    },
+    {
+      id: 'cinema-film-reel',
+      numberCode: '25',
+      collection: 'Fotografía y cine',
+      categoryTag: 'Editions',
+      dropCode: 'CINEMA 02',
+      eyebrow: 'CINE 02',
+      name: 'Cinema Reel 35mm',
+      headline: 'La bobina cinematográfica y la cinta de celuloide fundidas en gres artesanal: cada vertido, un fotograma de autor.',
+      story: 'Esculpido en gres hueso moteado con una cinta de película analógica de 35mm en esmalte negro con perforaciones que recorre el borde superior y desciende en espiral sobre el cono exterior. Incorpora un asa ergonómica modelada como un carrete de cine con radios calados, cámara interior en esmalte negro brillante con estrías verticales y peana arqueada de proyector con el sello grabado DRYP.',
+      objectDescription: 'Las nervaduras interiores acanaladas en negro profundo aseguran una oxigenación óptima y un drenaje laminar constante sin estancamientos, resaltando notas dulces acarameladas, una acidez brillante y una definición digna de la gran pantalla.',
+      price: 92,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Celuloide',
+      stockCountRemaining: 22,
+      paletteColors: [
+        { name: 'Gres Hueso Moteado', hex: '#E6E1D7' },
+        { name: 'Negro Celuloide', hex: '#161616' },
+        { name: 'Blanco Negativo', hex: '#FAF9F6' }
+      ],
+      specs: {
+        extractionStyle: 'Claridad cítrica brillante, dulzura caramelizada y final limpio y cinematográfico',
+        flowRate: 'Medio-rápido continuo con drenaje laminar',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres moteado de alta temperatura (1.280 °C) con doble esmaltado',
+        origin: 'Taller Cine & Óptica • Medellín',
+        weight: '385g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.25',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Cuadro a cuadro, gota a gota. Extracción cinematográfica.',
       visualType: 'lens-50'
     },
     {
