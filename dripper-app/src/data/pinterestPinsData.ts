@@ -174,11 +174,10 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
     category: 'Experimental',
     coverImage: '/images/products/exp-robot-automaton.jpg',
     previewImages: [
-      '/images/products/exp-robot-automaton.jpg',
-      '/images/products/orbital-kinetic.jpg'
+      '/images/products/exp-robot-automaton.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 1,
+    dripsCount: 1
   },
   {
     id: 'board-art',
@@ -559,33 +558,6 @@ export const DRYP_DRIPS: DrypDrip[] = [
   },
 
   // ── EXPERIMENTAL (1 drip único) ──────────────────────────────────────────
-  {
-    id: 'drip-exp-orbital-gyro',
-    productId: 'orbital-gyro-kinetic',
-    title: '21 / Orbital Gyro',
-    subtitle: 'Gres moteado arena con exoesqueleto helicoidal y anillo orbital de latón macizo. Suspensión cinética para un vertido laminar continuo.',
-    category: 'Experimental',
-    categoryLabel: 'Experimental',
-    imageSrc: '/images/products/orbital-kinetic.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Kinetic Lab',
-      avatar: '/favicon.svg',
-      handle: '@dryp_kinetic',
-      verified: true
-    },
-    price: 98,
-    stockStatus: 'available',
-    stockLabel: 'Disponible (Edición Experimental)',
-    likesCount: 3120,
-    savesCount: 7450,
-    boardIds: ['board-experimental'],
-    tags: ['Experimental', 'Cinético', 'Giroscopio', 'Latón', 'Gres Moteado', 'Orbital', 'Drop EXP'],
-    badge: 'KINETIC LAB',
-    dropCode: 'EXP 01',
-    level01Emotion: 'La gravedad suspendida en el aire mientras el anillo de latón orbita el gres caliente en pleno vertido.'
-  },
-
   {
     id: 'drip-exp-robot-automaton',
     productId: 'exp-robot-automaton',

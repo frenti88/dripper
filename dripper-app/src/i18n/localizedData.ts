@@ -1079,47 +1079,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core'
     },
     {
-      id: 'orbital-gyro-kinetic',
-      numberCode: '21',
-      collection: 'Experimental',
-      categoryTag: 'Lab',
-      dropCode: 'EXP 01',
-      eyebrow: 'EXPERIMENTAL 01',
-      name: '21 / Orbital Gyro',
-      headline: 'Orbital physics and gyroscopic suspension sculpted in volcanic stoneware and brass.',
-      story: 'Speckled sand stoneware cone with a ventilated helical exoskeleton and solid brass orbital ring. Inspired by nautical gyroscopes and celestial orbits to keep pour dynamics suspended in equilibrium.',
-      objectDescription: 'Internal spiral flutes guide 93°C water in a continuous laminar stream, while the metallic ring mass acts as kinetic counterweight and exterior thermal stabilizer.',
-      price: 98,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Available • Experimental Edition',
-      stockCountRemaining: 25,
-      paletteColors: [
-        { name: 'Speckled Sand Stoneware', hex: '#E2DDD3' },
-        { name: 'Raw Solid Brass', hex: '#C4A35A' },
-        { name: 'Raw Terracotta', hex: '#A85A3C' }
-      ],
-      specs: {
-        extractionStyle: 'Constant laminar flow, bright sweetness and silky suspended body',
-        flowRate: '3.8 ml/s continuous laminar stream',
-        capacity: '1–3 Cups (15g–30g dose)',
-        filterType: 'Standard 02 Conical filters',
-        material: 'High-fire speckled stoneware (1,280°C) with solid brass orbital axis',
-        origin: 'Kinetic Atelier • Medellín',
-        weight: '390g',
-        idealRecipe: {
-          dose: '18g',
-          water: '300ml',
-          temperature: '93°C',
-          brewTime: '2:40 min',
-          ratio: '1:16.6',
-          grindSize: 'Medium-Fine'
-        }
-      },
-      tagline: 'Experimental gyroscopic sculpture engineered for mindful slow coffee rituals.',
-      visualType: 'core'
-    },
-    {
       id: 'exp-robot-automaton',
       numberCode: '31',
       collection: 'Experimental',
@@ -2099,47 +2058,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Mareas jurásicas milenarias en cada vertido.',
-      visualType: 'core'
-    },
-    {
-      id: 'orbital-gyro-kinetic',
-      numberCode: '21',
-      collection: 'Experimental',
-      categoryTag: 'Lab',
-      dropCode: 'EXP 01',
-      eyebrow: 'EXPERIMENTAL 01',
-      name: '21 / Orbital Gyro',
-      headline: 'La física orbital y la suspensión giroscópica esculpidas en gres volcánico y latón.',
-      story: 'Cono de gres moteado arena con exoesqueleto helicoidal ventilado y anillo orbital de latón macizo. Inspirado en giroscopios náuticos y órbitas celestes para mantener la inercia del vertido suspendida en equilibrio.',
-      objectDescription: 'Las estrías espirales interiores guían el agua a 93\u00A0°C con un caudal laminar continuo, mientras la masa del anillo metálico actúa como contrapeso cinético y estabilizador térmico exterior.',
-      price: 98,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Disponible • Edición Experimental',
-      stockCountRemaining: 25,
-      paletteColors: [
-        { name: 'Gres Arena Moteado', hex: '#E2DDD3' },
-        { name: 'Latón Macizo Dorado', hex: '#C4A35A' },
-        { name: 'Terracota Volcánico', hex: '#A85A3C' }
-      ],
-      specs: {
-        extractionStyle: 'Flujo laminar constante, acidez brillante y cuerpo sedoso suspendido',
-        flowRate: '3.8 ml/s continuo laminar',
-        capacity: '1–3 Tazas (dosis de 15g–30g)',
-        filterType: 'Filtros cónicos estándar 02',
-        material: 'Gres chamotado arena horneado a 1.280\u00A0°C con eje y esfera de latón macizo',
-        origin: 'Atelier Experimental • Medellín',
-        weight: '390g',
-        idealRecipe: {
-          dose: '18g',
-          water: '300ml',
-          temperature: '93°C',
-          brewTime: '2:40 min',
-          ratio: '1:16.6',
-          grindSize: 'Media-Fina'
-        }
-      },
-      tagline: 'Escultura giroscópica experimental para el ritual de café lento.',
       visualType: 'core'
     },
     {
