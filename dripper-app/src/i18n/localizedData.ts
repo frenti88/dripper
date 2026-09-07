@@ -1158,48 +1158,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Hand-sculpted classical bust honoring the timeless ritual of coffee extraction.',
       visualType: 'artist-001'
-    },
-    {
-      id: 'art-calder-primary',
-      numberCode: '24',
-      collection: 'Art',
-      categoryTag: 'Artists',
-      dropCode: 'ART 02',
-      eyebrow: 'ART 02',
-      name: 'Calder Primary',
-      headline: 'The impossible balance of a Calder mobile suspended mid-air: gravity tamed by the grace of form.',
-      story: 'Speckled white stoneware cone painted with bold primary geometric shapes — red, blue, black, yellow — divided by thin painted lines, inspired by Alexander Calder\'s kinetic mobiles. Tripod base with black accent ring.',
-      objectDescription: 'High-fire speckled stoneware with hand-applied ceramic underglaze. Each geometric field is painted individually before the final firing, making each piece a unique composition within the same pattern.',
-      price: 98,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Available • Art Edition',
-      stockCountRemaining: 16,
-      paletteColors: [
-        { name: 'Speckled Natural White', hex: '#EAE7E1' },
-        { name: 'Calder Red', hex: '#CC2929' },
-        { name: 'Primary Blue', hex: '#1A3A6B' },
-        { name: 'Golden Yellow', hex: '#D4A017' }
-      ],
-      specs: {
-        extractionStyle: 'Vivid, bright acidity balanced with a sweet rounded body',
-        flowRate: 'Medium balanced drawdown',
-        capacity: '1–3 Cups (15g–30g dose)',
-        filterType: 'Standard 02 Conical filters',
-        material: 'High-fire speckled stoneware with ceramic underglaze',
-        origin: 'Classical Art Atelier • Medellín',
-        weight: '390g',
-        idealRecipe: {
-          dose: '17g',
-          water: '280ml',
-          temperature: '93°C',
-          brewTime: '2:55 min',
-          ratio: '1:16.5',
-          grindSize: 'Medium'
-        }
-      },
-      tagline: 'Primary colors. Pure form. One perfect pour.',
-      visualType: 'artist-001'
     }
   ],
   es: [
@@ -2139,48 +2097,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Busto clásico esculpido a mano en homenaje al ritual eterno del café.',
-      visualType: 'artist-001'
-    },
-    {
-      id: 'art-calder-primary',
-      numberCode: '24',
-      collection: 'Art',
-      categoryTag: 'Artists',
-      dropCode: 'ART 02',
-      eyebrow: 'ARTE 02',
-      name: 'Calder Primary',
-      headline: 'El equilibrio imposible de un móvil de Calder suspendido en el aire: gravedad domada por la gracia de la forma.',
-      story: 'Cono de gres blanco moteado pintado con formas geométricas primarias en rojo, azul, negro y amarillo — divididas por líneas pintadas a mano — inspiradas en los móviles cinéticos de Alexander Calder. Base trípode con anillo negro.',
-      objectDescription: 'Gres moteado de alta temperatura con esmalte bajo cubierta aplicado a mano. Cada campo de color es pintado individualmente antes de la cocción final, haciendo de cada pieza una composición única dentro del mismo patrón.',
-      price: 98,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Disponible • Edición Arte',
-      stockCountRemaining: 16,
-      paletteColors: [
-        { name: 'Blanco Natural Moteado', hex: '#EAE7E1' },
-        { name: 'Rojo Calder', hex: '#CC2929' },
-        { name: 'Azul Primario', hex: '#1A3A6B' },
-        { name: 'Amarillo Dorado', hex: '#D4A017' }
-      ],
-      specs: {
-        extractionStyle: 'Acidez viva y brillante balanceada con un cuerpo dulce y redondo',
-        flowRate: 'Drenaje equilibrado medio',
-        capacity: '1–3 Tazas (dosis 15g–30g)',
-        filterType: 'Filtros cónicos estándar 02',
-        material: 'Gres moteado de alta temperatura con esmalte bajo cubierta',
-        origin: 'Atelier de Arte Clásico • Medellín',
-        weight: '390g',
-        idealRecipe: {
-          dose: '17g',
-          water: '280ml',
-          temperature: '93°C',
-          brewTime: '2:55 min',
-          ratio: '1:16.5',
-          grindSize: 'Media'
-        }
-      },
-      tagline: 'Colores primarios. Forma pura. Un vertido perfecto.',
       visualType: 'artist-001'
     }
   ]

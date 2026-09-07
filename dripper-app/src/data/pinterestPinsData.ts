@@ -182,16 +182,15 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-art',
     title: 'Arte',
-    description: 'Bustos clásicos helénicos y móviles geométricos de Calder esculpidos a mano en gres cerámico a 1.280 °C.',
+    description: 'Bustos clásicos helénicos esculpidos a mano en gres cerámico a 1.280 °C.',
     tag: 'Arte',
     category: 'Art',
     coverImage: '/images/products/art-classical-muse.jpg',
     previewImages: [
-      '/images/products/art-classical-muse.jpg',
-      '/images/products/art-calder.jpg'
+      '/images/products/art-classical-muse.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 1,
+    dripsCount: 1
   }
 ];
 
@@ -611,33 +610,6 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'MUSE SCULPT',
     dropCode: 'ART 01',
     level01Emotion: 'La serenidad del arte helénico y el manto drapeado despertando bajo el aroma del café recién tostado.'
-  },
-
-  {
-    id: 'drip-art-calder-primary',
-    productId: 'art-calder-primary',
-    title: '24 / Calder Primary',
-    subtitle: 'Gres blanco moteado con formas geométricas primarias inspiradas en los móviles de Calder. Rojo, azul, negro y amarillo: el equilibrio que mueve el mundo.',
-    category: 'Art',
-    categoryLabel: 'Arte',
-    imageSrc: '/images/products/art-calder.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Classical Arts',
-      avatar: '/favicon.svg',
-      handle: '@dryp_art',
-      verified: true
-    },
-    price: 98,
-    stockStatus: 'available',
-    stockLabel: 'Disponible (Edición Arte)',
-    likesCount: 3610,
-    savesCount: 8920,
-    boardIds: ['board-art'],
-    tags: ['Arte', 'Calder', 'Abstracto', 'Colores Primarios', 'Geométrico', 'Móvil', 'Bauhaus'],
-    badge: 'CALDER PRIMARY',
-    dropCode: 'ART 02',
-    level01Emotion: 'El equilibrio imposible de un móvil de Calder suspendido en el aire: gravedad domada por la gracia de la forma.'
   }
 ];
 
