@@ -429,46 +429,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'lens-50'
     },
     {
-      id: 'cinema-35mm-film',
-      numberCode: '25',
-      collection: 'Cinema',
-      categoryTag: 'Editions',
-      dropCode: 'CINEMA 01',
-      eyebrow: 'CINEMA 01',
-      name: '35mm Film',
-      headline: 'Frame by frame, drop by drop: each pour, an unrepeatable take.',
-      story: 'Matte black stoneware cone with hand-fired film perforation cutouts circling the upper rim and a knurled base ring engraved with DRYP. — a direct translation of 35mm celluloid into functional ceramic.',
-      objectDescription: 'The perforated rim creates air ventilation channels that regulate internal thermal convection during the bloom phase. A brass dial knob on the tripod leg is purely decorative — a nod to vintage camera mechanics.',
-      price: 89,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Available • Celluloid Edition',
-      stockCountRemaining: 24,
-      paletteColors: [
-        { name: 'Matte Film Black', hex: '#1A1A1A' },
-        { name: 'Brass Dial Gold', hex: '#C9A050' }
-      ],
-      specs: {
-        extractionStyle: 'Bold, rich body with dark chocolate and toasted grain notes',
-        flowRate: 'Medium-slow controlled drawdown',
-        capacity: '1–2 Cups (15g–30g dose)',
-        filterType: 'Standard 02 Conical filters',
-        material: 'Matte black high-fire stoneware with brass accent',
-        origin: 'Valle de Silaria',
-        weight: '370g',
-        idealRecipe: {
-          dose: '17g',
-          water: '280ml',
-          temperature: '92°C',
-          brewTime: '3:10 min',
-          ratio: '1:16.5',
-          grindSize: 'Medium'
-        }
-      },
-      tagline: 'Every morning is a scene worth shooting.',
-      visualType: 'lens-50'
-    },
-    {
       id: 'series-springfield-spikes',
       numberCode: '30',
       collection: 'Series & TV',
@@ -1488,46 +1448,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Fotografía analógica y ritual de café en una sola pieza de autor.',
-      visualType: 'lens-50'
-    },
-    {
-      id: 'cinema-35mm-film',
-      numberCode: '25',
-      collection: 'Cinema',
-      categoryTag: 'Editions',
-      dropCode: 'CINEMA 01',
-      eyebrow: 'CINE 01',
-      name: '35mm Film',
-      headline: 'Cuadro a cuadro, gota a gota: cada vertido, una toma irrepetible.',
-      story: 'Cono de gres negro mate con perforaciones de tira de película de 35mm horneadas en el borde superior y base moleteada con el sello DRYP. grabado — una traducción directa del celuloide analógico en cerámica funcional.',
-      objectDescription: 'El borde perforado crea canales de ventilación de aire que regulan la convección térmica interna durante la fase de preinfusión. El botón de latón en la pata del trípode es puramente decorativo — un guiño a la mecánica de las cámaras vintage.',
-      price: 89,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Disponible • Edición Celuloide',
-      stockCountRemaining: 24,
-      paletteColors: [
-        { name: 'Negro Película Mate', hex: '#1A1A1A' },
-        { name: 'Latón Dorado', hex: '#C9A050' }
-      ],
-      specs: {
-        extractionStyle: 'Cuerpo robusto y profundo con notas de chocolate negro y grano tostado',
-        flowRate: 'Medio-lento, drenaje controlado',
-        capacity: '1–2 Tazas (dosis 15g–30g)',
-        filterType: 'Filtros cónicos estándar 02',
-        material: 'Gres negro de alta temperatura con detalle en latón',
-        origin: 'Valle de Silaria',
-        weight: '370g',
-        idealRecipe: {
-          dose: '17g',
-          water: '280ml',
-          temperature: '92°C',
-          brewTime: '3:10 min',
-          ratio: '1:16.5',
-          grindSize: 'Media'
-        }
-      },
-      tagline: 'Cada mañana es una escena que vale la pena rodar.',
       visualType: 'lens-50'
     },
     {

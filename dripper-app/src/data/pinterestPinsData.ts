@@ -447,33 +447,6 @@ export const DRYP_DRIPS: DrypDrip[] = [
     level01Emotion: 'El clic mecánico del anillo de apertura antes de congelar un segundo irrepetible con tu café.'
   },
 
-  {
-    id: 'drip-cinema-35mm',
-    productId: 'cinema-35mm-film',
-    title: '25 / 35mm Film',
-    subtitle: 'Gres negro mate con perforaciones de tira de película en el borde superior y base moleteada con sello DRYP. El fotograma que contiene el vertido.',
-    category: 'Cinema',
-    categoryLabel: 'Fotografía y cine',
-    imageSrc: '/images/products/cinema-35mm.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Optics Studio',
-      avatar: '/favicon.svg',
-      handle: '@dryp_optics',
-      verified: true
-    },
-    price: 89,
-    stockStatus: 'available',
-    stockLabel: 'Disponible (Edición Celuloide)',
-    likesCount: 4750,
-    savesCount: 10200,
-    boardIds: ['board-cinema'],
-    tags: ['Cine', 'Película 35mm', 'Fotograma', 'Negro Mate', 'Celuloide', 'Fotografía', 'Latón'],
-    badge: '35MM FILM',
-    dropCode: 'CINEMA 01',
-    level01Emotion: 'El avance cuadro a cuadro de la película analógica: cada gota de café, un fotograma irrepetible.'
-  },
-
   // ── SERIES Y TV ──────────────────────────────────────────────────────────
   {
     id: 'drip-series-springfield',
