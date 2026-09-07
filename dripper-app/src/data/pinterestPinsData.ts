@@ -182,15 +182,16 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-art',
     title: 'Arte',
-    description: 'Bustos clásicos helénicos y escultura anatómica esculpida a mano en gres cerámico a 1.280 °C.',
+    description: 'Bustos clásicos helénicos y móviles geométricos de Calder esculpidos a mano en gres cerámico a 1.280 °C.',
     tag: 'Arte',
     category: 'Art',
     coverImage: '/images/products/art-classical-muse.jpg',
     previewImages: [
-      '/images/products/art-classical-muse.jpg'
+      '/images/products/art-classical-muse.jpg',
+      '/images/products/art-calder.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 2,
+    dripsCount: 2
   }
 ];
 
@@ -691,33 +692,6 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'CALDER PRIMARY',
     dropCode: 'ART 02',
     level01Emotion: 'El equilibrio imposible de un móvil de Calder suspendido en el aire: gravedad domada por la gracia de la forma.'
-  },
-
-  {
-    id: 'drip-art-figma-canvas',
-    productId: 'art-figma-canvas',
-    title: '27 / Figma Vector Canvas',
-    subtitle: 'Cerámica modular facetada en pétalos de colores icónicos de Figma (naranja, rojo, violeta, azul y verde) sobre gres crema con base cuádruple articulada.',
-    category: 'Art',
-    categoryLabel: 'Arte',
-    imageSrc: '/images/products/art-figma-canvas.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Digital Atelier',
-      avatar: '/favicon.svg',
-      handle: '@dryp_design',
-      verified: true
-    },
-    price: 99,
-    stockStatus: 'available',
-    stockLabel: 'Disponible (Edición Figma)',
-    likesCount: 5420,
-    savesCount: 11800,
-    boardIds: ['board-art'],
-    tags: ['Figma', 'UI/UX', 'Diseño', 'Arte', 'Vector', 'Modular', 'Colores Digitales', 'Edición Especial'],
-    badge: 'FIGMA EDITION',
-    dropCode: 'ART 03',
-    level01Emotion: 'Diseñado en vectores, horneado a 1.280°C: donde el lienzo infinito de Figma se vuelve cerámica tangible.'
   }
 ];
 

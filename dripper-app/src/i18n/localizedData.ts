@@ -1280,49 +1280,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Primary colors. Pure form. One perfect pour.',
       visualType: 'artist-001'
-    },
-    {
-      id: 'art-figma-canvas',
-      numberCode: '27',
-      collection: 'Art',
-      categoryTag: 'Artists',
-      dropCode: 'ART 03',
-      eyebrow: 'FIGMA 01',
-      name: 'Figma Vector Canvas',
-      headline: 'Crafted in Bézier curves, vitrified at 1,280°C.',
-      story: 'Sculptural modular stoneware dripper directly celebrating Figma\'s iconic color system. Features five multi-colored glazed ceramic petals in Figma coral, orange, violet, electric blue, and neon green, resting on an articulated four-pod cream base with DRYP. branding.',
-      objectDescription: 'The segmented petal architecture creates distinct interior vertical flow channels for balanced, aromatic extraction. Each color block is individually hand-glazed with high-precision matte ceramic pigments.',
-      price: 99,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Available • Figma Edition',
-      stockCountRemaining: 15,
-      paletteColors: [
-        { name: 'Figma Coral Red', hex: '#F24E1E' },
-        { name: 'Figma Orange', hex: '#FF7262' },
-        { name: 'Figma Violet', hex: '#A259FF' },
-        { name: 'Figma Blue', hex: '#1ABCFE' },
-        { name: 'Figma Green', hex: '#0ACF83' }
-      ],
-      specs: {
-        extractionStyle: 'Vibrant, nuanced acidity with velvety body and crisp notes',
-        flowRate: 'Multi-channel petal drainage',
-        capacity: '1–2 Cups (15g–28g dose)',
-        filterType: 'Standard 02 Conical filters',
-        material: 'Modular colored glazed stoneware & bone white grog base',
-        origin: 'Digital Atelier • Medellín',
-        weight: '420g',
-        idealRecipe: {
-          dose: '18g',
-          water: '300ml',
-          temperature: '94°C',
-          brewTime: '2:50 min',
-          ratio: '1:16.6',
-          grindSize: 'Medium-Fine'
-        }
-      },
-      tagline: 'From digital canvas to tactile morning ritual.',
-      visualType: 'artist-001'
     }
   ],
   es: [
@@ -2384,49 +2341,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Colores primarios. Forma pura. Un vertido perfecto.',
-      visualType: 'artist-001'
-    },
-    {
-      id: 'art-figma-canvas',
-      numberCode: '27',
-      collection: 'Art',
-      categoryTag: 'Artists',
-      dropCode: 'ART 03',
-      eyebrow: 'FIGMA 01',
-      name: 'Figma Vector Canvas',
-      headline: 'Diseñado en curvas Bézier, vitrificado a 1.280°C.',
-      story: 'Gotero cerámico escultórico y modular que rinde homenaje directo al icónico sistema de color de Figma. Presenta cinco pétalos cerámicos esmaltados en los tonos rojo coral, naranja, violeta, azul eléctrico y verde de la marca, apoyados sobre una base articulada de cuatro apoyos con sello DRYP.',
-      objectDescription: 'La arquitectura segmentada en pétalos genera canales de flujo vertical internos independientes para una extracción balanceada y limpia. Cada bloque de color es esmaltado a mano con pigmentos cerámicos mates de alta precisión.',
-      price: 99,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Disponible • Edición Figma',
-      stockCountRemaining: 15,
-      paletteColors: [
-        { name: 'Rojo Coral Figma', hex: '#F24E1E' },
-        { name: 'Naranja Figma', hex: '#FF7262' },
-        { name: 'Violeta Figma', hex: '#A259FF' },
-        { name: 'Azul Figma', hex: '#1ABCFE' },
-        { name: 'Verde Figma', hex: '#0ACF83' }
-      ],
-      specs: {
-        extractionStyle: 'Acidez brillante y llena de matices con cuerpo sedoso y notas cristalinas',
-        flowRate: 'Drenaje multicanal por pétalos',
-        capacity: '1–2 Tazas (dosis 15g–28g)',
-        filterType: 'Filtros cónicos estándar 02',
-        material: 'Gres modular con esmaltes de color y base blanca hueso chamotada',
-        origin: 'Atelier Digital • Medellín',
-        weight: '420g',
-        idealRecipe: {
-          dose: '18g',
-          water: '300ml',
-          temperature: '94°C',
-          brewTime: '2:50 min',
-          ratio: '1:16.6',
-          grindSize: 'Media-Fina'
-        }
-      },
-      tagline: 'Del lienzo digital al ritual táctil de cada mañana.',
       visualType: 'artist-001'
     }
   ]
