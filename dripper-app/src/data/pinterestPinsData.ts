@@ -170,9 +170,9 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   },
   {
     id: 'board-experimental',
-    title: 'Experimental & Cinético',
-    description: 'Autómatas robóticos, exoesqueletos cinéticos y conos mecatrónicos para desafiar las leyes del vertido.',
-    tag: 'Experimental',
+    title: 'Futurismo',
+    description: 'Autómatas robóticos, conos mecatrónicos y estética ciber-futurista horneados a 1.280 °C.',
+    tag: 'Futurismo',
     category: 'Experimental',
     coverImage: '/images/products/exp-robot-automaton.jpg',
     previewImages: [
@@ -612,14 +612,14 @@ export const DRYP_DRIPS: DrypDrip[] = [
     level01Emotion: 'La calma milenaria de los templos de madera de Kioto: aleros escalonados que guían el agua con serenidad zen.'
   },
 
-  // ── EXPERIMENTAL (1 drip único) ──────────────────────────────────────────
+  // ── FUTURISMO (1 drip único) ──────────────────────────────────────────
   {
     id: 'drip-exp-robot-automaton',
     productId: 'exp-robot-automaton',
     title: '31 / Automaton Bot-01',
     subtitle: 'Gres hueso moteado con cabezal robótico facetado, ojos ámbar, cámara interior en cerámica negra estriada y base trípode mecatrónica con sello DRYP.',
     category: 'Experimental',
-    categoryLabel: 'Experimental',
+    categoryLabel: 'Futurismo',
     imageSrc: '/images/products/exp-robot-automaton.jpg',
     aspectRatio: 'aspect-square',
     author: {
@@ -634,9 +634,9 @@ export const DRYP_DRIPS: DrypDrip[] = [
     likesCount: 4890,
     savesCount: 11200,
     boardIds: ['board-experimental'],
-    tags: ['Experimental', 'Robot', 'Autómata', 'Mecatrónico', 'Cibernética', 'Sci-Fi', 'Gres Moteado', 'Drop EXP'],
-    badge: 'ROBOTIC LAB',
-    dropCode: 'EXP 02',
+    tags: ['Futurismo', 'Robot', 'Autómata', 'Mecatrónico', 'Cibernética', 'Sci-Fi', 'Gres Moteado', 'Drop BOT'],
+    badge: 'FUTURISM BOT',
+    dropCode: 'FUTR 01',
     level01Emotion: 'La precisión de los autómatas mecánicos fusionada con la calidez del gres: café preparado con exactitud milimétrica.'
   },
 

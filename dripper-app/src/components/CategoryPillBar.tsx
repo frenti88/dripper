@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
-import { Sparkles, Disc, Compass, Feather, Film, Building2, Palette, Radio, FlaskConical, Tv } from 'lucide-react';
+import { Sparkles, Disc, Compass, Feather, Film, Building2, Palette, Radio, Bot, Tv } from 'lucide-react';
 
 // Lucide-style Dinosaur icon (Sauropod / Diplodocus)
 const DinosaurIcon: React.FC<{ className?: string; style?: React.CSSProperties }> = ({ className, style }) => (
@@ -40,7 +40,7 @@ export const CategoryPillBar: React.FC<CategoryPillBarProps> = ({
     { id: 'Cinema', label: language === 'es' ? 'Fotografía y cine' : 'Cinema & Photography', icon: Film, glazeColor: '#c2410c', tintClass: 'hover:bg-[#fff7ed]' },
     { id: 'Series', label: language === 'es' ? 'Series y TV' : 'Series & TV', icon: Tv, glazeColor: '#eab308', tintClass: 'hover:bg-[#fefce8]' },
     { id: 'Retro', label: language === 'es' ? 'Retro' : 'Retro 70s', icon: Radio, glazeColor: '#d97706', tintClass: 'hover:bg-[#fffbeb]' },
-    { id: 'Experimental', label: language === 'es' ? 'Experimental' : 'Experimental', icon: FlaskConical, glazeColor: '#2563eb', tintClass: 'hover:bg-[#eff6ff]' },
+    { id: 'Experimental', label: language === 'es' ? 'Futurismo' : 'Futurism', icon: Bot, glazeColor: '#2563eb', tintClass: 'hover:bg-[#eff6ff]' },
     { id: 'Nature', label: language === 'es' ? 'Naturaleza' : 'Nature & Fauna', icon: Feather, glazeColor: '#15803d', tintClass: 'hover:bg-[#f0fdf4]' },
     { id: 'Music', label: language === 'es' ? 'Música' : 'Music', icon: Disc, glazeColor: '#6d28d9', tintClass: 'hover:bg-[#f5f3ff]' },
     { id: 'Cosmos', label: language === 'es' ? 'Universo' : 'Universe', icon: Compass, glazeColor: '#1e293b', tintClass: 'hover:bg-[#f1f5f9]' },
