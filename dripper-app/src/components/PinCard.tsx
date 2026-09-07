@@ -147,6 +147,14 @@ export const DripCard = memo<DripCardProps>(({
             className="w-full h-full object-cover group-hover:scale-[1.015] transition-transform duration-500 ease-out"
           />
         )}
+
+        {item.stockStatus === 'sold_out' && (
+          <div className="absolute top-2.5 left-2.5 z-10 pointer-events-none">
+            <span className="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider bg-[#151413]/85 backdrop-blur-xs text-[#faf8f5] shadow-xs border border-white/10">
+              {language === 'es' ? 'Agotado' : 'Sold Out'}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Drip Card Information - Cleanly Organized Below Image */}
@@ -255,6 +263,12 @@ export const DripCard = memo<DripCardProps>(({
               style={{ color: glaze.textHex }}
             >
               {categoryName}
+            </span>
+          )}
+
+          {item.stockStatus === 'sold_out' && (
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-mono font-medium text-[#756f66] bg-[#eae5dd] border border-[#d8d2c6] uppercase tracking-wider">
+              {language === 'es' ? 'Agotado' : 'Sold Out'}
             </span>
           )}
         </div>

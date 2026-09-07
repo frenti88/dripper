@@ -211,9 +211,17 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                   {item.categoryLabel}
                 </span>
 
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold bg-[#15803d]/10 text-[#15803d] border border-[#15803d]/25 whitespace-nowrap tabular-nums">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#15803d] animate-pulse" />
-                  {item.stockLabel || (language === 'es' ? 'Disponible (Cumbres de Neblaria)' : 'Available (Neblaria Highlands)')}
+                <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold whitespace-nowrap tabular-nums ${
+                  item.stockStatus === 'sold_out'
+                    ? 'bg-[#151413]/5 text-[#756f66] border border-[#e8e3da]'
+                    : 'bg-[#15803d]/10 text-[#15803d] border border-[#15803d]/25'
+                }`}>
+                  <span className={`w-1.5 h-1.5 rounded-full ${
+                    item.stockStatus === 'sold_out' ? 'bg-[#756f66]' : 'bg-[#15803d] animate-pulse'
+                  }`} />
+                  {item.stockStatus === 'sold_out'
+                    ? (language === 'es' ? 'Agotado' : 'Sold Out')
+                    : (item.stockLabel || (language === 'es' ? 'Disponible (Cumbres de Neblaria)' : 'Available (Neblaria Highlands)'))}
                 </span>
               </div>
 
@@ -285,12 +293,12 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                     type="button"
                     onClick={handleAddToCartClick}
                     disabled={item.stockStatus === 'sold_out'}
-                    className={`w-full min-h-[48px] py-3 px-6 rounded-full font-bold text-xs uppercase tracking-wider transition-all shadow-sm flex items-center justify-center gap-2 active:scale-98 cursor-pointer whitespace-nowrap ${
+                    className={`w-full min-h-[48px] py-3 px-6 rounded-full font-bold text-xs uppercase tracking-wider transition-all shadow-sm flex items-center justify-center gap-2 whitespace-nowrap ${
                       item.stockStatus === 'sold_out'
-                        ? 'bg-[#d8dcd8] text-[#8e9194] cursor-not-allowed'
+                        ? 'bg-[#eae5dd] text-[#8a8377] border border-[#dcd6ca] cursor-not-allowed'
                         : isAdded
-                        ? 'bg-[#15803d] text-white shadow-md'
-                        : 'bg-[#151413] hover:bg-[#252c26] text-[#faf8f5]'
+                        ? 'bg-[#15803d] text-white shadow-md active:scale-98 cursor-pointer'
+                        : 'bg-[#151413] hover:bg-[#252c26] text-[#faf8f5] active:scale-98 cursor-pointer'
                     }`}
                   >
                     <MorphIcon 
@@ -299,11 +307,11 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                       strokeWidth={2.2} 
                       spring="snappy" 
                       reducedMotion="user" 
-                      className="text-white" 
+                      className={item.stockStatus === 'sold_out' ? 'text-[#8a8377]' : 'text-white'} 
                     />
                     <span>
                       {item.stockStatus === 'sold_out'
-                        ? (language === 'es' ? 'Agotado por ahora' : 'Gone for now')
+                        ? (language === 'es' ? 'Agotado por ahora' : 'Sold Out')
                         : isAdded
                         ? (language === 'es' ? 'Añadido a la bolsa' : 'Added to bag')
                         : (language === 'es' ? 'Añadir a la bolsa' : 'Add to bag')}

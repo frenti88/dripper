@@ -202,9 +202,17 @@ export const DripDetailPage: React.FC<DripDetailPageProps> = ({
                   {drip.categoryLabel}
                 </span>
 
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold bg-[#15803d]/10 text-[#15803d] border border-[#15803d]/25 whitespace-nowrap tabular-nums">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#15803d] animate-pulse" />
-                  {drip.stockLabel || (language === 'es' ? 'Disponible (Cumbres de Neblaria)' : 'Available (Neblaria Highlands)')}
+                <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold whitespace-nowrap tabular-nums ${
+                  drip.stockStatus === 'sold_out'
+                    ? 'bg-[#151413]/5 text-[#756f66] border border-[#e8e3da]'
+                    : 'bg-[#15803d]/10 text-[#15803d] border border-[#15803d]/25'
+                }`}>
+                  <span className={`w-1.5 h-1.5 rounded-full ${
+                    drip.stockStatus === 'sold_out' ? 'bg-[#756f66]' : 'bg-[#15803d] animate-pulse'
+                  }`} />
+                  {drip.stockStatus === 'sold_out'
+                    ? (language === 'es' ? 'Agotado' : 'Sold Out')
+                    : (drip.stockLabel || (language === 'es' ? 'Disponible (Cumbres de Neblaria)' : 'Available (Neblaria Highlands)'))}
                 </span>
               </div>
 
@@ -273,11 +281,11 @@ export const DripDetailPage: React.FC<DripDetailPageProps> = ({
               <div className="flex items-center gap-3 pt-1">
                 
                 {/* Quantity Buttons (40px Accessible Hit Area) */}
-                <div className="flex items-center border border-[#e8e3da] rounded-full bg-[#faf8f5] p-1 shrink-0">
+                <div className={`flex items-center border border-[#e8e3da] rounded-full bg-[#faf8f5] p-1 shrink-0 ${drip.stockStatus === 'sold_out' ? 'opacity-40 pointer-events-none' : ''}`}>
                   <button
                     type="button"
                     onClick={() => setQuantity(q => Math.max(1, q - 1))}
-                    disabled={quantity <= 1}
+                    disabled={quantity <= 1 || drip.stockStatus === 'sold_out'}
                     aria-label="Reducir cantidad"
                     className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-mono font-medium text-[#151413] hover:bg-[#eae3d8] disabled:opacity-30 cursor-pointer transition-colors select-none"
                   >
@@ -287,8 +295,9 @@ export const DripDetailPage: React.FC<DripDetailPageProps> = ({
                   <button
                     type="button"
                     onClick={() => setQuantity(q => Math.min(10, q + 1))}
+                    disabled={drip.stockStatus === 'sold_out'}
                     aria-label="Aumentar cantidad"
-                    className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-mono font-medium text-[#151413] hover:bg-[#eae3d8] cursor-pointer transition-colors select-none"
+                    className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-mono font-medium text-[#151413] hover:bg-[#eae3d8] disabled:opacity-30 cursor-pointer transition-colors select-none"
                   >
                     +
                   </button>
@@ -299,12 +308,12 @@ export const DripDetailPage: React.FC<DripDetailPageProps> = ({
                   type="button"
                   onClick={handleAddToCartClick}
                   disabled={drip.stockStatus === 'sold_out'}
-                  className={`flex-1 min-h-[52px] py-3.5 px-6 rounded-full font-bold text-sm uppercase tracking-wider transition-all shadow-sm flex items-center justify-center gap-2 active:scale-98 cursor-pointer whitespace-nowrap ${
+                  className={`flex-1 min-h-[52px] py-3.5 px-6 rounded-full font-bold text-sm uppercase tracking-wider transition-all shadow-sm flex items-center justify-center gap-2 whitespace-nowrap ${
                     drip.stockStatus === 'sold_out'
-                      ? 'bg-[#d8dcd8] text-[#8e9194] cursor-not-allowed'
+                      ? 'bg-[#eae5dd] text-[#8a8377] border border-[#dcd6ca] cursor-not-allowed'
                       : isAdded
-                      ? 'bg-[#15803d] text-white shadow-md'
-                      : 'bg-[#151413] hover:bg-[#252c26] text-[#faf8f5]'
+                      ? 'bg-[#15803d] text-white shadow-md active:scale-98 cursor-pointer'
+                      : 'bg-[#151413] hover:bg-[#252c26] text-[#faf8f5] active:scale-98 cursor-pointer'
                   }`}
                 >
                   <MorphIcon 
@@ -313,9 +322,12 @@ export const DripDetailPage: React.FC<DripDetailPageProps> = ({
                     strokeWidth={2.2} 
                     spring="snappy" 
                     reducedMotion="user" 
+                    className={drip.stockStatus === 'sold_out' ? 'text-[#8a8377]' : ''}
                   />
                   <span>
-                    {isAdded 
+                    {drip.stockStatus === 'sold_out'
+                      ? (language === 'es' ? 'Agotado por ahora' : 'Sold Out')
+                      : isAdded 
                       ? (language === 'es' ? 'Añadido a la bolsa' : 'Added to bag')
                       : (language === 'es' ? 'Añadir a la bolsa' : 'Add to bag')}
                   </span>
@@ -402,12 +414,12 @@ export const DripDetailPage: React.FC<DripDetailPageProps> = ({
           type="button"
           onClick={handleAddToCartClick}
           disabled={drip.stockStatus === 'sold_out'}
-          className={`min-h-[46px] py-2.5 px-5 rounded-full font-bold text-base uppercase tracking-wider transition-all shadow-sm flex items-center justify-center gap-2 active:scale-95 cursor-pointer shrink-0 whitespace-nowrap ${
+          className={`min-h-[46px] py-2.5 px-5 rounded-full font-bold text-base uppercase tracking-wider transition-all shadow-sm flex items-center justify-center gap-2 shrink-0 whitespace-nowrap ${
             drip.stockStatus === 'sold_out'
-              ? 'bg-[#d8dcd8] text-[#8e9194] cursor-not-allowed'
+              ? 'bg-[#eae5dd] text-[#8a8377] border border-[#dcd6ca] cursor-not-allowed'
               : isAdded
-              ? 'bg-[#15803d] text-white'
-              : 'bg-[#151413] text-[#faf8f5]'
+              ? 'bg-[#15803d] text-white active:scale-95 cursor-pointer'
+              : 'bg-[#151413] text-[#faf8f5] active:scale-95 cursor-pointer'
           }`}
         >
           <MorphIcon 
@@ -416,9 +428,12 @@ export const DripDetailPage: React.FC<DripDetailPageProps> = ({
             strokeWidth={2.2} 
             spring="snappy" 
             reducedMotion="user" 
+            className={drip.stockStatus === 'sold_out' ? 'text-[#8a8377]' : ''}
           />
           <span>
-            {isAdded 
+            {drip.stockStatus === 'sold_out'
+              ? (language === 'es' ? 'Agotado' : 'Sold Out')
+              : isAdded 
               ? (language === 'es' ? 'Añadido a la bolsa' : 'Added to bag')
               : (language === 'es' ? 'Añadir a la bolsa' : 'Add to bag')}
           </span>
