@@ -1165,10 +1165,10 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Artists',
       dropCode: 'ART 01',
       eyebrow: 'ART 01',
-      name: '22 / Musa Clásica',
-      headline: 'Classical Hellenic marble sculpture translated into functional pour-over geometry.',
-      story: 'Textured marble-grog stoneware with a hand-sculpted Hellenic muse bust. The cascading hair waves guide internal extraction flutes for a sweet, crystalline cup.',
-      objectDescription: 'Interior vertical ribs seamlessly emerge from the classical sculpted hair locks, providing balanced air suspension and smooth drawdown for conical filters.',
+      name: 'Musa Clásica',
+      headline: 'Classical Hellenic sculpture translated into functional pour-over geometry.',
+      story: 'Handcrafted in fine ivory sandstone stoneware featuring a sculpted Hellenic muse head with laurel wreath, spiral draped garment ridges, and an arched pedestal base stamped with the DRYP seal.',
+      objectDescription: 'The spiral interior flutes seamlessly extend from the draped toga folds, aerating the conical filter for uniform drawdown, floral clarity, and a velvety sweet cup.',
       price: 94,
       currency: 'USD',
       stockStatus: 'available',
@@ -1176,8 +1176,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       stockCountRemaining: 20,
       paletteColors: [
         { name: 'Classical Ivory Marble', hex: '#E6E0D4' },
-        { name: 'Warm Cream Sandstone', hex: '#D8CEBE' },
-        { name: 'Raw Terracotta', hex: '#A85A3C' }
+        { name: 'Warm Cream Sandstone', hex: '#D8CEBE' }
       ],
       specs: {
         extractionStyle: 'Clear, balanced, sweet aromatics with silky mouthfeel',
@@ -2230,10 +2229,10 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       categoryTag: 'Artists',
       dropCode: 'ART 01',
       eyebrow: 'ARTE 01',
-      name: '22 / Musa Clásica',
+      name: 'Musa Clásica',
       headline: 'La escultura clásica helénica traducida a geometría de vertido funcional.',
-      story: 'Gres marmóreo texturizado con busto helénico esculpido a mano. Las ondas del cabello guían el flujo interior hacia un vertido dulce y cristalino.',
-      objectDescription: 'Las nervaduras interiores nacen orgánicamente del cabello esculpido clásico, suspendiendo el filtro cónico en cámara de aire para una extracción homogénea y limpia.',
+      story: 'Gotero cerámico en gres arenisca marfil texturizado con busto helénico con corona de laurel esculpido a mano, drapeado helicoidal que abraza el cono y peana arqueada calada con el sello DRYP.',
+      objectDescription: 'Las nervaduras interiores nacen en armonía con los pliegues del manto clásico, permitiendo una desgasificación suave y un drenaje uniforme que resalta la nitidez floral y la dulzura sedosa del café.',
       price: 94,
       currency: 'USD',
       stockStatus: 'available',
@@ -2241,8 +2240,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       stockCountRemaining: 20,
       paletteColors: [
         { name: 'Mármol Marfil Clásico', hex: '#E6E0D4' },
-        { name: 'Arenisca Crema Cálida', hex: '#D8CEBE' },
-        { name: 'Terracota Volcánico', hex: '#A85A3C' }
+        { name: 'Arenisca Crema Cálida', hex: '#D8CEBE' }
       ],
       specs: {
         extractionStyle: 'Extracción cristalina, dulzor floral equilibrado y tacto sedoso en boca',

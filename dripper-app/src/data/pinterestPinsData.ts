@@ -615,7 +615,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     id: 'drip-art-classical-muse',
     productId: 'art-classical-muse',
     title: '22 / Musa Clásica',
-    subtitle: 'Gres marmóreo texturizado con busto helénico esculpido a mano. Las ondas del cabello guían el flujo interior hacia un vertido dulce y cristalino.',
+    subtitle: 'Gres arenisca marfil con busto helénico con corona de laurel esculpido a mano, drapeado helicoidal y peana calada con sello DRYP.',
     category: 'Art',
     categoryLabel: 'Arte',
     imageSrc: '/images/products/art-classical-muse.jpg',
@@ -629,13 +629,13 @@ export const DRYP_DRIPS: DrypDrip[] = [
     price: 94,
     stockStatus: 'available',
     stockLabel: 'Disponible (Edición Arte)',
-    likesCount: 2890,
-    savesCount: 6540,
+    likesCount: 3890,
+    savesCount: 8540,
     boardIds: ['board-art'],
-    tags: ['Arte', 'Escultura', 'Musa', 'Helénico', 'Mármol', 'Gres Moteado', 'Busto Clásico'],
+    tags: ['Arte', 'Escultura', 'Musa', 'Helénico', 'Corona de Laurel', 'Arenisca', 'Gres Moteado', 'Busto Clásico'],
     badge: 'MUSE SCULPT',
     dropCode: 'ART 01',
-    level01Emotion: 'La serenidad del mármol clásico despertando bajo el aroma del café recién tostado.'
+    level01Emotion: 'La serenidad del arte helénico y el manto drapeado despertando bajo el aroma del café recién tostado.'
   },
 
   {
