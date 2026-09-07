@@ -837,6 +837,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core-black'
     },
     {
+      id: 'music-grand-piano',
+      numberCode: '23',
+      collection: 'Music',
+      categoryTag: 'Editions',
+      dropCode: 'AUDIO 02',
+      eyebrow: 'AUDIO 02',
+      name: 'Grand Piano Keys',
+      headline: 'Acoustic resonance and piano key geometry sculpted in high-gloss lacquer ceramic.',
+      story: 'High-fire ceramic finished in deep high-gloss concert piano lacquer black, featuring radial faceted casing lines reminiscent of a grand piano. The interior chamber is sculpted into ivory and black piano keys forming rhythmic vertical extraction flutes, traced by fine 24k gold pinstriping along the sweeping ergonomic rim and arched pedestal base with a gold DRYP seal.',
+      objectDescription: 'The alternating raised black and recessed ivory keys create harmonic air ventilation and calibrated vertical channels, preventing filter sticking and yielding rich caramelized sweetness, delicate floral high notes, and a velvety concert finish.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Concert Edition',
+      stockCountRemaining: 22,
+      paletteColors: [
+        { name: 'Concert Piano Black', hex: '#0D0D0D' },
+        { name: 'Ivory Key Porcelain', hex: '#F7F4EE' },
+        { name: 'Fine 24k Gold Luster', hex: '#D4AF37' }
+      ],
+      specs: {
+        extractionStyle: 'Harmonic balance, luscious caramel sweetness, and sparkling floral overtones',
+        flowRate: 'Smooth, rhythmic medium-steady drawdown',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire porcelain (1,280°C) with dual-tone black/ivory glaze and gold luster',
+        origin: 'Acoustic Sound Atelier • Medellín',
+        weight: '385g',
+        idealRecipe: {
+          dose: '16.5g',
+          water: '270ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.3',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Every note in tune. Every pour in harmony.',
+      visualType: 'core-black'
+    },
+    {
       id: 'nature-colibri-andes',
       numberCode: '12',
       collection: 'Nature',
@@ -1898,6 +1939,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Acústica concéntrica para rituales matutinos conscientes.',
+      visualType: 'core-black'
+    },
+    {
+      id: 'music-grand-piano',
+      numberCode: '23',
+      collection: 'Música',
+      categoryTag: 'Editions',
+      dropCode: 'AUDIO 02',
+      eyebrow: 'AUDIO 02',
+      name: 'Grand Piano Keys',
+      headline: 'La resonancia acústica y el teclado de un piano de cola esculpidos en cerámica negro laca de alta temperatura.',
+      story: 'Gotero cerámico cocido a 1.280°C con acabado en negro laca de piano de concierto ultrabrillante y nervaduras radiales que emulan la caja acústica de un piano de cola. Su cámara interior está modelada como un teclado de porcelana con teclas blancas y negras en relieve que actúan como estrías de drenaje, realzado con un delicado fileteado en oro fino en el borde ergonómico y peana arqueada con sello dorado DRYP.',
+      objectDescription: 'La alternancia rítmica de las teclas blancas y negras crea canales de desgasificación armónicos que evitan el colapso del filtro de papel, asegurando un drenaje laminar perfecto que resalta el dulzor meloso, notas de cacao fino y una acidez brillante.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Concierto',
+      stockCountRemaining: 22,
+      paletteColors: [
+        { name: 'Negro Laca de Concierto', hex: '#0D0D0D' },
+        { name: 'Porcelana Tecla Marfil', hex: '#F7F4EE' },
+        { name: 'Lustre Oro Fino 24k', hex: '#D4AF37' }
+      ],
+      specs: {
+        extractionStyle: 'Equilibrio armónico, dulzura densa acaramelada y sutiles sobretonos florales',
+        flowRate: 'Medio y rítmico con drenaje laminar',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres porcelánico de alta temperatura (1.280 °C) con fileteado en oro',
+        origin: 'Atelier Acústico • Medellín',
+        weight: '385g',
+        idealRecipe: {
+          dose: '16.5g',
+          water: '270ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.3',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Cada nota afinada. Cada vertido en perfecta armonía.',
       visualType: 'core-black'
     },
     {

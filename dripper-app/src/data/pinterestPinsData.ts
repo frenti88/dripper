@@ -62,15 +62,16 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-music',
     title: 'Música',
-    description: 'Surcos de vinilo a 33 RPM y acústica concéntrica traducidos a dinámica de vertido pour-over.',
+    description: 'Surcos de vinilo a 33 RPM y teclas de piano de cola esculpidas para una armonía acústica en cada vertido.',
     tag: 'Música',
     category: 'Music',
-    coverImage: '/images/products/vinyl-groove.jpg',
+    coverImage: '/images/products/music-piano.jpg',
     previewImages: [
+      '/images/products/music-piano.jpg',
       '/images/products/vinyl-groove.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 2,
+    dripsCount: 2
   },
   {
     id: 'board-cosmos',
@@ -227,6 +228,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'EDICIÓN VINILO',
     dropCode: 'AUDIO 01',
     level01Emotion: 'El crujido cálido del vinilo cuando la aguja toca el primer surco antes de que inicie la melodía matutina.'
+  },
+
+  {
+    id: 'drip-music-piano',
+    productId: 'music-grand-piano',
+    title: '23 / Grand Piano Keys',
+    subtitle: 'Cerámica negro piano brillante con teclas blancas y negras esculpidas en la cámara interior, fileteado en oro fino y base pedestal con sello dorado DRYP.',
+    category: 'Music',
+    categoryLabel: 'Música',
+    imageSrc: '/images/products/music-piano.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Sound Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_sound',
+      verified: true
+    },
+    price: 98,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Concierto)',
+    likesCount: 5210,
+    savesCount: 12600,
+    boardIds: ['board-music'],
+    tags: ['Piano', 'Música', 'Teclas', 'Negro Piano', 'Oro', 'Acústico', 'Concierto', 'Clásico'],
+    badge: 'GRAND PIANO',
+    dropCode: 'AUDIO 02',
+    level01Emotion: 'La resonancia de un acorde perfecto en un piano de cola: cada vertido fluye en cadencia armónica hacia tu taza.'
   },
 
   // ── COSMOS (1 drip único) ──────────────────────────────────────────────────
