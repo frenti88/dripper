@@ -1323,6 +1323,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Hand-sculpted classical bust honoring the timeless ritual of coffee extraction.',
       visualType: 'artist-001'
+    },
+    {
+      id: 'art-wabi-sabi-kintsugi',
+      numberCode: '24',
+      collection: 'Art',
+      categoryTag: 'Artists',
+      dropCode: 'ART 02',
+      eyebrow: 'ART 02',
+      name: 'Wabi-Sabi Kintsugi',
+      headline: 'The sublime art of impermanence: dual-clay ceramic unified by 24k gold scars.',
+      story: 'Sculpted from a striking contrast of organic speckled ivory stoneware and volcanic charcoal clay, fused along authentic tactile fracture lines with Japanese Kintsugi urushi lacquer and 24k gold leaf. The gilded veins trace across the exterior cone, flow over the rim, and spiral through the internal drainage flutes and hollowed pedestal base.',
+      objectDescription: 'The organic spiral flutes, accented with gilded seams, provide gentle aeration and a smooth, meditative drawdown. The high thermal mass of 1,280°C fired grog stoneware maintains temperature equilibrium, producing a cup of astonishing depth, subtle floral sweetness, and a contemplative finish.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Kintsugi Edition',
+      stockCountRemaining: 18,
+      paletteColors: [
+        { name: 'Speckled Ivory Stoneware', hex: '#E8E3D8' },
+        { name: 'Volcanic Charcoal Black', hex: '#232220' },
+        { name: '24k Kintsugi Gold Leaf', hex: '#D4AF37' }
+      ],
+      specs: {
+        extractionStyle: 'Deep balanced sweetness, layered complexity, and serene mineral clarity',
+        flowRate: 'Medium-slow meditative spiral drawdown',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'Dual high-fire stoneware (1,280°C) with real 24k gold leaf Kintsugi seams',
+        origin: 'Traditional Ceramic Atelier • Medellín',
+        weight: '415g',
+        idealRecipe: {
+          dose: '17g',
+          water: '280ml',
+          temperature: '93°C',
+          brewTime: '2:55 min',
+          ratio: '1:16.5',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Broken, mended, and made more beautiful with gold.',
+      visualType: 'artist-001'
     }
   ],
   es: [
@@ -2427,6 +2468,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Busto clásico esculpido a mano en homenaje al ritual eterno del café.',
+      visualType: 'artist-001'
+    },
+    {
+      id: 'art-wabi-sabi-kintsugi',
+      numberCode: '24',
+      collection: 'Arte',
+      categoryTag: 'Artists',
+      dropCode: 'ART 02',
+      eyebrow: 'ARTE 02',
+      name: 'Wabi-Sabi Kintsugi',
+      headline: 'El arte sublime de la imperfección: gres dual unido por costuras de oro de 24k.',
+      story: 'Esculpido en un contraste orgánico de gres marfil moteado y gres volcánico carbón, ensamblados a lo largo de fracturas reales con la técnica tradicional japonesa Kintsugi empleando laca y pan de oro de 24k. Las venas doradas recorren el exterior del cono, cruzan el borde y descienden en espiral por las estrías de extracción interior y la peana calada.',
+      objectDescription: 'Las estrías espirales interiores bañadas con acentos dorados guían el flujo de manera meditativa y uniforme, evitando la adherencia del filtro. La alta inercia térmica de la cerámica a 1.280 °C brinda una taza de extraordinaria profundidad, notas dulces florales y un final sereno.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Kintsugi',
+      stockCountRemaining: 18,
+      paletteColors: [
+        { name: 'Gres Marfil Moteado', hex: '#E8E3D8' },
+        { name: 'Gres Carbón Volcánico', hex: '#232220' },
+        { name: 'Pan de Oro 24k Kintsugi', hex: '#D4AF37' }
+      ],
+      specs: {
+        extractionStyle: 'Dulzura profunda, complejidad en capas y claridad mineral serena',
+        flowRate: 'Medio-lento espiral meditativo',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres dual de alta temperatura (1.280 °C) con filetes de oro 24k Kintsugi',
+        origin: 'Atelier de Cerámica Tradicional • Medellín',
+        weight: '415g',
+        idealRecipe: {
+          dose: '17g',
+          water: '280ml',
+          temperature: '93°C',
+          brewTime: '2:55 min',
+          ratio: '1:16.5',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Roto, restaurado y sublimado en oro. Belleza en la imperfección.',
       visualType: 'artist-001'
     }
   ]

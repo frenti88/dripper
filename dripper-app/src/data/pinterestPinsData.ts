@@ -186,15 +186,16 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-art',
     title: 'Arte',
-    description: 'Bustos clásicos helénicos esculpidos a mano en gres cerámico a 1.280 °C.',
+    description: 'Cerámica tradicional Wabi-Sabi con cicatrices en Kintsugi de oro y bustos clásicos helénicos a 1.280 °C.',
     tag: 'Arte',
     category: 'Art',
-    coverImage: '/images/products/art-classical-muse.jpg',
+    coverImage: '/images/products/art-wabi-sabi.jpg',
     previewImages: [
+      '/images/products/art-wabi-sabi.jpg',
       '/images/products/art-classical-muse.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 2,
+    dripsCount: 2
   }
 ];
 
@@ -722,6 +723,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'MUSE SCULPT',
     dropCode: 'ART 01',
     level01Emotion: 'La serenidad del arte helénico y el manto drapeado despertando bajo el aroma del café recién tostado.'
+  },
+
+  {
+    id: 'drip-art-wabi-sabi',
+    productId: 'art-wabi-sabi-kintsugi',
+    title: '24 / Wabi-Sabi Kintsugi',
+    subtitle: 'Gres dual en marfil moteado y carbón volcánico unidos por costuras de oro 24k en técnica Kintsugi tradicional, con peana calada y sello DRYP.',
+    category: 'Art',
+    categoryLabel: 'Arte',
+    imageSrc: '/images/products/art-wabi-sabi.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Traditional Arts',
+      avatar: '/favicon.svg',
+      handle: '@dryp_art',
+      verified: true
+    },
+    price: 98,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Kintsugi)',
+    likesCount: 7120,
+    savesCount: 15300,
+    boardIds: ['board-art'],
+    tags: ['Arte', 'Wabi-Sabi', 'Kintsugi', 'Cerámica Tradicional', 'Oro', 'Gres Moteado', 'Japón', 'Imperfecto'],
+    badge: 'KINTSUGI GOLD',
+    dropCode: 'ART 02',
+    level01Emotion: 'La belleza de la imperfección y la cicatriz dorada: cada fractura convertida en la parte más valiosa de tu ritual.'
   }
 ];
 
