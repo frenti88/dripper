@@ -796,46 +796,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core-black'
     },
     {
-      id: 'music-waveform-gold',
-      numberCode: '23',
-      collection: 'Music',
-      categoryTag: 'Editions',
-      dropCode: 'AUDIO 02',
-      eyebrow: 'AUDIO 02',
-      name: 'Waveform Gold',
-      headline: 'The moment silence becomes frequency: the wave that draws the morning before the first sip.',
-      story: 'Ivory white porcelain cone with a precision screen-printed golden sound-wave motif and a matte brass accent ring at the base. A small brass dial stud marks the handle grip.',
-      objectDescription: 'High-fire porcelain with a smooth matte ivory glaze. The waveform is applied with metallic gold luster fired at a second temperature, creating a tactile relief against the raw white surface.',
-      price: 96,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Available • Gold Edition',
-      stockCountRemaining: 18,
-      paletteColors: [
-        { name: 'Ivory Matte White', hex: '#F0EDE6' },
-        { name: 'Matte Gold Luster', hex: '#C9A050' }
-      ],
-      specs: {
-        extractionStyle: 'Delicate, floral clarity with a long resonant finish',
-        flowRate: 'Medium even drawdown',
-        capacity: '1–2 Cups (14g–28g dose)',
-        filterType: 'Standard 02 Conical filters',
-        material: 'High-fire porcelain with gold luster detailing and brass ring',
-        origin: 'Valle de Silaria',
-        weight: '330g',
-        idealRecipe: {
-          dose: '15g',
-          water: '250ml',
-          temperature: '93°C',
-          brewTime: '2:50 min',
-          ratio: '1:16.7',
-          grindSize: 'Medium'
-        }
-      },
-      tagline: 'Every pour, a frequency.',
-      visualType: 'core-black'
-    },
-    {
       id: 'nature-colibri-andes',
       numberCode: '12',
       collection: 'Nature',
@@ -1856,46 +1816,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Acústica concéntrica para rituales matutinos conscientes.',
-      visualType: 'core-black'
-    },
-    {
-      id: 'music-waveform-gold',
-      numberCode: '23',
-      collection: 'Music',
-      categoryTag: 'Editions',
-      dropCode: 'AUDIO 02',
-      eyebrow: 'AUDIO 02',
-      name: 'Waveform Gold',
-      headline: 'El instante en que el silencio se convierte en frecuencia: la onda que dibuja la mañana antes del primer sorbo.',
-      story: 'Cono de porcelana blanca marfil con una onda de sonido serigrafíada en oro mate de precisión y un anillo base dorado en latón mate. Un pequeño tachón de latón marca el grip del asa.',
-      objectDescription: 'Porcelana de alta temperatura con esmalte marfil liso y mate. La forma de onda se aplica con lustre metálico dorado cocido en una segunda temperatura, creando un relieve táctil sobre la superficie blanca cruda.',
-      price: 96,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Disponible • Edición Oro',
-      stockCountRemaining: 18,
-      paletteColors: [
-        { name: 'Blanco Marfil Mate', hex: '#F0EDE6' },
-        { name: 'Lustre Oro Mate', hex: '#C9A050' }
-      ],
-      specs: {
-        extractionStyle: 'Delicado, claridad floral con un final largo y resonante',
-        flowRate: 'Drenaje uniforme medio',
-        capacity: '1–2 Tazas (dosis 14g–28g)',
-        filterType: 'Filtros cónicos estándar 02',
-        material: 'Porcelana de alta temperatura con detallado en lustre dorado y anillo de latón',
-        origin: 'Valle de Silaria',
-        weight: '330g',
-        idealRecipe: {
-          dose: '15g',
-          water: '250ml',
-          temperature: '93°C',
-          brewTime: '2:50 min',
-          ratio: '1:16.7',
-          grindSize: 'Media'
-        }
-      },
-      tagline: 'Cada vertido, una frecuencia.',
       visualType: 'core-black'
     },
     {

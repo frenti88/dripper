@@ -228,33 +228,6 @@ export const DRYP_DRIPS: DrypDrip[] = [
     level01Emotion: 'El crujido cálido del vinilo cuando la aguja toca el primer surco antes de que inicie la melodía matutina.'
   },
 
-  {
-    id: 'drip-music-waveform',
-    productId: 'music-waveform-gold',
-    title: '23 / Waveform Gold',
-    subtitle: 'Porcelana blanca marfil con onda de sonido serigrafíada en oro mate y anillo base dorado. El pulso de la música traducido en gres.',
-    category: 'Music',
-    categoryLabel: 'Música',
-    imageSrc: '/images/products/music-waveform.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Sound Lab',
-      avatar: '/favicon.svg',
-      handle: '@dryp_sound',
-      verified: true
-    },
-    price: 96,
-    stockStatus: 'available',
-    stockLabel: 'Disponible (Edición Oro)',
-    likesCount: 4120,
-    savesCount: 9380,
-    boardIds: ['board-music'],
-    tags: ['Música', 'Onda de Sonido', 'Oro', 'Porcelana', 'Waveform', 'Minimalista', 'Latón'],
-    badge: 'WAVEFORM GOLD',
-    dropCode: 'AUDIO 02',
-    level01Emotion: 'El instante en que el silencio se convierte en frecuencia: la onda que dibuja la mañana antes del primer sorbo.'
-  },
-
   // ── COSMOS (1 drip único) ──────────────────────────────────────────────────
   {
     id: 'drip-cosmos-orbit',
