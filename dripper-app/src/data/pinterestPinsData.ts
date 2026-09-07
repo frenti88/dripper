@@ -168,15 +168,16 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-experimental',
     title: 'Experimental & Cinético',
-    description: 'Estructuras giroscópicas, exoesqueletos cerámicos y anillos de latón en suspensión para desafiar las leyes del vertido.',
+    description: 'Autómatas robóticos, exoesqueletos cinéticos y conos mecatrónicos para desafiar las leyes del vertido.',
     tag: 'Experimental',
     category: 'Experimental',
-    coverImage: '/images/products/orbital-kinetic.jpg',
+    coverImage: '/images/products/exp-robot-automaton.jpg',
     previewImages: [
+      '/images/products/exp-robot-automaton.jpg',
       '/images/products/orbital-kinetic.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 2,
+    dripsCount: 2
   },
   {
     id: 'board-art',
@@ -608,6 +609,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'KINETIC LAB',
     dropCode: 'EXP 01',
     level01Emotion: 'La gravedad suspendida en el aire mientras el anillo de latón orbita el gres caliente en pleno vertido.'
+  },
+
+  {
+    id: 'drip-exp-robot-automaton',
+    productId: 'exp-robot-automaton',
+    title: '31 / Automaton Bot-01',
+    subtitle: 'Gres hueso moteado con cabezal robótico facetado, ojos ámbar, cámara interior en cerámica negra estriada y base trípode mecatrónica con sello DRYP.',
+    category: 'Experimental',
+    categoryLabel: 'Experimental',
+    imageSrc: '/images/products/exp-robot-automaton.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Robotics Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_robotics',
+      verified: true
+    },
+    price: 99,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Bot)',
+    likesCount: 4890,
+    savesCount: 11200,
+    boardIds: ['board-experimental'],
+    tags: ['Experimental', 'Robot', 'Autómata', 'Mecatrónico', 'Cibernética', 'Sci-Fi', 'Gres Moteado', 'Drop EXP'],
+    badge: 'ROBOTIC LAB',
+    dropCode: 'EXP 02',
+    level01Emotion: 'La precisión de los autómatas mecánicos fusionada con la calidez del gres: café preparado con exactitud milimétrica.'
   },
 
   // ── ARTE (1 drip único) ──────────────────────────────────────────────────

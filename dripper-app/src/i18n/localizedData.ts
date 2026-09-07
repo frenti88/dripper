@@ -1159,6 +1159,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core'
     },
     {
+      id: 'exp-robot-automaton',
+      numberCode: '31',
+      collection: 'Experimental',
+      categoryTag: 'Lab',
+      dropCode: 'EXP 02',
+      eyebrow: 'EXPERIMENTAL 02',
+      name: 'Automaton Bot-01',
+      headline: 'Mechatronic retro-futurism engineered into high-fire ceramic pour-over precision.',
+      story: 'Speckled ivory stoneware dripper sculpted into a retro robotic automaton head, featuring amber optical lenses, side auditory dial nodes, and a contrasting ribbed black interior chamber. Elevated on articulated robotic mech tripod legs stamped with the DRYP mark.',
+      objectDescription: 'The matte black ribbed extraction chamber ensures uninterrupted vertical aeration and balanced fluid dynamics, while the heavy grogged ceramic walls preserve thermal consistency with robotic precision.',
+      price: 99,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Bot Edition',
+      stockCountRemaining: 22,
+      paletteColors: [
+        { name: 'Ivory Shell Ceramic', hex: '#E2DDD3' },
+        { name: 'Amber Optic Yellow', hex: '#D97706' },
+        { name: 'Matte Obsidian Black', hex: '#1C1B1A' }
+      ],
+      specs: {
+        extractionStyle: 'Precision extraction, exceptionally balanced clarity, sweetness and vibrant acidity',
+        flowRate: 'Regulated linear 3.6 ml/s drawdown',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire speckled stoneware with dual-tone black interior (1,280°C)',
+        origin: 'Robotics Lab • Cumbres de Neblaria',
+        weight: '420g',
+        idealRecipe: {
+          dose: '17g',
+          water: '280ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.5',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Cybernetic precision for your morning coffee algorithm.',
+      visualType: 'core'
+    },
+    {
       id: 'art-classical-muse',
       numberCode: '22',
       collection: 'Art',
@@ -2220,6 +2261,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Escultura giroscópica experimental para el ritual de café lento.',
+      visualType: 'core'
+    },
+    {
+      id: 'exp-robot-automaton',
+      numberCode: '31',
+      collection: 'Experimental',
+      categoryTag: 'Lab',
+      dropCode: 'EXP 02',
+      eyebrow: 'EXPERIMENTAL 02',
+      name: 'Automaton Bot-01',
+      headline: 'Retrofuturismo mecatrónico y precisión robótica horneados en gres cerámico.',
+      story: 'Gotero cerámico en gres hueso moteado esculpido como cabezal de autómata retro con lentes ópticos en esmalte ámbar, diales auditivos laterales y cámara interior estriada en negro mate. Se sostiene sobre patas robóticas articuladas en trípode con el grabado DRYP.',
+      objectDescription: 'La cámara interior estriada en negro mate garantiza una desgasificación vertical continua y una canalización equilibrada, mientras que la masa cerámica retiene la temperatura con exactitud robótica milimétrica.',
+      price: 99,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Bot',
+      stockCountRemaining: 22,
+      paletteColors: [
+        { name: 'Gres Hueso Robótico', hex: '#E2DDD3' },
+        { name: 'Ámbar Óptico', hex: '#D97706' },
+        { name: 'Negro Obsidiana Mate', hex: '#1C1B1A' }
+      ],
+      specs: {
+        extractionStyle: 'Extracción de alta precisión, balance extraordinario entre dulzor y acidez cristalina',
+        flowRate: 'Drenaje lineal regulado a 3.6 ml/s',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres chamotado de alta temperatura bicolor horneado a 1.280 °C',
+        origin: 'Laboratorio de Robótica • Cumbres de Neblaria',
+        weight: '420g',
+        idealRecipe: {
+          dose: '17g',
+          water: '280ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.5',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Precisión cibernética para tu algoritmo matutino de café.',
       visualType: 'core'
     },
     {
