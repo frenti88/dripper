@@ -141,15 +141,16 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-prehistoric',
     title: 'Prehistoria & Paleontología',
-    description: 'Cráneos fósiles de terópodo esculpidos a mano en gres vivo de arenisca a alta temperatura.',
+    description: 'Cráneos fósiles de terópodo y reptiles marinos del Jurásico esculpidos en gres vivo a 1.280 °C.',
     tag: 'Drop 001',
     category: 'Prehistoric',
-    coverImage: '/images/products/fossil-skull.jpg',
+    coverImage: '/images/products/prehistoric-marine.jpg',
     previewImages: [
+      '/images/products/prehistoric-marine.jpg',
       '/images/products/fossil-skull.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 2,
+    dripsCount: 2
   },
   {
     id: 'board-architecture',
@@ -387,6 +388,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'PALEO SCULPT',
     dropCode: 'DROP 001',
     level01Emotion: 'Millones de años de evolución y fósiles colosales despertando con la primera gota de agua hirviendo.'
+  },
+
+  {
+    id: 'drip-prehistoric-marine',
+    productId: 'prehistoric-marine-plesiosaur',
+    title: '08 / Plesiosaur Marine Spiral',
+    subtitle: 'Gres azul petróleo oceánico moteado con estrías helicoidales marinas, borde ondulado en ola, asa en espiral fósil amonita y peana arqueada con sello DRYP.',
+    category: 'Prehistoric',
+    categoryLabel: 'Prehistoria',
+    imageSrc: '/images/products/prehistoric-marine.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Paleo Atelier',
+      avatar: '/favicon.svg',
+      handle: '@dryp_paleo',
+      verified: true
+    },
+    price: 98,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Marina)',
+    likesCount: 4620,
+    savesCount: 10450,
+    boardIds: ['board-prehistoric'],
+    tags: ['Prehistoria', 'Dinosaurio Marino', 'Plesiosaurio', 'Fósil', 'Azul Petróleo', 'Espiral', 'Amonita', 'Mesozoico'],
+    badge: 'MARINE FOSSIL',
+    dropCode: 'PALEO 02',
+    level01Emotion: 'La marea abisal del Jurásico canalizada en un vertido espiral de aguas profundas y aroma mineral.'
   },
 
   // ── FOTOGRAFÍA Y CINE (Objeto 05 Lens) ───────────────────────────────────

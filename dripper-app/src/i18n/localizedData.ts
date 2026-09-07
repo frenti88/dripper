@@ -1078,6 +1078,46 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'fossil-t'
     },
     {
+      id: 'prehistoric-marine-plesiosaur',
+      numberCode: '08',
+      collection: 'Prehistoric',
+      categoryTag: 'Editions',
+      dropCode: 'PALEO 02',
+      eyebrow: 'PALEO 02',
+      name: 'Plesiosaur Marine Spiral',
+      headline: 'The abyssal spiral of the Jurassic ocean, preserved in speckled teal stoneware.',
+      story: 'Handcrafted stoneware in deep oceanic petrol teal glaze with sweeping spiral shell grooves, a scalloped wave-form rim, and an exquisite coiled ammonite tail handle. Supported by an arched pedestal base stamped with the DRYP seal.',
+      objectDescription: 'The helical interior channels guide a swirling vortex drawdown, aerating the coffee slurry for remarkable cup clarity, sparkling sweetness, and deep mineral undertones.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Marine Edition',
+      stockCountRemaining: 26,
+      paletteColors: [
+        { name: 'Abyssal Petrol Teal', hex: '#2D6A75' },
+        { name: 'Warm Clay Bisque', hex: '#B88F68' }
+      ],
+      specs: {
+        extractionStyle: 'Vibrant cup clarity, pronounced floral aromatics, and deep mineral finish',
+        flowRate: 'Smooth vortex helical drainage',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-temperature glazed grog stoneware (1,280°C)',
+        origin: 'Paleo Atelier • Cumbres de Neblaria',
+        weight: '385g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.25',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Ancient ocean depths. A mindful morning tide.',
+      visualType: 'core'
+    },
+    {
       id: 'orbital-gyro-kinetic',
       numberCode: '21',
       collection: 'Experimental',
@@ -2101,6 +2141,46 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Anatomía de depredador mesozoico traducida en un ritual de café inolvidable.',
       visualType: 'fossil-t'
+    },
+    {
+      id: 'prehistoric-marine-plesiosaur',
+      numberCode: '08',
+      collection: 'Prehistoric',
+      categoryTag: 'Editions',
+      dropCode: 'PALEO 02',
+      eyebrow: 'PALEO 02',
+      name: 'Plesiosaur Marine Spiral',
+      headline: 'La espiral abisal de los mares jurásicos, fosilizada en gres azul petróleo.',
+      story: 'Gotero cerámico cocido a 1.280°C en esmalte azul petróleo marino moteado con estrías helicoidales continuas, borde superior ondulado en forma de ola marina y una majestuosa asa en espiral fósil de amonita. Reposa sobre una peana trípode arqueada con doble ventana grabada con el sello DRYP.',
+      objectDescription: 'Las nervaduras helicoidales internas inducen un flujo en vórtice controlado que oxigena la extracción y favorece una solubilidad uniforme, resaltando la nitidez aromática, acidez limpia y notas minerales de cafés de origen.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Marina',
+      stockCountRemaining: 26,
+      paletteColors: [
+        { name: 'Azul Petróleo Abisal', hex: '#2D6A75' },
+        { name: 'Bizcocho Cerámico Cálido', hex: '#B88F68' }
+      ],
+      specs: {
+        extractionStyle: 'Claridad aromática superior, acidez marina limpia y dulzura estructurada',
+        flowRate: 'Fluido helicoidal constante, drenaje en vórtice',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres chamotado de alta temperatura esmaltado a 1.280°C',
+        origin: 'Taller Paleo • Cumbres de Neblaria',
+        weight: '385g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.25',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Mareas jurásicas milenarias en cada vertido.',
+      visualType: 'core'
     },
     {
       id: 'orbital-gyro-kinetic',
