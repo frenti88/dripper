@@ -174,12 +174,13 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
     description: 'Autómatas robóticos, conos mecatrónicos y estética ciber-futurista horneados a 1.280 °C.',
     tag: 'Futurismo',
     category: 'Experimental',
-    coverImage: '/images/products/exp-robot-automaton.jpg',
+    coverImage: '/images/products/futurism-cyberpunk.jpg',
     previewImages: [
+      '/images/products/futurism-cyberpunk.jpg',
       '/images/products/exp-robot-automaton.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 2,
+    dripsCount: 2
   },
   {
     id: 'board-art',
@@ -638,6 +639,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'FUTURISM BOT',
     dropCode: 'FUTR 01',
     level01Emotion: 'La precisión de los autómatas mecánicos fusionada con la calidez del gres: café preparado con exactitud milimétrica.'
+  },
+
+  {
+    id: 'drip-futurism-cyberpunk',
+    productId: 'futurism-cyberpunk-neon',
+    title: '33 / Cyberpunk Neon Circuit',
+    subtitle: 'Cerámica negro obsidiana con armadura facetada stealth, circuitos grabados en neón carmesí, asa angular mecatrónica y base poligonal con sello DRYP.',
+    category: 'Experimental',
+    categoryLabel: 'Futurismo',
+    imageSrc: '/images/products/futurism-cyberpunk.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Cyber Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_cyber',
+      verified: true
+    },
+    price: 98,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Neo-Tokyo)',
+    likesCount: 6890,
+    savesCount: 14500,
+    boardIds: ['board-experimental'],
+    tags: ['Cyberpunk', 'Futurismo', 'Sci-Fi', 'Negro Obsidiana', 'Neón', 'Circuitos', 'Stealth', 'Neo-Tokyo'],
+    badge: 'CYBERPUNK NEON',
+    dropCode: 'FUTR 02',
+    level01Emotion: 'La lluvia ácida y las luces de neón de Neo-Tokyo desvaneciéndose en la primera extracción de alta fidelidad.'
   },
 
   // ── ARTE (1 drip único) ──────────────────────────────────────────────────

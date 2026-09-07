@@ -1203,6 +1203,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core'
     },
     {
+      id: 'futurism-cyberpunk-neon',
+      numberCode: '33',
+      collection: 'Futurism',
+      categoryTag: 'Editions',
+      dropCode: 'FUTR 02',
+      eyebrow: 'FUTURISM 02',
+      name: 'Cyberpunk Neon Circuit',
+      headline: 'Neo-Tokyo nightfall cast in faceted obsidian ceramic and glowing neon circuitry.',
+      story: 'High-fire matte obsidian black ceramic sculpted with angular stealth armor faceting, recessed glowing crimson-red circuit channels, and horizontal heat-sink ventilation hashes. Paired with a sharp chevron mechatronic handle and a hollowed octagonal pedestal base bearing the debossed DRYP emblem.',
+      objectDescription: 'The interior cone features deep vertical extraction flutes inlaid with vibrant crimson glaze channels, providing accelerated air venting and linear laminar drainage that extracts crisp tropical acidity, dark cocoa depth, and razor-sharp clarity.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Neo-Tokyo Edition',
+      stockCountRemaining: 24,
+      paletteColors: [
+        { name: 'Matte Obsidian Black', hex: '#161616' },
+        { name: 'Neon Cyber Crimson', hex: '#FF3B00' },
+        { name: 'Carbon Fiber Grey', hex: '#2A2A2A' }
+      ],
+      specs: {
+        extractionStyle: 'Razor-sharp citrus clarity, complex berry notes, and dark chocolate resonance',
+        flowRate: 'Medium-fast energetic laminar flow',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-temperature matte obsidian ceramic (1,280°C) with neon glaze inlay',
+        origin: 'Cyber Lab • Medellín',
+        weight: '395g',
+        idealRecipe: {
+          dose: '18g',
+          water: '290ml',
+          temperature: '94°C',
+          brewTime: '2:40 min',
+          ratio: '1:16.1',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'High tech, slow pour. Wake up in Neo-Tokyo.',
+      visualType: 'core'
+    },
+    {
       id: 'art-classical-muse',
       numberCode: '22',
       collection: 'Art',
@@ -2223,6 +2264,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Precisión cibernética para tu algoritmo matutino de café.',
+      visualType: 'core'
+    },
+    {
+      id: 'futurism-cyberpunk-neon',
+      numberCode: '33',
+      collection: 'Futurismo',
+      categoryTag: 'Editions',
+      dropCode: 'FUTR 02',
+      eyebrow: 'FUTURISMO 02',
+      name: 'Cyberpunk Neon Circuit',
+      headline: 'El anochecer de Neo-Tokyo forjado en cerámica negro obsidiana y circuitos de neón carmesí.',
+      story: 'Cerámica de alta temperatura en negro obsidiana mate esculpida con armadura facetada geométrica stealth, canales rebajados de circuitos en rojo neón brillante y ranuras de ventilación térmica. Incorpora un asa angular mecatrónica en chevron y una base pedestal octagonal calada con el sello grabado DRYP.',
+      objectDescription: 'La cámara interior presenta estrías verticales profundas intercaladas con canales de esmalte carmesí, asegurando una desgasificación ultrarrápida y un flujo laminar continuo que resalta la acidez tropical, notas a cacao negro y una nitidez asombrosa.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Neo-Tokyo',
+      stockCountRemaining: 24,
+      paletteColors: [
+        { name: 'Negro Obsidiana Mate', hex: '#161616' },
+        { name: 'Rojo Neón Cyber', hex: '#FF3B00' },
+        { name: 'Gris Carbono', hex: '#2A2A2A' }
+      ],
+      specs: {
+        extractionStyle: 'Acidez brillante de alta definición, notas de frutos rojos y fondo de chocolate amargo',
+        flowRate: 'Medio-rápido enérgico y fluido',
+        capacity: '1–2 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Cerámica de alta temperatura a 1.280 °C con incrustación de esmalte neón',
+        origin: 'Taller Cyberpunk • Medellín',
+        weight: '395g',
+        idealRecipe: {
+          dose: '18g',
+          water: '290ml',
+          temperature: '94°C',
+          brewTime: '2:40 min',
+          ratio: '1:16.1',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Alta tecnología, vertido pausado. Despierta en Neo-Tokyo.',
       visualType: 'core'
     },
     {
