@@ -1000,6 +1000,48 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core'
     },
     {
+      id: 'retro-atari-2600',
+      numberCode: '20',
+      collection: 'Retro',
+      categoryTag: 'Editions',
+      dropCode: 'RETRO 02',
+      eyebrow: 'RETRO 02',
+      name: 'Atari Fuji 2600',
+      headline: 'The dawn of home gaming: iconic retro tri-stripes meets high-fire ceramic discipline.',
+      story: 'Crafted from speckled sand stoneware with architectural fluting along the conical exterior. Features the legendary retro tri-color racing stripes in golden yellow, warm amber orange, and racing red that swoop down from the rim and branch across the pedestal base. The fluted interior chamber is glazed in matte graphite black with colored stripe accents, perched atop an arched tripod ring debossed with DRYP.',
+      objectDescription: 'The fluted matte black interior channels water steadily through the bed with superb thermal stability, bringing out rich caramelized sweetness, toasted hazelnut nuances, and vibrant citrus highlights from light to medium roast origins.',
+      price: 94,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Arcade Edition',
+      stockCountRemaining: 20,
+      paletteColors: [
+        { name: 'Speckled Sand Stoneware', hex: '#E2DDD3' },
+        { name: 'Atari Amber Orange', hex: '#E85D04' },
+        { name: 'Golden Coin-Op Yellow', hex: '#F48C06' },
+        { name: 'Arcade Racing Red', hex: '#D00000' }
+      ],
+      specs: {
+        extractionStyle: 'Punchy citrus vibrancy, deep caramelized sweetness, and smooth chocolate finish',
+        flowRate: 'Medium-steady balanced drawdown',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-fire speckled stoneware (1,280°C) with triple-tone ceramic glaze',
+        origin: 'Retro Lab • Medellín',
+        weight: '390g',
+        idealRecipe: {
+          dose: '17g',
+          water: '270ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:15.9',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Insert coin to start your morning ritual.',
+      visualType: 'core'
+    },
+    {
       id: 'nature-botanical-wings',
       numberCode: '15',
       collection: 'Nature',
@@ -1978,6 +2020,48 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Una vida extra para tu ritual de cada mañana.',
+      visualType: 'core'
+    },
+    {
+      id: 'retro-atari-2600',
+      numberCode: '20',
+      collection: 'Retro',
+      categoryTag: 'Editions',
+      dropCode: 'RETRO 02',
+      eyebrow: 'RETRO 02',
+      name: 'Atari Fuji 2600',
+      headline: 'El amanecer de los videojuegos arcade: las míticas franjas tri-color en gres cerámico de alta temperatura.',
+      story: 'Esculpido en gres arena moteado con facetado arquitectónico exterior. Luce las legendarias franjas de carreras en amarillo dorado, naranja ámbar y rojo carmín que descienden desde el borde y se abren sobre la peana emulando el icónico logo Fuji de Atari. Cámara interior acanalada en negro grafito mate con prolongación de las líneas de color, sostenida por una base trípode arqueada con el sello grabado DRYP.',
+      objectDescription: 'Las nervaduras interiores acanaladas en negro mate guían el flujo de forma homogénea manteniendo la temperatura a 93°C, potenciando un dulzor acaramelado profundo, notas a avellana tostada y una acidez limpia y jugosa.',
+      price: 94,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Arcade',
+      stockCountRemaining: 20,
+      paletteColors: [
+        { name: 'Gres Arena Moteado', hex: '#E2DDD3' },
+        { name: 'Naranja Ámbar Atari', hex: '#E85D04' },
+        { name: 'Amarillo Arcade', hex: '#F48C06' },
+        { name: 'Rojo Carmín Fuji', hex: '#D00000' }
+      ],
+      specs: {
+        extractionStyle: 'Acidez cítrica viva, dulzor concentrado y final redondo a chocolate y avellana',
+        flowRate: 'Drenaje constante y equilibrado',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres chamotado horneado a 1.280 °C con esmaltes tricromáticos',
+        origin: 'Taller Retro • Medellín',
+        weight: '390g',
+        idealRecipe: {
+          dose: '17g',
+          water: '270ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:15.9',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Inserta una moneda para iniciar tu ritual de café.',
       visualType: 'core'
     },
     {

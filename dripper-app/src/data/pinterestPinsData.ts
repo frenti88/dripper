@@ -130,15 +130,16 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-retro',
     title: 'Retro & Vintage',
-    description: 'Diseño analógico, iconos de videojuegos clásicos y estética vintage en gres de autor.',
+    description: 'Diseño analógico, iconos de videojuegos clásicos y estética arcade vintage en gres de autor a 1.280 °C.',
     tag: 'Retro Gaming',
     category: 'Retro',
-    coverImage: '/images/products/retro-super-mushroom.jpg',
+    coverImage: '/images/products/retro-atari.jpg',
     previewImages: [
+      '/images/products/retro-atari.jpg',
       '/images/products/retro-super-mushroom.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 2,
+    dripsCount: 2
   },
   {
     id: 'board-prehistoric',
@@ -528,6 +529,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'SUPER MUSHROOM',
     dropCode: 'RETRO 03',
     level01Emotion: 'Ese sonido inconfundible al conseguir una vida extra: energía instantánea para conquistar la mañana.'
+  },
+
+  {
+    id: 'drip-retro-atari',
+    productId: 'retro-atari-2600',
+    title: '20 / Atari Fuji 2600',
+    subtitle: 'Gres arena moteado con las icónicas franjas Atari en amarillo, naranja y rojo carmín, cámara interior acanalada en negro grafito y base pedestal con sello DRYP.',
+    category: 'Retro',
+    categoryLabel: 'Retro',
+    imageSrc: '/images/products/retro-atari.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Retro Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_retro',
+      verified: true
+    },
+    price: 94,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Arcade)',
+    likesCount: 5430,
+    savesCount: 11800,
+    boardIds: ['board-retro'],
+    tags: ['Atari', 'Retro', 'Arcade', '2600', 'Gaming', 'Vintage', 'Franjas', 'Gres Moteado'],
+    badge: 'ATARI 2600',
+    dropCode: 'RETRO 02',
+    level01Emotion: 'El destello del televisor de tubo y el joystick listo para la primera partida matutina con aroma a café tostado.'
   },
 
   {
