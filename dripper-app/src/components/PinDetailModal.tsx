@@ -36,7 +36,6 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
   const { products, language } = useLanguage();
   const [selectedColor, setSelectedColor] = useState<string>('');
   const [copiedLink, setCopiedLink] = useState(false);
-  const [activeImage, setActiveImage] = useState<string>(item?.imageSrc || '');
   const [modalImgError, setModalImgError] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
   const closeBtnRef = useRef<HTMLButtonElement>(null);
@@ -50,7 +49,6 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
   const [prevItemId, setPrevItemId] = useState<string | null>(null);
   if (item && item.id !== prevItemId) {
     setPrevItemId(item.id);
-    setActiveImage(item.imageSrc);
     if (product && product.paletteColors.length > 0) {
       setSelectedColor(product.paletteColors[0].name);
     }
@@ -128,7 +126,7 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
           
           {/* Main Visual Display Frame */}
           <div className="relative w-full flex-1 flex items-center justify-center min-h-[280px] sm:min-h-[340px] max-h-[460px] rounded-[16px] overflow-hidden bg-[#faf8f5] border border-[#e8e3da] shadow-2xs group">
-            {item && (activeImage || item.imageSrc) && (
+            {item && item.imageSrc && (
               modalImgError ? (
                 <div className="w-full h-full flex flex-col items-center justify-center bg-[#f4efea] text-[#756f66] p-6 text-center">
                   <span className="font-headline text-lg font-bold text-[#151413]">{item.title}</span>
@@ -136,7 +134,7 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
                 </div>
               ) : (
                 <img
-                  src={activeImage || item.imageSrc}
+                  src={item.imageSrc}
                   alt={item.title}
                   onError={() => setModalImgError(true)}
                   className="w-full h-full object-cover group-hover:scale-[1.015] transition-transform duration-500 ease-out"
@@ -144,31 +142,6 @@ export const DripDetailModal: React.FC<DripDetailModalProps> = ({
               )
             )}
           </div>
-
-          {/* Alternate Perspective Thumbnails */}
-          {product && (
-            <div className="flex items-center gap-3 w-full">
-              <button
-                type="button"
-                onClick={() => setActiveImage(item.imageSrc)}
-                className={`flex-1 aspect-[4/3] rounded-[12px] overflow-hidden border-2 bg-[#faf8f5] transition-all cursor-pointer ${
-                  activeImage === item.imageSrc ? 'border-[#151413] ring-1 ring-[#151413]/20 scale-[1.01]' : 'border-[#e8e3da] opacity-75 hover:opacity-100 hover:border-[#b8b0a2]'
-                }`}
-              >
-                <img src={item.imageSrc} alt="Vista Principal" className="w-full h-full object-cover" />
-              </button>
-              <button
-                type="button"
-                onClick={() => setActiveImage('/images/products/ritual-morning.jpg')}
-                className={`flex-1 aspect-[4/3] rounded-[12px] overflow-hidden border-2 bg-[#faf8f5] transition-all cursor-pointer ${
-                  activeImage === '/images/products/ritual-morning.jpg' ? 'border-[#151413] ring-1 ring-[#151413]/20 scale-[1.01]' : 'border-[#e8e3da] opacity-75 hover:opacity-100 hover:border-[#b8b0a2]'
-                }`}
-              >
-                <img src="/images/products/ritual-morning.jpg" alt="Ritual Pour" className="w-full h-full object-cover" />
-              </button>
-            </div>
-          )}
-
         </div>
 
         {/* ── RIGHT COLUMN: NARRATIVE, SPECS & INTEGRATED ACTION ─────────────── */}

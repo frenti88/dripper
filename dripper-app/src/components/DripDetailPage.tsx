@@ -53,12 +53,10 @@ export const DripDetailPage: React.FC<DripDetailPageProps> = ({
     () => (product && product.paletteColors.length > 0 ? product.paletteColors[0].name : '')
   );
   const [copiedLink, setCopiedLink] = useState(false);
-  const [activeImage, setActiveImage] = useState<string>(drip.imageSrc);
   const [quantity, setQuantity] = useState(1);
 
   if (drip.id !== prevDripId) {
     setPrevDripId(drip.id);
-    setActiveImage(drip.imageSrc);
     if (product && product.paletteColors.length > 0) {
       setSelectedColor(product.paletteColors[0].name);
     }
@@ -182,7 +180,7 @@ export const DripDetailPage: React.FC<DripDetailPageProps> = ({
               className="relative w-full aspect-square rounded-[16px] overflow-hidden bg-[#f4efea] border border-[#e8e3da] shadow-xs flex items-center justify-center group"
             >
               <img
-                src={activeImage || drip.imageSrc}
+                src={drip.imageSrc}
                 alt={drip.title}
                 width={800}
                 height={800}
@@ -191,51 +189,6 @@ export const DripDetailPage: React.FC<DripDetailPageProps> = ({
                 className="w-full h-full object-cover group-hover:scale-[1.015] transition-transform duration-700 ease-out"
               />
             </div>
-
-            {/* Alternate View Perspective Thumbnails */}
-            <div className="flex items-center gap-3">
-              <button
-                type="button"
-                onClick={() => setActiveImage(drip.imageSrc)}
-                className={`flex-1 aspect-[4/3] rounded-[16px] overflow-hidden border-2 bg-[#f4efea] transition-all cursor-pointer ${
-                  activeImage === drip.imageSrc 
-                    ? 'border-[#151413] ring-2 ring-[#151413]/10 scale-[1.01]' 
-                    : 'border-[#e8e3da] opacity-75 hover:opacity-100 hover:border-[#b8b0a2]'
-                }`}
-              >
-                <img 
-                  src={drip.imageSrc} 
-                  alt="Vista frontal calibrada" 
-                  width={240}
-                  height={180}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover" 
-                />
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setActiveImage('/images/products/ritual-morning.jpg')}
-                className={`flex-1 aspect-[4/3] rounded-[16px] overflow-hidden border-2 bg-[#f4efea] transition-all cursor-pointer ${
-                  activeImage === '/images/products/ritual-morning.jpg' 
-                    ? 'border-[#151413] ring-2 ring-[#151413]/10 scale-[1.01]' 
-                    : 'border-[#e8e3da] opacity-75 hover:opacity-100 hover:border-[#b8b0a2]'
-                }`}
-              >
-                <img 
-                  src="/images/products/ritual-morning.jpg" 
-                  alt="Ritual de vertido 93°C" 
-                  width={240}
-                  height={180}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover" 
-                />
-              </button>
-            </div>
-
-
           </div>
 
           {/* ── RIGHT 5-COLS: NARRATIVE, SPECS & PURCHASING ─────────────────── */}
