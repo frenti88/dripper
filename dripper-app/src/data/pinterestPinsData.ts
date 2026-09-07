@@ -115,15 +115,16 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-series',
     title: 'Series y TV',
-    description: 'Iconografía televisiva de culto, siluetas pop animadas y esmaltes de alta temperatura a 1.280 °C.',
+    description: 'Iconografía televisiva de culto, leyendas del anime japonés y siluetas pop a 1.280 °C.',
     tag: 'Series & TV',
     category: 'Series',
-    coverImage: '/images/products/series-springfield.jpg',
+    coverImage: '/images/products/series-dragon-ball.jpg',
     previewImages: [
+      '/images/products/series-dragon-ball.jpg',
       '/images/products/series-springfield.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 2,
+    dripsCount: 2
   },
   {
     id: 'board-retro',
@@ -473,6 +474,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'SERIES TV',
     dropCode: 'SERIES 01',
     level01Emotion: 'La chispa irreverente de la televisión animada de sobremesa vertida en tu primer café del día.'
+  },
+
+  {
+    id: 'drip-series-dragon-ball',
+    productId: 'series-dragon-ball-4star',
+    title: '32 / Dragon Ball 4-Star',
+    subtitle: 'Gres naranja Kame con facetas angulares en llamarada Saiyajin, esfera de cuatro estrellas incrustada en el asa circular y base arqueada con sello DRYP.',
+    category: 'Series',
+    categoryLabel: 'Series y TV',
+    imageSrc: '/images/products/series-dragon-ball.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Pop TV Atelier',
+      avatar: '/favicon.svg',
+      handle: '@dryp_tv',
+      verified: true
+    },
+    price: 94,
+    stockStatus: 'available',
+    stockLabel: 'Disponible (Edición Shenron)',
+    likesCount: 5280,
+    savesCount: 12400,
+    boardIds: ['board-series'],
+    tags: ['Dragon Ball', 'Anime', 'Series', 'TV', 'Goku', 'Saiyajin', 'Esfera del Dragón', '4 Estrellas', 'Naranja Kame'],
+    badge: 'DRAGON BALL',
+    dropCode: 'SERIES 02',
+    level01Emotion: 'Toda la energía del Ki concentrada en una extracción legendaria que eleva tu poder matutino a más de 9.000.'
   },
 
   // ── RETRO ───────────────────────────────────────────────────────────────

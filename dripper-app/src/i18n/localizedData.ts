@@ -469,6 +469,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core'
     },
     {
+      id: 'series-dragon-ball-4star',
+      numberCode: '32',
+      collection: 'Series & TV',
+      categoryTag: 'Editions',
+      dropCode: 'SERIES 02',
+      eyebrow: 'SERIES 02',
+      name: 'Dragon Ball 4-Star',
+      headline: 'Unleash your morning Ki: legendary anime power forged in high-fire orange ceramic.',
+      story: 'High-fire glazed stoneware in vibrant martial arts Kame orange, sculpted with explosive Super Saiyan hair faceting along the cone and rim. The circular loop handle proudly carries the iconic amber 4-star Dragon Ball, resting on an arched viewing base stamped with the DRYP mark.',
+      objectDescription: 'The cream-glazed interior with prominent vertical extraction ribs guarantees explosive drawdown and uniform slurry aeration, yielding sweet caramel notes, punchy tropical fruit acidity, and unmatched morning vitality.',
+      price: 94,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Available • Shenron Edition',
+      stockCountRemaining: 20,
+      paletteColors: [
+        { name: 'Kame Gi Orange', hex: '#F26419' },
+        { name: 'Dragon Ball Amber', hex: '#FFB703' },
+        { name: 'Speckled Cream Bone', hex: '#E6E0D4' }
+      ],
+      specs: {
+        extractionStyle: 'Punchy fruit acidity, concentrated sweetness, and energetic clean finish',
+        flowRate: 'Fast and fluid vertical aeration',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters',
+        material: 'High-temperature glazed grogged stoneware (1,280°C)',
+        origin: 'Pop TV Atelier • Medellín',
+        weight: '380g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '94°C',
+          brewTime: '2:30 min',
+          ratio: '1:16.25',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Raise your power level above 9,000 with every pour.',
+      visualType: 'core'
+    },
+    {
       id: 'brutalist-01',
       numberCode: '06',
       collection: 'Architecture',
@@ -1488,6 +1529,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Empieza la mañana con humor y buen café.',
+      visualType: 'core'
+    },
+    {
+      id: 'series-dragon-ball-4star',
+      numberCode: '32',
+      collection: 'Series y TV',
+      categoryTag: 'Editions',
+      dropCode: 'SERIES 02',
+      eyebrow: 'SERIES 02',
+      name: 'Dragon Ball 4-Star',
+      headline: 'Despierta tu Ki matutino: el poder legendario del anime fundido en cerámica naranja de alta temperatura.',
+      story: 'Gotero cerámico cocido a 1.280°C en vibrante naranja Kame con facetas geométricas angulares inspiradas en el cabello Saiyajin. Su asa circular ergonómica incorpora la legendaria Esfera del Dragón de 4 estrellas en resina ámbar con estrellas rojas, sobre una base arqueada con el sello grabado DRYP.',
+      objectDescription: 'La cámara interior en gres crema con marcadas estrías verticales asegura un drenaje continuo y vigoroso con oxigenación perfecta, resaltando notas dulces acarameladas, acidez tropical chispeante y una claridad digna de un guerrero.',
+      price: 94,
+      currency: 'USD',
+      stockStatus: 'available',
+      stockLabel: 'Disponible • Edición Shenron',
+      stockCountRemaining: 20,
+      paletteColors: [
+        { name: 'Naranja Kame Gi', hex: '#F26419' },
+        { name: 'Ámbar Esfera del Dragón', hex: '#FFB703' },
+        { name: 'Gres Hueso Moteado', hex: '#E6E0D4' }
+      ],
+      specs: {
+        extractionStyle: 'Acidez frutal chispeante, dulzor concentrado y final limpio y energético',
+        flowRate: 'Rápido y fluido con oxigenación vertical',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres chamotado de alta temperatura esmaltado a 1.280 °C',
+        origin: 'Taller Pop TV • Medellín',
+        weight: '380g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '94°C',
+          brewTime: '2:30 min',
+          ratio: '1:16.25',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Eleva tu poder a más de 9.000 con cada vertido.',
       visualType: 'core'
     },
     {
