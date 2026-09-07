@@ -128,12 +128,12 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-retro',
     title: 'Retro & Vintage',
-    description: 'Líneas de velocidad setenteras, diseño analógico y estética vintage en gres de autor.',
-    tag: 'Retro 1974',
+    description: 'Diseño analógico, iconos de videojuegos clásicos y estética vintage en gres de autor.',
+    tag: 'Retro Gaming',
     category: 'Retro',
-    coverImage: '/images/products/retro-stripes.jpg',
+    coverImage: '/images/products/retro-super-mushroom.jpg',
     previewImages: [
-      '/images/products/retro-stripes.jpg'
+      '/images/products/retro-super-mushroom.jpg'
     ],
     pinsCount: 1,
     dripsCount: 1
@@ -473,33 +473,6 @@ export const DRYP_DRIPS: DrypDrip[] = [
   },
 
   // ── RETRO ───────────────────────────────────────────────────────────────
-  {
-    id: 'drip-retro-nes',
-    productId: 'retro-nes-8bit',
-    title: '20 / Retro Sunset Arcade',
-    subtitle: 'Gres crema moteado con bandas curvadas en ocre, naranja y terracota, interior negro brillante y base trípode arqueada con sello DRYP.',
-    category: 'Retro',
-    categoryLabel: 'Retro',
-    imageSrc: '/images/products/retro-nes.jpg',
-    aspectRatio: 'aspect-square',
-    author: {
-      name: 'DRYP. Retro Lab',
-      avatar: '/favicon.svg',
-      handle: '@dryp_retro',
-      verified: true
-    },
-    price: 92,
-    stockStatus: 'available',
-    stockLabel: 'Disponible (Edición Sunset)',
-    likesCount: 4210,
-    savesCount: 8940,
-    boardIds: ['board-retro'],
-    tags: ['Retro', 'Vintage', '70s', '80s', 'Sunset Stripes', 'Arcade', 'Gres Moteado', 'Rayas'],
-    badge: 'RETRO SUNSET',
-    dropCode: 'RETRO 02',
-    level01Emotion: 'La energía solar de los atardeceres analógicos: líneas cálidas que abrazan la geometría de cada vertido.'
-  },
-
   {
     id: 'drip-retro-super-mushroom',
     productId: 'retro-super-mushroom',

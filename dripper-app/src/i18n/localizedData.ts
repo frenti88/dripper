@@ -957,48 +957,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'brutalist'
     },
     {
-      id: 'retro-nes-8bit',
-      numberCode: '20',
-      collection: 'Retro',
-      categoryTag: 'Editions',
-      dropCode: 'RETRO 02',
-      eyebrow: 'RETRO 02',
-      name: 'Retro Sunset Arcade',
-      headline: 'Golden hour warmth from the analog arcade era.',
-      story: 'Speckled cream stoneware dripper decorated with sweeping retro sunset curved stripes in yellow ochre, warm amber orange, and deep burnt terracotta. Contrasted with a deep gloss black interior and an arched tripod pedestal stamped with DRYP.',
-      objectDescription: 'The glossy black interior ribs ensure effortless, channel-free drawdown, while the thick ceramic walls provide stellar heat stability for sweet, full-bodied morning extractions.',
-      price: 92,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Available • Sunset Edition',
-      stockCountRemaining: 28,
-      paletteColors: [
-        { name: 'Speckled Oatmeal Cream', hex: '#EAE5D9' },
-        { name: 'Sunset Amber & Ochre', hex: '#D97706' },
-        { name: 'Burnt Terracotta', hex: '#9C3D24' },
-        { name: 'Gloss Obsidian Black', hex: '#161616' }
-      ],
-      specs: {
-        extractionStyle: 'Clean, structured body with bright acidity and a long finish',
-        flowRate: 'Medium-fast single pour',
-        capacity: '1–2 Cups (14g–28g dose)',
-        filterType: 'Standard 02 Conical filters',
-        material: 'High-fire speckled stoneware with gloss interior and ceramic stripe glazes',
-        origin: 'Retro Lab • Cumbres de Neblaria',
-        weight: '360g',
-        idealRecipe: {
-          dose: '15g',
-          water: '250ml',
-          temperature: '93°C',
-          brewTime: '2:40 min',
-          ratio: '1:16.7',
-          grindSize: 'Medium'
-        }
-      },
-      tagline: 'Warm sunsets, slow mornings, deliberate coffee.',
-      visualType: 'core'
-    },
-    {
       id: 'retro-super-mushroom',
       numberCode: '28',
       collection: 'Retro',
@@ -2022,48 +1980,6 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Aleros de pagoda escalonados. Un vertido consciente cada mañana.',
       visualType: 'brutalist'
-    },
-    {
-      id: 'retro-nes-8bit',
-      numberCode: '20',
-      collection: 'Retro',
-      categoryTag: 'Editions',
-      dropCode: 'RETRO 02',
-      eyebrow: 'RETRO 02',
-      name: 'Retro Sunset Arcade',
-      headline: 'La calidez de la hora dorada nacida en la era de los arcades analógicos.',
-      story: 'Gotero cerámico de gres crema moteado decorado con franjas curvadas al estilo atardecer setentero en ocre, ámbar cálido y terracota quemado. Contrasta con un interior esmaltado en negro brillante y una base trípode arqueada con el sello DRYP.',
-      objectDescription: 'Las nervaduras interiores en negro brillante aseguran un paso de agua fluido y libre de canalizaciones, mientras que las paredes gruesas de gres ofrecen una gran estabilidad térmica para extracciones dulces y con cuerpo redondo.',
-      price: 92,
-      currency: 'USD',
-      stockStatus: 'available',
-      stockLabel: 'Disponible • Edición Sunset',
-      stockCountRemaining: 28,
-      paletteColors: [
-        { name: 'Crema Avena Moteada', hex: '#EAE5D9' },
-        { name: 'Ámbar & Ocre Sunset', hex: '#D97706' },
-        { name: 'Terracota Tostado', hex: '#9C3D24' },
-        { name: 'Negro Obsidiana Brillante', hex: '#161616' }
-      ],
-      specs: {
-        extractionStyle: 'Cuerpo limpio y estructurado, acidez brillante y final largo',
-        flowRate: 'Medio-rápido, vertido único',
-        capacity: '1–2 Tazas (dosis 14g–28g)',
-        filterType: 'Filtros cónicos estándar 02',
-        material: 'Gres de alta temperatura con interior esmaltado brillante y franjas cerámicas',
-        origin: 'Retro Lab • Cumbres de Neblaria',
-        weight: '360g',
-        idealRecipe: {
-          dose: '15g',
-          water: '250ml',
-          temperature: '93°C',
-          brewTime: '2:40 min',
-          ratio: '1:16.7',
-          grindSize: 'Media'
-        }
-      },
-      tagline: 'Atardeceres cálidos, mañanas lentas, café consciente.',
-      visualType: 'core'
     },
     {
       id: 'retro-super-mushroom',
