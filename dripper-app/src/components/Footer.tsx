@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
-import { LanguageToggle } from './LanguageToggle';
 
 interface FooterProps {
   onOpenNotify?: () => void;
@@ -57,7 +56,6 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
 
           <div className="flex items-center gap-4 shrink-0">
-            <LanguageToggle theme="light" />
             <button
               onClick={onOpenNotify}
               className="px-4 py-2 min-h-[38px] rounded-full border border-[#121613] text-[#121613] hover:bg-[#121613] hover:text-white transition-all text-xs font-semibold cursor-pointer"

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ShoppingBag, Bell } from 'lucide-react';
 import type { DropPhase } from '../types';
 import { useLanguage } from '../i18n/LanguageContext';
-import { LanguageToggle } from './LanguageToggle';
 
 interface HeaderProps {
   onOpenCart: () => void;
@@ -86,14 +85,8 @@ export const Header: React.FC<HeaderProps> = ({
           ))}
         </nav>
 
-        {/* Right: Language Toggle, Drop Alerts Pill & Cart Button */}
+        {/* Right: Drop Alerts Pill & Cart Button */}
         <div className="flex items-center gap-3">
-          {/* Language Switcher */}
-          <LanguageToggle 
-            theme={isScrolled ? 'light' : 'dark'}
-            className="hidden sm:inline-flex" 
-          />
-
           {/* Ghost Pill Button for Drop Alerts (31.35px radius) */}
           <button
             onClick={onOpenNotify}
@@ -163,11 +156,6 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
         <div id="mobile-navigation" className="lg:hidden fixed inset-x-0 top-full bg-[#ffffff] border-b border-[#a7aaad] px-6 py-8 text-[#000000] animate-phase-change">
-          <div className="flex items-center justify-between pb-4 mb-4 border-b border-[#d8d8d8]">
-            <span className="text-[15px] text-[#8e9194]">{t('languageSelector')}</span>
-            <LanguageToggle theme="light" />
-          </div>
-
           <nav aria-label="Mobile Navigation" className="flex flex-col space-y-4 text-[16px]">
             {navItems.map((item, idx) => (
               <a 

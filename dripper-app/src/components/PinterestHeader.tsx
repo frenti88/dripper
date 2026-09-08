@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { MorphIcon } from 'morphicons/react';
 import { Search, Bookmark, ShoppingBag, X, Sparkles } from 'lucide';
 import { useLanguage } from '../i18n/LanguageContext';
-import { LanguageToggle } from './LanguageToggle';
 
 interface PinterestHeaderProps {
   onOpenCart: () => void;
@@ -185,11 +184,6 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
               <span>{savedCount}</span>
             </div>
           )}
-
-          {/* Language Toggle */}
-          <div className="shrink-0">
-            <LanguageToggle />
-          </div>
 
           {/* Shopping Bag Button (Basalt with Ember Counter) */}
           <button

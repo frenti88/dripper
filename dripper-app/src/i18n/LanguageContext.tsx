@@ -44,10 +44,8 @@ const STORAGE_KEY = 'drip_language_preference';
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
     if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved === 'en' || saved === 'es') return saved;
-      // Default to Spanish per user requirement
-      return 'es';
+      localStorage.setItem(STORAGE_KEY, 'es');
+      document.documentElement.lang = 'es';
     }
     return 'es';
   });
