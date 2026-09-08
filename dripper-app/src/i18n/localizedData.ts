@@ -551,6 +551,48 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core'
     },
     {
+      id: 'series-sailor-moon-crystal',
+      numberCode: '34',
+      collection: 'Series & TV',
+      categoryTag: 'Editions',
+      dropCode: 'SERIES 03',
+      eyebrow: 'SERIES 03',
+      name: 'Sailor Moon Cosmic Moon',
+      headline: 'By the power of the Moon Prism: celestial anime elegance sculpted in pearlescent porcelain and 24k gold.',
+      story: 'High-fire vitrified porcelain in pearlescent bone white with swirling blush-pink pastel flutes, trimmed with lustrous 24k gold leaf borders. The front features the golden Moon Stick scepter emblem with a celestial crescent and star. The handle is cast as an iconic crescent moon in mirror-polished gold, crowned by a brilliant faceted magenta-ruby cabochon crystal, resting on an open arched pedestal base debossed with the DRYP atelier stamp.',
+      objectDescription: 'The soft blush-pink interior chamber features fluted spiral ridges adorned with miniature golden stars and a radiant crescent moon. Designed for conical 60° filters, it delivers ultra-smooth extraction, accentuating floral jasmine aromatics, peach sweetness, and silky velvet body.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Sold Out',
+      stockCountRemaining: 15,
+      paletteColors: [
+        { name: 'Pearl Bone White', hex: '#FAF7F2' },
+        { name: 'Blush Cosmic Pink', hex: '#F4B6C2' },
+        { name: '24K Moon Gold', hex: '#D4AF37' },
+        { name: 'Prism Ruby Magenta', hex: '#9E1B48' }
+      ],
+      specs: {
+        extractionStyle: 'Delicate floral aromatics, elevated peach sweetness, and silky velvet finish',
+        flowRate: 'Balanced spiral drawdown with gentle radial aeration',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters (V60 / Cafec)',
+        material: 'Vitrified high-fired porcelain (1,280°C) with 24k gold luster',
+        origin: 'Pop TV Atelier • Medellín',
+        weight: '395g',
+        idealRecipe: {
+          dose: '16g',
+          water: '250ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:15.6',
+          grindSize: 'Medium-Fine'
+        }
+      },
+      tagline: 'In the name of the Moon, brew exquisite coffee.',
+      visualType: 'core'
+    },
+    {
       id: 'brutalist-01',
       numberCode: '06',
       collection: 'Architecture',
@@ -1694,6 +1736,48 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Eleva tu poder a más de 9.000 con cada vertido.',
+      visualType: 'core'
+    },
+    {
+      id: 'series-sailor-moon-crystal',
+      numberCode: '34',
+      collection: 'Series y TV',
+      categoryTag: 'Editions',
+      dropCode: 'SERIES 03',
+      eyebrow: 'SERIES 03',
+      name: 'Sailor Moon Cosmic Moon',
+      headline: 'Por el poder del Prisma Lunar: elegancia celestial de anime esculpida en porcelana blanco perla y oro 24k.',
+      story: 'Porcelana vitrificada de alta temperatura en tono blanco perla con paneles helicoidales en rosa empolvado pastel y ribetes en pan de oro brillante de 24k. El frente luce el emblema dorado del cetro lunar con media luna y estrella. El asa escultural recrea la icónica media luna dorada coronada por una gema cabujón magenta rubí facetada, sostenida sobre una peana calada con canales rosas y el sello grabado DRYP.',
+      objectDescription: 'La cámara interior en esmalte rosa pastel cuenta con estrías en espiral decoradas con estrellas doradas y una luna creciente. Su geometría cónica de 60° ofrece una extracción aterciopelada y cristalina, resaltando notas florales de jazmín, dulzor de melocotón blanco y cuerpo sedoso.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Agotado',
+      stockCountRemaining: 15,
+      paletteColors: [
+        { name: 'Blanco Perla Porcelana', hex: '#FAF7F2' },
+        { name: 'Rosa Cósmico Pastel', hex: '#F4B6C2' },
+        { name: 'Oro Lunar 24K', hex: '#D4AF37' },
+        { name: 'Rubí Magenta Prisma', hex: '#9E1B48' }
+      ],
+      specs: {
+        extractionStyle: 'Notas florales delicadas, dulzor de frutas blancas y cuerpo sedoso y limpio',
+        flowRate: 'Flujo en espiral equilibrado con oxigenación radial suave',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02 (V60 / Cafec)',
+        material: 'Porcelana vitrificada cocida a 1.280 °C con lustre de oro 24k',
+        origin: 'Taller Pop TV • Medellín',
+        weight: '395g',
+        idealRecipe: {
+          dose: '16g',
+          water: '250ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:15.6',
+          grindSize: 'Media-Fina'
+        }
+      },
+      tagline: 'En el nombre de la Luna, prepara un café legendario.',
       visualType: 'core'
     },
     {

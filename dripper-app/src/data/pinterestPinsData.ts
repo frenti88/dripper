@@ -120,13 +120,14 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
     description: 'Iconografía televisiva de culto, leyendas del anime japonés y siluetas pop a 1.280 °C.',
     tag: 'Series & TV',
     category: 'Series',
-    coverImage: '/images/products/series-dragon-ball.jpg',
+    coverImage: '/images/products/series-sailor-moon.jpg',
     previewImages: [
+      '/images/products/series-sailor-moon.jpg',
       '/images/products/series-dragon-ball.jpg',
       '/images/products/series-springfield.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 3,
+    dripsCount: 3
   },
   {
     id: 'board-retro',
@@ -531,6 +532,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'DRAGON BALL',
     dropCode: 'SERIES 02',
     level01Emotion: 'Toda la energía del Ki concentrada en una extracción legendaria que eleva tu poder matutino a más de 9.000.'
+  },
+
+  {
+    id: 'drip-series-sailor-moon',
+    productId: 'series-sailor-moon-crystal',
+    title: '34 / Sailor Moon Cosmic Moon',
+    subtitle: 'Porcelana blanco perla con paneles en rosa empolvado, fileteado en oro 24k, cámara interior estriada con estrellas celestiales, asa en media luna dorada con gema cabujón magenta y peana calada con sello DRYP.',
+    category: 'Series',
+    categoryLabel: 'Series y TV',
+    imageSrc: '/images/products/series-sailor-moon.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Pop TV Atelier',
+      avatar: '/favicon.svg',
+      handle: '@dryp_tv',
+      verified: true
+    },
+    price: 98,
+    stockStatus: 'sold_out',
+    stockLabel: 'Agotado',
+    likesCount: 6840,
+    savesCount: 15900,
+    boardIds: ['board-series'],
+    tags: ['Sailor Moon', 'Anime', 'Series', 'TV', 'Media Luna', 'Cristal de Plata', 'Rosa Pastel', 'Oro 24k', 'Shoujo', 'Magical Girl'],
+    badge: 'SAILOR MOON',
+    dropCode: 'SERIES 03',
+    level01Emotion: 'Por el poder del Prisma Lunar: la magia y el brillo celestial transforman tu ritual del café en un destello de pura nostalgia de los noventa.'
   },
 
   // ── RETRO ───────────────────────────────────────────────────────────────
