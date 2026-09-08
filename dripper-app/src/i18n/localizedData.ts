@@ -1124,6 +1124,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'brutalist'
     },
     {
+      id: 'arch-brutalism-monolith',
+      numberCode: '42',
+      collection: 'Architecture',
+      categoryTag: 'Editions',
+      dropCode: 'ARCH 03',
+      eyebrow: 'ARCH 03',
+      name: 'Monolithic Brutalism — Béton Brut',
+      headline: 'The unadorned truth of exposed concrete and monumental shadow: raw architectural power for your morning pour.',
+      story: 'Sculpted in refractory mineral grog stoneware with an unglazed mineral-grain texture that mirrors raw cast concrete (béton brut). Formed into a monolithic hexagonal-faceted cantilever funnel that casts sharp dramatic chiaroscuro shadows across its canted planes. The interior conical chamber features heavy vertical pilaster extraction ribs, elevated above an open brutalist colonnade plinth stamped with the black DRYP hallmark.',
+      objectDescription: 'The massive structural ceramic walls provide extraordinary thermal mass and heat retention, while the deep internal architectural pilasters guide vertical laminar drainage with steady aeration, unlocking deep roasted hazelnut notes, bittersweet dark cocoa, and a clean, monumental sweet finish.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Sold Out',
+      stockCountRemaining: 18,
+      paletteColors: [
+        { name: 'Raw Béton Brut Grey', hex: '#8F8B85' },
+        { name: 'Mineral Aggregate Sand', hex: '#B5B1AA' },
+        { name: 'Shadow Cast Charcoal', hex: '#2B2A28' }
+      ],
+      specs: {
+        extractionStyle: 'Deep chocolate richness, caramelized stone-fruit notes, and unyielding thermal clarity',
+        flowRate: 'Linear vertical laminar descent with architectural pilaster fluting',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters (V60 / Cafec)',
+        material: 'Refractory mineral-grain grog stoneware fired at 1,280°C',
+        origin: 'Architecture Atelier • Medellín',
+        weight: '460g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '94°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.6',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Raw concrete truth. Monumental morning focus.',
+      visualType: 'brutalist'
+    },
+    {
       id: 'retro-super-mushroom',
       numberCode: '28',
       collection: 'Retro',
@@ -2596,6 +2637,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Aleros de pagoda escalonados. Un vertido consciente cada mañana.',
+      visualType: 'brutalist'
+    },
+    {
+      id: 'arch-brutalism-monolith',
+      numberCode: '42',
+      collection: 'Arquitectura',
+      categoryTag: 'Editions',
+      dropCode: 'ARCH 03',
+      eyebrow: 'ARQUITECTURA 03',
+      name: 'Brutalismo Monolítico — Hormigón Visto',
+      headline: 'La verdad estructural del hormigón visto y las sombras profundas: fuerza arquitectónica monumental para tu vertido matutino.',
+      story: 'Gotero artesanal cocido a 1.280 °C en gres mineral chamotado con textura rugosa que evoca el hormigón visto (béton brut). Esculpido en un monolito facetado hexagonal con planos inclinados en voladizo que proyectan sombras profundas de claroscuro. La cámara interior integra pilastras verticales de drenaje estructural, apoyada sobre un pedestal colosal calado con aberturas rectangulares y el sello en negro DRYP.',
+      objectDescription: 'Las gruesas paredes de gres refractario proporcionan una inercia térmica colosal que mantiene la temperatura de extracción imperturbable. Sus pilastras interiores aseguran una desgasificación vertical continua y un flujo laminar sin estrangulamientos, resaltando notas profundas a cacao amargo, avellanas tostadas y un final dulce y estructurado.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Agotado',
+      stockCountRemaining: 18,
+      paletteColors: [
+        { name: 'Gris Hormigón Visto', hex: '#8F8B85' },
+        { name: 'Árido Mineral Claro', hex: '#B5B1AA' },
+        { name: 'Sombra Profunda Carbón', hex: '#2B2A28' }
+      ],
+      specs: {
+        extractionStyle: 'Densidad de cacao, dulzor acaramelado y claridad monumental por inercia térmica',
+        flowRate: 'Drenaje laminar lineal constante con pilastras estructurales',
+        capacity: '1–2 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02 (V60 / Cafec)',
+        material: 'Gres chamotado refractario con árido mineral cocido a 1.280 °C',
+        origin: 'Atelier de Arquitectura • Medellín',
+        weight: '460g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '94°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.6',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'La fuerza del hormigón visto. Enfoque monumental en cada vertido.',
       visualType: 'brutalist'
     },
     {

@@ -166,15 +166,17 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-architecture',
     title: 'Arquitectura',
-    description: 'Geometría funcional de la Bauhaus de Dessau: minimalismo estructural y estrías de extracción directa.',
+    description: 'Brutalismo monolítico en hormigón visto, geometría Bauhaus de Dessau y aleros escalonados de Kioto a 1.280 °C.',
     tag: 'Arquitectura',
     category: 'Architecture',
-    coverImage: '/images/products/bauhaus-dessau.jpg',
+    coverImage: '/images/products/arch-brutalism.jpg',
     previewImages: [
+      '/images/products/arch-brutalism.jpg',
+      '/images/products/arch-origami.jpg',
       '/images/products/bauhaus-dessau.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 3,
+    dripsCount: 3
   },
   {
     id: 'board-experimental',
@@ -811,6 +813,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'PAGODA KIOTO',
     dropCode: 'ARCH 02',
     level01Emotion: 'La calma milenaria de los templos de madera de Kioto: aleros escalonados que guían el agua con serenidad zen.'
+  },
+
+  {
+    id: 'drip-arch-brutalism',
+    productId: 'arch-brutalism-monolith',
+    title: '42 / Brutalismo Monolítico',
+    subtitle: 'Gres mineral en textura de hormigón visto con facetado hexagonal monolítico, sombras profundas, pilastras interiores de extracción y peana calada con sello DRYP.',
+    category: 'Architecture',
+    categoryLabel: 'Arquitectura',
+    imageSrc: '/images/products/arch-brutalism.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Architecture Unit',
+      avatar: '/favicon.svg',
+      handle: '@dryp_arch',
+      verified: true
+    },
+    price: 98,
+    stockStatus: 'sold_out',
+    stockLabel: 'Agotado',
+    likesCount: 6340,
+    savesCount: 14700,
+    boardIds: ['board-architecture'],
+    tags: ['Brutalismo', 'Arquitectura', 'Hormigón Visto', 'Béton Brut', 'Monolito', 'Sombras Profundas', 'Gres Mineral', 'Geometría'],
+    badge: 'BRUTALIST MONOLITH',
+    dropCode: 'ARCH 03',
+    level01Emotion: 'La presencia imponente del hormigón y la sombra: verdad material y peso arquitectónico en cada gota de café.'
   },
 
   // ── FUTURISMO (1 drip único) ──────────────────────────────────────────
