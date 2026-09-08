@@ -1207,6 +1207,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core'
     },
     {
+      id: 'retro-polaroid-rainbow',
+      numberCode: '40',
+      collection: 'Retro',
+      categoryTag: 'Editions',
+      dropCode: 'RETRO 04',
+      eyebrow: 'RETRO 04',
+      name: 'Polaroid Color Spectrum',
+      headline: 'Instant analog nostalgia: square pyramidal geometry, iconic rainbow spectrum stripe, and deep fluted chamber.',
+      story: 'Sculpted in high-fire speckled ivory-bone ceramic featuring an architectural square-funnel silhouette inspired by the legendary Polaroid instant camera. The iconic five-color spectrum stripe (red, orange, yellow, green, blue) flows vertically down the frontal facet and across the base bridge, contrasting with a deep charcoal basalt interior chamber and an open geometric A-frame pedestal stamped with the black DRYP hallmark.',
+      objectDescription: 'The inverted square-pyramid geometry creates an optimized flow path with vertical bone extraction ribs on matte basalt, ensuring linear drainage with zero filter bypass to highlight instant crisp berry sweetness, delicate citrus brightness, and a nostalgic, silky chocolate finish.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Sold Out',
+      stockCountRemaining: 16,
+      paletteColors: [
+        { name: 'Speckled Camera Ivory', hex: '#EBE6DD' },
+        { name: 'Polaroid Rainbow Stripe', hex: '#E63946' },
+        { name: 'Dark Chamber Basalt', hex: '#21201E' }
+      ],
+      specs: {
+        extractionStyle: 'Instant clarity, juicy berry sweetness, and crisp vibrant finish',
+        flowRate: 'Linear pyramidal drawdown with vertical air-relief ribs',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical or Square filters',
+        material: 'High-fire speckled stoneware & multi-color ceramic enamel (1,280°C)',
+        origin: 'Retro Lab • Medellín',
+        weight: '410g',
+        idealRecipe: {
+          dose: '17g',
+          water: '270ml',
+          temperature: '93°C',
+          brewTime: '2:40 min',
+          ratio: '1:15.9',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Capture your morning in an instant.',
+      visualType: 'core'
+    },
+    {
       id: 'nature-botanical-wings',
       numberCode: '15',
       collection: 'Nature',
@@ -2597,6 +2638,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Inserta una moneda para iniciar tu ritual de café.',
+      visualType: 'core'
+    },
+    {
+      id: 'retro-polaroid-rainbow',
+      numberCode: '40',
+      collection: 'Retro',
+      categoryTag: 'Editions',
+      dropCode: 'RETRO 04',
+      eyebrow: 'RETRO 04',
+      name: 'Polaroid Color Spectrum',
+      headline: 'Nostalgia analógica instantánea: geometría piramidal cuadrada, mítica franja arcoíris y cámara interior estriada.',
+      story: 'Gotero artesanal cocido a 1.280 °C en gres cerámico hueso moteado con silueta piramidal invertida inspirada en la mítica cámara instantánea Polaroid. Luce la icónica franja arcoíris de cinco colores (rojo, naranja, amarillo, verde y azul) recorriendo el frontal hasta el puente de la base, en contraste con una cámara interior en basalto carbón y pedestal geométrico calado con el sello en negro DRYP.',
+      objectDescription: 'La geometría piramidal de base cuadrada combinada con estrías verticales en tono hueso sobre basalto oscuro promueve un flujo laminar uniforme sin canalizaciones falsas, logrando una extracción instantánea de notas a frutos rojos, acidez cítrica viva y un retrogusto sedoso a cacao.',
+      price: 98,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Agotado',
+      stockCountRemaining: 16,
+      paletteColors: [
+        { name: 'Gres Hueso Moteado', hex: '#EBE6DD' },
+        { name: 'Franja Arcoíris Polaroid', hex: '#E63946' },
+        { name: 'Negro Basalto Carbón', hex: '#21201E' }
+      ],
+      specs: {
+        extractionStyle: 'Claridad instantánea, dulzura jugosa de frutos rojos y final vivo y equilibrado',
+        flowRate: 'Drenaje lineal piramidal con estrías de alivio',
+        capacity: '1–2 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02',
+        material: 'Gres chamotado de alta temperatura y esmaltes policromáticos a 1.280 °C',
+        origin: 'Taller Retro • Medellín',
+        weight: '410g',
+        idealRecipe: {
+          dose: '17g',
+          water: '270ml',
+          temperature: '93°C',
+          brewTime: '2:40 min',
+          ratio: '1:15.9',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Captura tu ritual matutino al instante.',
       visualType: 'core'
     },
     {

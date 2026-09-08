@@ -136,16 +136,17 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-retro',
     title: 'Retro & Vintage',
-    description: 'Diseño analógico, iconos de videojuegos clásicos y estética arcade vintage en gres de autor a 1.280 °C.',
+    description: 'Cámaras instantáneas Polaroid, iconos analógicos y estética arcade vintage en gres de autor a 1.280 °C.',
     tag: 'Retro Gaming',
     category: 'Retro',
-    coverImage: '/images/products/retro-atari.jpg',
+    coverImage: '/images/products/retro-polaroid.jpg',
     previewImages: [
+      '/images/products/retro-polaroid.jpg',
       '/images/products/retro-atari.jpg',
       '/images/products/retro-super-mushroom.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 3,
+    dripsCount: 3
   },
   {
     id: 'board-prehistoric',
@@ -728,6 +729,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'ATARI 2600',
     dropCode: 'RETRO 02',
     level01Emotion: 'El destello del televisor de tubo y el joystick listo para la primera partida matutina con aroma a café tostado.'
+  },
+
+  {
+    id: 'drip-retro-polaroid',
+    productId: 'retro-polaroid-rainbow',
+    title: '40 / Polaroid Color Spectrum',
+    subtitle: 'Gres hueso moteado en pirámide cuadrada invertida con la mítica franja arcoíris Polaroid, cámara interior estriada en negro carbón y pedestal geométrico con sello DRYP.',
+    category: 'Retro',
+    categoryLabel: 'Retro',
+    imageSrc: '/images/products/retro-polaroid.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Retro Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_retro',
+      verified: true
+    },
+    price: 98,
+    stockStatus: 'sold_out',
+    stockLabel: 'Agotado',
+    likesCount: 7890,
+    savesCount: 17400,
+    boardIds: ['board-retro'],
+    tags: ['Polaroid', 'Retro', 'Cámara', 'Arcoíris', 'Vintage', 'Instantáneo', 'Fotografía', 'Gres'],
+    badge: 'POLAROID SPECTRUM',
+    dropCode: 'RETRO 04',
+    level01Emotion: 'La magia instantánea de la película revelándose: un instante analógico detenido en cada gota de café.'
   },
 
   {
