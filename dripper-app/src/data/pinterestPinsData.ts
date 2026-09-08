@@ -173,16 +173,17 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-experimental',
     title: 'Futurista y Sci-fi',
-    description: 'Autómatas robóticos, conos mecatrónicos y estética ciber-futurista horneados a 1.280 °C.',
+    description: 'Autómatas robóticos, máquinas del tiempo y estética ciber-futurista horneados a 1.280 °C.',
     tag: 'Futurista y Sci-fi',
     category: 'Experimental',
-    coverImage: '/images/products/futurism-cyberpunk.jpg',
+    coverImage: '/images/products/futurism-time-machine.jpg',
     previewImages: [
+      '/images/products/futurism-time-machine.jpg',
       '/images/products/futurism-cyberpunk.jpg',
       '/images/products/exp-robot-automaton.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 3,
+    dripsCount: 3
   },
   {
     id: 'board-art',
@@ -723,6 +724,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'CYBERPUNK NEON',
     dropCode: 'FUTR 02',
     level01Emotion: 'La lluvia ácida y las luces de neón de Neo-Tokyo desvaneciéndose en la primera extracción de alta fidelidad.'
+  },
+
+  {
+    id: 'drip-futurism-time-machine',
+    productId: 'futurism-time-machine-chronos',
+    title: '35 / Chronos Time Machine',
+    subtitle: 'Gres arena moteado cilíndrico con grabados astrológicos y líneas temporales, cámara cónica interior en basalto negro con estrías en bronce, asa giroscópica orbital y peana graduada con sello DRYP.',
+    category: 'Experimental',
+    categoryLabel: 'Futurista y Sci-fi',
+    imageSrc: '/images/products/futurism-time-machine.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Quantum Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_quantum',
+      verified: true
+    },
+    price: 110,
+    stockStatus: 'sold_out',
+    stockLabel: 'Agotado',
+    likesCount: 7420,
+    savesCount: 16800,
+    boardIds: ['board-experimental'],
+    tags: ['Máquina del Tiempo', 'Chronos', 'Futurista', 'Sci-Fi', 'Astrolabio', 'Órbita', 'Bronce', 'Basalto', 'Tiempo', 'Cuántico'],
+    badge: 'TIME MACHINE',
+    dropCode: 'FUTR 03',
+    level01Emotion: 'El tiempo se pliega en cada vertido: una máquina cuántica de cerámica que detiene los segundos para saborear el instante presente.'
   },
 
   // ── ARTE (1 drip único) ──────────────────────────────────────────────────

@@ -1327,6 +1327,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core'
     },
     {
+      id: 'futurism-time-machine-chronos',
+      numberCode: '35',
+      collection: 'Futurism & Sci-Fi',
+      categoryTag: 'Editions',
+      dropCode: 'FUTR 03',
+      eyebrow: 'FUTURISM 03',
+      name: 'Chronos Time Machine',
+      headline: 'Time folds with every pour: a ceramic quantum engine calibrated to slow down the morning.',
+      story: 'Cylindrical speckled sandstone ceramic body engraved with celestial astrolabe charts, temporal timeline coordinates, and a vertical amber-brass liquid capsule gauge. An inverted conical funnel in matte basalt grog stoneware features bronze-plated extraction flutes, anchored by an orbital gyroscopic armillary handle and a calibrated timeline tripod ring base with the DRYP atelier seal.',
+      objectDescription: 'The interior conical chamber features dark volcanic stoneware flutes lined with conductive bronze glaze, regulating heat retention and water dispersion to unlock rich chocolate undertones, layered stone-fruit complexity, and eternal lingering sweetness.',
+      price: 110,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Sold Out',
+      stockCountRemaining: 12,
+      paletteColors: [
+        { name: 'Speckled Sand Ceramic', hex: '#E2DDD4' },
+        { name: 'Volcanic Basalt Black', hex: '#262422' },
+        { name: 'Aged Orbital Bronze', hex: '#A87D4D' }
+      ],
+      specs: {
+        extractionStyle: 'Deep chocolate undertones, stone fruit sweetness, and suspended temporal finish',
+        flowRate: 'Chronometrically calibrated laminar flow (3.8 ml/s)',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters (V60 / Cafec)',
+        material: 'High-fire dual stoneware & bronze luster (1,280°C)',
+        origin: 'Quantum Ceramics Lab • Medellín',
+        weight: '430g',
+        idealRecipe: {
+          dose: '18g',
+          water: '290ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.1',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Bend time before your first sip.',
+      visualType: 'core'
+    },
+    {
       id: 'art-classical-muse',
       numberCode: '22',
       collection: 'Art',
@@ -2512,6 +2553,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Alta tecnología, vertido pausado. Despierta en Neo-Tokyo.',
+      visualType: 'core'
+    },
+    {
+      id: 'futurism-time-machine-chronos',
+      numberCode: '35',
+      collection: 'Futurista y Sci-fi',
+      categoryTag: 'Editions',
+      dropCode: 'FUTR 03',
+      eyebrow: 'FUTURISMO 03',
+      name: 'Máquina del Tiempo Chronos',
+      headline: 'El tiempo se pliega en cada vertido: un motor cuántico cerámico calibrado para detener la prisa matutina.',
+      story: 'Cuerpo cilíndrico en gres arena moteado con grabados astronómicos, coordenadas de líneas temporales y cápsula vertical de nivel en bronce. La cámara cónica invertida en gres negro basalto cuenta con estrías con acentos en bronce, asa giroscópica orbital en anillo armilar y peana circular graduada con el sello grabado DRYP.',
+      objectDescription: 'El cono interior en cerámica volcánica oscura canaliza el flujo con precisión milimétrica mediante estrías de bronce esmaltado, maximizando la extracción de notas profundas de cacao, frutas de hueso maduras y un retrogusto sedoso y prolongado.',
+      price: 110,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Agotado',
+      stockCountRemaining: 12,
+      paletteColors: [
+        { name: 'Gres Arena Moteado', hex: '#E2DDD4' },
+        { name: 'Negro Basalto Volcánico', hex: '#262422' },
+        { name: 'Bronce Orbital Envejecido', hex: '#A87D4D' }
+      ],
+      specs: {
+        extractionStyle: 'Cacao denso, dulzor de frutos maduros y final prolongado de alta complejidad',
+        flowRate: 'Flujo laminar cronométrico regulado a 3.8 ml/s',
+        capacity: '1–2 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02 (V60 / Cafec)',
+        material: 'Gres chamotado dual y esmalte bronce cocido a 1.280 °C',
+        origin: 'Laboratorio Cuántico • Medellín',
+        weight: '430g',
+        idealRecipe: {
+          dose: '18g',
+          water: '290ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.1',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Detén el tiempo antes del primer sorbo.',
       visualType: 'core'
     },
     {
