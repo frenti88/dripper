@@ -1652,6 +1652,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Broken, mended, and made more beautiful with gold.',
       visualType: 'artist-001'
+    },
+    {
+      id: 'art-botero-volumen',
+      numberCode: '41',
+      collection: 'Art',
+      categoryTag: 'Artists',
+      dropCode: 'ART 03',
+      eyebrow: 'ART 03',
+      name: 'Botero Volumetric Muse',
+      headline: 'Sensual monumental volume celebrating the master Fernando Botero, sculpted in speckled ivory sandstone.',
+      story: 'Created in Medellín as an intimate tribute to the legendary sculptor Fernando Botero. Sculpted in warm, speckled sand-oat grog stoneware with generous, voluptuous figurative curves celebrating volume and sensuality. Paired with a delicate ear-loop handle and an elevated sculptural pedestal base with curvaceous leg arches, bearing the debossed DRYP atelier seal.',
+      objectDescription: 'The interior conical chamber features deep, sculptural extraction flutes extending down the voluptuous walls. The generous ceramic mass offers immense thermal retention, ensuring slow, steady water contact that extracts rich chocolate sweetness, full velvety body, and a comforting caramel finish.',
+      price: 105,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Sold Out',
+      stockCountRemaining: 12,
+      paletteColors: [
+        { name: 'Speckled Sandstone Ivory', hex: '#E3DBCF' },
+        { name: 'Warm Grog Biscuit', hex: '#CBBFA8' },
+        { name: 'Debossed Atelier Cacao', hex: '#4A3B32' }
+      ],
+      specs: {
+        extractionStyle: 'Voluptuous body, round sweetness, luscious caramel, and chocolate depth',
+        flowRate: 'Smooth regulated linear drawdown with high thermal stability',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters (V60 / Cafec)',
+        material: 'High-fire speckled grog stoneware (1,280°C)',
+        origin: 'Escultura Studio • Medellín',
+        weight: '435g',
+        idealRecipe: {
+          dose: '18g',
+          water: '290ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.1',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Monumental volume, voluptuous warmth in every cup.',
+      visualType: 'artist-001'
     }
   ],
   es: [
@@ -3085,6 +3126,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Roto, restaurado y sublimado en oro. Belleza en la imperfección.',
+      visualType: 'artist-001'
+    },
+    {
+      id: 'art-botero-volumen',
+      numberCode: '41',
+      collection: 'Arte',
+      categoryTag: 'Artists',
+      dropCode: 'ART 03',
+      eyebrow: 'ARTE 03',
+      name: 'La Gorda de Botero — Volumen Monumental',
+      headline: 'Homenaje al maestro Fernando Botero: volumen sensual y monumental esculpido en gres arena marfil de alta temperatura.',
+      story: 'Nacido en Medellín en homenaje a la estética inconfundible de las monumentales esculturas de Fernando Botero. Esculpido en gres chamotado arena marfil moteado con curvas generosas y voluptuosas que celebran la plenitud formal, dotado de un asa lateral arqueada y una base escultórica elevada con arcos anatómicos curvos y el sello grabado DRYP.',
+      objectDescription: 'La cámara cónica interior cuenta con profundas estrías de drenaje vertical que canalizan el flujo de agua de manera uniforme. La generosa masa cerámica de alta temperatura retiene el calor de forma excepcional, favoreciendo una extracción rica en cuerpo, con notas profundas de chocolate artesanal, dulzura caramelizada y retrogusto sedoso.',
+      price: 105,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Agotado',
+      stockCountRemaining: 12,
+      paletteColors: [
+        { name: 'Gres Arena Marfil', hex: '#E3DBCF' },
+        { name: 'Bizcocho Chamotado Cálido', hex: '#CBBFA8' },
+        { name: 'Sello Grabado Cacao', hex: '#4A3B32' }
+      ],
+      specs: {
+        extractionStyle: 'Cuerpo voluptuoso, dulzor redondo, notas a chocolate artesanal y caramelo denso',
+        flowRate: 'Drenaje lineal uniforme y pausado con alta estabilidad térmica',
+        capacity: '1–2 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02 (V60 / Cafec)',
+        material: 'Gres chamotado de alta temperatura a 1.280 °C',
+        origin: 'Estudio de Escultura • Medellín',
+        weight: '435g',
+        idealRecipe: {
+          dose: '18g',
+          water: '290ml',
+          temperature: '93°C',
+          brewTime: '2:50 min',
+          ratio: '1:16.1',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Volumen monumental y calidez voluptuosa en cada taza.',
       visualType: 'artist-001'
     }
   ]

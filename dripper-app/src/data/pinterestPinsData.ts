@@ -194,16 +194,17 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-art',
     title: 'Arte',
-    description: 'Cerámica tradicional Wabi-Sabi con cicatrices en Kintsugi de oro y bustos clásicos helénicos a 1.280 °C.',
+    description: 'La Gorda de Botero, cerámica Wabi-Sabi en Kintsugi de oro y bustos clásicos helénicos a 1.280 °C.',
     tag: 'Arte',
     category: 'Art',
-    coverImage: '/images/products/art-wabi-sabi.jpg',
+    coverImage: '/images/products/art-botero-volumen.jpg',
     previewImages: [
+      '/images/products/art-botero-volumen.jpg',
       '/images/products/art-wabi-sabi.jpg',
       '/images/products/art-classical-muse.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 3,
+    dripsCount: 3
   }
 ];
 
@@ -947,6 +948,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'KINTSUGI GOLD',
     dropCode: 'ART 02',
     level01Emotion: 'La belleza de la imperfección y la cicatriz dorada: cada fractura convertida en la parte más valiosa de tu ritual.'
+  },
+
+  {
+    id: 'drip-art-botero',
+    productId: 'art-botero-volumen',
+    title: '41 / La Gorda de Botero',
+    subtitle: 'Gres arena marfil con curvas voluptuosas monumentales en homenaje al maestro Fernando Botero, asa arqueada, estrías cónicas interiores y peana calada con sello DRYP.',
+    category: 'Art',
+    categoryLabel: 'Arte',
+    imageSrc: '/images/products/art-botero-volumen.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Sculpture Studio',
+      avatar: '/favicon.svg',
+      handle: '@dryp_art',
+      verified: true
+    },
+    price: 105,
+    stockStatus: 'sold_out',
+    stockLabel: 'Agotado',
+    likesCount: 8920,
+    savesCount: 19600,
+    boardIds: ['board-art'],
+    tags: ['Botero', 'Arte', 'Medellín', 'Escultura', 'Volumen', 'La Gorda', 'Gres Moteado', 'Monumental'],
+    badge: 'BOTERO SCULPT',
+    dropCode: 'ART 03',
+    level01Emotion: 'La plenitud y calidez del volumen boteriano convertidas en una experiencia táctil y sensorial para tus mañanas.'
   }
 ];
 
