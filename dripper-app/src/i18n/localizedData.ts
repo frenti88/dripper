@@ -1368,6 +1368,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core'
     },
     {
+      id: 'prehistoric-pterodactyl-wing',
+      numberCode: '39',
+      collection: 'Prehistoric',
+      categoryTag: 'Editions',
+      dropCode: 'PALEO 04',
+      eyebrow: 'PALEO 04',
+      name: 'Pterodactyl Wing Strut',
+      headline: 'Mesozoic aerodynamic flight architecture sculpted into skeletal bone stoneware and charcoal fossil membrane.',
+      story: 'Sculpted in dual-tone high-fire stoneware featuring an architectural skeletal wing framework in speckled fossil bone ceramic, embracing a dark textured charcoal reptilian membrane cone. An aerodynamic pterosaur wing claw extends from the angular rim, elevated upon an open skeletal bone base stamped with the debossed DRYP emblem.',
+      objectDescription: 'The interior chamber features prominent pale bone extraction flutes contrasting against the dark textured stoneware, accelerating linear convective airflow and continuous laminar drainage that enhances sparkling citrus acidity, delicate stone-fruit sweetness, and a crisp, lingering cedar finish.',
+      price: 104,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Sold Out',
+      stockCountRemaining: 14,
+      paletteColors: [
+        { name: 'Fossil Bone Cream', hex: '#E2DDD4' },
+        { name: 'Charcoal Wing Membrane', hex: '#262422' },
+        { name: 'Aged Ochre Mineral', hex: '#8B7355' }
+      ],
+      specs: {
+        extractionStyle: 'Aerodynamic clarity, lively fruit acidity, and sweet mineral resonance',
+        flowRate: 'Agile linear convective drawdown with laminar fluting',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters (V60 / Cafec)',
+        material: 'High-fire skeletal grog stoneware & reactive mineral slip (1,280°C)',
+        origin: 'Paleo Atelier • Medellín',
+        weight: '395g',
+        idealRecipe: {
+          dose: '16.5g',
+          water: '270ml',
+          temperature: '93°C',
+          brewTime: '2:35 min',
+          ratio: '1:16.3',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Prehistoric flight physics guiding your morning pour.',
+      visualType: 'fossil-t'
+    },
+    {
       id: 'exp-robot-automaton',
       numberCode: '31',
       collection: 'Futurism & Sci-Fi',
@@ -2718,6 +2759,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Mareas jurásicas milenarias en cada vertido.',
       visualType: 'core'
+    },
+    {
+      id: 'prehistoric-pterodactyl-wing',
+      numberCode: '39',
+      collection: 'Prehistoria',
+      categoryTag: 'Editions',
+      dropCode: 'PALEO 04',
+      eyebrow: 'PALEO 04',
+      name: 'Ala de Pterodáctilo Mesozoico',
+      headline: 'La arquitectura aerodinámica del primer vuelo mesozoico esculpida en estructura ósea de gres y membrana carbón.',
+      story: 'Gotero artesanal cocido a 1.280 °C que plasma la estructura esquelética y biomecánica del ala de un pterosaurio. El exoesqueleto en gres arena hueso abraza un cuerpo cónico texturizado en membrana fósil carbón, rematado por una garra alar ergonómica en el borde y una base ósea calada con el sello grabado DRYP.',
+      objectDescription: 'La cámara interior cuenta con marcadas nervaduras en tono hueso fósil sobre el fondo oscuro que canalizan un flujo laminar acelerado y una aireación constante, maximizando la vivacidad de acidez cítrica, dulzor balanceado de frutas blancas y un retrogusto mineral limpio y prolongado.',
+      price: 104,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Agotado',
+      stockCountRemaining: 14,
+      paletteColors: [
+        { name: 'Gres Hueso Fósil', hex: '#E2DDD4' },
+        { name: 'Membrana Alar Carbón', hex: '#262422' },
+        { name: 'Ocre Mineral Añejo', hex: '#8B7355' }
+      ],
+      specs: {
+        extractionStyle: 'Claridad aerodinámica viva, acidez brillante y dulzura mineral balanceada',
+        flowRate: 'Drenaje lineal convectivo ágil con estrías óseas',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02 (V60 / Cafec)',
+        material: 'Gres chamotado esquelético de alta temperatura a 1.280 °C',
+        origin: 'Taller Paleo • Medellín',
+        weight: '395g',
+        idealRecipe: {
+          dose: '16.5g',
+          water: '270ml',
+          temperature: '93°C',
+          brewTime: '2:35 min',
+          ratio: '1:16.3',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'La física del vuelo prehistórico guiando tu ritual matutino.',
+      visualType: 'fossil-t'
     },
     {
       id: 'exp-robot-automaton',

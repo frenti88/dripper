@@ -150,16 +150,17 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-prehistoric',
     title: 'Prehistoria & Paleontología',
-    description: 'Cráneos fósiles de terópodo y reptiles marinos del Jurásico esculpidos en gres vivo a 1.280 °C.',
+    description: 'Cráneos fósiles de terópodo, alas biomecánicas de pterosaurio y reptiles marinos del Jurásico esculpidos en gres vivo a 1.280 °C.',
     tag: 'Drop 001',
     category: 'Prehistoric',
-    coverImage: '/images/products/prehistoric-marine.jpg',
+    coverImage: '/images/products/prehistoric-pterodactyl.jpg',
     previewImages: [
+      '/images/products/prehistoric-pterodactyl.jpg',
       '/images/products/prehistoric-marine.jpg',
       '/images/products/fossil-skull.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 3,
+    dripsCount: 3
   },
   {
     id: 'board-architecture',
@@ -508,6 +509,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'MARINE FOSSIL',
     dropCode: 'PALEO 02',
     level01Emotion: 'La marea abisal del Jurásico canalizada en un vertido espiral de aguas profundas y aroma mineral.'
+  },
+
+  {
+    id: 'drip-prehistoric-pterodactyl',
+    productId: 'prehistoric-pterodactyl-wing',
+    title: '39 / Ala de Pterodáctilo',
+    subtitle: 'Gres arena hueso con armazón esquelético biomecánico, membrana interior cónica en negro carbón con estrías óseas y base aerodinámica calada con sello DRYP.',
+    category: 'Prehistoric',
+    categoryLabel: 'Prehistoria',
+    imageSrc: '/images/products/prehistoric-pterodactyl.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Paleo Atelier',
+      avatar: '/favicon.svg',
+      handle: '@dryp_paleo',
+      verified: true
+    },
+    price: 104,
+    stockStatus: 'sold_out',
+    stockLabel: 'Agotado',
+    likesCount: 5670,
+    savesCount: 13800,
+    boardIds: ['board-prehistoric'],
+    tags: ['Pterodáctilo', 'Pterosaurio', 'Ala', 'Prehistoria', 'Fósil', 'Aerodinámica', 'Hueso', 'Gres'],
+    badge: 'PTEROSAUR WING',
+    dropCode: 'PALEO 04',
+    level01Emotion: 'El primer vuelo de la Tierra canalizado en tu taza: aerodinámica esquelética que convierte la gravedad en un vertido perfecto.'
   },
 
   // ── FOTOGRAFÍA Y CINE (Objeto 05 Lens) ───────────────────────────────────
