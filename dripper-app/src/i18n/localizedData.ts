@@ -1247,7 +1247,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
     {
       id: 'exp-robot-automaton',
       numberCode: '31',
-      collection: 'Futurism',
+      collection: 'Futurism & Sci-Fi',
       categoryTag: 'Lab',
       dropCode: 'FUTR 01',
       eyebrow: 'FUTURISM 01',
@@ -1288,7 +1288,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
     {
       id: 'futurism-cyberpunk-neon',
       numberCode: '33',
-      collection: 'Futurism',
+      collection: 'Futurism & Sci-Fi',
       categoryTag: 'Editions',
       dropCode: 'FUTR 02',
       eyebrow: 'FUTURISM 02',
@@ -2435,7 +2435,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
     {
       id: 'exp-robot-automaton',
       numberCode: '31',
-      collection: 'Futurismo',
+      collection: 'Futurista y Sci-fi',
       categoryTag: 'Lab',
       dropCode: 'FUTR 01',
       eyebrow: 'FUTURISMO 01',
@@ -2476,7 +2476,7 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
     {
       id: 'futurism-cyberpunk-neon',
       numberCode: '33',
-      collection: 'Futurismo',
+      collection: 'Futurista y Sci-fi',
       categoryTag: 'Editions',
       dropCode: 'FUTR 02',
       eyebrow: 'FUTURISMO 02',

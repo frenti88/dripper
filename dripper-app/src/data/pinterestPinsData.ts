@@ -172,9 +172,9 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   },
   {
     id: 'board-experimental',
-    title: 'Futurismo',
+    title: 'Futurista y Sci-fi',
     description: 'Autómatas robóticos, conos mecatrónicos y estética ciber-futurista horneados a 1.280 °C.',
-    tag: 'Futurismo',
+    tag: 'Futurista y Sci-fi',
     category: 'Experimental',
     coverImage: '/images/products/futurism-cyberpunk.jpg',
     previewImages: [
@@ -677,7 +677,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     title: '31 / Automaton Bot-01',
     subtitle: 'Gres hueso moteado con cabezal robótico facetado, ojos ámbar, cámara interior en cerámica negra estriada y base trípode mecatrónica con sello DRYP.',
     category: 'Experimental',
-    categoryLabel: 'Futurismo',
+    categoryLabel: 'Futurista y Sci-fi',
     imageSrc: '/images/products/exp-robot-automaton.jpg',
     aspectRatio: 'aspect-square',
     author: {
@@ -704,7 +704,7 @@ export const DRYP_DRIPS: DrypDrip[] = [
     title: '33 / Cyberpunk Neon Circuit',
     subtitle: 'Cerámica negro obsidiana con armadura facetada stealth, circuitos grabados en neón carmesí, asa angular mecatrónica y base poligonal con sello DRYP.',
     category: 'Experimental',
-    categoryLabel: 'Futurismo',
+    categoryLabel: 'Futurista y Sci-fi',
     imageSrc: '/images/products/futurism-cyberpunk.jpg',
     aspectRatio: 'aspect-square',
     author: {

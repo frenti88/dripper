@@ -43,7 +43,7 @@ const CATEGORY_NAMES: Record<string, { es: string; en: string }> = {
   Cinema: { es: 'Fotografía y cine', en: 'Cinema & Photography' },
   Series: { es: 'Series y TV', en: 'Series & TV' },
   Retro: { es: 'Retro', en: 'Retro' },
-  Experimental: { es: 'Futurismo', en: 'Futurism' },
+  Experimental: { es: 'Futurista y Sci-fi', en: 'Futurism & Sci-Fi' },
   Prehistoric: { es: 'Prehistoria', en: 'Prehistoric' },
   Photography: { es: 'Fotografía y cine', en: 'Cinema & Photography' },
   Architecture: { es: 'Arquitectura', en: 'Architecture' },
