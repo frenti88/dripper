@@ -107,16 +107,17 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-cinema',
     title: 'Fotografía y cine',
-    description: 'Ópticas concéntricas de 35mm, cintas de celuloide helicoidales y bobinas de cine en gres horneado a 1.280 °C.',
+    description: 'Ópticas concéntricas de 35mm, cámaras telemétricas vintage y bobinas de cine en gres horneado a 1.280 °C.',
     tag: 'Cine & Foto',
     category: 'Cinema',
-    coverImage: '/images/products/cinema-film-reel.jpg',
+    coverImage: '/images/products/cinema-rangefinder.jpg',
     previewImages: [
+      '/images/products/cinema-rangefinder.jpg',
       '/images/products/cinema-film-reel.jpg',
       '/images/products/lens-50.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 3,
+    dripsCount: 3
   },
   {
     id: 'board-series',
@@ -595,6 +596,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'CINEMA 35MM',
     dropCode: 'CINEMA 02',
     level01Emotion: 'El giro continuo de la bobina de 35mm proyectando cada gota de extracción como un fotograma de autor.'
+  },
+
+  {
+    id: 'drip-cinema-rangefinder',
+    productId: 'cinema-rangefinder-leica',
+    title: '43 / Cámara Telemétrica Rangefinder',
+    subtitle: 'Gres mineral y vulcanita texturizada inspirada en cámaras telemétricas clásicas de 35mm, visor de coincidencia, disparador rojo y peana con sello DRYP.',
+    category: 'Cinema',
+    categoryLabel: 'Fotografía y cine',
+    imageSrc: '/images/products/cinema-rangefinder.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Optics Studio',
+      avatar: '/favicon.svg',
+      handle: '@dryp_optics',
+      verified: true
+    },
+    price: 99,
+    stockStatus: 'sold_out',
+    stockLabel: 'Agotado',
+    likesCount: 5410,
+    savesCount: 12890,
+    boardIds: ['board-cinema'],
+    tags: ['Rangefinder', 'Telemétrica', '35mm', 'Fotografía', 'Cine', 'Vulcanita', 'Leica M', 'Enfoque de Coincidencia'],
+    badge: 'RANGEFINDER M',
+    dropCode: 'CINE 03',
+    level01Emotion: 'Alinear dos imágenes en el telémetro óptico antes del clic mecánico: precisión analógica en tu ritual matutino.'
   },
 
   // ── SERIES Y TV ──────────────────────────────────────────────────────────

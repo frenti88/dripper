@@ -470,6 +470,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'lens-50'
     },
     {
+      id: 'cinema-rangefinder-leica',
+      numberCode: '43',
+      collection: 'Cinema & Photography',
+      categoryTag: 'Editions',
+      dropCode: 'CINE 03',
+      eyebrow: 'CINE 03',
+      name: 'Rangefinder Telemeter M',
+      headline: 'The mechanical precision of 35mm split-image rangefinder optics sculpted in artisanal stoneware.',
+      story: 'Inspired by legendary mid-century 35mm rangefinder cameras. Crafted from speckled mineral stoneware paired with a tactile vulcanite leatherette grip band. Features a telemeter split-image optical window, a crisp rectangular viewfinder with chrome ceramic bezel, an iconic red shutter release button accent, and a knurled metal-textured dial knob. An architectural handle with aperture cutouts balances the piece over an elevated pedestal base debossed with the DRYP hallmark.',
+      objectDescription: 'The matte basalt interior chamber is engineered with deep bone-colored vertical extraction channels that optimize laminar water flow and uniform aeration, preventing channeling and producing a clean cup with crystalline fruit acidity, sweet bergamot nuances, and a crisp, focus-sharp finish.',
+      price: 99,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Sold Out',
+      stockCountRemaining: 15,
+      paletteColors: [
+        { name: 'Vulcanite Matte Black', hex: '#1C1C1A' },
+        { name: 'Speckled Mineral Grey', hex: '#A8A49D' },
+        { name: 'Shutter Accent Red', hex: '#D62828' }
+      ],
+      specs: {
+        extractionStyle: 'Crystalline fruit clarity, vibrant citrus acidity, and razor-sharp balance',
+        flowRate: 'Precision laminar descent guided by optical fluted channels',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters (V60 / Cafec)',
+        material: 'High-fire mineral stoneware (1,280°C) with vulcanite textured glaze',
+        origin: 'Optics & Rangefinder Atelier • Medellín',
+        weight: '410g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.6',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Split-image precision. Focus every morning extraction.',
+      visualType: 'lens-50'
+    },
+    {
       id: 'series-springfield-spikes',
       numberCode: '30',
       collection: 'Series & TV',
@@ -1983,6 +2024,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Cuadro a cuadro, gota a gota. Extracción cinematográfica.',
+      visualType: 'lens-50'
+    },
+    {
+      id: 'cinema-rangefinder-leica',
+      numberCode: '43',
+      collection: 'Fotografía y cine',
+      categoryTag: 'Editions',
+      dropCode: 'CINE 03',
+      eyebrow: 'CINE 03',
+      name: 'Cámara Telemétrica Rangefinder',
+      headline: 'La precisión mecánica del telémetro de 35mm fundida en gres artesanal: enfoca cada matiz de tu café.',
+      story: 'Inspirado en las legendarias cámaras telemétricas de 35mm. Moldeado en gres mineral moteado combinado con una banda táctil en textura de vulcanita granulada negra. Incorpora una ventana óptica de telémetro con visor rectangular de bisel cerámico cromado, un botón disparador rojo de acento y diales moleteados. Su asa geométrica con recorte de apertura equilibra la pieza sobre una peana elevada con calados de ventilación y el sello grabado en negro DRYP.',
+      objectDescription: 'El cono interior en basalto oscuro cuenta con estrías verticales en contraste color hueso que guían el flujo laminar del agua con perfecta oxigenación sin adherencias prematuras del filtro, resaltando una claridad frutal cristalina, notas sutiles de bergamota y un final definido y enfocado.',
+      price: 99,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Agotado',
+      stockCountRemaining: 15,
+      paletteColors: [
+        { name: 'Negro Vulcanita Mate', hex: '#1C1C1A' },
+        { name: 'Gris Mineral Moteado', hex: '#A8A49D' },
+        { name: 'Rojo Disparador', hex: '#D62828' }
+      ],
+      specs: {
+        extractionStyle: 'Claridad frutal cristalina, acidez cítrica brillante y equilibrio de enfoque óptico',
+        flowRate: 'Flujo laminar guiado por estrías de precisión',
+        capacity: '1–2 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02 (V60 / Cafec)',
+        material: 'Gres mineral de alta temperatura (1.280 °C) con esmalte texturizado tipo vulcanita',
+        origin: 'Atelier de Cine & Óptica • Medellín',
+        weight: '410g',
+        idealRecipe: {
+          dose: '18g',
+          water: '300ml',
+          temperature: '93°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.6',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Precisión telemétrica. Enfoca tu ritual cada mañana.',
       visualType: 'lens-50'
     },
     {
