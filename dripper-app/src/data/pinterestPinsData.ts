@@ -89,16 +89,17 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-nature',
     title: 'Naturaleza & Biodiversidad',
-    description: 'Plumajes de colibríes andinos y venaciones biomiméticas de alas de libélula en porcelana marfil.',
+    description: 'Plumajes de colibríes andinos, siluetas felinas biomiméticas y venaciones aladas en gres horneado a 1.280 °C.',
     tag: 'Botánica & Fauna',
     category: 'Nature',
-    coverImage: '/images/products/nature-venation.jpg',
+    coverImage: '/images/products/nature-feline.jpg',
     previewImages: [
+      '/images/products/nature-feline.jpg',
       '/images/products/nature-venation.jpg',
       '/images/products/colibri-andes.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 3,
+    dripsCount: 3
   },
   {
     id: 'board-cinema',
@@ -368,6 +369,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'MONARCH WINGS',
     dropCode: 'BIO 02',
     level01Emotion: 'La delicadeza ingrávida de las alas de mariposa abriéndose hacia la luz del sol en las mañanas de bosque.'
+  },
+
+  {
+    id: 'drip-nature-feline',
+    productId: 'nature-feline-silhouette',
+    title: '36 / Silueta Felina',
+    subtitle: 'Cerámica negro grafito mate con orejas felinas en el borde, bigotes y nariz en oro envejecido, cono interior en gres arena marfil con estrías en vórtice y peana calada con huellas doradas y sello DRYP.',
+    category: 'Nature',
+    categoryLabel: 'Naturaleza',
+    imageSrc: '/images/products/nature-feline.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Bio Atelier',
+      avatar: '/favicon.svg',
+      handle: '@dryp_nature',
+      verified: true
+    },
+    price: 96,
+    stockStatus: 'sold_out',
+    stockLabel: 'Agotado',
+    likesCount: 5120,
+    savesCount: 12400,
+    boardIds: ['board-nature'],
+    tags: ['Naturaleza', 'Felino', 'Gato', 'Fauna', 'Biomimético', 'Oro', 'Negro Mate', 'Vórtice'],
+    badge: 'FELINE EDITION',
+    dropCode: 'BIO 03',
+    level01Emotion: 'La calma silenciosa y el sigilo de un felino al amanecer, concentrados en un vertido paciente y armonioso.'
   },
 
   // ── PREHISTORIA (3 drips únicos) ──────────────────────────────────────────

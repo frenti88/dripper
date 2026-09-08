@@ -1165,6 +1165,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'artist-001'
     },
     {
+      id: 'nature-feline-silhouette',
+      numberCode: '36',
+      collection: 'Nature',
+      categoryTag: 'Editions',
+      dropCode: 'BIO 03',
+      eyebrow: 'BIO 03',
+      name: 'Feline Silhouette & Moonlit Paws',
+      headline: 'The silent grace and focused agility of a feline carved into high-fire black stoneware and warm gold luster.',
+      story: 'Sculpted in matte charcoal-black ceramic with feline ear crests gracing the rim, fine debossed gilded whiskers and nose, and an expansive sand-oat glazed conical interior with deep vortex extraction flutes. Anchored by an arched elevated base featuring golden paw accents and the debossed DRYP seal.',
+      objectDescription: 'The interior conical chamber features swirling spiral flutes in warm speckled sand stoneware, accelerating continuous water drainage while preserving exceptional thermal equilibrium to extract delicate florals, honey sweetness, and a silky, lingering cocoa finish.',
+      price: 96,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Sold Out',
+      stockCountRemaining: 18,
+      paletteColors: [
+        { name: 'Matte Charcoal Black', hex: '#1C1B1A' },
+        { name: 'Speckled Oat Sand', hex: '#DED6C7' },
+        { name: 'Ancient Luster Gold', hex: '#C5A059' }
+      ],
+      specs: {
+        extractionStyle: 'Silky mouthfeel, balanced sweetness, sparkling citrus and layered cocoa finish',
+        flowRate: 'Fluid spiral vortex drainage',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters (V60 / Cafec)',
+        material: 'High-temperature matte stoneware & gold luster (1,280°C)',
+        origin: 'Bio Atelier • Medellín',
+        weight: '380g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:30 min',
+          ratio: '1:16.2',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Feline grace and quiet mindfulness in every pour.',
+      visualType: 'artist-001'
+    },
+    {
       id: 'fossil-skull-trex',
       numberCode: '16',
       collection: 'Prehistoric',
@@ -2391,6 +2432,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Venación biomimética que traduce la naturaleza en café extraordinario.',
+      visualType: 'artist-001'
+    },
+    {
+      id: 'nature-feline-silhouette',
+      numberCode: '36',
+      collection: 'Naturaleza',
+      categoryTag: 'Editions',
+      dropCode: 'BIO 03',
+      eyebrow: 'BIO 03',
+      name: 'Silueta Felina & Patas de Luna',
+      headline: 'La gracia silenciosa y la mirada atenta de un felino talladas en cerámica negro carbón y destellos en oro.',
+      story: 'Esculpido en cerámica mate negro carbón con siluetas de orejas felinas en el borde superior, bigotes y nariz grabados en oro envejecido, y una cámara cónica interior en gres arena marfil con estrías en vórtice espiral. Su base arqueada elevada luce huellas felinas doradas y el sello DRYP estampado.',
+      objectDescription: 'La cámara interior con estrías en espiral sobre esmalte arena moteado acelera el flujo centrípeto del agua, garantizando un drenaje continuo y máxima estabilidad térmica para resaltar notas florales sutiles, dulzor a miel y un retrogusto sedoso a cacao.',
+      price: 96,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Agotado',
+      stockCountRemaining: 18,
+      paletteColors: [
+        { name: 'Negro Carbón Mate', hex: '#1C1B1A' },
+        { name: 'Gres Arena Marfil', hex: '#DED6C7' },
+        { name: 'Oro Envejecido', hex: '#C5A059' }
+      ],
+      specs: {
+        extractionStyle: 'Cuerpo sedoso, dulzor balanceado de miel y final aterciopelado de cacao',
+        flowRate: 'Flujo continuo en vórtice espiral',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02 (V60 / Cafec)',
+        material: 'Gres chamotado de alta temperatura a 1.280 °C y esmalte en oro',
+        origin: 'Bio Atelier • Medellín',
+        weight: '380g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:30 min',
+          ratio: '1:16.2',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Gracia felina y calma silenciosa en cada vertido.',
       visualType: 'artist-001'
     },
     {
