@@ -312,6 +312,9 @@ Priorizar:
 
 sobre bloques largos.
 
+### Regla General de Cards (Fotografías Limpias)
+Las tarjetas de producto en el catálogo y feed nunca deben superponer tags, badges ni elementos encima de la fotografía. La pieza cerámica debe contemplarse siempre completa y limpia. Cualquier indicador de estado (como «Agotado») se sitúa fuera de la imagen, en la esquina inferior derecha de la tarjeta junto al precio.
+
 ---
 
 # PRINCIPIO DE MARCA

@@ -154,10 +154,11 @@ Forms are organic yet disciplined. Outer containers utilize generous rounded cor
 - **Secondary:** Border 1px `#E6E1D8`, background transparent, text `#151413`. Hover fill `#F3EFE6`.
 
 ### Cards / Containers
-- **Corner Style:** 24px (`rounded-3xl`)
+- **Corner Style:** 24px (`rounded-3xl`) o 16px (`rounded-[16px]`)
 - **Background:** `#F8F6F1` with 1px border `#E6E1D8`
 - **Internal Padding:** 24px–32px
 - **Hover State:** Border transitions to `#CDC5B8` with ambient sculpture lift.
+- **The Pure Image Rule (Cards Clean Canvas):** Las imágenes de producto en las cards nunca deben tener tags, badges ni elementos superpuestos encima de la fotografía. La pieza cerámica debe exhibirse siempre limpia y sin obstrucciones visuales. Cualquier badge de estado (como *Agotado* / *Sold Out*) debe ubicarse exclusivamente fuera del contenedor visual de la imagen, en la esquina inferior derecha de la card (en la fila de precio).
 
 ### Drop Controller Switcher
 - **Style:** Compact pill-track container in `#F3EFE6` with segmented tabs.
@@ -180,3 +181,4 @@ Forms are organic yet disciplined. Outer containers utilize generous rounded cor
 - **Don't** use pure black (`#000000`) or pure cold white (`#FFFFFF`) for large surfaces.
 - **Don't** display technical specifications before the emotional backstory has been established.
 - **Don't** design literal retro kitsch or dated skeuomorphism; execution must remain crisp and modern.
+- **Don't** colocar tags, badges o etiquetas encima de las imágenes de las cards. La fotografía debe mantenerse libre de obstrucciones visuales; los tags de estado van siempre en la parte inferior derecha de la card.
