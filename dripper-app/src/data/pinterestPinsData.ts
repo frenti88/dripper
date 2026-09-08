@@ -62,16 +62,17 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-music',
     title: 'Música',
-    description: 'Surcos de vinilo a 33 RPM y teclas de piano de cola esculpidas para una armonía acústica en cada vertido.',
+    description: 'Surcos de vinilo a 33 RPM, teclas de piano de cola y ondas sonoras esculpidas para una armonía acústica en cada vertido.',
     tag: 'Música',
     category: 'Music',
-    coverImage: '/images/products/music-piano.jpg',
+    coverImage: '/images/products/music-soundwave.jpg',
     previewImages: [
+      '/images/products/music-soundwave.jpg',
       '/images/products/music-piano.jpg',
       '/images/products/vinyl-groove.jpg'
     ],
-    pinsCount: 2,
-    dripsCount: 2
+    pinsCount: 3,
+    dripsCount: 3
   },
   {
     id: 'board-cosmos',
@@ -259,6 +260,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'GRAND PIANO',
     dropCode: 'AUDIO 02',
     level01Emotion: 'La resonancia de un acorde perfecto en un piano de cola: cada vertido fluye en cadencia armónica hacia tu taza.'
+  },
+
+  {
+    id: 'drip-music-soundwave',
+    productId: 'music-soundwave-resonance',
+    title: '37 / Ondas Sonoras Resonance',
+    subtitle: 'Gres arena moteado y basalto negro con borde sinusoidal en onda acústica, barras de ecualizador en cascada y base arqueada con sello dorado DRYP.',
+    category: 'Music',
+    categoryLabel: 'Música',
+    imageSrc: '/images/products/music-soundwave.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Sound Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_sound',
+      verified: true
+    },
+    price: 94,
+    stockStatus: 'sold_out',
+    stockLabel: 'Agotado',
+    likesCount: 4890,
+    savesCount: 11200,
+    boardIds: ['board-music'],
+    tags: ['Ondas Sonoras', 'Música', 'Acústico', 'Frecuencia', 'Ecualizador', 'Gres Arena', 'Negro Basalto', 'Resonancia'],
+    badge: 'SOUNDWAVE',
+    dropCode: 'AUDIO 03',
+    level01Emotion: 'La frecuencia exacta del sonido vibrando en la cerámica: una melodía fluida que resuena en cada gota de café.'
   },
 
   // ── COSMOS (1 drip único) ──────────────────────────────────────────────────

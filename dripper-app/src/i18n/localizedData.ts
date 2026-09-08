@@ -920,6 +920,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'core-black'
     },
     {
+      id: 'music-soundwave-resonance',
+      numberCode: '37',
+      collection: 'Music',
+      categoryTag: 'Editions',
+      dropCode: 'AUDIO 03',
+      eyebrow: 'AUDIO 03',
+      name: 'Soundwave Resonance',
+      headline: 'Acoustic frequency spectrum sculpted into dual-tone stoneware and undulating resonance curves.',
+      story: 'Sculpted in high-fire stoneware featuring an organic sinusoidal wave rim that transitions into vertical soundwave equalizer bars descending like melodic frequencies. The upper half is glazed in speckled oatmeal sandstone, cascading into a deep matte charcoal-basalt base elevated on an arched acoustic pedestal bearing the debossed gold DRYP emblem.',
+      objectDescription: 'The undulating rim and vertical soundwave flutes provide progressive air ventilation, preventing filter adhesion while producing a resonant central vortex drawdown that accentuates luminous citrus acidity, crisp floral clarity, and a lingering harmonic honey-cocoa finish.',
+      price: 94,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Sold Out',
+      stockCountRemaining: 16,
+      paletteColors: [
+        { name: 'Speckled Oatmeal Sand', hex: '#E4DDD3' },
+        { name: 'Matte Basalt Charcoal', hex: '#21201E' },
+        { name: 'Debossed Gold Accent', hex: '#C5A059' }
+      ],
+      specs: {
+        extractionStyle: 'Resonant acoustic balance, crystalline fruit acidity, and lingering cocoa harmony',
+        flowRate: 'Harmonic sinusoidal drawdown with dynamic wave aeration',
+        capacity: '1–2 Cups (15g–28g dose)',
+        filterType: 'Standard 02 Conical filters (V60 / Cafec)',
+        material: 'High-fire dual stoneware & mineral matte glaze (1,280°C)',
+        origin: 'Acoustic Sound Lab • Medellín',
+        weight: '375g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:35 min',
+          ratio: '1:16.25',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Pour the frequency of your morning.',
+      visualType: 'core'
+    },
+    {
       id: 'nature-colibri-andes',
       numberCode: '12',
       collection: 'Nature',
@@ -2188,6 +2229,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       },
       tagline: 'Cada nota afinada. Cada vertido en perfecta armonía.',
       visualType: 'core-black'
+    },
+    {
+      id: 'music-soundwave-resonance',
+      numberCode: '37',
+      collection: 'Música',
+      categoryTag: 'Editions',
+      dropCode: 'AUDIO 03',
+      eyebrow: 'AUDIO 03',
+      name: 'Ondas Sonoras Resonance',
+      headline: 'El espectro de frecuencias acústicas esculpido en gres dual y curvas de resonancia sinusoidal.',
+      story: 'Gotero artesanal cocido a 1.280 °C con un borde ondulado de perfil sinusoidal que desciende en barras verticales de ecualizador y ondas de sonido. La mitad superior en gres arena moteado marfil fluye en cascada sobre una base texturizada en negro basalto mate, soportada por un pedestal arqueado calado con el sello en oro DRYP.',
+      objectDescription: 'Las crestas y valles de las ondas sonoras actúan como estrías acústicas de ventilación progresiva, canalizando el flujo del agua en un vórtice armónico continuo que potencia la acidez cítrica brillante, notas florales de jazmín y un fondo acaramelado equilibrado.',
+      price: 94,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Agotado',
+      stockCountRemaining: 16,
+      paletteColors: [
+        { name: 'Gres Arena Moteado', hex: '#E4DDD3' },
+        { name: 'Negro Basalto Carbón', hex: '#21201E' },
+        { name: 'Detalle en Oro', hex: '#C5A059' }
+      ],
+      specs: {
+        extractionStyle: 'Equilibrio acústico resonante, acidez cristalina de frutos amarillos y fondo suave a cacao',
+        flowRate: 'Flujo sinusoidal armónico con aireación de onda dinámica',
+        capacity: '1–2 Tazas (dosis 15g–28g)',
+        filterType: 'Filtros cónicos estándar 02 (V60 / Cafec)',
+        material: 'Gres chamotado dual horneado a 1.280 °C con esmalte mineral mate',
+        origin: 'Laboratorio Acústico • Medellín',
+        weight: '375g',
+        idealRecipe: {
+          dose: '16g',
+          water: '260ml',
+          temperature: '93°C',
+          brewTime: '2:35 min',
+          ratio: '1:16.25',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Vierte la frecuencia exacta de tu mañana.',
+      visualType: 'core'
     },
     {
       id: 'nature-colibri-andes',
