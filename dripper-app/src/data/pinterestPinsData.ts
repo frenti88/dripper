@@ -77,15 +77,17 @@ export const PINTEREST_BOARDS: PinterestBoard[] = [
   {
     id: 'board-cosmos',
     title: 'Universo',
-    description: 'Regolito lunar Apollo y basalto volcánico texturizado en conos cerámicos de alta inercia térmica.',
+    description: 'Regolito lunar Apollo, condritas meteóricas con cráteres de impacto y basalto volcánico horneados a 1.280 °C.',
     tag: 'Universo',
     category: 'Cosmos',
-    coverImage: '/images/products/orbit.jpg',
+    coverImage: '/images/products/cosmos-meteorite.jpg',
     previewImages: [
+      '/images/products/cosmos-meteorite.jpg',
+      '/images/products/cosmos-lunar-lander.jpg',
       '/images/products/orbit.jpg'
     ],
-    pinsCount: 1,
-    dripsCount: 1
+    pinsCount: 3,
+    dripsCount: 3
   },
   {
     id: 'board-nature',
@@ -342,6 +344,33 @@ export const DRYP_DRIPS: DrypDrip[] = [
     badge: 'APOLLO LANDER',
     dropCode: 'SPACE 03',
     level01Emotion: 'Contacto confirmado en el Mar de la Tranquilidad: la física del alunizaje convertida en tu ritual matutino.'
+  },
+
+  {
+    id: 'drip-cosmos-meteorite',
+    productId: 'cosmos-meteorite-impact',
+    title: '38 / Meteorito Chondrite Crater',
+    subtitle: 'Gres basáltico con cráteres de impacto y textura meteórica de regmaglifos, estrías interiores en bronce cobrizo y base poligonal facetada con sello DRYP.',
+    category: 'Cosmos',
+    categoryLabel: 'Universo',
+    imageSrc: '/images/products/cosmos-meteorite.jpg',
+    aspectRatio: 'aspect-square',
+    author: {
+      name: 'DRYP. Space Lab',
+      avatar: '/favicon.svg',
+      handle: '@dryp_space',
+      verified: true
+    },
+    price: 102,
+    stockStatus: 'sold_out',
+    stockLabel: 'Agotado',
+    likesCount: 6840,
+    savesCount: 15900,
+    boardIds: ['board-cosmos'],
+    tags: ['Meteorito', 'Cráteres', 'Espacio', 'Universo', 'Chondrite', 'Asteroide', 'Basalto', 'Bronce'],
+    badge: 'METEORITE',
+    dropCode: 'SPACE 04',
+    level01Emotion: 'La fuerza geológica del espacio profundo desacelerando en tu ritual: mineralidad, inercia térmica y un vertido sereno.'
   },
 
   // ── NATURALEZA (2 drips únicos) ──────────────────────────────────────────────

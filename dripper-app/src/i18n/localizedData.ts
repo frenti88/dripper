@@ -716,6 +716,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
       visualType: 'orbit'
     },
     {
+      id: 'cosmos-meteorite-impact',
+      numberCode: '38',
+      collection: 'Space',
+      categoryTag: 'Editions',
+      dropCode: 'SPACE 04',
+      eyebrow: 'SPACE 03',
+      name: 'Chondrite Meteorite Crater',
+      headline: 'Forged in deep interplanetary orbit: metallic chondrite stoneware pitted with impact craters and copper-bronze thermal ribs.',
+      story: 'Sculpted in high-fire refractory basalt stoneware with heavy regmaglypt craters, micro-pitted impact textures, and a craggy faceted asteroid fracture rim. The interior cone contrasts in silky basalt stoneware inlaid with radiating copper-bronze thermal extraction ribs, anchored by a polygonal faceted geometric pedestal base stamped with the gold DRYP hallmark.',
+      objectDescription: 'The cratered exterior ceramic maintains immense thermal inertia, while the interior copper-bronze flutes guide rapid linear drawdown with continuous degassing, unlocking dense chocolate depth, ripe dark cherry notes, and a profound, lingering mineral sweetness.',
+      price: 102,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Sold Out',
+      stockCountRemaining: 15,
+      paletteColors: [
+        { name: 'Chondrite Meteorite Bronze', hex: '#3E342B' },
+        { name: 'Deep Basalt Black', hex: '#1C1A18' },
+        { name: 'Impact Copper Lustre', hex: '#9C6944' }
+      ],
+      specs: {
+        extractionStyle: 'Deep cocoa resonance, stone-fruit sweetness, and high thermal retention clarity',
+        flowRate: 'Linear aerated drawdown with thermal stability',
+        capacity: '1–2 Cups (15g–30g dose)',
+        filterType: 'Standard 02 Conical filters (V60 / Cafec)',
+        material: 'Refractory basalt stoneware & metallic mineral glaze (1,280°C)',
+        origin: 'Space Lab • Medellín',
+        weight: '440g',
+        idealRecipe: {
+          dose: '18g',
+          water: '290ml',
+          temperature: '94°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.1',
+          grindSize: 'Medium'
+        }
+      },
+      tagline: 'Pouring the mineral depths of the deep asteroid belt.',
+      visualType: 'orbit'
+    },
+    {
       id: 'artist-001-camilo',
       numberCode: '08',
       collection: 'Artists',
@@ -2024,6 +2065,47 @@ export const LOCALIZED_PRODUCTS: Record<Language, Product[]> = {
         }
       },
       tagline: 'Un pequeño vertido para tu taza, un gran salto para tu mañana.',
+      visualType: 'orbit'
+    },
+    {
+      id: 'cosmos-meteorite-impact',
+      numberCode: '38',
+      collection: 'Space',
+      categoryTag: 'Editions',
+      dropCode: 'SPACE 04',
+      eyebrow: 'ESPACIO 03',
+      name: 'Meteorito Chondrite Crater',
+      headline: 'Forjado en las órbitas del cinturón de asteroides: gres meteórico con cráteres de impacto y estrías térmicas en bronce cobrizo.',
+      story: 'Gotero artesanal cocido a 1.280 °C en gres basáltico refractario con textura de regmaglifos, micro-cráteres de ablación atmosférica y un borde facetado en fractura de asteroide. La cámara interior contrasta en gres negro sedoso con estrías radiales conductoras en esmalte bronce cobrizo, apoyada en una peana poligonal calada con el sello grabado en oro DRYP.',
+      objectDescription: 'La masa cerámica texturizada ofrece una inercia térmica sobresaliente para una temperatura de extracción perfectamente estable, mientras que las estrías metálicas de bronce canalizan un flujo uniforme que maximiza notas profundas a cacao amargo, ciruela negra madura y una dulzura mineral prolongada.',
+      price: 102,
+      currency: 'USD',
+      stockStatus: 'sold_out',
+      stockLabel: 'Agotado',
+      stockCountRemaining: 15,
+      paletteColors: [
+        { name: 'Bronce Meteórico Chondrite', hex: '#3E342B' },
+        { name: 'Negro Basalto Profundo', hex: '#1C1A18' },
+        { name: 'Lustre Cobrizo de Impacto', hex: '#9C6944' }
+      ],
+      specs: {
+        extractionStyle: 'Resonancia densa de cacao, dulzor de frutos oscuros y gran claridad por inercia térmica',
+        flowRate: 'Drenaje lineal aireado de alta estabilidad térmica',
+        capacity: '1–2 Tazas (dosis 15g–30g)',
+        filterType: 'Filtros cónicos estándar 02 (V60 / Cafec)',
+        material: 'Gres basáltico refractario y esmalte mineral metálico a 1.280 °C',
+        origin: 'Space Lab • Medellín',
+        weight: '440g',
+        idealRecipe: {
+          dose: '18g',
+          water: '290ml',
+          temperature: '94°C',
+          brewTime: '2:45 min',
+          ratio: '1:16.1',
+          grindSize: 'Media'
+        }
+      },
+      tagline: 'Vierte la fuerza mineral de los confines del sistema solar.',
       visualType: 'orbit'
     },
     {
